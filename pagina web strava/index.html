@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strava Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- FontAwesome (Optional for icons if needed later) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>MY ACTIVITY</h1>
+            <div class="user-badge">
+                <span>Marc Chavarria</span>
+                <!-- Replaced with a generic avatar or initials if image not available -->
+                <div style="width:30px;height:30px;background:#fc4c02;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;">M</div>
+            </div>
+        </header>
+
+        <!-- Stats Grid -->
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>Total Distance</h3>
+                <div class="stat-value" id="total-distance">0</div>
+                <div class="stat-unit">Kilometers</div>
+            </div>
+            <div class="card">
+                <h3>Elevation Gain</h3>
+                <div class="stat-value" id="total-elevation">0</div>
+                <div class="stat-unit">Meters</div>
+            </div>
+            <div class="card">
+                <h3>Total Time</h3>
+                <div class="stat-value" id="total-time">0</div>
+                <div class="stat-unit">Hours</div>
+            </div>
+            <div class="card">
+                <h3>Activities</h3>
+                <div class="stat-value" id="total-activities">0</div>
+                <div class="stat-unit">Total Count</div>
+            </div>
+        </div>
+
+        <!-- Charts -->
+        <div class="charts-section">
+            <div class="chart-container">
+                <h3>Recent Activity (Distance)</h3>
+                <canvas id="progressChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Sport Type</h3>
+                <canvas id="typeChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Activity Feed -->
+        <div class="activity-feed">
+            <h2>Recent Activities</h2>
+            <div class="activity-list" id="activity-list">
+                <!-- Activities injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
