@@ -1,0 +1,10 @@
+
+# System
+.DS_Store
+
+# Scripts with credentials (DO NOT COMMIT)
+fetch_data.py
+*token*
+
+# VS Code
+.vscode/
