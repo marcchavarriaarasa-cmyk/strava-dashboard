@@ -60,6 +60,9 @@ def generate_context_file(activities):
             moving_time_min = round(activity.get('moving_time', 0) / 60, 2)
             avg_speed_kmh = round(activity.get('average_speed', 0) * 3.6, 2)
             elevation_gain = round(activity.get('total_elevation_gain', 0), 1)
+            heart_rate = activity.get('average_heartrate', 'Null')
+            if heart_rate != 'Null':
+                heart_rate = round(heart_rate, 1)
             
             f.write(f"Fecha: {date}\n")
             f.write(f"Actividad: {name} ({type_})\n")
@@ -67,6 +70,7 @@ def generate_context_file(activities):
             f.write(f"Tiempo en movimiento: {moving_time_min} min\n")
             f.write(f"Velocidad media: {avg_speed_kmh} km/h\n")
             f.write(f"Desnivel positivo: {elevation_gain} m\n")
+            f.write(f"Frecuencia cardíaca media: {heart_rate} bpm\n")
             f.write("-" * 30 + "\n")
             
     print(f"Successfully saved {len(recent_activities)} activities to {filename}")

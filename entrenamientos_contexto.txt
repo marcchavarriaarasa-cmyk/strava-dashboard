@@ -7,6 +7,7 @@ Distancia: 2.46 km
 Tiempo en movimiento: 24.3 min
 Velocidad media: 6.07 km/h
 Desnivel positivo: 0.0 m
+Frecuencia cardíaca media: 104.8 bpm
 ------------------------------
 Fecha: 2026-02-07
 Actividad: Diagonal per a variar (Run)
@@ -14,6 +15,7 @@ Distancia: 11.02 km
 Tiempo en movimiento: 58.65 min
 Velocidad media: 11.28 km/h
 Desnivel positivo: 72.4 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-02-06
 Actividad: Evening workout 🏋️ (WeightTraining)
@@ -21,6 +23,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 151.65 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-02-05
 Actividad: Diagonal Chill (Run)
@@ -28,6 +31,7 @@ Distancia: 10.04 km
 Tiempo en movimiento: 54.95 min
 Velocidad media: 10.96 km/h
 Desnivel positivo: 59.5 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-02-02
 Actividad: Pel Delta (Run)
@@ -35,6 +39,7 @@ Distancia: 15.85 km
 Tiempo en movimiento: 97.93 min
 Velocidad media: 9.71 km/h
 Desnivel positivo: 63.4 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-01-30
 Actividad: Evening workout 🏋️ (WeightTraining)
@@ -42,6 +47,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 86.1 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-01-28
 Actividad: Afternoon Run (Run)
@@ -49,6 +55,7 @@ Distancia: 10.01 km
 Tiempo en movimiento: 50.77 min
 Velocidad media: 11.83 km/h
 Desnivel positivo: 64.6 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-01-27
 Actividad: Morning workout ☀️ (WeightTraining)
@@ -56,6 +63,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 60.75 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-01-25
 Actividad: Afternoon workout 💪 (WeightTraining)
@@ -63,6 +71,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 95.12 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-01-22
 Actividad: Afternoon workout 💪 (WeightTraining)
@@ -70,6 +79,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 72.2 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-01-20
 Actividad: Evening workout 🏋️ (WeightTraining)
@@ -77,6 +87,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 132.05 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-01-18
 Actividad: Via verda Canal (Run)
@@ -84,6 +95,7 @@ Distancia: 10.13 km
 Tiempo en movimiento: 55.35 min
 Velocidad media: 10.98 km/h
 Desnivel positivo: 3.1 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-01-14
 Actividad: Afternoon workout 💪 (WeightTraining)
@@ -91,6 +103,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 109.87 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-01-13
 Actividad: B3TTERRUNCLUB (Run)
@@ -98,6 +111,7 @@ Distancia: 6.01 km
 Tiempo en movimiento: 28.42 min
 Velocidad media: 12.68 km/h
 Desnivel positivo: 7.7 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-01-12
 Actividad: Afternoon workout 💪 (WeightTraining)
@@ -105,6 +119,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 139.6 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-01-06
 Actividad: Afternoon Run (Run)
@@ -112,6 +127,7 @@ Distancia: 5.09 km
 Tiempo en movimiento: 29.22 min
 Velocidad media: 10.46 km/h
 Desnivel positivo: 2.0 m
+Frecuencia cardíaca media: 142.7 bpm
 ------------------------------
 Fecha: 2026-01-02
 Actividad: Via verda (Run)
@@ -119,6 +135,7 @@ Distancia: 6.13 km
 Tiempo en movimiento: 36.73 min
 Velocidad media: 10.0 km/h
 Desnivel positivo: 0.0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-12-31
 Actividad: San Silvestre Amposta '25 (Run)
@@ -126,6 +143,7 @@ Distancia: 3.06 km
 Tiempo en movimiento: 12.23 min
 Velocidad media: 14.85 km/h
 Desnivel positivo: 16.6 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-12-30
 Actividad: Pista atletisme amb familia Zhao (Run)
@@ -133,6 +151,7 @@ Distancia: 10.02 km
 Tiempo en movimiento: 60.27 min
 Velocidad media: 9.98 km/h
 Desnivel positivo: 0.0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-12-22
 Actividad: Ruta circular cordillera serra del Montsia (Hike)
@@ -140,6 +159,7 @@ Distancia: 22.78 km
 Tiempo en movimiento: 305.15 min
 Velocidad media: 4.48 km/h
 Desnivel positivo: 1068.6 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-12-16
 Actividad: Evening workout 🏋️ (WeightTraining)
@@ -147,6 +167,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 82.5 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-12-08
 Actividad: Camí Casa de Fusta (Run)
@@ -154,6 +175,7 @@ Distancia: 10.05 km
 Tiempo en movimiento: 56.08 min
 Velocidad media: 10.75 km/h
 Desnivel positivo: 2.7 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-12-04
 Actividad: Afternoon workout 💪 (WeightTraining)
@@ -161,6 +183,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 80.93 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-12-02
 Actividad: Recuperació post cursa (Run)
@@ -168,6 +191,7 @@ Distancia: 4.34 km
 Tiempo en movimiento: 26.33 min
 Velocidad media: 9.9 km/h
 Desnivel positivo: 10.8 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-12-01
 Actividad: Afternoon workout 💪 (WeightTraining)
@@ -175,6 +199,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 86.77 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-30
 Actividad: Jean Bouin '2025 (Run)
@@ -182,6 +207,7 @@ Distancia: 10.33 km
 Tiempo en movimiento: 43.62 min
 Velocidad media: 14.21 km/h
 Desnivel positivo: 33.7 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-28
 Actividad: Recollir dorsal jean bouin (Run)
@@ -189,6 +215,7 @@ Distancia: 5.13 km
 Tiempo en movimiento: 26.27 min
 Velocidad media: 11.72 km/h
 Desnivel positivo: 21.2 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-26
 Actividad: Afternoon workout 💪 (WeightTraining)
@@ -196,6 +223,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 131.1 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-25
 Actividad: B3TTERRUNCLUB (Run)
@@ -203,6 +231,7 @@ Distancia: 8.2 km
 Tiempo en movimiento: 39.65 min
 Velocidad media: 12.41 km/h
 Desnivel positivo: 18.1 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-22
 Actividad: Portell de l'infern i Salt del Robert (Hike)
@@ -210,6 +239,7 @@ Distancia: 13.38 km
 Tiempo en movimiento: 201.72 min
 Velocidad media: 3.98 km/h
 Desnivel positivo: 499.9 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-18
 Actividad: B3TTERRUNCLUB (Run)
@@ -217,6 +247,7 @@ Distancia: 6.07 km
 Tiempo en movimiento: 30.5 min
 Velocidad media: 11.94 km/h
 Desnivel positivo: 11.4 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-13
 Actividad: Afternoon workout 💪 (WeightTraining)
@@ -224,6 +255,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 91.9 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-12
 Actividad: Evening workout 🏋️ (WeightTraining)
@@ -231,6 +263,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 111.23 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-11
 Actividad: B3TTERRUNCLUB (Run)
@@ -238,6 +271,7 @@ Distancia: 6.02 km
 Tiempo en movimiento: 35.98 min
 Velocidad media: 10.04 km/h
 Desnivel positivo: 17.4 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-10
 Actividad: Afternoon workout 💪 (WeightTraining)
@@ -245,6 +279,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 63.12 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-09
 Actividad: Cursa dela bombers 2025 (Run)
@@ -252,6 +287,7 @@ Distancia: 10.15 km
 Tiempo en movimiento: 46.85 min
 Velocidad media: 13.0 km/h
 Desnivel positivo: 48.6 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-08
 Actividad: Afternoon workout 💪 (WeightTraining)
@@ -259,6 +295,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 66.88 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-08
 Actividad: Activacio PreCursa dels bombers (Run)
@@ -266,6 +303,7 @@ Distancia: 3.15 km
 Tiempo en movimiento: 20.47 min
 Velocidad media: 9.23 km/h
 Desnivel positivo: 24.1 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-06
 Actividad: Evening workout 🏋️ (WeightTraining)
@@ -273,6 +311,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 98.07 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-04
 Actividad: Afternoon workout 💪 (WeightTraining)
@@ -280,6 +319,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 111.62 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-11-04
 Actividad: B3tterRunClub (Run)
@@ -287,6 +327,7 @@ Distancia: 9.05 km
 Tiempo en movimiento: 46.3 min
 Velocidad media: 11.73 km/h
 Desnivel positivo: 14.0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-10-30
 Actividad: Caminata (Walk)
@@ -294,6 +335,7 @@ Distancia: 8.26 km
 Tiempo en movimiento: 102.17 min
 Velocidad media: 4.85 km/h
 Desnivel positivo: 47.5 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-10-30
 Actividad: Morning workout ☀️ (WeightTraining)
@@ -301,6 +343,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 85.15 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-10-29
 Actividad: Afternoon workout 💪 (WeightTraining)
@@ -308,6 +351,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 58.28 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-10-23
 Actividad: Evening workout 🏋️ (WeightTraining)
@@ -315,6 +359,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 62.6 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-10-23
 Actividad: Afternoon Run (Run)
@@ -322,6 +367,7 @@ Distancia: 8.46 km
 Tiempo en movimiento: 45.35 min
 Velocidad media: 11.2 km/h
 Desnivel positivo: 45.1 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-10-21
 Actividad: Afternoon workout 💪 (WeightTraining)
@@ -329,6 +375,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 83.25 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-10-19
 Actividad: SPARTAN RACE SUPER 10K (Run)
@@ -336,6 +383,7 @@ Distancia: 11.81 km
 Tiempo en movimiento: 93.53 min
 Velocidad media: 7.58 km/h
 Desnivel positivo: 222.9 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-10-17
 Actividad: Afternoon workout 💪 (WeightTraining)
@@ -343,6 +391,7 @@ Distancia: 0.0 km
 Tiempo en movimiento: 78.13 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2025-10-15
 Actividad: Afternoon workout 💪 (WeightTraining)
@@ -350,4 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 105.95 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
