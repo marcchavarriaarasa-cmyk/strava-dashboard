@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-02-10
+Actividad: B3TTER PRE-MITJA BCN '26 (Run)
+Distancia: 8.86 km
+Tiempo en movimiento: 47.72 min
+Velocidad media: 11.15 km/h
+Desnivel positivo: 28.5 m
+Frecuencia cardíaca media: 158.8 bpm
+------------------------------
 Fecha: 2026-02-08
 Actividad: Proban juguet nou (pulsometro) (Walk)
 Distancia: 2.46 km
@@ -389,14 +397,6 @@ Fecha: 2025-10-17
 Actividad: Afternoon workout 💪 (WeightTraining)
 Distancia: 0.0 km
 Tiempo en movimiento: 78.13 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-10-15
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 105.95 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
