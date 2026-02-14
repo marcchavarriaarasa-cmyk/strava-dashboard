@@ -300,7 +300,7 @@ function renderConsistencyStats(activities) {
     // Set grid styles dynamically to match 53 columns?
     // CSS handle auto-flow column, but for labels container we need specific template columns?
     // Or just use same auto-flow.
-    labelsContainer.style.gridTemplateColumns = `repeat(53, 14px)`; // Force 53 cols
+    labelsContainer.style.gridTemplateColumns = `repeat(53, 16px)`; // Force 53 cols
     labelsContainer.style.gap = '4px';
     // Heatmap container uses auto-flow column so strictly it just fills.
     // But to ensure alignment, we need to make sure sizes match.
