@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strava Dashboard</title>
-    <link rel="stylesheet" href="style.css?v=1.2">
+    <link rel="stylesheet" href="style.css?v=1.3">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- FontAwesome (Optional for icons if needed later) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<!-- ... -->
+<script src="app.js?v=1.4"></script>
 
 <body>
 
@@ -118,6 +120,9 @@
             <!-- Heatmap -->
             <div class="card heatmap-card">
                 <h3>Activity Habit (Last Year)</h3>
+                <div class="month-labels" id="monthLabels">
+                    <!-- JS Labels -->
+                </div>
                 <div class="heatmap-container" id="heatmap">
                     <!-- JS Grid -->
                 </div>
