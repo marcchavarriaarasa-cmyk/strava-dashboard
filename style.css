@@ -392,6 +392,12 @@ h1 {
     height: 20px;
 }
 
+/* Map specific override for dark mode tiles if desired, 
+   but standard OSM tiles are light. We can use a filter to darken them. */
+.leaflet-layer {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+
 .month-label {
     font-size: 0.7rem;
     color: var(--text-secondary);

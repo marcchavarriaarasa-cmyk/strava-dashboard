@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strava Dashboard</title>
-    <link rel="stylesheet" href="style.css?v=1.7">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <link rel="stylesheet" href="style.css?v=1.8">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- FontAwesome (Optional for icons if needed later) -->
@@ -147,6 +154,19 @@
             </div>
         </div>
 
+        <!-- Geography & Gear Section -->
+        <h2 style="margin-bottom: 20px;">Geography & Equipment</h2>
+        <div class="charts-section">
+            <div class="chart-container" style="flex: 2; min-height: 400px;">
+                <h3>Latest Route</h3>
+                <div id="map" style="height: 350px; width: 100%; border-radius: 8px;"></div>
+            </div>
+            <div class="chart-container" style="flex: 1;">
+                <h3>Gear Usage (Distance)</h3>
+                <canvas id="gearChart"></canvas>
+            </div>
+        </div>
+
         <!-- Activity Feed -->
         <div class="activity-feed">
             <h2>Recent Activities</h2>
@@ -156,7 +176,7 @@
         </div>
     </div>
 
-    <script src="app.js?v=1.6"></script>
+    <script src="app.js?v=1.8"></script>
 </body>
 
 </html>

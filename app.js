@@ -211,6 +211,97 @@ function updateDashboard(activities) {
     renderCharts(activities);
     renderActivityList(activities);
     renderConsistencyStats(activities);
+    renderGeographyAndGear(activities);
+}
+
+function renderGeographyAndGear(activities) {
+    // --- 1. Latest Route Map ---
+    // Find first activity with a polyline
+    const activityWithMap = activities.find(a => a.map && a.map.summary_polyline);
+
+    if (activityWithMap) {
+        const polyline = activityWithMap.map.summary_polyline;
+        const coordinates = decodePolyline(polyline);
+
+        if (coordinates.length > 0) {
+            // Initialize Map (check if already exists)
+            if (window.mapInstance) {
+                window.mapInstance.remove();
+            }
+
+            // Center map on the start of the route
+            window.mapInstance = L.map('map').setView(coordinates[0], 13);
+
+            // Add Tile Layer (OpenStreetMap)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(window.mapInstance);
+
+            // Draw Polyline
+            const routeLine = L.polyline(coordinates, {
+                color: '#fc4c02',
+                weight: 4,
+                opacity: 0.8
+            }).addTo(window.mapInstance);
+
+            // Fit bounds
+            window.mapInstance.fitBounds(routeLine.getBounds());
+        }
+    } else {
+        document.getElementById('map').innerHTML = '<p style="text-align:center; padding-top:150px; color:#666;">No map data available for recent activities.</p>';
+    }
+
+    // --- 2. Gear Usage Chart ---
+    const gearUsage = {};
+
+    // Config for Gear Names (User can update this later)
+    const gearNames = {
+        // Example: 'g1234567': 'Nike Pegasus 39',
+    };
+
+    activities.forEach(a => {
+        if (a.gear_id) {
+            const name = gearNames[a.gear_id] || a.gear_id;
+            gearUsage[name] = (gearUsage[name] || 0) + (a.distance / 1000);
+        }
+    });
+
+    // Sort by use
+    const sortedGear = Object.entries(gearUsage).sort((a, b) => b[1] - a[1]);
+
+    const ctxGear = document.getElementById('gearChart').getContext('2d');
+    if (window.gearChartInstance) window.gearChartInstance.destroy();
+
+    window.gearChartInstance = new Chart(ctxGear, {
+        type: 'bar',
+        data: {
+            labels: sortedGear.map(g => g[0]), // Name/ID
+            datasets: [{
+                label: 'Distance (km)',
+                data: sortedGear.map(g => g[1]),
+                backgroundColor: '#2196f3',
+                borderRadius: 4
+            }]
+        },
+        options: {
+            indexAxis: 'y', // Horizontal bars for names
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    grid: { color: 'rgba(255,255,255,0.1)' },
+                    ticks: { color: '#b0b0b0' }
+                },
+                y: {
+                    grid: { display: false },
+                    ticks: { color: '#b0b0b0' }
+                }
+            },
+            plugins: {
+                legend: { display: false }
+            }
+        }
+    });
 }
 
 function renderConsistencyStats(activities) {
@@ -695,4 +786,49 @@ function calculateMovingAverage(data, windowSize) {
         result.push(sum / subset.length);
     }
     return result;
+}
+
+// Polyline Decoder (Google Encoded Polyline Algorithm)
+function decodePolyline(str, precision) {
+    var index = 0,
+        lat = 0,
+        lng = 0,
+        coordinates = [],
+        shift = 0,
+        result = 0,
+        byte = null,
+        latitude_change,
+        longitude_change,
+        factor = Math.pow(10, precision === undefined ? 5 : precision);
+
+    while (index < str.length) {
+        byte = null;
+        shift = 0;
+        result = 0;
+
+        do {
+            byte = str.charCodeAt(index++) - 63;
+            result |= (byte & 0x1f) << shift;
+            shift += 5;
+        } while (byte >= 0x20);
+
+        latitude_change = ((result & 1) ? ~(result >> 1) : (result >> 1));
+
+        shift = result = 0;
+
+        do {
+            byte = str.charCodeAt(index++) - 63;
+            result |= (byte & 0x1f) << shift;
+            shift += 5;
+        } while (byte >= 0x20);
+
+        longitude_change = ((result & 1) ? ~(result >> 1) : (result >> 1));
+
+        lat += latitude_change;
+        lng += longitude_change;
+
+        coordinates.push([lat / factor, lng / factor]);
+    }
+
+    return coordinates;
 }
