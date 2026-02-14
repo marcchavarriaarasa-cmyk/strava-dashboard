@@ -125,7 +125,15 @@ h1 {
     border-radius: 16px;
     padding: 20px;
     border: 1px solid var(--glass-border);
-    height: 400px;
+    min-height: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-container canvas,
+.chart-container div[id] {
+    flex-grow: 1;
 }
 
 
