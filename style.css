@@ -230,6 +230,16 @@ h1 {
     flex-grow: 1;
 }
 
+.select-all-row {
+    font-weight: bold;
+    color: var(--accent-color);
+    background: rgba(252, 76, 2, 0.1);
+}
+
+.select-all-row:hover {
+    background: rgba(252, 76, 2, 0.2);
+}
+
 /* Activity Feed */
 .activity-feed {
     margin-top: 40px;

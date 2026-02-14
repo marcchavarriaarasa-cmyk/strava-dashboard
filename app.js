@@ -87,6 +87,47 @@ function renderCheckboxList(elementId, items, selectedItems, filterKey, formatte
     const container = document.getElementById(elementId);
     container.innerHTML = '';
 
+    // --- Select All / Deselect All Option ---
+    const allSelected = items.length > 0 && items.every(i => selectedItems.includes(i));
+    const selectAllRow = document.createElement('label');
+    selectAllRow.className = 'checkbox-row select-all-row';
+
+    const selectAllCheckbox = document.createElement('input');
+    selectAllCheckbox.type = 'checkbox';
+    selectAllCheckbox.checked = allSelected;
+
+    const selectAllText = document.createTextNode(allSelected ? 'Deselect All' : 'Select All');
+
+    selectAllRow.appendChild(selectAllCheckbox);
+    selectAllRow.appendChild(selectAllText);
+    container.appendChild(selectAllRow);
+
+    // Separator
+    const hr = document.createElement('div');
+    hr.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
+    hr.style.margin = '5px 0';
+    container.appendChild(hr);
+
+    selectAllCheckbox.addEventListener('change', (e) => {
+        if (e.target.checked) {
+            // Select All
+            currentFilters[filterKey] = [...items];
+        } else {
+            // Deselect All
+            currentFilters[filterKey] = [];
+        }
+
+        // Re-render to update all checkboxes and button text
+        renderCheckboxList(elementId, items, currentFilters[filterKey], filterKey, formatter);
+
+        const total = items.length;
+        const label = filterKey.charAt(0).toUpperCase() + filterKey.slice(1) + 's';
+        updateButtonText(`${filterKey}Btn`, label, currentFilters[filterKey].length, total);
+
+        applyFilters();
+    });
+    // ----------------------------------------
+
     items.forEach(item => {
         const row = document.createElement('label');
         row.className = 'checkbox-row';
@@ -106,9 +147,16 @@ function renderCheckboxList(elementId, items, selectedItems, filterKey, formatte
             }
 
             // Update button text
-            const total = document.getElementById(elementId).children.length;
+            const total = items.length;
             const label = filterKey.charAt(0).toUpperCase() + filterKey.slice(1) + 's';
             updateButtonText(`${filterKey}Btn`, label, currentFilters[filterKey].length, total);
+
+            // Re-render list to update "Select All" state if needed (optional, but good for consistency)
+            // But doing full re-render might lose focus/scroll. Let's just update "Select All" checkbox state visually?
+            // Simpler: Just check if we need to update "Select All" box
+            const newAllSelected = items.every(i => currentFilters[filterKey].includes(i));
+            selectAllCheckbox.checked = newAllSelected;
+            selectAllText.textContent = newAllSelected ? 'Deselect All' : 'Select All';
 
             applyFilters();
         });
