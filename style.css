@@ -358,7 +358,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     /* 12 Months */
-    grid-template-rows: repeat(31, 10px);
+    grid-template-rows: repeat(31, 16px);
     /* 31 Days */
     grid-auto-flow: column;
     /* Fill columns first (Month 1, Days 1-31) */
@@ -371,7 +371,7 @@ h1 {
 .heatmap-cell {
     width: 100%;
     /* Fill column width */
-    height: 10px;
+    height: 16px;
     /* Matches row height */
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.05);
