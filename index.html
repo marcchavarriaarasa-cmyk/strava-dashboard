@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
     <!-- FontAwesome (Optional for icons if needed later) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
     <div id="loading">
@@ -23,7 +24,9 @@
             <div class="user-badge">
                 <span>Marc Chavarria</span>
                 <!-- Replaced with a generic avatar or initials if image not available -->
-                <div style="width:30px;height:30px;background:#fc4c02;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;">M</div>
+                <div
+                    style="width:30px;height:30px;background:#fc4c02;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;">
+                    M</div>
             </div>
         </header>
 
@@ -51,6 +54,37 @@
             </div>
         </div>
 
+        <!-- Controls -->
+        <div class="controls-section">
+            <div class="filter-group" id="year-filter-group">
+                <label>Year</label>
+                <div class="multiselect-container">
+                    <button class="multiselect-btn" id="yearBtn">Select Years</button>
+                    <div class="multiselect-dropdown" id="yearList">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+            <div class="filter-group" id="month-filter-group">
+                <label>Month</label>
+                <div class="multiselect-container">
+                    <button class="multiselect-btn" id="monthBtn">Select Months</button>
+                    <div class="multiselect-dropdown" id="monthList">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+            <div class="filter-group" id="type-filter-group">
+                <label>Sport</label>
+                <div class="multiselect-container">
+                    <button class="multiselect-btn" id="typeBtn">Select Sports</button>
+                    <div class="multiselect-dropdown" id="typeList">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Charts -->
         <div class="charts-section">
             <div class="chart-container">
@@ -74,4 +108,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>

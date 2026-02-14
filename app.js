@@ -22,8 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function fetchData() {
     try {
-        const response = await fetch('data/activities.json');
+        // Add cache busting timestamp
+        const response = await fetch(`data/activities.json?v=${new Date().getTime()}`);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         allActivities = await response.json();
+        console.log(`Loaded ${allActivities.length} activities.`);
 
         // Hide loading screen
         document.getElementById('loading').style.display = 'none';

@@ -10,8 +10,17 @@ CLIENT_SECRET = os.getenv('STRAVA_CLIENT_SECRET')
 REFRESH_TOKEN = os.getenv('STRAVA_REFRESH_TOKEN')
 
 def get_access_token():
-    if not all([CLIENT_ID, CLIENT_SECRET, REFRESH_TOKEN]):
-        print("Error: Missing environment variables. Please set STRAVA_CLIENT_ID, STRAVA_CLIENT_SECRET, and STRAVA_REFRESH_TOKEN.")
+    missing_vars = []
+    if not CLIENT_ID:
+        missing_vars.append('STRAVA_CLIENT_ID')
+    if not CLIENT_SECRET:
+        missing_vars.append('STRAVA_CLIENT_SECRET')
+    if not REFRESH_TOKEN:
+        missing_vars.append('STRAVA_REFRESH_TOKEN')
+
+    if missing_vars:
+        print(f"Error: Missing environment variables: {', '.join(missing_vars)}.")
+        print("Please ensure these are set in your GitHub Repository Secrets.")
         sys.exit(1)
 
     print("Refreshing access token...")
