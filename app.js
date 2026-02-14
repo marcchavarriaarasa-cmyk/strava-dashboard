@@ -256,7 +256,9 @@ function renderGeographyAndGear(activities) {
 
     // Config for Gear Names (User can update this later)
     const gearNames = {
-        // Example: 'g1234567': 'Nike Pegasus 39',
+        'g21829526': 'Nike Zoom Fly 5',
+        'g22746812': 'HOKA Bondi 9',
+        'b16055834': 'Bike (Unknown)', // Found in data
     };
 
     activities.forEach(a => {
