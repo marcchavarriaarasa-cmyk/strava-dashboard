@@ -390,7 +390,7 @@ function renderGeographyAndGear(activities) {
     const gearNames = {
         'g21829526': 'Nike Zoom Fly 5',
         'g22746812': 'HOKA Bondi 9',
-        'b16055834': 'Bike (Unknown)', // Found in data
+        'b16055834': 'Kross', // User confirmed name
     };
 
     activities.forEach(a => {
