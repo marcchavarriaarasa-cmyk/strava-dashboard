@@ -226,6 +226,47 @@ function updateUserStats(activities) {
     // Format time (hours)
     const hours = Math.floor(totalTime / 3600);
     animateValue('total-time', hours);
+
+    // --- New Headline Metrics ---
+
+    // 1. Toughness (Elevation / Distance in km)
+    const distanceKm = totalDistance / 1000;
+    const toughness = distanceKm > 0 ? (totalElevation / distanceKm).toFixed(1) : '0';
+    animateValue('toughness', toughness);
+
+    // 2. Efficiency (Moving Time / Elapsed Time)
+    const totalElapsed = activities.reduce((acc, curr) => acc + (curr.elapsed_time || 0), 0);
+    const efficiency = totalElapsed > 0 ? ((totalTime / totalElapsed) * 100).toFixed(1) : '0';
+    animateValue('efficiency', efficiency + '%');
+
+    // 3. Avg Pace / Speed
+    // Logic: If majority is Run -> min/km. If Ride -> km/h.
+    // Or just check the filter? Let's check the dominant sport in the filtered set.
+    const runCount = activities.filter(a => a.sport_type === 'Run').length;
+    const rideCount = activities.filter(a => a.sport_type === 'Ride').length;
+
+    // Default to Pace (min/km) unless it's clearly a Ride focus
+    const isRideFocus = rideCount > runCount;
+
+    if (totalDistance > 0 && totalTime > 0) {
+        if (isRideFocus) {
+            // Speed: km/h
+            const avgSpeed = (distanceKm / (totalTime / 3600)).toFixed(1);
+            document.getElementById('avg-pace').innerText = avgSpeed;
+            document.getElementById('avg-pace-unit').innerText = 'km/h';
+        } else {
+            // Pace: min/km
+            const paceSeconds = totalTime / distanceKm;
+            const paceMins = Math.floor(paceSeconds / 60);
+            const paceSecs = Math.floor(paceSeconds % 60);
+            const paceStr = `${paceMins}:${paceSecs.toString().padStart(2, '0')}`;
+            document.getElementById('avg-pace').innerText = paceStr;
+            document.getElementById('avg-pace-unit').innerText = 'min/km';
+        }
+    } else {
+        document.getElementById('avg-pace').innerText = '-';
+        document.getElementById('avg-pace-unit').innerText = isRideFocus ? 'km/h' : 'min/km';
+    }
 }
 
 function animateValue(id, value) {
