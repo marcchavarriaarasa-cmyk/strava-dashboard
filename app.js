@@ -379,7 +379,52 @@ function updateDashboard(activities) {
     renderConsistencyStats(activities);
     renderGeographyAndGear(activities);
     renderTrainingQuality(activities);
+    renderPersonalRecords(activities);
     renderGoals(activities);
+}
+
+function renderPersonalRecords(activities) {
+    // 1. Longest Run
+    const runs = activities.filter(a => a.sport_type === 'Run' || a.type === 'Run');
+    let longestRun = { distance: 0, date: '-' };
+    if (runs.length > 0) {
+        const maxRun = runs.reduce((max, curr) => (curr.distance > max.distance) ? curr : max, runs[0]);
+        longestRun = {
+            distance: (maxRun.distance / 1000).toFixed(2) + ' km',
+            date: new Date(maxRun.start_date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })
+        };
+    }
+
+    // 2. Longest Ride
+    const rides = activities.filter(a => a.sport_type === 'Ride' || a.type === 'Ride' || a.sport_type === 'MountainBikeRide');
+    let longestRide = { distance: 0, date: '-' };
+    if (rides.length > 0) {
+        const maxRide = rides.reduce((max, curr) => (curr.distance > max.distance) ? curr : max, rides[0]);
+        longestRide = {
+            distance: (maxRide.distance / 1000).toFixed(2) + ' km',
+            date: new Date(maxRide.start_date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })
+        };
+    }
+
+    // 3. Max Elevation (across all sports)
+    let maxElev = { elem: 0, date: '-' };
+    if (activities.length > 0) {
+        const maxE = activities.reduce((max, curr) => ((curr.total_elevation_gain || 0) > (max.total_elevation_gain || 0)) ? curr : max, activities[0]);
+        maxElev = {
+            elem: (maxE.total_elevation_gain || 0).toFixed(0) + ' m',
+            date: new Date(maxE.start_date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })
+        };
+    }
+
+    // Update DOM
+    document.getElementById('longest-run-dist').innerText = longestRun.distance !== 0 ? longestRun.distance : '-';
+    document.getElementById('longest-run-date').innerText = longestRun.date;
+
+    document.getElementById('longest-ride-dist').innerText = longestRide.distance !== 0 ? longestRide.distance : '-';
+    document.getElementById('longest-ride-date').innerText = longestRide.date;
+
+    document.getElementById('max-elevation').innerText = maxElev.elem !== 0 ? maxElev.elem : '-';
+    document.getElementById('max-elevation-date').innerText = maxElev.date;
 }
 
 function renderGoals(activities) {
