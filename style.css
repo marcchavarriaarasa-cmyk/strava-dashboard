@@ -346,32 +346,35 @@ h1 {
     grid-template-columns: 3fr 1fr;
     gap: 20px;
     margin-bottom: 40px;
-    align-items: start;
-    /* Prevent heatmap card from stretching vertically */
 }
 
 .heatmap-card {
     overflow-x: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .heatmap-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     /* 12 Months */
-    grid-template-rows: repeat(31, 16px);
+    grid-template-rows: repeat(31, 15px);
     /* 31 Days */
     grid-auto-flow: column;
     /* Fill columns first (Month 1, Days 1-31) */
-    gap: 3px;
-    margin-top: 5px;
+    gap: 2px;
+    margin-top: auto;
+    /* Push to bottom if space permits, or usually just top */
+    margin-bottom: auto;
     min-width: 300px;
-    /* Can be smaller now */
+    flex-grow: 1;
+    /* allow it to take available space if needed */
 }
 
 .heatmap-cell {
     width: 100%;
     /* Fill column width */
-    height: 16px;
+    height: 15px;
     /* Matches row height */
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.05);
@@ -383,7 +386,8 @@ h1 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     /* 12 Months */
-    gap: 3px;
+    gap: 2px;
+    /* Match heatmap gap */
     margin-bottom: 5px;
     height: 20px;
 }

@@ -289,7 +289,7 @@ function renderConsistencyStats(activities) {
 
     // Update grid styles for labels/heatmap to ensure simple 12-col layout
     labelsContainer.style.gridTemplateColumns = `repeat(12, 1fr)`;
-    labelsContainer.style.gap = '3px';
+    labelsContainer.style.gap = '2px';
     // Heatmap container styles are in CSS
 
 
