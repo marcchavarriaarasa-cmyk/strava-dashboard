@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-    <link rel="stylesheet" href="style.css?v=3.0">
+    <link rel="stylesheet" href="style.css?v=3.1">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- FontAwesome (Optional for icons if needed later) -->
@@ -29,62 +29,64 @@
 
     <div class="container">
         <header>
-            <h1>MY ACTIVITY</h1>
-            <div class="user-badge">
-                <span>Marc Chavarria</span>
-                <!-- Replaced with a generic avatar or initials if image not available -->
-                <div
-                    style="width:30px;height:30px;background:#fc4c02;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;">
-                    M</div>
+            <h1 data-i18n="title">MY ACTIVITY</h1>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button id="lang-btn" class="lang-btn">ES</button>
+                <div class="user-badge">
+                    <span>Marc Chavarria</span>
+                    <div
+                        style="width:30px;height:30px;background:#fc4c02;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;">
+                        M</div>
+                </div>
             </div>
         </header>
 
         <!-- Stats Grid -->
         <div class="dashboard-grid">
             <div class="card">
-                <h3>Total Distance</h3>
+                <h3 data-i18n="total_distance">Total Distance</h3>
                 <div class="stat-value" id="total-distance">0</div>
-                <div class="stat-unit">Kilometers</div>
+                <div class="stat-unit" data-i18n="km">Kilometers</div>
             </div>
             <div class="card">
-                <h3>Elevation Gain</h3>
+                <h3 data-i18n="elevation_gain">Elevation Gain</h3>
                 <div class="stat-value" id="total-elevation">0</div>
-                <div class="stat-unit">Meters</div>
+                <div class="stat-unit" data-i18n="meters">Meters</div>
             </div>
             <div class="card">
-                <h3>Total Time</h3>
+                <h3 data-i18n="total_time">Total Time</h3>
                 <div class="stat-value" id="total-time">0</div>
-                <div class="stat-unit">Hours</div>
+                <div class="stat-unit" data-i18n="hours">Hours</div>
             </div>
             <div class="card">
-                <h3>Activities</h3>
+                <h3 data-i18n="activities">Activities</h3>
                 <div class="stat-value" id="total-activities">0</div>
-                <div class="stat-unit">Total Count</div>
+                <div class="stat-unit" data-i18n="sessions">Sessions</div>
             </div>
             <div class="card">
-                <h3>Avg Pace / Speed</h3>
+                <h3 data-i18n="avg_pace">Avg Pace / Speed</h3>
                 <div class="stat-value" id="avg-pace">0:00</div>
                 <div class="stat-unit" id="avg-pace-unit">min/km</div>
             </div>
             <div class="card">
-                <h3>Efficiency</h3>
+                <h3 data-i18n="efficiency">Efficiency</h3>
                 <div class="stat-value" id="efficiency">0%</div>
-                <div class="stat-unit">Moving vs Elapsed</div>
+                <div class="stat-unit" data-i18n="moving_vs_elapsed">Moving vs Elapsed</div>
             </div>
             <div class="card">
-                <h3>Toughness</h3>
+                <h3 data-i18n="toughness">Toughness</h3>
                 <div class="stat-value" id="toughness">0</div>
-                <div class="stat-unit">Elev Gain / km</div>
+                <div class="stat-unit" data-i18n="elev_per_km">Elev Gain / km</div>
             </div>
         </div>
 
         <!-- Goals Section -->
-        <h2 style="margin-bottom: 20px;">Monthly Goals (Current Month)</h2>
+        <h2 style="margin-bottom: 20px;" data-i18n="monthly_goals">Monthly Goals (Current Month)</h2>
         <div class="goals-grid">
             <!-- Run Goal -->
             <div class="card goal-card">
                 <div class="goal-header">
-                    <h3>🏃‍♂️ Running</h3>
+                    <h3 data-i18n="running">🏃‍♂️ Running</h3>
                     <span id="run-projection" class="goal-projection">On track: 0km</span>
                 </div>
                 <div class="progress-bar-container">
@@ -99,7 +101,7 @@
             <!-- Ride Goal -->
             <div class="card goal-card">
                 <div class="goal-header">
-                    <h3>🚴‍♂️ Cycling</h3>
+                    <h3 data-i18n="cycling">🚴‍♂️ Cycling</h3>
                     <span id="ride-projection" class="goal-projection">On track: 0km</span>
                 </div>
                 <div class="progress-bar-container">
@@ -115,27 +117,27 @@
         <!-- Controls -->
         <div class="controls-section">
             <div class="filter-group" id="year-filter-group">
-                <label>Year</label>
+                <label data-i18n="year">Year</label>
                 <div class="multiselect-container">
-                    <button class="multiselect-btn" id="yearBtn">Select Years</button>
+                    <button class="multiselect-btn" id="yearBtn" data-i18n="select_years">Select Years</button>
                     <div class="multiselect-dropdown" id="yearList">
                         <!-- Populated by JS -->
                     </div>
                 </div>
             </div>
             <div class="filter-group" id="month-filter-group">
-                <label>Month</label>
+                <label data-i18n="month">Month</label>
                 <div class="multiselect-container">
-                    <button class="multiselect-btn" id="monthBtn">Select Months</button>
+                    <button class="multiselect-btn" id="monthBtn" data-i18n="select_months">Select Months</button>
                     <div class="multiselect-dropdown" id="monthList">
                         <!-- Populated by JS -->
                     </div>
                 </div>
             </div>
             <div class="filter-group" id="type-filter-group">
-                <label>Sport</label>
+                <label data-i18n="sport">Sport</label>
                 <div class="multiselect-container">
-                    <button class="multiselect-btn" id="typeBtn">Select Sports</button>
+                    <button class="multiselect-btn" id="typeBtn" data-i18n="select_sports">Select Sports</button>
                     <div class="multiselect-dropdown" id="typeList">
                         <!-- Populated by JS -->
                     </div>
@@ -146,21 +148,21 @@
         <!-- Charts -->
         <div class="charts-section">
             <div class="chart-container">
-                <h3>Recent Activity (Distance)</h3>
+                <h3 data-i18n="recent_distance">Recent Activity (Distance)</h3>
                 <canvas id="progressChart"></canvas>
             </div>
             <div class="chart-container">
-                <h3>Sport Type</h3>
+                <h3 data-i18n="sport_type">Sport Type</h3>
                 <canvas id="typeChart"></canvas>
             </div>
         </div>
 
         <!-- Consistency Section -->
-        <h2 style="margin-bottom: 20px;">Consistency & Trends</h2>
+        <h2 style="margin-bottom: 20px;" data-i18n="consistency_trends">Consistency & Trends</h2>
         <div class="consistency-grid">
             <!-- Heatmap -->
             <div class="card heatmap-card">
-                <h3>Activity Habit (Last Year)</h3>
+                <h3 data-i18n="activity_habit">Activity Habit (Last Year)</h3>
                 <div class="month-labels" id="monthLabels">
                     <!-- JS Labels -->
                 </div>
@@ -172,58 +174,58 @@
             <!-- Streaks & Time of Day -->
             <div class="side-stats">
                 <div class="card streak-card">
-                    <h3>Current Streak</h3>
+                    <h3 data-i18n="current_streak">Current Streak</h3>
                     <div class="stat-value" id="current-streak">0</div>
-                    <div class="stat-unit">Days</div>
+                    <div class="stat-unit" data-i18n="days">Days</div>
                 </div>
                 <div class="card streak-card">
-                    <h3>Best Streak</h3>
+                    <h3 data-i18n="best_streak">Best Streak</h3>
                     <div class="stat-value" id="best-streak">0</div>
-                    <div class="stat-unit">Days</div>
+                    <div class="stat-unit" data-i18n="days">Days</div>
                 </div>
                 <div class="card chart-container" style="height: auto;">
-                    <h3>Time of Day</h3>
+                    <h3 data-i18n="time_of_day">Time of Day</h3>
                     <canvas id="timeOfDayChart" style="max-height: 200px;"></canvas>
                 </div>
             </div>
         </div>
 
         <!-- Geography & Gear Section -->
-        <h2 style="margin-bottom: 20px;">Geography & Equipment</h2>
+        <h2 style="margin-bottom: 20px;" data-i18n="geography_gear">Geography & Equipment</h2>
         <div class="charts-section">
             <div class="chart-container" style="flex: 2; min-height: 400px;">
-                <h3>Latest Route</h3>
+                <h3 data-i18n="latest_route">Latest Route</h3>
                 <div id="map" style="height: 350px; width: 100%; border-radius: 8px;"></div>
             </div>
             <div class="chart-container" style="flex: 1;">
-                <h3>Gear Usage (Distance)</h3>
+                <h3 data-i18n="gear_usage">Gear Usage (Distance)</h3>
                 <canvas id="gearChart"></canvas>
             </div>
         </div>
 
         <!-- Training Quality Section -->
-        <h2 style="margin-bottom: 20px;">Training Quality</h2>
+        <h2 style="margin-bottom: 20px;" data-i18n="training_quality">Training Quality</h2>
         <div class="charts-section">
             <div class="chart-container" style="flex: 1;">
-                <h3>Pulse Distribution (Avg HR)</h3>
+                <h3 data-i18n="pulse_dist">Pulse Distribution (Avg HR)</h3>
                 <canvas id="hrDistributionChart"></canvas>
             </div>
             <div class="chart-container" style="flex: 1;">
-                <h3>Relative Effort Trend</h3>
+                <h3 data-i18n="effort_trend">Relative Effort Trend</h3>
                 <canvas id="effortTrendChart"></canvas>
             </div>
         </div>
 
         <!-- Activity Feed -->
         <div class="activity-feed">
-            <h2>Recent Activities</h2>
+            <h2 data-i18n="recent_activities">Recent Activities</h2>
             <div class="activity-list" id="activity-list">
                 <!-- Activities injected by JS -->
             </div>
         </div>
     </div>
 
-    <script src="app.js?v=3.0"></script>
+    <script src="app.js?v=3.2"></script>
     </script>
 </body>
 

@@ -7,18 +7,171 @@ let currentFilters = {
 };
 
 // Month names for mapping
-const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const monthNamesEn = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const monthNamesEs = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+// I18N Configuration
+let currentLang = localStorage.getItem('strava_lang') || 'en';
+
+const translations = {
+    en: {
+        title: "MY ACTIVITY",
+        total_distance: "Total Distance",
+        elevation_gain: "Elevation Gain",
+        total_time: "Total Time",
+        activities: "Activities",
+        avg_pace: "Avg Pace / Speed",
+        efficiency: "Efficiency",
+        toughness: "Toughness",
+
+        km: "Kilometers",
+        meters: "Meters",
+        hours: "Hours",
+        sessions: "Sessions",
+        moving_vs_elapsed: "Moving vs Elapsed",
+        elev_per_km: "Elev Gain / km",
+
+        monthly_goals: "Monthly Goals (Current Month)",
+        running: "🏃‍♂️ Running",
+        cycling: "🚴‍♂️ Cycling",
+        on_track: "On track",
+
+        year: "Year",
+        month: "Month",
+        sport: "Sport",
+        select_years: "Select Years",
+        select_months: "Select Months",
+        select_sports: "Select Sports",
+        all: "All",
+        select: "Select",
+
+        recent_distance: "Recent Activity (Distance)",
+        sport_type: "Sport Type",
+
+        consistency_trends: "Consistency & Trends",
+        activity_habit: "Activity Habit (Last Year)",
+        current_streak: "Current Streak",
+        best_streak: "Best Streak",
+        time_of_day: "Time of Day",
+        days: "Days",
+
+        geography_gear: "Geography & Equipment",
+        latest_route: "Latest Route",
+        gear_usage: "Gear Usage (Distance)",
+
+        training_quality: "Training Quality",
+        pulse_dist: "Pulse Distribution (Avg HR)",
+        effort_trend: "Relative Effort Trend",
+
+        recent_activities: "Recent Activities",
+        duration: "Duration",
+        elev: "elev",
+        suffer: "Suffer",
+
+        // Month Abbreviations
+        months_short: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    },
+    es: {
+        title: "MI ACTIVIDAD",
+        total_distance: "Distancia Total",
+        elevation_gain: "Desnivel Positivo",
+        total_time: "Tiempo Total",
+        activities: "Actividades",
+        avg_pace: "Ritmo / Vel. Media",
+        efficiency: "Eficiencia",
+        toughness: "Dureza",
+
+        km: "Kilómetros",
+        meters: "Metros",
+        hours: "Horas",
+        sessions: "Sesiones",
+        moving_vs_elapsed: "Movimiento vs Total",
+        elev_per_km: "Desnivel / km",
+
+        monthly_goals: "Objetivos Mensuales",
+        running: "🏃‍♂️ Running",
+        cycling: "🚴‍♂️ Cycling",
+        on_track: "Proyección",
+
+        year: "Año",
+        month: "Mes",
+        sport: "Deporte",
+        select_years: "Filtrar Años",
+        select_months: "Filtrar Meses",
+        select_sports: "Filtrar Deportes",
+        all: "Todos",
+        select: "Seleccionar",
+
+        recent_distance: "Actividad Reciente (Distancia)",
+        sport_type: "Tipo de Deporte",
+
+        consistency_trends: "Consistencia y Tendencias",
+        activity_habit: "Hábito (Último Año)",
+        current_streak: "Racha Actual",
+        best_streak: "Mejor Racha",
+        time_of_day: "Hora del Día",
+        days: "Días",
+
+        geography_gear: "Geografía y Equipo",
+        latest_route: "Última Ruta",
+        gear_usage: "Uso de Material (Distancia)",
+
+        training_quality: "Calidad de Entrenamiento",
+        pulse_dist: "Distribución de Pulso (FC Media)",
+        effort_trend: "Tendencia de Esfuerzo Relativo",
+
+        recent_activities: "Actividades Recientes",
+        duration: "Duración",
+        elev: "desn",
+        suffer: "Suffer",
+
+        // Month Abbreviations
+        months_short: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
+    }
+};
+
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Init Language
+    updateLanguage();
+    document.getElementById('lang-btn').addEventListener('click', toggleLanguage);
+    toggleLanguage(false); // Update button text only without toggle, hacky but works via logic below
+
     fetchData();
 
     // Close dropdowns when clicking outside
     document.addEventListener('click', (e) => {
-        if (!e.target.closest('.multiselect-container')) {
+        if (!e.target.closest('.multiselect-container') && !e.target.closest('.lang-btn')) {
             document.querySelectorAll('.multiselect-dropdown').forEach(el => el.classList.remove('show'));
         }
     });
 });
+
+function toggleLanguage(switchLang = true) {
+    if (switchLang) {
+        currentLang = currentLang === 'en' ? 'es' : 'en';
+        localStorage.setItem('strava_lang', currentLang);
+    }
+
+    // Update Button Text (to show what you CAN switch to, or current?)
+    // Let's show current.
+    document.getElementById('lang-btn').innerText = currentLang === 'en' ? 'ES' : 'EN';
+
+    updateLanguage();
+    // Re-render dashboard to update dynamic js texts
+    if (allActivities.length > 0) applyFilters();
+}
+
+function updateLanguage() {
+    const t = translations[currentLang];
+
+    // Update simple text elements
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key]) el.innerText = t[key];
+    });
+}
+
 
 async function fetchData() {
     try {
@@ -62,13 +215,16 @@ function populateFilters(activities) {
     // Default select all
     currentFilters.year = [...sortedYears];
     currentFilters.type = [...sortedTypes];
-    currentFilters.month = monthNames.map((_, i) => i); // [0, 1, ... 11]
+    // Use raw indices 0-11 for month filter, independent of name
+    currentFilters.month = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
     // Render Dropdowns
     renderCheckboxList('yearList', sortedYears, currentFilters.year, 'year');
     renderCheckboxList('typeList', sortedTypes, currentFilters.type, 'type', formatSportType);
 
     // Render Months (All 12)
+    // Use current lang month names for dropdown
+    const monthNames = currentLang === 'en' ? monthNamesEn : monthNamesEs;
     const allMonthIndices = monthNames.map((_, i) => i);
     renderCheckboxList('monthList', allMonthIndices, currentFilters.month, 'month', (i) => monthNames[i]);
 
@@ -180,14 +336,24 @@ function setupDropdownToggle(btnId, listId) {
     });
 }
 
-function updateButtonText(btnId, label, selectedCount, totalCount) {
+function updateButtonText(btnId, labelKey, selectedCount, totalCount) {
     const btn = document.getElementById(btnId);
+    const t = translations[currentLang];
+    // Dynamic Labels: "Select Years" vs "Years"
+    // simplistic approach
+    let baseLabel = t[labelKey] || labelKey; // e.g. "Year" -> "Año"
+
+    // Hack: Map internal keys to i18n keys for plural buttons
+    let i18nSelectKey = `select_${labelKey}s`; // select_years
+    let selectText = t[i18nSelectKey] || `Select ${baseLabel}`;
+    let allText = `${t.all} ${baseLabel}s`; // Todos Años (approx)
+
     if (selectedCount === 0) {
-        btn.innerText = `Select ${label}`;
+        btn.innerText = selectText;
     } else if (selectedCount === totalCount) {
-        btn.innerText = `All ${label}`;
+        btn.innerText = t.all || "All";
     } else {
-        btn.innerText = `${selectedCount} ${label}`;
+        btn.innerText = `${selectedCount} ${baseLabel}`; // 3 Años
     }
 }
 
@@ -271,7 +437,8 @@ function updateGoalUI(type, current, target, day, totalDays) {
     }
 
     const projEl = document.getElementById(`${type}-projection`);
-    projEl.innerText = `Forecast: ${projection.toFixed(0)} km`;
+    const t = translations[currentLang];
+    projEl.innerText = `${t.on_track}: ${projection.toFixed(0)} km`;
 
     // Style projection: Green if >= target, Red/Orange if < target
     if (projection >= target) {
@@ -819,7 +986,7 @@ function renderCharts(activities) {
             if (a.distance > 0) months[m] += (a.distance / 1000);
         });
 
-        labels = monthNames.map(m => m.substring(0, 3));
+        labels = translations[currentLang].months_short;
         data = Object.values(months);
     }
 
@@ -872,8 +1039,10 @@ function renderActivityList(activities) {
     listContainer.innerHTML = '';
 
     // pagination for list could be added here, currently showing filtered list (limit to 50 for performance)
+    const t = translations[currentLang];
+
     activities.slice(0, 50).forEach(activity => {
-        const date = new Date(activity.start_date).toLocaleDateString(undefined, {
+        const date = new Date(activity.start_date).toLocaleDateString(currentLang === 'es' ? 'es-ES' : 'en-US', {
             month: 'short', day: 'numeric', year: '2-digit'
         });
 
@@ -889,7 +1058,7 @@ function renderActivityList(activities) {
                 <div class="activity-stats">
                     <div class="stat-group">
                         <span class="activity-stat-main">${duration}</span>
-                        <span class="activity-stat-sub">Duration</span>
+                        <span class="activity-stat-sub">${t.duration}</span>
                     </div>
                 </div>
             `;
@@ -920,7 +1089,7 @@ function renderActivityList(activities) {
                 </div>
                  <div class="activity-stats">
                     <div class="stat-group">
-                        <span class="activity-stat-main">${elevation}m <span class="activity-stat-sub">elev</span></span>
+                        <span class="activity-stat-main">${elevation}m <span class="activity-stat-sub">${t.elev}</span></span>
                     </div>
                 </div>
             `;
@@ -943,7 +1112,7 @@ function renderActivityList(activities) {
                 <div class="activity-stats mobile-hide">
                     <div class="stat-group">
                         <span class="activity-stat-main" style="color:#d32f2f">${activity.suffer_score}</span>
-                        <span class="activity-stat-sub">Suffer</span>
+                        <span class="activity-stat-sub">${t.suffer}</span>
                     </div>
                 </div>
             `;
