@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-    <link rel="stylesheet" href="style.css?v=3.6">
+    <link rel="stylesheet" href="style.css?v=3.7">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- FontAwesome (Optional for icons if needed later) -->
@@ -41,8 +41,9 @@
             </div>
         </header>
 
-        <!-- Stats Grid -->
-        <div class="dashboard-grid">
+        <!-- Stats Grid - Row 1 (4 items) -->
+        <div class="dashboard-grid"
+            style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-bottom: 20px;">
             <div class="card">
                 <h3 data-i18n="total_distance">Total Distance</h3>
                 <div class="stat-value" id="total-distance">0</div>
@@ -63,6 +64,10 @@
                 <div class="stat-value" id="total-activities">0</div>
                 <div class="stat-unit" data-i18n="sessions">Sessions</div>
             </div>
+        </div>
+
+        <!-- Stats Grid - Row 2 (3 items) -->
+        <div class="dashboard-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
             <div class="card">
                 <h3 data-i18n="avg_pace">Avg Pace / Speed</h3>
                 <div class="stat-value" id="avg-pace">0:00</div>
@@ -275,7 +280,7 @@
         </div>
     </div>
 
-    <script src="app.js?v=3.6"></script>
+    <script src="app.js?v=3.7"></script>
     </script>
 </body>
 
