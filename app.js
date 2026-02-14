@@ -212,6 +212,138 @@ function updateDashboard(activities) {
     renderActivityList(activities);
     renderConsistencyStats(activities);
     renderGeographyAndGear(activities);
+    renderTrainingQuality(activities);
+}
+
+function renderTrainingQuality(activities) {
+    // --- 1. Pulse Distribution (Avg HR Buckets) ---
+    // We categorize activities by their Average HR to see polarization.
+    // Buckets: <125 (Z1), 125-140 (Z2), 140-155 (Z3), 155-170 (Z4), >170 (Z5)
+    // Adjust these arbitrary thresholds or make them dynamic later.
+    const hrBuckets = { 'Z1 (<125)': 0, 'Z2 (125-140)': 0, 'Z3 (140-155)': 0, 'Z4 (155-170)': 0, 'Z5 (>170)': 0 };
+
+    let hasHrData = false;
+    activities.forEach(a => {
+        if (a.has_heartrate && a.average_heartrate) {
+            hasHrData = true;
+            const hr = a.average_heartrate;
+            if (hr < 125) hrBuckets['Z1 (<125)']++;
+            else if (hr < 140) hrBuckets['Z2 (125-140)']++;
+            else if (hr < 155) hrBuckets['Z3 (140-155)']++;
+            else if (hr < 170) hrBuckets['Z4 (155-170)']++;
+            else hrBuckets['Z5 (>170)']++;
+        }
+    });
+
+    const ctxHr = document.getElementById('hrDistributionChart').getContext('2d');
+    if (window.hrChartInstance) window.hrChartInstance.destroy();
+
+    window.hrChartInstance = new Chart(ctxHr, {
+        type: 'bar',
+        data: {
+            labels: Object.keys(hrBuckets),
+            datasets: [{
+                label: 'Activities',
+                data: Object.values(hrBuckets),
+                backgroundColor: [
+                    '#4caf50', // Z1 Green
+                    '#8bc34a', // Z2 Light Green
+                    '#ffeb3b', // Z3 Yellow
+                    '#ff9800', // Z4 Orange
+                    '#f44336'  // Z5 Red
+                ],
+                borderRadius: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: { color: 'rgba(255,255,255,0.1)' },
+                    ticks: { color: '#b0b0b0' }
+                },
+                x: {
+                    grid: { display: false },
+                    ticks: { color: '#b0b0b0' }
+                }
+            },
+            plugins: {
+                legend: { display: false }
+            }
+        }
+    });
+
+    // --- 2. Effort Trend (Suffer Score or HR) ---
+    // Use last 30 activities for readability
+    const recentActivities = activities.slice(0, 30).reverse(); // Oldest first
+    const labels = recentActivities.map(a => new Date(a.start_date).toLocaleDateString(undefined, { month: 'short', day: 'numeric' }));
+
+    // Data: Suffer Score if available, else null
+    const sufferData = recentActivities.map(a => a.suffer_score || null);
+    // Data: Avg HR as secondary
+    const hrData = recentActivities.map(a => a.average_heartrate || null);
+
+    const ctxEffort = document.getElementById('effortTrendChart').getContext('2d');
+    if (window.effortChartInstance) window.effortChartInstance.destroy();
+
+    window.effortChartInstance = new Chart(ctxEffort, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [
+                {
+                    label: 'Relative Effort',
+                    data: sufferData,
+                    borderColor: '#f44336', // Strava Red
+                    backgroundColor: 'rgba(244, 67, 54, 0.1)',
+                    fill: true,
+                    tension: 0.4,
+                    yAxisID: 'y'
+                },
+                {
+                    label: 'Avg HR',
+                    data: hrData,
+                    borderColor: '#2196f3', // Blue
+                    borderDash: [5, 5],
+                    tension: 0.4,
+                    yAxisID: 'y1',
+                    hidden: true // Hide by default to not clutter
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: {
+                mode: 'index',
+                intersect: false,
+            },
+            scales: {
+                y: {
+                    type: 'linear',
+                    display: true,
+                    position: 'left',
+                    grid: { color: 'rgba(255,255,255,0.1)' },
+                    ticks: { color: '#b0b0b0' },
+                    title: { display: true, text: 'Relative Effort', color: '#b0b0b0' }
+                },
+                y1: {
+                    type: 'linear',
+                    display: true,
+                    position: 'right',
+                    grid: { drawOnChartArea: false },
+                    ticks: { color: '#2196f3' },
+                    title: { display: true, text: 'Avg HR', color: '#2196f3' }
+                },
+                x: {
+                    grid: { display: false },
+                    ticks: { color: '#b0b0b0' }
+                }
+            }
+        }
+    });
 }
 
 function renderGeographyAndGear(activities) {

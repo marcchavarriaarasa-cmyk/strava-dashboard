@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-    <link rel="stylesheet" href="style.css?v=1.8">
+    <link rel="stylesheet" href="style.css?v=2.0">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- FontAwesome (Optional for icons if needed later) -->
@@ -167,16 +167,32 @@
             </div>
         </div>
 
-        <!-- Activity Feed -->
-        <div class="activity-feed">
-            <h2>Recent Activities</h2>
-            <div class="activity-list" id="activity-list">
-                <!-- Activities injected by JS -->
-            </div>
+    </div>
+    </div>
+
+    <!-- Training Quality Section -->
+    <h2 style="margin-bottom: 20px;">Training Quality</h2>
+    <div class="charts-section">
+        <div class="chart-container" style="flex: 1;">
+            <h3>Pulse Distribution (Avg HR)</h3>
+            <canvas id="hrDistributionChart"></canvas>
+        </div>
+        <div class="chart-container" style="flex: 1;">
+            <h3>Relative Effort Trend</h3>
+            <canvas id="effortTrendChart"></canvas>
         </div>
     </div>
 
-    <script src="app.js?v=1.9"></script>
+    <!-- Activity Feed -->
+    <div class="activity-feed">
+        <h2>Recent Activities</h2>
+        <div class="activity-list" id="activity-list">
+            <!-- Activities injected by JS -->
+        </div>
+    </div>
+    </div>
+
+    <script src="app.js?v=2.0"></script>
 </body>
 
 </html>
