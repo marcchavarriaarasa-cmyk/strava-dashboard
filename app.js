@@ -214,96 +214,83 @@ function updateDashboard(activities) {
 }
 
 function renderConsistencyStats(activities) {
-    // --- 1. Heatmap (Last 365 Days) ---
+    // --- 1. Heatmap (Month x Day) ---
     const heatmapContainer = document.getElementById('heatmap');
     const labelsContainer = document.getElementById('monthLabels');
 
     heatmapContainer.innerHTML = '';
     labelsContainer.innerHTML = ''; // Clear labels
 
+    // Determine Year (Filter or Current)
+    // If multiple years selected, maybe just show current year or last selected?
+    // Let's Default to current year or 2024.
+    let targetYear = new Date().getFullYear();
+    if (currentFilters.year && currentFilters.year.length === 1) {
+        targetYear = parseInt(currentFilters.year[0]);
+    }
+
     // Create map of date -> count
     const activityMap = {};
     activities.forEach(a => {
-        const dateStr = a.start_date.split('T')[0];
-        activityMap[dateStr] = (activityMap[dateStr] || 0) + 1;
+        const d = new Date(a.start_date);
+        // Only map if it matches the target year (though if we filter, the activities array is already filtered)
+        if (d.getFullYear() === targetYear) {
+            const dateStr = a.start_date.split('T')[0];
+            activityMap[dateStr] = (activityMap[dateStr] || 0) + 1;
+        }
     });
 
-    // Start 52 weeks ago (approx 364 days), aligned to Sunday
-    const today = new Date();
-    const startDate = new Date();
-    startDate.setDate(today.getDate() - 364);
+    // Generate Month Labels (Jan - Dec)
+    const monthNamesShort = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
+    // Or full names if space permits? "Jan", "Feb"...
+    // With 12 columns, short names are safer.
 
-    // Adjust start date to Sunday for proper GitHub-like alignment
-    while (startDate.getDay() !== 0) {
-        startDate.setDate(startDate.getDate() - 1);
-    }
-
-    // We need 53 columns (or 52). Let's loop by weeks to handle columns easier.
-    // GitHub grid fills by column (week), 7 rows (days).
-    // CSS Grid `grid-auto-flow: column` handles this automatically for cells.
-    // For labels, we need to know which column corresponds to a new month.
-
-    // Reset date for loop
-    const loopDate = new Date(startDate);
-
-    // We will generate 53 weeks * 7 days
-    for (let w = 0; w < 53; w++) {
-        const weekStartDate = new Date(loopDate);
-
-        // Check if this week contains the 1st of a month to add a label
-        let monthLabel = '';
-        const checkDate = new Date(weekStartDate);
-        // Check next 7 days to see if month changes? 
-        // Or simplified: if weekStartDate's day is <= 7, it's start of month?
-        // Better: Check if the Month of 'checkDate' is different from prev week?
-        // Or: If the week contains the 1st.
-
-        // Actually, just placing the label on the week that contains the 1st is good.
-        for (let d = 0; d < 7; d++) {
-            const dCheck = new Date(weekStartDate);
-            dCheck.setDate(dCheck.getDate() + d);
-            if (dCheck.getDate() === 1) {
-                monthLabel = (dCheck.getMonth() + 1).toString(); // 1-12
-                break;
-            }
-        }
-
-        // Add Label Element
+    monthNamesShort.forEach(m => {
         const labelEl = document.createElement('div');
         labelEl.className = 'month-label';
-        labelEl.innerText = monthLabel;
-        // To align correctly in grid with gap 4px and width 14px:
-        // styling handled in CSS. We just need empty divs for spacing if no label?
-        // Yes, if we use the same grid structure. 
+        labelEl.innerText = m;
         labelsContainer.appendChild(labelEl);
+    });
 
-        // Add 7 Cells for this week
-        for (let d = 0; d < 7; d++) {
-            const dateStr = loopDate.toISOString().split('T')[0];
-            const count = activityMap[dateStr] || 0;
+    // Generate Grid (12 Months x 31 Days)
+    // grid-auto-flow: column fills column by column.
+    // So we loop: Month 0 (Days 1-31), Month 1 (Days 1-31)...
 
-            let level = 0;
-            if (count === 1) level = 2;
-            if (count >= 2) level = 4;
+    for (let m = 0; m < 12; m++) {
+        const daysInMonth = new Date(targetYear, m + 1, 0).getDate(); // Get last day of month
 
+        for (let d = 1; d <= 31; d++) {
             const cell = document.createElement('div');
             cell.className = 'heatmap-cell';
-            cell.dataset.level = level;
-            cell.title = `${dateStr}: ${count} activities`; // Tooltip
-            heatmapContainer.appendChild(cell);
 
-            // Advance day
-            loopDate.setDate(loopDate.getDate() + 1);
+            if (d > daysInMonth) {
+                // Invisible placeholder for alignment
+                cell.style.visibility = 'hidden';
+                // Or opacity: 0
+            } else {
+                // Construct YYYY-MM-DD
+                // Note: Month is 0-indexed in JS Date, but we need 01-12
+                const monthStr = (m + 1).toString().padStart(2, '0');
+                const dayStr = d.toString().padStart(2, '0');
+                const dateStr = `${targetYear}-${monthStr}-${dayStr}`;
+
+                const count = activityMap[dateStr] || 0;
+
+                let level = 0;
+                if (count === 1) level = 2;
+                if (count >= 2) level = 4;
+
+                cell.dataset.level = level;
+                cell.title = `${dateStr}: ${count} activities`;
+            }
+            heatmapContainer.appendChild(cell);
         }
     }
 
-    // Set grid styles dynamically to match 53 columns?
-    // CSS handle auto-flow column, but for labels container we need specific template columns?
-    // Or just use same auto-flow.
-    labelsContainer.style.gridTemplateColumns = `repeat(53, 16px)`; // Force 53 cols
-    labelsContainer.style.gap = '4px';
-    // Heatmap container uses auto-flow column so strictly it just fills.
-    // But to ensure alignment, we need to make sure sizes match.
+    // Update grid styles for labels/heatmap to ensure simple 12-col layout
+    labelsContainer.style.gridTemplateColumns = `repeat(12, 1fr)`;
+    labelsContainer.style.gap = '3px';
+    // Heatmap container styles are in CSS
 
 
     // --- 2. Streaks ---

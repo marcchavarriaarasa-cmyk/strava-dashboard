@@ -356,19 +356,24 @@ h1 {
 
 .heatmap-container {
     display: grid;
-    grid-template-rows: repeat(7, 16px);
-    /* Larger cells */
+    grid-template-columns: repeat(12, 1fr);
+    /* 12 Months */
+    grid-template-rows: repeat(31, 10px);
+    /* 31 Days */
     grid-auto-flow: column;
-    gap: 4px;
+    /* Fill columns first (Month 1, Days 1-31) */
+    gap: 3px;
     margin-top: 5px;
-    min-width: 600px;
+    min-width: 300px;
+    /* Can be smaller now */
 }
 
 .heatmap-cell {
-    width: 16px;
-    /* Larger cells */
-    height: 16px;
-    border-radius: 3px;
+    width: 100%;
+    /* Fill column width */
+    height: 10px;
+    /* Matches row height */
+    border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.05);
     /* Inactive */
 }
@@ -376,9 +381,9 @@ h1 {
 /* Month Labels */
 .month-labels {
     display: grid;
-    grid-template-columns: repeat(53, 16px);
-    grid-auto-flow: column;
-    gap: 4px;
+    grid-template-columns: repeat(12, 1fr);
+    /* 12 Months */
+    gap: 3px;
     margin-bottom: 5px;
     height: 20px;
 }
