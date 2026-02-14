@@ -1,6 +1,22 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-02-12
+Actividad: Afternoon workout 💪 (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 66.7 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-02-11
+Actividad: Afternoon workout 💪 (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 101.03 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-02-10
 Actividad: B3TTER PRE-MITJA BCN '26 (Run)
 Distancia: 8.86 km
@@ -381,22 +397,6 @@ Fecha: 2025-10-21
 Actividad: Afternoon workout 💪 (WeightTraining)
 Distancia: 0.0 km
 Tiempo en movimiento: 83.25 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-10-19
-Actividad: SPARTAN RACE SUPER 10K (Run)
-Distancia: 11.81 km
-Tiempo en movimiento: 93.53 min
-Velocidad media: 7.58 km/h
-Desnivel positivo: 222.9 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-10-17
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 78.13 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
