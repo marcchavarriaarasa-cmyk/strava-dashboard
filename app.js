@@ -61,6 +61,7 @@ const translations = {
         max_elevation: "Max Elevation",
         best_5k: "Fastest 5k",
         best_10k: "Fastest 10k",
+        best_half_marathon: "Half Marathon",
         best_marathon: "Marathon",
 
         geography_gear: "Geography & Equipment",
@@ -125,6 +126,7 @@ const translations = {
         max_elevation: "Mayor Desnivel",
         best_5k: "Mejor 5k",
         best_10k: "Mejor 10k",
+        best_half_marathon: "Media Maratón",
         best_marathon: "Maratón",
 
         geography_gear: "Geografía y Equipo",
@@ -432,10 +434,11 @@ function renderPersonalRecords(activities) {
     }
 
     // 4. Best Efforts (Estimated)
-    // 5k: 5000m (+/- 200m?)
-    const best5k = getBestEffort(runs, 5000, 200);
-    const best10k = getBestEffort(runs, 10000, 200);
-    const bestMarathon = getBestEffort(runs, 42195, 500); // 42.2km +/- 500m
+    // Relaxed tolerances to capture real world GPS data
+    const best5k = getBestEffort(runs, 5000, 800); // 4.2 - 5.8 km
+    const best10k = getBestEffort(runs, 10000, 1000); // 9.0 - 11.0 km
+    const bestHalf = getBestEffort(runs, 21097, 1000); // 20.1 - 22.1 km
+    const bestMarathon = getBestEffort(runs, 42195, 1000); // 41.2 - 43.2 km
 
     // Update DOM
     document.getElementById('longest-run-dist').innerText = longestRun.distance !== 0 ? longestRun.distance : '-';
@@ -452,6 +455,9 @@ function renderPersonalRecords(activities) {
 
     document.getElementById('best-10k-time').innerText = best10k.time;
     document.getElementById('best-10k-date').innerText = best10k.date;
+
+    document.getElementById('best-half-marathon-time').innerText = bestHalf.time;
+    document.getElementById('best-half-marathon-date').innerText = bestHalf.date;
 
     document.getElementById('best-marathon-time').innerText = bestMarathon.time;
     document.getElementById('best-marathon-date').innerText = bestMarathon.date;
