@@ -213,6 +213,72 @@ function updateDashboard(activities) {
     renderConsistencyStats(activities);
     renderGeographyAndGear(activities);
     renderTrainingQuality(activities);
+    renderGoals(activities);
+}
+
+function renderGoals(activities) {
+    const now = new Date();
+    const currentMonth = now.getMonth(); // 0-11
+    const currentYear = now.getFullYear();
+    const currentDay = now.getDate();
+    const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+    // Goals Config
+    const goalsConfig = {
+        runMonthlyTarget: 100, // km
+        rideMonthlyTarget: 300 // km
+    };
+
+    // Reset Totals
+    let runDist = 0;
+    let rideDist = 0;
+
+    // Sum distances for current month
+    activities.forEach(a => {
+        const d = new Date(a.start_date); // UTC
+        // Use local time for correct monthly assignment
+        // If start_date_local is available usage that, but start_date JS Date obj converts to browser local usually
+        if (d.getMonth() === currentMonth && d.getFullYear() === currentYear) {
+            const km = a.distance / 1000;
+            if (a.sport_type === 'Run' || a.type === 'Run') {
+                runDist += km;
+            } else if (a.sport_type === 'Ride' || a.type === 'Ride' || a.sport_type === 'MountainBikeRide') {
+                rideDist += km;
+            }
+        }
+    });
+
+    // Update UI
+    updateGoalUI('run', runDist, goalsConfig.runMonthlyTarget, currentDay, daysInMonth);
+    updateGoalUI('ride', rideDist, goalsConfig.rideMonthlyTarget, currentDay, daysInMonth);
+}
+
+function updateGoalUI(type, current, target, day, totalDays) {
+    // 1. Progress Bar
+    const pct = Math.min((current / target) * 100, 100);
+    document.getElementById(`${type}-progress`).style.width = `${pct}%`;
+
+    // 2. Text
+    document.getElementById(`${type}-current`).innerText = `${current.toFixed(1)} km`;
+    document.getElementById(`${type}-target`).innerText = `/ ${target} km`;
+
+    // 3. Projection
+    // formula: (current / day) * totalDays
+    // prevent division by zero or weirdness on day 0
+    let projection = 0;
+    if (day > 0) {
+        projection = (current / day) * totalDays;
+    }
+
+    const projEl = document.getElementById(`${type}-projection`);
+    projEl.innerText = `Forecast: ${projection.toFixed(0)} km`;
+
+    // Style projection: Green if >= target, Red/Orange if < target
+    if (projection >= target) {
+        projEl.style.color = '#4caf50'; // Green
+    } else {
+        projEl.style.color = '#ff9800'; // Orange
+    }
 }
 
 function renderTrainingQuality(activities) {
