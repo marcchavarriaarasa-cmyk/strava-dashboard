@@ -55,6 +55,14 @@ const translations = {
         time_of_day: "Time of Day",
         days: "Days",
 
+        personal_records: "Personal Records",
+        longest_run: "Longest Run",
+        longest_ride: "Longest Ride",
+        max_elevation: "Max Elevation",
+        best_5k: "Fastest 5k",
+        best_10k: "Fastest 10k",
+        best_marathon: "Marathon",
+
         geography_gear: "Geography & Equipment",
         latest_route: "Latest Route",
         gear_usage: "Gear Usage (Distance)",
@@ -111,6 +119,13 @@ const translations = {
         best_streak: "Mejor Racha",
         time_of_day: "Hora del Día",
         days: "Días",
+        personal_records: "Mejores Marcas",
+        longest_run: "Carrera Más Larga",
+        longest_ride: "Salida Bici Más Larga",
+        max_elevation: "Mayor Desnivel",
+        best_5k: "Mejor 5k",
+        best_10k: "Mejor 10k",
+        best_marathon: "Maratón",
 
         geography_gear: "Geografía y Equipo",
         latest_route: "Última Ruta",
@@ -416,6 +431,12 @@ function renderPersonalRecords(activities) {
         };
     }
 
+    // 4. Best Efforts (Estimated)
+    // 5k: 5000m (+/- 200m?)
+    const best5k = getBestEffort(runs, 5000, 200);
+    const best10k = getBestEffort(runs, 10000, 200);
+    const bestMarathon = getBestEffort(runs, 42195, 500); // 42.2km +/- 500m
+
     // Update DOM
     document.getElementById('longest-run-dist').innerText = longestRun.distance !== 0 ? longestRun.distance : '-';
     document.getElementById('longest-run-date').innerText = longestRun.date;
@@ -425,6 +446,34 @@ function renderPersonalRecords(activities) {
 
     document.getElementById('max-elevation').innerText = maxElev.elem !== 0 ? maxElev.elem : '-';
     document.getElementById('max-elevation-date').innerText = maxElev.date;
+
+    document.getElementById('best-5k-time').innerText = best5k.time;
+    document.getElementById('best-5k-date').innerText = best5k.date;
+
+    document.getElementById('best-10k-time').innerText = best10k.time;
+    document.getElementById('best-10k-date').innerText = best10k.date;
+
+    document.getElementById('best-marathon-time').innerText = bestMarathon.time;
+    document.getElementById('best-marathon-date').innerText = bestMarathon.date;
+}
+
+function getBestEffort(activities, targetDistance, tolerance) {
+    // Find activities within range [target - tolerance, target + tolerance]
+    // Then sort by moving_time ascending
+    const candidates = activities.filter(a => {
+        const d = a.distance;
+        return d >= (targetDistance - tolerance) && d <= (targetDistance + tolerance);
+    });
+
+    if (candidates.length === 0) return { time: '-', date: '-' };
+
+    const best = candidates.reduce((min, curr) => (curr.moving_time < min.moving_time) ? curr : min, candidates[0]);
+
+    // Format time (HH:MM:SS or MM:SS)
+    const timeStr = formatDuration(best.moving_time);
+    const dateStr = new Date(best.start_date).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+
+    return { time: timeStr, date: dateStr };
 }
 
 function renderGoals(activities) {

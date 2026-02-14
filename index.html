@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-    <link rel="stylesheet" href="style.css?v=3.3">
+    <link rel="stylesheet" href="style.css?v=3.4">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- FontAwesome (Optional for icons if needed later) -->
@@ -148,7 +148,25 @@
         <!-- Personal Records Section -->
         <h2 style="margin-bottom: 20px;" data-i18n="personal_records">Personal Records</h2>
         <div class="dashboard-grid"
-            style="margin-bottom: 40px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+            style="margin-bottom: 40px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+            <!-- Best Efforts -->
+            <div class="card">
+                <h3 data-i18n="best_5k">Fastest 5k</h3>
+                <div class="stat-value" id="best-5k-time">-</div>
+                <div class="stat-unit" id="best-5k-date">-</div>
+            </div>
+            <div class="card">
+                <h3 data-i18n="best_10k">Fastest 10k</h3>
+                <div class="stat-value" id="best-10k-time">-</div>
+                <div class="stat-unit" id="best-10k-date">-</div>
+            </div>
+            <div class="card">
+                <h3 data-i18n="best_marathon">Marathon</h3>
+                <div class="stat-value" id="best-marathon-time">-</div>
+                <div class="stat-unit" id="best-marathon-date">-</div>
+            </div>
+
+            <!-- Highlights -->
             <div class="card">
                 <h3 data-i18n="longest_run">Longest Run</h3>
                 <div class="stat-value" id="longest-run-dist">0</div>
@@ -246,7 +264,7 @@
         </div>
     </div>
 
-    <script src="app.js?v=3.3"></script>
+    <script src="app.js?v=3.4"></script>
     </script>
 </body>
 
