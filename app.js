@@ -210,6 +210,165 @@ function updateDashboard(activities) {
     updateUserStats(activities);
     renderCharts(activities);
     renderActivityList(activities);
+    renderConsistencyStats(activities);
+}
+
+function renderConsistencyStats(activities) {
+    // --- 1. Heatmap (Last 365 Days) ---
+    const heatmapContainer = document.getElementById('heatmap');
+    heatmapContainer.innerHTML = '';
+
+    // Create map of date -> intensity (distance or count)
+    const activityMap = {};
+    activities.forEach(a => {
+        const dateStr = a.start_date.split('T')[0];
+        // Accumulate distance (km) or just count? Let's use count/presence for now, or sum distance.
+        // GitHub uses "contributions". Let's use count for intensity.
+        activityMap[dateStr] = (activityMap[dateStr] || 0) + 1;
+    });
+
+    // Generate last 365 days
+    const today = new Date();
+    // Start from 52 weeks ago (approx 364 days) to align grid nicely if needed, 
+    // but standard is just last year.
+    // For a nice grid, we usually start from a Sunday 52 weeks ago.
+    const startDate = new Date();
+    startDate.setDate(today.getDate() - 365);
+
+    // Adjust to start on a Sunday (optional, but looks better)
+    // while (startDate.getDay() !== 0) {
+    //     startDate.setDate(startDate.getDate() - 1);
+    // }
+
+    // Loop for 365 days
+    for (let i = 0; i <= 365; i++) {
+        const d = new Date(startDate);
+        d.setDate(d.getDate() + i);
+        const dateStr = d.toISOString().split('T')[0];
+
+        const count = activityMap[dateStr] || 0;
+        let level = 0;
+
+        if (count > 0) level = 1;
+        if (count > 1) level = 2; // e.g. morning + evening
+        // If we used distance, we could scale level 1-4 based on quartiles.
+
+        // Use logic similar to GitHub: 
+        // 0: No activity
+        // 1-4: quartiles. For now, binary (1) or multiple (2,3,4) is fine.
+        // Let's make it simple: 1 activity = level 2. >1 = level 4.
+        if (count === 1) level = 2;
+        if (count >= 2) level = 4;
+
+        const cell = document.createElement('div');
+        cell.className = 'heatmap-cell';
+        cell.dataset.level = level;
+        cell.title = `${dateStr}: ${count} activities`;
+        heatmapContainer.appendChild(cell);
+    }
+
+    // --- 2. Streaks ---
+    // Sort unique dates descending
+    const uniqueDates = [...new Set(activities.map(a => a.start_date.split('T')[0]))].sort().reverse();
+
+    let currentStreak = 0;
+    let bestStreak = 0;
+
+    if (uniqueDates.length > 0) {
+        // Current Streak
+        const todayStr = new Date().toISOString().split('T')[0];
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        const yesterdayStr = yesterday.toISOString().split('T')[0];
+
+        let streakStartDate = new Date(uniqueDates[0]);
+        // Check if latest activity is today or yesterday to count as "active" streak
+        if (uniqueDates[0] === todayStr || uniqueDates[0] === yesterdayStr) {
+            currentStreak = 1;
+            let checkDate = new Date(uniqueDates[0]);
+
+            for (let i = 1; i < uniqueDates.length; i++) {
+                checkDate.setDate(checkDate.getDate() - 1);
+                const expectedStr = checkDate.toISOString().split('T')[0];
+                if (uniqueDates[i] === expectedStr) {
+                    currentStreak++;
+                } else {
+                    break;
+                }
+            }
+        }
+    }
+
+    // Best Streak (Iterate all gaps)
+    // This requires a full walk. Simplification:
+    let tempStreak = 1;
+    for (let i = 0; i < uniqueDates.length - 1; i++) {
+        const d1 = new Date(uniqueDates[i]);
+        const d2 = new Date(uniqueDates[i + 1]);
+        const diffTime = Math.abs(d1 - d2);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+        if (diffDays === 1) {
+            tempStreak++;
+        } else {
+            if (tempStreak > bestStreak) bestStreak = tempStreak;
+            tempStreak = 1;
+        }
+    }
+    if (tempStreak > bestStreak) bestStreak = tempStreak;
+    if (currentStreak > bestStreak) bestStreak = currentStreak;
+
+    animateValue('current-streak', currentStreak);
+    animateValue('best-streak', bestStreak);
+
+
+    // --- 3. Time of Day Chart ---
+    const timeOfDay = { 'Morning': 0, 'Afternoon': 0, 'Evening': 0, 'Night': 0 };
+
+    activities.forEach(a => {
+        // local time is usually "YYYY-MM-DDTHH:MM:SSZ"
+        const hour = parseInt(a.start_date_local.split('T')[1].split(':')[0]);
+
+        if (hour >= 5 && hour < 12) timeOfDay['Morning']++;
+        else if (hour >= 12 && hour < 17) timeOfDay['Afternoon']++;
+        else if (hour >= 17 && hour < 21) timeOfDay['Evening']++;
+        else timeOfDay['Night']++;
+    });
+
+    const ctxTime = document.getElementById('timeOfDayChart').getContext('2d');
+
+    // Destroy if exists (we need a global var for this too)
+    if (window.timeChartInstance) window.timeChartInstance.destroy();
+
+    window.timeChartInstance = new Chart(ctxTime, {
+        type: 'polarArea',
+        data: {
+            labels: Object.keys(timeOfDay),
+            datasets: [{
+                data: Object.values(timeOfDay),
+                backgroundColor: [
+                    'rgba(255, 206, 86, 0.6)', // Morning (Sun)
+                    'rgba(255, 99, 132, 0.6)', // Afternoon (Heat)
+                    'rgba(54, 162, 235, 0.6)', // Evening (Cool)
+                    'rgba(153, 102, 255, 0.6)' // Night
+                ],
+                borderWidth: 1,
+                borderColor: '#1e1e1e'
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                r: {
+                    grid: { color: 'rgba(255,255,255,0.1)' },
+                    ticks: { display: false, backdropColor: 'transparent' }
+                }
+            },
+            plugins: {
+                legend: { position: 'right', labels: { color: '#b0b0b0', boxWidth: 10 } }
+            }
+        }
+    });
 }
 
 function updateUserStats(activities) {
@@ -357,7 +516,17 @@ function renderCharts(activities) {
                 label: 'Distance (km)',
                 data: data,
                 backgroundColor: '#fc4c02',
-                borderRadius: 4
+                borderRadius: 4,
+                order: 2
+            }, {
+                type: 'line',
+                label: '4-Period Mov. Avg.',
+                data: calculateMovingAverage(data, 4),
+                borderColor: '#ffffff',
+                borderWidth: 2,
+                pointRadius: 0,
+                tension: 0.4,
+                order: 1
             }]
         },
         options: {
@@ -489,4 +658,15 @@ function formatDuration(seconds) {
 function formatSportType(type) {
     // Add spaces to CamelCase (e.g., WeightTraining -> Weight Training)
     return type.replace(/([A-Z])/g, ' $1').trim();
+}
+
+function calculateMovingAverage(data, windowSize) {
+    const result = [];
+    for (let i = 0; i < data.length; i++) {
+        const start = Math.max(0, i - windowSize + 1);
+        const subset = data.slice(start, i + 1);
+        const sum = subset.reduce((a, b) => a + b, 0);
+        result.push(sum / subset.length);
+    }
+    return result;
 }
