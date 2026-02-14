@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-    <link rel="stylesheet" href="style.css?v=2.8">
+    <link rel="stylesheet" href="style.css?v=2.9">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- FontAwesome (Optional for icons if needed later) -->
@@ -75,6 +75,40 @@
                 <h3>Toughness</h3>
                 <div class="stat-value" id="toughness">0</div>
                 <div class="stat-unit">Elev Gain / km</div>
+            </div>
+        </div>
+
+        <!-- Goals Section -->
+        <h2 style="margin-bottom: 20px;">Monthly Goals (Current Month)</h2>
+        <div class="goals-grid">
+            <!-- Run Goal -->
+            <div class="card goal-card">
+                <div class="goal-header">
+                    <h3>🏃‍♂️ Running</h3>
+                    <span id="run-projection" class="goal-projection">On track: 0km</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="run-progress" style="width: 0%; background-color: #fc4c02;"></div>
+                </div>
+                <div class="goal-numbers">
+                    <span id="run-current">0 km</span>
+                    <span id="run-target">/ 100 km</span>
+                </div>
+            </div>
+
+            <!-- Ride Goal -->
+            <div class="card goal-card">
+                <div class="goal-header">
+                    <h3>🚴‍♂️ Cycling</h3>
+                    <span id="ride-projection" class="goal-projection">On track: 0km</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="ride-progress" style="width: 0%; background-color: #2196f3;"></div>
+                </div>
+                <div class="goal-numbers">
+                    <span id="ride-current">0 km</span>
+                    <span id="ride-target">/ 300 km</span>
+                </div>
             </div>
         </div>
 
@@ -189,7 +223,7 @@
         </div>
     </div>
 
-    <script src="app.js?v=2.8"></script>
+    <script src="app.js?v=2.9"></script>
     </script>
 </body>
 
