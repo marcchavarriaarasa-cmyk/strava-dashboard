@@ -2,6 +2,14 @@ RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
 Fecha: 2026-02-15
+Actividad: Mitja Marató Barcelona 2026 (Run)
+Distancia: 21.31 km
+Tiempo en movimiento: 97.65 min
+Velocidad media: 13.09 km/h
+Desnivel positivo: 47.5 m
+Frecuencia cardíaca media: 175.7 bpm
+------------------------------
+Fecha: 2026-02-15
 Actividad: Calentament mitja bcn'26 (Run)
 Distancia: 2.29 km
 Tiempo en movimiento: 12.22 min
@@ -391,13 +399,5 @@ Distancia: 8.26 km
 Tiempo en movimiento: 102.17 min
 Velocidad media: 4.85 km/h
 Desnivel positivo: 47.5 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-10-30
-Actividad: Morning workout ☀️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 85.15 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
