@@ -1,6 +1,38 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-02-15
+Actividad: Calentament mitja bcn'26 (Run)
+Distancia: 2.29 km
+Tiempo en movimiento: 12.22 min
+Velocidad media: 11.27 km/h
+Desnivel positivo: 0.0 m
+Frecuencia cardíaca media: 154.6 bpm
+------------------------------
+Fecha: 2026-02-14
+Actividad: Activació pre-mitja (tornada) (Run)
+Distancia: 1.03 km
+Tiempo en movimiento: 5.65 min
+Velocidad media: 10.93 km/h
+Desnivel positivo: 12.9 m
+Frecuencia cardíaca media: 156.7 bpm
+------------------------------
+Fecha: 2026-02-14
+Actividad: Estiraments pre mitja bcn '26 (Workout)
+Distancia: 0.0 km
+Tiempo en movimiento: 51.57 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: 113.4 bpm
+------------------------------
+Fecha: 2026-02-14
+Actividad: Activació pre-mitja (anada) (Run)
+Distancia: 1.01 km
+Tiempo en movimiento: 4.42 min
+Velocidad media: 13.78 km/h
+Desnivel positivo: 3.1 m
+Frecuencia cardíaca media: 164.2 bpm
+------------------------------
 Fecha: 2026-02-12
 Actividad: Afternoon workout 💪 (WeightTraining)
 Distancia: 0.0 km
@@ -365,38 +397,6 @@ Fecha: 2025-10-30
 Actividad: Morning workout ☀️ (WeightTraining)
 Distancia: 0.0 km
 Tiempo en movimiento: 85.15 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-10-29
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 58.28 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-10-23
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 62.6 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-10-23
-Actividad: Afternoon Run (Run)
-Distancia: 8.46 km
-Tiempo en movimiento: 45.35 min
-Velocidad media: 11.2 km/h
-Desnivel positivo: 45.1 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-10-21
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 83.25 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
