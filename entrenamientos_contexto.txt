@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-03-05
+Actividad: Caminata via verda canal de la rapita (Walk)
+Distancia: 6.57 km
+Tiempo en movimiento: 79.43 min
+Velocidad media: 4.96 km/h
+Desnivel positivo: 0.0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-02-20
 Actividad: Via verda (Walk)
 Distancia: 5.97 km
@@ -391,13 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 111.62 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-11-04
-Actividad: B3tterRunClub (Run)
-Distancia: 9.05 km
-Tiempo en movimiento: 46.3 min
-Velocidad media: 11.73 km/h
-Desnivel positivo: 14.0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
