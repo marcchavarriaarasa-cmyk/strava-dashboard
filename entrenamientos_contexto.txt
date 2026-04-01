@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-03-31
+Actividad: Primera carrera post cirugia (Run)
+Distancia: 7.37 km
+Tiempo en movimiento: 42.03 min
+Velocidad media: 10.52 km/h
+Desnivel positivo: 0.0 m
+Frecuencia cardíaca media: 162.1 bpm
+------------------------------
 Fecha: 2026-03-26
 Actividad: Afternoon workout 💪 (WeightTraining)
 Distancia: 0.0 km
@@ -391,13 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 111.23 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-11-11
-Actividad: B3TTERRUNCLUB (Run)
-Distancia: 6.02 km
-Tiempo en movimiento: 35.98 min
-Velocidad media: 10.04 km/h
-Desnivel positivo: 17.4 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
