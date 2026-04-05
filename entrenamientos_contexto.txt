@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-04-04
+Actividad: Estreno Via verda (Walk)
+Distancia: 4.03 km
+Tiempo en movimiento: 48.17 min
+Velocidad media: 5.02 km/h
+Desnivel positivo: 31.2 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-04-02
 Actividad: Afternoon workout 💪 (WeightTraining)
 Distancia: 0.0 km
@@ -391,13 +399,5 @@ Distancia: 6.07 km
 Tiempo en movimiento: 30.5 min
 Velocidad media: 11.94 km/h
 Desnivel positivo: 11.4 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-11-13
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 91.9 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
