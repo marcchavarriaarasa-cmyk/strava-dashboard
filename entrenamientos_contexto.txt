@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-04-08
+Actividad: Afternoon workout 💪 (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 98.15 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-04-06
 Actividad: Via verda (solo) (Run)
 Distancia: 10.27 km
@@ -391,13 +399,5 @@ Distancia: 8.2 km
 Tiempo en movimiento: 39.65 min
 Velocidad media: 12.41 km/h
 Desnivel positivo: 18.1 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-11-22
-Actividad: Portell de l'infern i Salt del Robert (Hike)
-Distancia: 13.38 km
-Tiempo en movimiento: 201.72 min
-Velocidad media: 3.98 km/h
-Desnivel positivo: 499.9 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
