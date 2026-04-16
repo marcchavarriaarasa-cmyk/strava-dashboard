@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-04-15
+Actividad: Caminata chill via verda (Walk)
+Distancia: 6.23 km
+Tiempo en movimiento: 54.42 min
+Velocidad media: 6.87 km/h
+Desnivel positivo: 44.3 m
+Frecuencia cardíaca media: 119.1 bpm
+------------------------------
 Fecha: 2026-04-12
 Actividad: Afternoon workout 💪 (WeightTraining)
 Distancia: 0.0 km
@@ -391,13 +399,5 @@ Distancia: 10.33 km
 Tiempo en movimiento: 43.62 min
 Velocidad media: 14.21 km/h
 Desnivel positivo: 33.7 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-11-28
-Actividad: Recollir dorsal jean bouin (Run)
-Distancia: 5.13 km
-Tiempo en movimiento: 26.27 min
-Velocidad media: 11.72 km/h
-Desnivel positivo: 21.2 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
