@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-04-18
+Actividad: RumClub CasaCupra amb Pol Rovira (Run)
+Distancia: 6.24 km
+Tiempo en movimiento: 40.18 min
+Velocidad media: 9.31 km/h
+Desnivel positivo: 14.7 m
+Frecuencia cardíaca media: 145.6 bpm
+------------------------------
 Fecha: 2026-04-15
 Actividad: Caminata chill via verda (Walk)
 Distancia: 6.23 km
@@ -391,13 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 86.77 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-11-30
-Actividad: Jean Bouin '2025 (Run)
-Distancia: 10.33 km
-Tiempo en movimiento: 43.62 min
-Velocidad media: 14.21 km/h
-Desnivel positivo: 33.7 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
