@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-04-19
+Actividad: Morning workout ☀️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 77.7 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-04-18
 Actividad: RumClub CasaCupra amb Pol Rovira (Run)
 Distancia: 6.24 km
@@ -391,13 +399,5 @@ Distancia: 4.34 km
 Tiempo en movimiento: 26.33 min
 Velocidad media: 9.9 km/h
 Desnivel positivo: 10.8 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-12-01
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 86.77 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
