@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-04-23
+Actividad: Diagonal Sant Jordi (Run)
+Distancia: 10.01 km
+Tiempo en movimiento: 52.7 min
+Velocidad media: 11.4 km/h
+Desnivel positivo: 56.9 m
+Frecuencia cardíaca media: 166.8 bpm
+------------------------------
 Fecha: 2026-04-22
 Actividad: Afternoon workout 💪 (WeightTraining)
 Distancia: 0.0 km
@@ -391,13 +399,5 @@ Distancia: 22.78 km
 Tiempo en movimiento: 305.15 min
 Velocidad media: 4.48 km/h
 Desnivel positivo: 1068.6 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-12-16
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 82.5 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
