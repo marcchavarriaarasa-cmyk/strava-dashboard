@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-04-26
+Actividad: Tenis (Workout)
+Distancia: 2.06 km
+Tiempo en movimiento: 44.95 min
+Velocidad media: 2.75 km/h
+Desnivel positivo: 0.0 m
+Frecuencia cardíaca media: 145.1 bpm
+------------------------------
 Fecha: 2026-04-23
 Actividad: Diagonal Sant Jordi (Run)
 Distancia: 10.01 km
@@ -391,13 +399,5 @@ Distancia: 10.02 km
 Tiempo en movimiento: 60.27 min
 Velocidad media: 9.98 km/h
 Desnivel positivo: 0.0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-12-22
-Actividad: Ruta circular cordillera serra del Montsia (Hike)
-Distancia: 22.78 km
-Tiempo en movimiento: 305.15 min
-Velocidad media: 4.48 km/h
-Desnivel positivo: 1068.6 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
