@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-04-28
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 77.27 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-04-26
 Actividad: Tenis (Workout)
 Distancia: 2.06 km
@@ -391,13 +399,5 @@ Distancia: 3.06 km
 Tiempo en movimiento: 12.23 min
 Velocidad media: 14.85 km/h
 Desnivel positivo: 16.6 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-12-30
-Actividad: Pista atletisme amb familia Zhao (Run)
-Distancia: 10.02 km
-Tiempo en movimiento: 60.27 min
-Velocidad media: 9.98 km/h
-Desnivel positivo: 0.0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
