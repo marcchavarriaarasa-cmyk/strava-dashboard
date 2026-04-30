@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-04-29
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 53.35 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-04-28
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
@@ -391,13 +399,5 @@ Distancia: 6.13 km
 Tiempo en movimiento: 36.73 min
 Velocidad media: 10.0 km/h
 Desnivel positivo: 0.0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2025-12-31
-Actividad: San Silvestre Amposta '25 (Run)
-Distancia: 3.06 km
-Tiempo en movimiento: 12.23 min
-Velocidad media: 14.85 km/h
-Desnivel positivo: 16.6 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
