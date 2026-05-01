@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-04-30
+Actividad: Via verda en la mama (Run)
+Distancia: 7.51 km
+Tiempo en movimiento: 43.27 min
+Velocidad media: 10.41 km/h
+Desnivel positivo: 46.0 m
+Frecuencia cardíaca media: 159.5 bpm
+------------------------------
 Fecha: 2026-04-29
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
@@ -392,12 +400,4 @@ Tiempo en movimiento: 29.22 min
 Velocidad media: 10.46 km/h
 Desnivel positivo: 2.0 m
 Frecuencia cardíaca media: 142.7 bpm
-------------------------------
-Fecha: 2026-01-02
-Actividad: Via verda (Run)
-Distancia: 6.13 km
-Tiempo en movimiento: 36.73 min
-Velocidad media: 10.0 km/h
-Desnivel positivo: 0.0 m
-Frecuencia cardíaca media: Null bpm
 ------------------------------
