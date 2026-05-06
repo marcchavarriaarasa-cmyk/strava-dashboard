@@ -5,6 +5,73 @@
       "id": 47802575,
       "resource_state": 1
     },
+    "name": "Casa Cupra Club Run 8k",
+    "distance": 8008.4,
+    "moving_time": 2815,
+    "elapsed_time": 3046,
+    "total_elevation_gain": 25.1,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": 0,
+    "device_name": "Strava App",
+    "id": 18389106654,
+    "start_date": "2026-05-05T17:16:07Z",
+    "start_date_local": "2026-05-05T19:16:07Z",
+    "timezone": "(GMT+01:00) Europe/Madrid",
+    "utc_offset": 7200.0,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 7,
+    "kudos_count": 7,
+    "comment_count": 0,
+    "athlete_count": 46,
+    "photo_count": 0,
+    "map": {
+      "id": "a18389106654",
+      "summary_polyline": "egt{F}qdLBB@PF^LX?VDPHt@x@pEBVTvA@Z?CFV@NCHTR@GGBBTL`@`@vCVhA`@rCf@lCFp@ZtBRdAN`@Nn@HbANnAf@tCFLCA@FFJH\\JlAt@nEA@AC\\|A@VPrAx@tFPv@TrAAHMROl@?`@Dd@HZj@l@AACDBPC@Th@VGF?lAdGbCjOLfAJZTpAFn@AJBVRl@j@~Cl@bEbAnFrBhMPlANn@d@`Dz@fF\\dBTbBf@tCNzA`@rCZvANjBh@hDRt@DHBRd@hDr@~DL~@Jb@DHXdBD?AABAB^@^VbB|@vFl@`Dd@bDJ`@\\hBR|ARrA`@~CBd@?hAj@jAHpAPjBPp@LbAIQG_AO}@Se@DOGc@@m@CWi@mACK?u@G}@i@}DCk@c@}C]aBYoBy@cEqAqICKS_@O{ASyAGe@MUw@_FUaBY}A?YSo@k@kDa@oB]iCE{@GMEQKeAs@iEk@cE_ByIIU{@wFI{@o@yDk@{CSqAaA}EQsAGy@Oq@Ee@Si@S{AQo@MLH[?IOk@u@eFa@oB[sCu@kFU{@GEi@SE]_@a@Kc@Ec@Aa@BURo@ScBEy@Qw@{@cFSwAC_@[uB]aBYuBMq@Sk@Ac@K}@c@uBWsBWcAc@sCQs@Ii@?]q@_EEk@s@wCMsA{@qEm@uEa@{BG{@GC?GDMCCICII_@B]^MVBDDCH[LO",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": true,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g22746812",
+    "start_latlng": [
+      41.396518,
+      2.158559
+    ],
+    "end_latlng": [
+      41.396816,
+      2.158742
+    ],
+    "average_speed": 2.845,
+    "max_speed": 12.465,
+    "average_cadence": 74.0,
+    "has_heartrate": true,
+    "average_heartrate": 165.1,
+    "max_heartrate": 183.0,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 79.0,
+    "elev_low": 59.7,
+    "upload_id": 19493546056,
+    "upload_id_str": "19493546056",
+    "external_id": "1927520c-709d-4a81-91be-d7b0b994cab2-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 3,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 78.0
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 47802575,
+      "resource_state": 1
+    },
     "name": "Via verda en la mama",
     "distance": 7506.2,
     "moving_time": 2596,
@@ -2954,7 +3021,7 @@
     "achievement_count": 2,
     "kudos_count": 4,
     "comment_count": 0,
-    "athlete_count": 2,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16957662356",
@@ -3569,7 +3636,7 @@
     "achievement_count": 16,
     "kudos_count": 18,
     "comment_count": 0,
-    "athlete_count": 432,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16606825895",
@@ -3753,7 +3820,7 @@
     "achievement_count": 19,
     "kudos_count": 3,
     "comment_count": 0,
-    "athlete_count": 15,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16559057801",
@@ -3880,7 +3947,7 @@
     "achievement_count": 18,
     "kudos_count": 8,
     "comment_count": 0,
-    "athlete_count": 54,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16491698699",
@@ -4052,7 +4119,7 @@
     "achievement_count": 7,
     "kudos_count": 5,
     "comment_count": 0,
-    "athlete_count": 11,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16421003630",
@@ -4170,7 +4237,7 @@
     "achievement_count": 8,
     "kudos_count": 9,
     "comment_count": 1,
-    "athlete_count": 156,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16401109034",
@@ -4289,7 +4356,7 @@
     "achievement_count": 0,
     "kudos_count": 2,
     "comment_count": 0,
-    "athlete_count": 2,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16394987934",
@@ -4462,7 +4529,7 @@
     "achievement_count": 20,
     "kudos_count": 9,
     "comment_count": 0,
-    "athlete_count": 50,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16348900730",
@@ -4526,7 +4593,7 @@
     "achievement_count": 0,
     "kudos_count": 2,
     "comment_count": 0,
-    "athlete_count": 2,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16304754256",
@@ -4871,7 +4938,7 @@
     "achievement_count": 0,
     "kudos_count": 4,
     "comment_count": 0,
-    "athlete_count": 3,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16189696985",
@@ -5098,7 +5165,7 @@
     "achievement_count": 20,
     "kudos_count": 4,
     "comment_count": 0,
-    "athlete_count": 14,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16134082664",
@@ -5800,7 +5867,7 @@
     "achievement_count": 17,
     "kudos_count": 7,
     "comment_count": 0,
-    "athlete_count": 19,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a15827017280",
@@ -8785,7 +8852,7 @@
     "achievement_count": 2,
     "kudos_count": 2,
     "comment_count": 0,
-    "athlete_count": 3,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a14644356792",
