@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-05-07
+Actividad: Afternoon workout 💪 (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 60.0 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-05-05
 Actividad: Casa Cupra Club Run 8k (Run)
 Distancia: 8.01 km
@@ -391,13 +399,5 @@ Distancia: 6.01 km
 Tiempo en movimiento: 28.42 min
 Velocidad media: 12.68 km/h
 Desnivel positivo: 7.7 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-01-12
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 139.6 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
