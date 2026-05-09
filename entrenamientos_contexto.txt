@@ -6,7 +6,7 @@ Actividad: Afternoon workout 💪 (WeightTraining)
 Distancia: 0.0 km
 Tiempo en movimiento: 60.0 min
 Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
+Desnivel positivo: 0.0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-05-05
