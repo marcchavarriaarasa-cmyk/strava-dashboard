@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-05-10
+Actividad: Calentament Cursa Corte Ingles (Run)
+Distancia: 3.0 km
+Tiempo en movimiento: 15.68 min
+Velocidad media: 11.49 km/h
+Desnivel positivo: 18.8 m
+Frecuencia cardíaca media: 159.9 bpm
+------------------------------
 Fecha: 2026-05-07
 Actividad: Afternoon workout 💪 (WeightTraining)
 Distancia: 0.0 km
@@ -391,13 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 109.87 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-01-13
-Actividad: B3TTERRUNCLUB (Run)
-Distancia: 6.01 km
-Tiempo en movimiento: 28.42 min
-Velocidad media: 12.68 km/h
-Desnivel positivo: 7.7 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------

@@ -5,6 +5,72 @@
       "id": 47802575,
       "resource_state": 1
     },
+    "name": "Calentament Cursa Corte Ingles",
+    "distance": 3002.8,
+    "moving_time": 941,
+    "elapsed_time": 949,
+    "total_elevation_gain": 18.8,
+    "type": "Run",
+    "sport_type": "Run",
+    "workout_type": null,
+    "device_name": "Strava App",
+    "id": 18447219218,
+    "start_date": "2026-05-10T06:19:15Z",
+    "start_date_local": "2026-05-10T08:19:15Z",
+    "timezone": "(GMT+01:00) Europe/Madrid",
+    "utc_offset": 7200.0,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 2,
+    "kudos_count": 0,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a18447219218",
+      "summary_polyline": "egt{FordLDI?RGF@x@T`Dr@`CHb@Pp@VnAf@hDHvATt@Pp@HhA?|@NbARv@BjAR`Aj@`BH`@\\f@J\\Ft@A`@TnBRp@Hh@j@hC^lADzAT|AHv@Lp@V`C\\vARvARl@LhAKZEZGr@@`@JTJLb@n@Lh@f@JTTPVt@xCb@vBLnAPhA|@bFn@~D\\`BNjA^vBZ`CZhATpBb@pBn@dFf@rCJ~@Nl@Dl@Lj@JbAZzAFh@^`CThAT`B?FCBN^LfAXbALvADFBA?K_@aCSw@CWQk@?YIcADADJBZLp@BFD@LRHf@Xv@NXHDBH",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "g22746812",
+    "start_latlng": [
+      41.396517,
+      2.15864
+    ],
+    "end_latlng": [
+      41.388507,
+      2.12924
+    ],
+    "average_speed": 3.191,
+    "max_speed": 4.58,
+    "has_heartrate": true,
+    "average_heartrate": 159.9,
+    "max_heartrate": 170.0,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": true,
+    "elev_high": 75.6,
+    "elev_low": 59.8,
+    "upload_id": 19552200671,
+    "upload_id_str": "19552200671",
+    "external_id": "fbea9729-0498-4d43-9df4-b51bd0cfbfb2-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 0,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 24.0
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 47802575,
+      "resource_state": 1
+    },
     "name": "Afternoon workout \ud83d\udcaa",
     "distance": 0.0,
     "moving_time": 3600,
@@ -2956,7 +3022,7 @@
     "achievement_count": 10,
     "kudos_count": 5,
     "comment_count": 0,
-    "athlete_count": 12,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a17031169396",
@@ -3690,7 +3756,7 @@
     "achievement_count": 16,
     "kudos_count": 18,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 447,
     "photo_count": 0,
     "map": {
       "id": "a16606825895",
@@ -3874,7 +3940,7 @@
     "achievement_count": 19,
     "kudos_count": 3,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 15,
     "photo_count": 0,
     "map": {
       "id": "a16559057801",
@@ -4001,7 +4067,7 @@
     "achievement_count": 18,
     "kudos_count": 8,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 54,
     "photo_count": 0,
     "map": {
       "id": "a16491698699",
@@ -4173,7 +4239,7 @@
     "achievement_count": 7,
     "kudos_count": 5,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 11,
     "photo_count": 0,
     "map": {
       "id": "a16421003630",
@@ -4291,7 +4357,7 @@
     "achievement_count": 8,
     "kudos_count": 9,
     "comment_count": 1,
-    "athlete_count": 1,
+    "athlete_count": 156,
     "photo_count": 0,
     "map": {
       "id": "a16401109034",
@@ -4410,7 +4476,7 @@
     "achievement_count": 0,
     "kudos_count": 2,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 2,
     "photo_count": 0,
     "map": {
       "id": "a16394987934",
@@ -4583,7 +4649,7 @@
     "achievement_count": 20,
     "kudos_count": 9,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 50,
     "photo_count": 0,
     "map": {
       "id": "a16348900730",
@@ -4647,7 +4713,7 @@
     "achievement_count": 0,
     "kudos_count": 2,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 2,
     "photo_count": 0,
     "map": {
       "id": "a16304754256",
@@ -4992,7 +5058,7 @@
     "achievement_count": 0,
     "kudos_count": 4,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 3,
     "photo_count": 0,
     "map": {
       "id": "a16189696985",
@@ -5219,7 +5285,7 @@
     "achievement_count": 20,
     "kudos_count": 4,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 14,
     "photo_count": 0,
     "map": {
       "id": "a16134082664",
@@ -5921,7 +5987,7 @@
     "achievement_count": 17,
     "kudos_count": 7,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 19,
     "photo_count": 0,
     "map": {
       "id": "a15827017280",
