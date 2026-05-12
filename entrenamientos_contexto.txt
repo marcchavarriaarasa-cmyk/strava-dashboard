@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-05-12
+Actividad: b3tterRunClub (Run)
+Distancia: 7.94 km
+Tiempo en movimiento: 47.52 min
+Velocidad media: 10.03 km/h
+Desnivel positivo: 26.4 m
+Frecuencia cardíaca media: 162.2 bpm
+------------------------------
 Fecha: 2026-05-10
 Actividad: Cursa Corte Ingles 2026 (Run)
 Distancia: 10.19 km
@@ -391,13 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 132.05 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-01-18
-Actividad: Via verda Canal (Run)
-Distancia: 10.13 km
-Tiempo en movimiento: 55.35 min
-Velocidad media: 10.98 km/h
-Desnivel positivo: 3.1 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
