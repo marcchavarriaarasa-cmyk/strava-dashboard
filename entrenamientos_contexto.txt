@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-05-17
+Actividad: Amposta - Tortosa (Via Verda) (Ride)
+Distancia: 36.48 km
+Tiempo en movimiento: 101.25 min
+Velocidad media: 21.62 km/h
+Desnivel positivo: 115.5 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-05-14
 Actividad: Afternoon workout 💪 (WeightTraining)
 Distancia: 0.0 km
@@ -389,14 +397,6 @@ Fecha: 2026-01-27
 Actividad: Morning workout ☀️ (WeightTraining)
 Distancia: 0.0 km
 Tiempo en movimiento: 60.75 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-01-25
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 95.12 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
