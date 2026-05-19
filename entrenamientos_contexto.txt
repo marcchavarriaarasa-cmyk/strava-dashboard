@@ -1,6 +1,22 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-05-19
+Actividad: b3tterRunClub (Run)
+Distancia: 6.63 km
+Tiempo en movimiento: 34.5 min
+Velocidad media: 11.54 km/h
+Desnivel positivo: 11.1 m
+Frecuencia cardíaca media: 163.0 bpm
+------------------------------
+Fecha: 2026-05-18
+Actividad: De camí al pis (Walk)
+Distancia: 4.36 km
+Tiempo en movimiento: 42.9 min
+Velocidad media: 6.09 km/h
+Desnivel positivo: 8.7 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-05-17
 Actividad: Amposta - Tortosa (Via Verda) (Ride)
 Distancia: 36.48 km
@@ -381,22 +397,6 @@ Fecha: 2026-01-30
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
 Tiempo en movimiento: 86.1 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-01-28
-Actividad: Afternoon Run (Run)
-Distancia: 10.01 km
-Tiempo en movimiento: 50.77 min
-Velocidad media: 11.83 km/h
-Desnivel positivo: 64.6 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-01-27
-Actividad: Morning workout ☀️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 60.75 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
