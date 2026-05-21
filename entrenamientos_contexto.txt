@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-05-20
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 140.97 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-05-19
 Actividad: b3tterRunClub (Run)
 Distancia: 6.63 km
@@ -391,13 +399,5 @@ Distancia: 15.85 km
 Tiempo en movimiento: 97.93 min
 Velocidad media: 9.71 km/h
 Desnivel positivo: 63.4 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-01-30
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 86.1 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
