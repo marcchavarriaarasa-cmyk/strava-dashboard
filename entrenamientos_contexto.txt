@@ -1,6 +1,22 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-05-23
+Actividad: Afternoon workout 💪 (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 57.12 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-05-23
+Actividad: Activació Desafio Guerreros (Run)
+Distancia: 5.83 km
+Tiempo en movimiento: 28.62 min
+Velocidad media: 12.22 km/h
+Desnivel positivo: 42.9 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-05-20
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
@@ -383,21 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 151.65 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-02-05
-Actividad: Diagonal Chill (Run)
-Distancia: 10.04 km
-Tiempo en movimiento: 54.95 min
-Velocidad media: 10.96 km/h
-Desnivel positivo: 59.5 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-02-02
-Actividad: Pel Delta (Run)
-Distancia: 15.85 km
-Tiempo en movimiento: 97.93 min
-Velocidad media: 9.71 km/h
-Desnivel positivo: 63.4 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
