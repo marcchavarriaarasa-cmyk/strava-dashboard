@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-05-24
+Actividad: DESAFIO GUERREROS 6k (Run)
+Distancia: 3.78 km
+Tiempo en movimiento: 31.62 min
+Velocidad media: 2.88 km/h
+Desnivel positivo: 15.4 m
+Frecuencia cardíaca media: 139.6 bpm
+------------------------------
 Fecha: 2026-05-23
 Actividad: Afternoon workout 💪 (WeightTraining)
 Distancia: 0.0 km
@@ -391,13 +399,5 @@ Distancia: 11.02 km
 Tiempo en movimiento: 58.65 min
 Velocidad media: 11.28 km/h
 Desnivel positivo: 72.4 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-02-06
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 151.65 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
