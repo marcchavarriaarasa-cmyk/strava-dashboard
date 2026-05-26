@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-05-26
+Actividad: Ultim b3tterRunClub 🥲 (Run)
+Distancia: 7.07 km
+Tiempo en movimiento: 35.93 min
+Velocidad media: 11.8 km/h
+Desnivel positivo: 18.5 m
+Frecuencia cardíaca media: 166.0 bpm
+------------------------------
 Fecha: 2026-05-24
 Actividad: DESAFIO GUERREROS 6k (Run)
 Distancia: 3.78 km
@@ -392,12 +400,4 @@ Tiempo en movimiento: 24.3 min
 Velocidad media: 6.07 km/h
 Desnivel positivo: 0.0 m
 Frecuencia cardíaca media: 104.8 bpm
-------------------------------
-Fecha: 2026-02-07
-Actividad: Diagonal per a variar (Run)
-Distancia: 11.02 km
-Tiempo en movimiento: 58.65 min
-Velocidad media: 11.28 km/h
-Desnivel positivo: 72.4 m
-Frecuencia cardíaca media: Null bpm
 ------------------------------
