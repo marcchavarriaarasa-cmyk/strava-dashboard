@@ -1,6 +1,54 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-06-04
+Actividad: Tornada corrents del gympro (Run)
+Distancia: 2.54 km
+Tiempo en movimiento: 13.52 min
+Velocidad media: 11.26 km/h
+Desnivel positivo: 5.9 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-04
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 99.38 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-04
+Actividad: Anada corrents al gympro (Run)
+Distancia: 2.24 km
+Tiempo en movimiento: 11.4 min
+Velocidad media: 11.77 km/h
+Desnivel positivo: 41.6 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-03
+Actividad: Tornada del gym (Run)
+Distancia: 2.48 km
+Tiempo en movimiento: 11.55 min
+Velocidad media: 12.9 km/h
+Desnivel positivo: 3.5 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-03
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 66.6 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-03
+Actividad: Anar al gym (Run)
+Distancia: 2.56 km
+Tiempo en movimiento: 12.95 min
+Velocidad media: 11.86 km/h
+Desnivel positivo: 48.4 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-05-26
 Actividad: Ultim b3tterRunClub 🥲 (Run)
 Distancia: 7.07 km
@@ -352,52 +400,4 @@ Tiempo en movimiento: 5.65 min
 Velocidad media: 10.93 km/h
 Desnivel positivo: 12.9 m
 Frecuencia cardíaca media: 156.7 bpm
-------------------------------
-Fecha: 2026-02-14
-Actividad: Estiraments pre mitja bcn '26 (Workout)
-Distancia: 0.0 km
-Tiempo en movimiento: 51.57 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: 113.4 bpm
-------------------------------
-Fecha: 2026-02-14
-Actividad: Activació pre-mitja (anada) (Run)
-Distancia: 1.01 km
-Tiempo en movimiento: 4.42 min
-Velocidad media: 13.78 km/h
-Desnivel positivo: 3.1 m
-Frecuencia cardíaca media: 164.2 bpm
-------------------------------
-Fecha: 2026-02-12
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 66.7 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-02-11
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 101.03 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-02-10
-Actividad: B3TTER PRE-MITJA BCN '26 (Run)
-Distancia: 8.86 km
-Tiempo en movimiento: 47.72 min
-Velocidad media: 11.15 km/h
-Desnivel positivo: 28.5 m
-Frecuencia cardíaca media: 158.8 bpm
-------------------------------
-Fecha: 2026-02-08
-Actividad: Proban juguet nou (pulsometro) (Walk)
-Distancia: 2.46 km
-Tiempo en movimiento: 24.3 min
-Velocidad media: 6.07 km/h
-Desnivel positivo: 0.0 m
-Frecuencia cardíaca media: 104.8 bpm
 ------------------------------
