@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-06-10
+Actividad: Anar al pis dels iaios (Ride)
+Distancia: 25.45 km
+Tiempo en movimiento: 76.1 min
+Velocidad media: 20.06 km/h
+Desnivel positivo: 41.8 m
+Frecuencia cardíaca media: 148.1 bpm
+------------------------------
 Fecha: 2026-06-09
 Actividad: Tornada gympro (Run)
 Distancia: 2.51 km
@@ -392,12 +400,4 @@ Tiempo en movimiento: 79.43 min
 Velocidad media: 4.96 km/h
 Desnivel positivo: 0.0 m
 Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-02-20
-Actividad: Via verda (Walk)
-Distancia: 5.97 km
-Tiempo en movimiento: 60.23 min
-Velocidad media: 5.95 km/h
-Desnivel positivo: 0.0 m
-Frecuencia cardíaca media: 97.0 bpm
 ------------------------------
