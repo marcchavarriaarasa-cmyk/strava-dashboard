@@ -1,6 +1,30 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-06-12
+Actividad: Tornasa  gympro corrents (Run)
+Distancia: 2.59 km
+Tiempo en movimiento: 12.92 min
+Velocidad media: 12.01 km/h
+Desnivel positivo: 6.3 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-12
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 90.4 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-12
+Actividad: Anada Gympro corrents (Run)
+Distancia: 2.57 km
+Tiempo en movimiento: 13.98 min
+Velocidad media: 11.02 km/h
+Desnivel positivo: 48.3 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-06-10
 Actividad: Anar al pis dels iaios (Ride)
 Distancia: 25.45 km
@@ -375,29 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 82.6 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-03-10
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 105.2 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-03-08
-Actividad: Morning workout ☀️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 134.7 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-03-05
-Actividad: Caminata via verda canal de la rapita (Walk)
-Distancia: 6.57 km
-Tiempo en movimiento: 79.43 min
-Velocidad media: 4.96 km/h
-Desnivel positivo: 0.0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
