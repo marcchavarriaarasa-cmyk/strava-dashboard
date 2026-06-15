@@ -1,8 +1,24 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-06-14
+Actividad: Casa Alcanar - Casa Amposta (Ride)
+Distancia: 17.61 km
+Tiempo en movimiento: 44.17 min
+Velocidad media: 23.92 km/h
+Desnivel positivo: 37.9 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-14
+Actividad: Casa Amposta - casa Alcanar (Ride)
+Distancia: 17.63 km
+Tiempo en movimiento: 51.0 min
+Velocidad media: 20.74 km/h
+Desnivel positivo: 37.0 m
+Frecuencia cardíaca media: 148.4 bpm
+------------------------------
 Fecha: 2026-06-12
-Actividad: Tornasa  gympro corrents (Run)
+Actividad: Tornada  gympro corrents (Run)
 Distancia: 2.59 km
 Tiempo en movimiento: 12.92 min
 Velocidad media: 12.01 km/h
@@ -381,22 +397,6 @@ Fecha: 2026-03-25
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
 Tiempo en movimiento: 86.22 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-03-21
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 66.58 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-03-12
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 82.6 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
