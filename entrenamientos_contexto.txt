@@ -1,6 +1,54 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-06-17
+Actividad: Tornada Gympro (Run)
+Distancia: 2.27 km
+Tiempo en movimiento: 12.08 min
+Velocidad media: 11.25 km/h
+Desnivel positivo: 4.6 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-17
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 76.43 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-17
+Actividad: Anada Gympro (Run)
+Distancia: 2.23 km
+Tiempo en movimiento: 12.27 min
+Velocidad media: 10.9 km/h
+Desnivel positivo: 47.2 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-16
+Actividad: Tornada gympro (Run)
+Distancia: 2.57 km
+Tiempo en movimiento: 14.42 min
+Velocidad media: 10.68 km/h
+Desnivel positivo: 6.0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-16
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 56.63 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-16
+Actividad: Anada gympro (Run)
+Distancia: 2.34 km
+Tiempo en movimiento: 13.45 min
+Velocidad media: 10.43 km/h
+Desnivel positivo: 47.2 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-06-14
 Actividad: Casa Alcanar - Casa Amposta (Ride)
 Distancia: 17.61 km
@@ -349,54 +397,6 @@ Fecha: 2026-04-08
 Actividad: Afternoon workout 💪 (WeightTraining)
 Distancia: 0.0 km
 Tiempo en movimiento: 98.15 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-04-06
-Actividad: Via verda (solo) (Run)
-Distancia: 10.27 km
-Tiempo en movimiento: 58.25 min
-Velocidad media: 10.58 km/h
-Desnivel positivo: 61.1 m
-Frecuencia cardíaca media: 170.6 bpm
-------------------------------
-Fecha: 2026-04-04
-Actividad: Estreno Via verda (Walk)
-Distancia: 4.03 km
-Tiempo en movimiento: 48.17 min
-Velocidad media: 5.02 km/h
-Desnivel positivo: 31.2 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-04-02
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 76.45 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-03-31
-Actividad: Primera carrera post cirugia (Run)
-Distancia: 7.37 km
-Tiempo en movimiento: 42.03 min
-Velocidad media: 10.52 km/h
-Desnivel positivo: 0.0 m
-Frecuencia cardíaca media: 162.1 bpm
-------------------------------
-Fecha: 2026-03-26
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 54.3 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-03-25
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 86.22 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
