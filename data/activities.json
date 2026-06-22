@@ -23,7 +23,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 0,
-    "kudos_count": 0,
+    "kudos_count": 1,
     "comment_count": 0,
     "athlete_count": 1,
     "photo_count": 0,
@@ -4039,7 +4039,7 @@
     "achievement_count": 46,
     "kudos_count": 22,
     "comment_count": 1,
-    "athlete_count": 190,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a17402772375",
@@ -4475,7 +4475,7 @@
     "achievement_count": 30,
     "kudos_count": 10,
     "comment_count": 0,
-    "athlete_count": 37,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a17347409698",
@@ -4792,7 +4792,7 @@
     "achievement_count": 0,
     "kudos_count": 3,
     "comment_count": 0,
-    "athlete_count": 2,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a17262260857",
@@ -5192,7 +5192,7 @@
     "achievement_count": 0,
     "kudos_count": 2,
     "comment_count": 0,
-    "athlete_count": 2,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a17095424915",
@@ -5311,7 +5311,7 @@
     "achievement_count": 10,
     "kudos_count": 5,
     "comment_count": 0,
-    "athlete_count": 12,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a17031169396",
@@ -5430,7 +5430,7 @@
     "achievement_count": 2,
     "kudos_count": 4,
     "comment_count": 0,
-    "athlete_count": 2,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16957662356",
@@ -5560,7 +5560,7 @@
     "achievement_count": 0,
     "kudos_count": 7,
     "comment_count": 1,
-    "athlete_count": 20,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16896004625",
@@ -5807,7 +5807,7 @@
     "achievement_count": 0,
     "kudos_count": 5,
     "comment_count": 0,
-    "athlete_count": 2,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16682371789",
@@ -5926,7 +5926,7 @@
     "achievement_count": 5,
     "kudos_count": 7,
     "comment_count": 0,
-    "athlete_count": 17,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16625497300",
@@ -6045,7 +6045,7 @@
     "achievement_count": 16,
     "kudos_count": 18,
     "comment_count": 0,
-    "athlete_count": 469,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a16606825895",
