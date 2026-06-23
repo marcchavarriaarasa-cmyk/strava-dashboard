@@ -1,6 +1,30 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-06-22
+Actividad: Tornada Gympro (Run)
+Distancia: 1.72 km
+Tiempo en movimiento: 8.42 min
+Velocidad media: 12.29 km/h
+Desnivel positivo: 4.3 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-22
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 70.17 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-22
+Actividad: Anada Gympro (Run)
+Distancia: 2.22 km
+Tiempo en movimiento: 12.23 min
+Velocidad media: 10.89 km/h
+Desnivel positivo: 47.1 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-06-20
 Actividad: Tornada Gympro (Run)
 Distancia: 1.66 km
@@ -376,28 +400,4 @@ Tiempo en movimiento: 51.53 min
 Velocidad media: 9.99 km/h
 Desnivel positivo: 19.7 m
 Frecuencia cardíaca media: 166.3 bpm
-------------------------------
-Fecha: 2026-04-20
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 74.92 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-04-19
-Actividad: Morning workout ☀️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 77.7 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-04-18
-Actividad: RumClub CasaCupra amb Pol Rovira (Run)
-Distancia: 6.24 km
-Tiempo en movimiento: 40.18 min
-Velocidad media: 9.31 km/h
-Desnivel positivo: 14.7 m
-Frecuencia cardíaca media: 145.6 bpm
 ------------------------------
