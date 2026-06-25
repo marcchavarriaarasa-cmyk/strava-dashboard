@@ -3,6 +3,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Casa Amposta - casa Alcanar",
@@ -15,6 +16,7 @@
     "workout_type": 12,
     "device_name": "Strava App",
     "id": 19038005314,
+    "id_str": "19038005314",
     "start_date": "2026-06-23T15:51:36Z",
     "start_date_local": "2026-06-23T17:51:36Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -23,7 +25,7 @@
     "location_state": null,
     "location_country": null,
     "achievement_count": 1,
-    "kudos_count": 2,
+    "kudos_count": 4,
     "comment_count": 0,
     "athlete_count": 1,
     "photo_count": 0,
@@ -72,6 +74,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Tornada Gympro",
@@ -84,6 +87,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 19025377536,
+    "id_str": "19025377536",
     "start_date": "2026-06-22T18:05:03Z",
     "start_date_local": "2026-06-22T20:05:03Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -136,6 +140,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -148,6 +153,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 19025132305,
+    "id_str": "19025132305",
     "start_date": "2026-06-22T16:45:28Z",
     "start_date_local": "2026-06-22T18:45:28Z",
     "timezone": "(GMT+02:00) Africa/Blantyre",
@@ -191,6 +197,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Anada Gympro",
@@ -203,6 +210,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 19024179521,
+    "id_str": "19024179521",
     "start_date": "2026-06-22T16:27:37Z",
     "start_date_local": "2026-06-22T18:27:37Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -255,6 +263,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Tornada Gympro",
@@ -267,6 +276,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 19000328833,
+    "id_str": "19000328833",
     "start_date": "2026-06-20T17:39:41Z",
     "start_date_local": "2026-06-20T19:39:41Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -318,6 +328,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -330,6 +341,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 19000228972,
+    "id_str": "19000228972",
     "start_date": "2026-06-20T16:02:56Z",
     "start_date_local": "2026-06-20T18:02:56Z",
     "timezone": "(GMT+02:00) Africa/Blantyre",
@@ -373,6 +385,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Anada gympro",
@@ -385,6 +398,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 18999100727,
+    "id_str": "18999100727",
     "start_date": "2026-06-20T15:47:41Z",
     "start_date_local": "2026-06-20T17:47:41Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -436,6 +450,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Via verda",
@@ -448,6 +463,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 18975392078,
+    "id_str": "18975392078",
     "start_date": "2026-06-18T18:19:31Z",
     "start_date_local": "2026-06-18T20:19:31Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -500,6 +516,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Tornada Gympro",
@@ -512,6 +529,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 18961553415,
+    "id_str": "18961553415",
     "start_date": "2026-06-17T18:00:09Z",
     "start_date_local": "2026-06-17T20:00:09Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -564,6 +582,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -576,6 +595,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18961324868,
+    "id_str": "18961324868",
     "start_date": "2026-06-17T16:41:45Z",
     "start_date_local": "2026-06-17T18:41:45Z",
     "timezone": "(GMT+02:00) Africa/Blantyre",
@@ -619,6 +639,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Anada Gympro",
@@ -631,6 +652,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 18960134769,
+    "id_str": "18960134769",
     "start_date": "2026-06-17T16:24:53Z",
     "start_date_local": "2026-06-17T18:24:53Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -683,6 +705,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Tornada gympro",
@@ -695,6 +718,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 18946662090,
+    "id_str": "18946662090",
     "start_date": "2026-06-16T17:22:01Z",
     "start_date_local": "2026-06-16T19:22:01Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -747,6 +771,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -759,6 +784,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18946401707,
+    "id_str": "18946401707",
     "start_date": "2026-06-16T16:25:11Z",
     "start_date_local": "2026-06-16T18:25:11Z",
     "timezone": "(GMT+02:00) Africa/Blantyre",
@@ -802,6 +828,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Anada gympro",
@@ -814,6 +841,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 18945458952,
+    "id_str": "18945458952",
     "start_date": "2026-06-16T16:06:37Z",
     "start_date_local": "2026-06-16T18:06:37Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -866,6 +894,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Casa Alcanar - Casa Amposta",
@@ -878,6 +907,7 @@
     "workout_type": 12,
     "device_name": "Strava App",
     "id": 18920792786,
+    "id_str": "18920792786",
     "start_date": "2026-06-14T16:53:40Z",
     "start_date_local": "2026-06-14T18:53:40Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -933,6 +963,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Casa Amposta - casa Alcanar",
@@ -945,6 +976,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 18915623136,
+    "id_str": "18915623136",
     "start_date": "2026-06-14T10:23:51Z",
     "start_date_local": "2026-06-14T12:23:51Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -1002,6 +1034,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Tornada  gympro corrents",
@@ -1014,6 +1047,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 18893953685,
+    "id_str": "18893953685",
     "start_date": "2026-06-12T18:10:27Z",
     "start_date_local": "2026-06-12T20:10:27Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -1066,6 +1100,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -1078,6 +1113,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18893765416,
+    "id_str": "18893765416",
     "start_date": "2026-06-12T16:36:12Z",
     "start_date_local": "2026-06-12T18:36:12Z",
     "timezone": "(GMT+02:00) Africa/Blantyre",
@@ -1121,6 +1157,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Anada Gympro corrents",
@@ -1133,6 +1170,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 18892685293,
+    "id_str": "18892685293",
     "start_date": "2026-06-12T16:17:24Z",
     "start_date_local": "2026-06-12T18:17:24Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -1185,6 +1223,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Anar al pis dels iaios",
@@ -1197,6 +1236,7 @@
     "workout_type": 12,
     "device_name": "Strava App",
     "id": 18868599961,
+    "id_str": "18868599961",
     "start_date": "2026-06-10T16:11:25Z",
     "start_date_local": "2026-06-10T18:11:25Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -1254,6 +1294,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Tornada gympro",
@@ -1266,6 +1307,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 18855082149,
+    "id_str": "18855082149",
     "start_date": "2026-06-09T18:44:34Z",
     "start_date_local": "2026-06-09T20:44:34Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -1318,6 +1360,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -1330,6 +1373,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18854700953,
+    "id_str": "18854700953",
     "start_date": "2026-06-09T17:29:31Z",
     "start_date_local": "2026-06-09T19:29:31Z",
     "timezone": "(GMT+02:00) Africa/Blantyre",
@@ -1373,6 +1417,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Anada gympro",
@@ -1385,6 +1430,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 18853579542,
+    "id_str": "18853579542",
     "start_date": "2026-06-09T17:10:19Z",
     "start_date_local": "2026-06-09T19:10:19Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -1437,6 +1483,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Tornada corrents del gympro",
@@ -1449,6 +1496,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 18787202837,
+    "id_str": "18787202837",
     "start_date": "2026-06-04T17:43:36Z",
     "start_date_local": "2026-06-04T19:43:36Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -1501,6 +1549,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -1513,6 +1562,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18786996266,
+    "id_str": "18786996266",
     "start_date": "2026-06-04T16:03:52Z",
     "start_date_local": "2026-06-04T18:03:52Z",
     "timezone": "(GMT+02:00) Africa/Blantyre",
@@ -1556,6 +1606,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Anada corrents al gympro",
@@ -1568,6 +1619,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 18785615424,
+    "id_str": "18785615424",
     "start_date": "2026-06-04T15:48:45Z",
     "start_date_local": "2026-06-04T17:48:45Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -1620,6 +1672,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Tornada del gym",
@@ -1632,6 +1685,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 18774538825,
+    "id_str": "18774538825",
     "start_date": "2026-06-03T19:04:00Z",
     "start_date_local": "2026-06-03T21:04:00Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -1684,6 +1738,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -1696,6 +1751,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18774317401,
+    "id_str": "18774317401",
     "start_date": "2026-06-03T17:52:49Z",
     "start_date_local": "2026-06-03T19:52:49Z",
     "timezone": "(GMT+02:00) Africa/Blantyre",
@@ -1739,6 +1795,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Anar al gym",
@@ -1751,6 +1808,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 18773095899,
+    "id_str": "18773095899",
     "start_date": "2026-06-03T17:25:09Z",
     "start_date_local": "2026-06-03T19:25:09Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -1803,6 +1861,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Ultim b3tterRunClub \ud83e\udd72",
@@ -1815,6 +1874,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 18656901766,
+    "id_str": "18656901766",
     "start_date": "2026-05-26T05:16:51Z",
     "start_date_local": "2026-05-26T07:16:51Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -1869,6 +1929,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "DESAFIO GUERREROS 6k",
@@ -1881,6 +1942,7 @@
     "workout_type": 1,
     "device_name": "Samsung Galaxy Watch5",
     "id": 18634470099,
+    "id_str": "18634470099",
     "start_date": "2026-05-24T09:36:59Z",
     "start_date_local": "2026-05-24T11:36:59Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -1935,6 +1997,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -1947,6 +2010,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18624408949,
+    "id_str": "18624408949",
     "start_date": "2026-05-23T16:01:55Z",
     "start_date_local": "2026-05-23T18:01:55Z",
     "timezone": "(GMT+02:00) Africa/Blantyre",
@@ -1990,6 +2054,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Activaci\u00f3 Desafio Guerreros",
@@ -2002,6 +2067,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 18623127316,
+    "id_str": "18623127316",
     "start_date": "2026-05-23T14:18:19Z",
     "start_date_local": "2026-05-23T16:18:19Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -2054,6 +2120,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -2066,6 +2133,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18584908831,
+    "id_str": "18584908831",
     "start_date": "2026-05-20T15:15:43Z",
     "start_date_local": "2026-05-20T17:15:43Z",
     "timezone": "(GMT+02:00) Africa/Blantyre",
@@ -2109,6 +2177,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "b3tterRunClub",
@@ -2121,6 +2190,7 @@
     "workout_type": 0,
     "device_name": "Strava App",
     "id": 18563770912,
+    "id_str": "18563770912",
     "start_date": "2026-05-19T05:25:30Z",
     "start_date_local": "2026-05-19T07:25:30Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -2175,6 +2245,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "De cam\u00ed al pis",
@@ -2186,6 +2257,7 @@
     "sport_type": "Walk",
     "device_name": "Strava App",
     "id": 18556937490,
+    "id_str": "18556937490",
     "start_date": "2026-05-18T15:54:33Z",
     "start_date_local": "2026-05-18T17:54:33Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -2237,6 +2309,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Amposta - Tortosa (Via Verda)",
@@ -2249,6 +2322,7 @@
     "workout_type": 12,
     "device_name": "Strava App",
     "id": 18539008831,
+    "id_str": "18539008831",
     "start_date": "2026-05-17T07:00:11Z",
     "start_date_local": "2026-05-17T09:00:11Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -2304,6 +2378,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -2316,6 +2391,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18505578825,
+    "id_str": "18505578825",
     "start_date": "2026-05-14T14:05:00Z",
     "start_date_local": "2026-05-14T16:05:00Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -2358,6 +2434,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning workout \u2600\ufe0f",
@@ -2370,6 +2447,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18499698109,
+    "id_str": "18499698109",
     "start_date": "2026-05-13T14:37:24Z",
     "start_date_local": "2026-05-13T16:37:24Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -2412,6 +2490,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "b3tterRunClub",
@@ -2424,6 +2503,7 @@
     "workout_type": 0,
     "device_name": "Strava App",
     "id": 18473000933,
+    "id_str": "18473000933",
     "start_date": "2026-05-12T05:15:57Z",
     "start_date_local": "2026-05-12T07:15:57Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -2478,6 +2558,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Cursa Corte Ingles 2026",
@@ -2490,6 +2571,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 18447888240,
+    "id_str": "18447888240",
     "start_date": "2026-05-10T07:07:56Z",
     "start_date_local": "2026-05-10T09:07:56Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -2544,6 +2626,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Calentament Cursa Corte Ingles",
@@ -2556,6 +2639,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 18447219218,
+    "id_str": "18447219218",
     "start_date": "2026-05-10T06:19:15Z",
     "start_date_local": "2026-05-10T08:19:15Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -2610,6 +2694,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -2622,6 +2707,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18413356877,
+    "id_str": "18413356877",
     "start_date": "2026-05-07T14:08:07Z",
     "start_date_local": "2026-05-07T16:08:07Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -2664,6 +2750,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Casa Cupra Club Run 8k",
@@ -2676,6 +2763,7 @@
     "workout_type": 0,
     "device_name": "Strava App",
     "id": 18389106654,
+    "id_str": "18389106654",
     "start_date": "2026-05-05T17:16:07Z",
     "start_date_local": "2026-05-05T19:16:07Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -2731,6 +2819,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Via verda en la mama",
@@ -2743,6 +2832,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 18320284552,
+    "id_str": "18320284552",
     "start_date": "2026-04-30T14:32:38Z",
     "start_date_local": "2026-04-30T16:32:38Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -2798,6 +2888,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -2810,6 +2901,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18309758674,
+    "id_str": "18309758674",
     "start_date": "2026-04-29T17:21:03Z",
     "start_date_local": "2026-04-29T19:21:03Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -2852,6 +2944,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -2864,6 +2957,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18296662750,
+    "id_str": "18296662750",
     "start_date": "2026-04-28T17:45:36Z",
     "start_date_local": "2026-04-28T19:45:36Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -2906,6 +3000,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Tenis",
@@ -2918,6 +3013,7 @@
     "workout_type": null,
     "device_name": "Samsung Galaxy Watch5",
     "id": 18263461658,
+    "id_str": "18263461658",
     "start_date": "2026-04-26T09:37:39Z",
     "start_date_local": "2026-04-26T11:37:39Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -2972,6 +3068,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Diagonal Sant Jordi",
@@ -2984,6 +3081,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 18226894852,
+    "id_str": "18226894852",
     "start_date": "2026-04-23T14:21:18Z",
     "start_date_local": "2026-04-23T16:21:18Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3039,6 +3137,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -3051,6 +3150,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18213532934,
+    "id_str": "18213532934",
     "start_date": "2026-04-22T14:36:19Z",
     "start_date_local": "2026-04-22T16:36:19Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3093,6 +3193,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "b3tterRunClub",
@@ -3105,6 +3206,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 18193211069,
+    "id_str": "18193211069",
     "start_date": "2026-04-21T05:21:23Z",
     "start_date_local": "2026-04-21T07:21:23Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3160,6 +3262,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -3172,6 +3275,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18185921187,
+    "id_str": "18185921187",
     "start_date": "2026-04-20T15:04:26Z",
     "start_date_local": "2026-04-20T17:04:26Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3214,6 +3318,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning workout \u2600\ufe0f",
@@ -3226,6 +3331,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18169763368,
+    "id_str": "18169763368",
     "start_date": "2026-04-19T09:22:25Z",
     "start_date_local": "2026-04-19T11:22:25Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3268,6 +3374,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "RumClub CasaCupra amb Pol Rovira",
@@ -3280,6 +3387,7 @@
     "workout_type": 0,
     "device_name": "Strava App",
     "id": 18155500449,
+    "id_str": "18155500449",
     "start_date": "2026-04-18T09:25:39Z",
     "start_date_local": "2026-04-18T11:25:39Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3335,6 +3443,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Caminata chill via verda",
@@ -3346,6 +3455,7 @@
     "sport_type": "Walk",
     "device_name": "Strava App",
     "id": 18120062662,
+    "id_str": "18120062662",
     "start_date": "2026-04-15T14:58:45Z",
     "start_date_local": "2026-04-15T16:58:45Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3401,6 +3511,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -3413,6 +3524,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18081859274,
+    "id_str": "18081859274",
     "start_date": "2026-04-12T14:19:10Z",
     "start_date_local": "2026-04-12T16:19:10Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3455,6 +3567,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -3467,6 +3580,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18043670385,
+    "id_str": "18043670385",
     "start_date": "2026-04-09T16:34:56Z",
     "start_date_local": "2026-04-09T18:34:56Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3509,6 +3623,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -3521,6 +3636,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 18028642655,
+    "id_str": "18028642655",
     "start_date": "2026-04-08T14:04:56Z",
     "start_date_local": "2026-04-08T16:04:56Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3563,6 +3679,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Via verda (solo)",
@@ -3575,6 +3692,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 18001696129,
+    "id_str": "18001696129",
     "start_date": "2026-04-06T14:36:25Z",
     "start_date_local": "2026-04-06T16:36:25Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3630,6 +3748,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Estreno Via verda",
@@ -3641,6 +3760,7 @@
     "sport_type": "Walk",
     "device_name": "Strava App",
     "id": 17977619252,
+    "id_str": "17977619252",
     "start_date": "2026-04-04T15:32:10Z",
     "start_date_local": "2026-04-04T17:32:10Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3694,6 +3814,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -3706,6 +3827,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17952037258,
+    "id_str": "17952037258",
     "start_date": "2026-04-02T15:19:39Z",
     "start_date_local": "2026-04-02T17:19:39Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3748,6 +3870,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Primera carrera post cirugia",
@@ -3760,6 +3883,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 17927462161,
+    "id_str": "17927462161",
     "start_date": "2026-03-31T16:20:18Z",
     "start_date_local": "2026-03-31T18:20:18Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3815,6 +3939,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -3827,6 +3952,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17867761270,
+    "id_str": "17867761270",
     "start_date": "2026-03-26T16:42:57Z",
     "start_date_local": "2026-03-26T17:42:57Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3869,6 +3995,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -3881,6 +4008,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17856346702,
+    "id_str": "17856346702",
     "start_date": "2026-03-25T16:51:35Z",
     "start_date_local": "2026-03-25T17:51:35Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3923,6 +4051,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -3935,6 +4064,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17806492073,
+    "id_str": "17806492073",
     "start_date": "2026-03-21T16:35:33Z",
     "start_date_local": "2026-03-21T17:35:33Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -3977,6 +4107,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -3989,6 +4120,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17699530141,
+    "id_str": "17699530141",
     "start_date": "2026-03-12T16:35:24Z",
     "start_date_local": "2026-03-12T17:35:24Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4031,6 +4163,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -4043,6 +4176,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17674489933,
+    "id_str": "17674489933",
     "start_date": "2026-03-10T15:11:05Z",
     "start_date_local": "2026-03-10T16:11:05Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4085,6 +4219,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning workout \u2600\ufe0f",
@@ -4097,6 +4232,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17646574190,
+    "id_str": "17646574190",
     "start_date": "2026-03-08T09:10:50Z",
     "start_date_local": "2026-03-08T10:10:50Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4139,6 +4275,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Caminata via verda canal de la rapita",
@@ -4150,6 +4287,7 @@
     "sport_type": "Walk",
     "device_name": "Strava App",
     "id": 17615507705,
+    "id_str": "17615507705",
     "start_date": "2026-03-05T16:03:17Z",
     "start_date_local": "2026-03-05T17:03:17Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4203,6 +4341,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Via verda",
@@ -4214,6 +4353,7 @@
     "sport_type": "Walk",
     "device_name": "Strava App",
     "id": 17462902752,
+    "id_str": "17462902752",
     "start_date": "2026-02-20T15:29:16Z",
     "start_date_local": "2026-02-20T16:29:16Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4269,6 +4409,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Mitja Marat\u00f3 Barcelona 2026",
@@ -4281,6 +4422,7 @@
     "workout_type": 2,
     "device_name": "Strava App",
     "id": 17402772375,
+    "id_str": "17402772375",
     "start_date": "2026-02-15T07:57:34Z",
     "start_date_local": "2026-02-15T08:57:34Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4336,6 +4478,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Calentament mitja bcn'26",
@@ -4348,6 +4491,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 17401983743,
+    "id_str": "17401983743",
     "start_date": "2026-02-15T07:17:00Z",
     "start_date_local": "2026-02-15T08:17:00Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4403,6 +4547,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Activaci\u00f3 pre-mitja (tornada)",
@@ -4415,6 +4560,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 17396904991,
+    "id_str": "17396904991",
     "start_date": "2026-02-14T16:26:37Z",
     "start_date_local": "2026-02-14T17:26:37Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4470,6 +4616,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Estiraments pre mitja bcn '26",
@@ -4482,6 +4629,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 17396750659,
+    "id_str": "17396750659",
     "start_date": "2026-02-14T15:33:51Z",
     "start_date_local": "2026-02-14T16:33:51Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4530,6 +4678,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Activaci\u00f3 pre-mitja (anada)",
@@ -4542,6 +4691,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 17396087320,
+    "id_str": "17396087320",
     "start_date": "2026-02-14T15:26:43Z",
     "start_date_local": "2026-02-14T16:26:43Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4597,6 +4747,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -4609,6 +4760,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17375107145,
+    "id_str": "17375107145",
     "start_date": "2026-02-12T15:39:30Z",
     "start_date_local": "2026-02-12T16:39:30Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4651,6 +4803,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -4663,6 +4816,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17364868419,
+    "id_str": "17364868419",
     "start_date": "2026-02-11T16:14:20Z",
     "start_date_local": "2026-02-11T17:14:20Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4705,6 +4859,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "B3TTER PRE-MITJA BCN '26",
@@ -4717,6 +4872,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 17347409698,
+    "id_str": "17347409698",
     "start_date": "2026-02-10T06:19:20Z",
     "start_date_local": "2026-02-10T07:19:20Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4772,6 +4928,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Proban juguet nou (pulsometro)",
@@ -4783,6 +4940,7 @@
     "sport_type": "Walk",
     "device_name": "Strava App",
     "id": 17331544641,
+    "id_str": "17331544641",
     "start_date": "2026-02-08T16:33:32Z",
     "start_date_local": "2026-02-08T17:33:32Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4838,6 +4996,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Diagonal per a variar",
@@ -4850,6 +5009,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 17319292738,
+    "id_str": "17319292738",
     "start_date": "2026-02-07T15:26:14Z",
     "start_date_local": "2026-02-07T16:26:14Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4903,6 +5063,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -4915,6 +5076,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17308598678,
+    "id_str": "17308598678",
     "start_date": "2026-02-06T15:44:17Z",
     "start_date_local": "2026-02-06T16:44:17Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -4957,6 +5119,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Diagonal Chill",
@@ -4969,6 +5132,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 17296365366,
+    "id_str": "17296365366",
     "start_date": "2026-02-05T14:44:09Z",
     "start_date_local": "2026-02-05T15:44:09Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5022,6 +5186,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Pel Delta",
@@ -5034,6 +5199,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 17262260857,
+    "id_str": "17262260857",
     "start_date": "2026-02-02T15:20:05Z",
     "start_date_local": "2026-02-02T16:20:05Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5087,6 +5253,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -5099,6 +5266,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17230241204,
+    "id_str": "17230241204",
     "start_date": "2026-01-30T17:39:09Z",
     "start_date_local": "2026-01-30T18:39:09Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5141,6 +5309,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon Run",
@@ -5153,6 +5322,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 17206929419,
+    "id_str": "17206929419",
     "start_date": "2026-01-28T15:23:52Z",
     "start_date_local": "2026-01-28T16:23:52Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5206,6 +5376,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning workout \u2600\ufe0f",
@@ -5218,6 +5389,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17192652067,
+    "id_str": "17192652067",
     "start_date": "2026-01-27T10:50:39Z",
     "start_date_local": "2026-01-27T11:50:39Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5260,6 +5432,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -5272,6 +5445,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17174688046,
+    "id_str": "17174688046",
     "start_date": "2026-01-25T15:03:58Z",
     "start_date_local": "2026-01-25T16:03:58Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5314,6 +5488,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -5326,6 +5501,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17140330912,
+    "id_str": "17140330912",
     "start_date": "2026-01-22T15:13:33Z",
     "start_date_local": "2026-01-22T16:13:33Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5368,6 +5544,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -5380,6 +5557,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17120106030,
+    "id_str": "17120106030",
     "start_date": "2026-01-20T18:33:16Z",
     "start_date_local": "2026-01-20T19:33:16Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5422,6 +5600,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Via verda Canal",
@@ -5434,6 +5613,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 17095424915,
+    "id_str": "17095424915",
     "start_date": "2026-01-18T15:41:34Z",
     "start_date_local": "2026-01-18T16:41:34Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5487,6 +5667,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -5499,6 +5680,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17048255843,
+    "id_str": "17048255843",
     "start_date": "2026-01-14T14:19:47Z",
     "start_date_local": "2026-01-14T15:19:47Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5541,6 +5723,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "B3TTERRUNCLUB",
@@ -5553,6 +5736,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 17031169396,
+    "id_str": "17031169396",
     "start_date": "2026-01-13T06:37:53Z",
     "start_date_local": "2026-01-13T07:37:53Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5606,6 +5790,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -5618,6 +5803,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 17024806604,
+    "id_str": "17024806604",
     "start_date": "2026-01-12T15:13:15Z",
     "start_date_local": "2026-01-12T16:13:15Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5660,6 +5846,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon Run",
@@ -5672,6 +5859,7 @@
     "workout_type": null,
     "device_name": "Samsung Galaxy Watch5",
     "id": 16957662356,
+    "id_str": "16957662356",
     "start_date": "2026-01-06T15:04:28Z",
     "start_date_local": "2026-01-06T16:04:28Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5726,6 +5914,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Via verda",
@@ -5738,6 +5927,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 16909690349,
+    "id_str": "16909690349",
     "start_date": "2026-01-02T08:03:39Z",
     "start_date_local": "2026-01-02T09:03:39Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5790,6 +5980,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "San Silvestre Amposta '25",
@@ -5802,6 +5993,7 @@
     "workout_type": 1,
     "device_name": "Strava App",
     "id": 16896004625,
+    "id_str": "16896004625",
     "start_date": "2025-12-31T15:59:23Z",
     "start_date_local": "2025-12-31T16:59:23Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5855,6 +6047,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Pista atletisme amb familia Zhao",
@@ -5867,6 +6060,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 16881292973,
+    "id_str": "16881292973",
     "start_date": "2025-12-30T08:20:09Z",
     "start_date_local": "2025-12-30T09:20:09Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5919,6 +6113,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Ruta circular cordillera serra del Montsia",
@@ -5930,6 +6125,7 @@
     "sport_type": "Hike",
     "device_name": "Strava App",
     "id": 16812632396,
+    "id_str": "16812632396",
     "start_date": "2025-12-22T09:33:29Z",
     "start_date_local": "2025-12-22T10:33:29Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -5983,6 +6179,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -5995,6 +6192,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16760389105,
+    "id_str": "16760389105",
     "start_date": "2025-12-16T17:14:09Z",
     "start_date_local": "2025-12-16T18:14:09Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6037,6 +6235,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Cam\u00ed Casa de Fusta",
@@ -6049,6 +6248,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 16682371789,
+    "id_str": "16682371789",
     "start_date": "2025-12-08T08:24:07Z",
     "start_date_local": "2025-12-08T09:24:07Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6102,6 +6302,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -6114,6 +6315,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16649613935,
+    "id_str": "16649613935",
     "start_date": "2025-12-04T15:55:35Z",
     "start_date_local": "2025-12-04T16:55:35Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6156,6 +6358,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Recuperaci\u00f3 post cursa",
@@ -6168,6 +6371,7 @@
     "workout_type": 0,
     "device_name": "Strava App",
     "id": 16625497300,
+    "id_str": "16625497300",
     "start_date": "2025-12-02T06:39:53Z",
     "start_date_local": "2025-12-02T07:39:53Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6221,6 +6425,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -6233,6 +6438,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16620354136,
+    "id_str": "16620354136",
     "start_date": "2025-12-01T15:54:14Z",
     "start_date_local": "2025-12-01T16:54:14Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6275,6 +6481,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Jean Bouin '2025",
@@ -6287,6 +6494,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 16606825895,
+    "id_str": "16606825895",
     "start_date": "2025-11-30T08:01:15Z",
     "start_date_local": "2025-11-30T09:01:15Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6340,6 +6548,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Recollir dorsal jean bouin",
@@ -6352,6 +6561,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 16589853618,
+    "id_str": "16589853618",
     "start_date": "2025-11-28T10:11:19Z",
     "start_date_local": "2025-11-28T11:11:19Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6405,6 +6615,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -6417,6 +6628,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16574258513,
+    "id_str": "16574258513",
     "start_date": "2025-11-26T15:31:42Z",
     "start_date_local": "2025-11-26T16:31:42Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6459,6 +6671,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "B3TTERRUNCLUB",
@@ -6471,6 +6684,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 16559057801,
+    "id_str": "16559057801",
     "start_date": "2025-11-25T06:16:46Z",
     "start_date_local": "2025-11-25T07:16:46Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6523,6 +6737,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Portell de l'infern i Salt del Robert",
@@ -6534,6 +6749,7 @@
     "sport_type": "Hike",
     "device_name": "Strava App",
     "id": 16533085799,
+    "id_str": "16533085799",
     "start_date": "2025-11-22T07:12:23Z",
     "start_date_local": "2025-11-22T08:12:23Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6586,6 +6802,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "B3TTERRUNCLUB",
@@ -6598,6 +6815,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 16491698699,
+    "id_str": "16491698699",
     "start_date": "2025-11-18T06:37:53Z",
     "start_date_local": "2025-11-18T07:37:53Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6650,6 +6868,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -6662,6 +6881,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16447731143,
+    "id_str": "16447731143",
     "start_date": "2025-11-13T15:59:32Z",
     "start_date_local": "2025-11-13T16:59:32Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6704,6 +6924,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -6716,6 +6937,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16438255420,
+    "id_str": "16438255420",
     "start_date": "2025-11-12T16:56:06Z",
     "start_date_local": "2025-11-12T17:56:06Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6758,6 +6980,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "B3TTERRUNCLUB",
@@ -6770,6 +6993,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 16421003630,
+    "id_str": "16421003630",
     "start_date": "2025-11-11T06:16:14Z",
     "start_date_local": "2025-11-11T07:16:14Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6822,6 +7046,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -6834,6 +7059,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16415313851,
+    "id_str": "16415313851",
     "start_date": "2025-11-10T15:22:36Z",
     "start_date_local": "2025-11-10T16:22:36Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6876,6 +7102,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Cursa dela bombers 2025",
@@ -6888,6 +7115,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 16401109034,
+    "id_str": "16401109034",
     "start_date": "2025-11-09T08:12:08Z",
     "start_date_local": "2025-11-09T09:12:08Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6941,6 +7169,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -6953,6 +7182,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16396304894,
+    "id_str": "16396304894",
     "start_date": "2025-11-08T16:15:23Z",
     "start_date_local": "2025-11-08T17:15:23Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -6995,6 +7225,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Activacio PreCursa dels bombers",
@@ -7007,6 +7238,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 16394987934,
+    "id_str": "16394987934",
     "start_date": "2025-11-08T15:05:44Z",
     "start_date_local": "2025-11-08T16:05:44Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7060,6 +7292,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -7072,6 +7305,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16376247128,
+    "id_str": "16376247128",
     "start_date": "2025-11-06T16:32:27Z",
     "start_date_local": "2025-11-06T17:32:27Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7114,6 +7348,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -7126,6 +7361,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16354346858,
+    "id_str": "16354346858",
     "start_date": "2025-11-04T15:42:54Z",
     "start_date_local": "2025-11-04T16:42:54Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7168,6 +7404,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "B3tterRunClub",
@@ -7180,6 +7417,7 @@
     "workout_type": 0,
     "device_name": "Strava App",
     "id": 16348900730,
+    "id_str": "16348900730",
     "start_date": "2025-11-04T06:17:07Z",
     "start_date_local": "2025-11-04T07:17:07Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7233,6 +7471,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Caminata",
@@ -7244,6 +7483,7 @@
     "sport_type": "Walk",
     "device_name": "Strava App",
     "id": 16304754256,
+    "id_str": "16304754256",
     "start_date": "2025-10-30T16:08:04Z",
     "start_date_local": "2025-10-30T17:08:04Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7297,6 +7537,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning workout \u2600\ufe0f",
@@ -7309,6 +7550,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16301008475,
+    "id_str": "16301008475",
     "start_date": "2025-10-30T09:49:18Z",
     "start_date_local": "2025-10-30T10:49:18Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7351,6 +7593,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -7363,6 +7606,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16294326946,
+    "id_str": "16294326946",
     "start_date": "2025-10-29T16:31:26Z",
     "start_date_local": "2025-10-29T17:31:26Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7405,6 +7649,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -7417,6 +7662,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16234202585,
+    "id_str": "16234202585",
     "start_date": "2025-10-23T16:28:36Z",
     "start_date_local": "2025-10-23T18:28:36Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7459,6 +7705,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon Run",
@@ -7471,6 +7718,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 16233510056,
+    "id_str": "16233510056",
     "start_date": "2025-10-23T15:28:54Z",
     "start_date_local": "2025-10-23T17:28:54Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7523,6 +7771,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -7535,6 +7784,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16212080634,
+    "id_str": "16212080634",
     "start_date": "2025-10-21T14:02:34Z",
     "start_date_local": "2025-10-21T16:02:34Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7577,6 +7827,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "SPARTAN RACE SUPER 10K",
@@ -7589,6 +7840,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 16189696985,
+    "id_str": "16189696985",
     "start_date": "2025-10-19T08:49:14Z",
     "start_date_local": "2025-10-19T10:49:14Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7642,6 +7894,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -7654,6 +7907,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16168940974,
+    "id_str": "16168940974",
     "start_date": "2025-10-17T10:15:36Z",
     "start_date_local": "2025-10-17T12:15:36Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7696,6 +7950,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -7708,6 +7963,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16149800803,
+    "id_str": "16149800803",
     "start_date": "2025-10-15T13:24:44Z",
     "start_date_local": "2025-10-15T15:24:44Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7750,6 +8006,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -7762,6 +8019,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16140200926,
+    "id_str": "16140200926",
     "start_date": "2025-10-14T16:10:30Z",
     "start_date_local": "2025-10-14T18:10:30Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7804,6 +8062,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "B3tterRunClub",
@@ -7816,6 +8075,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 16134082664,
+    "id_str": "16134082664",
     "start_date": "2025-10-14T05:16:48Z",
     "start_date_local": "2025-10-14T07:16:48Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7868,6 +8128,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Canal 7k",
@@ -7880,6 +8141,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 16097650267,
+    "id_str": "16097650267",
     "start_date": "2025-10-10T16:29:05Z",
     "start_date_local": "2025-10-10T18:29:05Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7933,6 +8195,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -7945,6 +8208,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16075937764,
+    "id_str": "16075937764",
     "start_date": "2025-10-08T14:09:29Z",
     "start_date_local": "2025-10-08T16:09:29Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -7987,6 +8251,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -7999,6 +8264,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16052852465,
+    "id_str": "16052852465",
     "start_date": "2025-10-06T14:03:47Z",
     "start_date_local": "2025-10-06T16:03:47Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8041,6 +8307,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -8053,6 +8320,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 16000040452,
+    "id_str": "16000040452",
     "start_date": "2025-10-01T15:00:19Z",
     "start_date_local": "2025-10-01T17:00:19Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8095,6 +8363,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -8107,6 +8376,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15988945280,
+    "id_str": "15988945280",
     "start_date": "2025-09-30T15:50:26Z",
     "start_date_local": "2025-09-30T17:50:26Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8149,6 +8419,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "10k diagonal",
@@ -8161,6 +8432,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 15977188972,
+    "id_str": "15977188972",
     "start_date": "2025-09-29T15:42:25Z",
     "start_date_local": "2025-09-29T17:42:25Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8214,6 +8486,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Paseito pel canal",
@@ -8226,6 +8499,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 15955990718,
+    "id_str": "15955990718",
     "start_date": "2025-09-27T15:36:13Z",
     "start_date_local": "2025-09-27T17:36:13Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8281,6 +8555,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -8293,6 +8568,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15908794083,
+    "id_str": "15908794083",
     "start_date": "2025-09-23T10:23:39Z",
     "start_date_local": "2025-09-23T12:23:39Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8335,6 +8611,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -8347,6 +8624,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15899162809,
+    "id_str": "15899162809",
     "start_date": "2025-09-22T13:57:02Z",
     "start_date_local": "2025-09-22T15:57:02Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8389,6 +8667,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "7km Easy Run with Runna \u2705",
@@ -8401,6 +8680,7 @@
     "workout_type": null,
     "device_name": "Runna",
     "id": 15895625534,
+    "id_str": "15895625534",
     "start_date": "2025-09-22T07:06:06Z",
     "start_date_local": "2025-09-22T09:06:06Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8452,6 +8732,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -8464,6 +8745,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15856339447,
+    "id_str": "15856339447",
     "start_date": "2025-09-18T15:06:54Z",
     "start_date_local": "2025-09-18T17:06:54Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8506,6 +8788,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "BetterRunClub 1r del curs",
@@ -8518,6 +8801,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 15827017280,
+    "id_str": "15827017280",
     "start_date": "2025-09-16T05:24:47Z",
     "start_date_local": "2025-09-16T07:24:47Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8571,6 +8855,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "200 x 3   /   400x1",
@@ -8583,6 +8868,7 @@
     "workout_type": 3,
     "device_name": "Samsung Galaxy Watch5",
     "id": 15788847172,
+    "id_str": "15788847172",
     "start_date": "2025-09-12T17:31:09Z",
     "start_date_local": "2025-09-12T19:31:09Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8637,6 +8923,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Calentament",
@@ -8649,6 +8936,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 15788386122,
+    "id_str": "15788386122",
     "start_date": "2025-09-12T17:09:35Z",
     "start_date_local": "2025-09-12T19:09:35Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8701,6 +8989,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Series Costa Amunt",
@@ -8713,6 +9002,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 15720538823,
+    "id_str": "15720538823",
     "start_date": "2025-09-06T17:45:25Z",
     "start_date_local": "2025-09-06T19:45:25Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8766,6 +9056,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Xalet Didac - Via verda (tornada)",
@@ -8778,6 +9069,7 @@
     "workout_type": 12,
     "device_name": "Strava App",
     "id": 15697722734,
+    "id_str": "15697722734",
     "start_date": "2025-09-04T17:21:22Z",
     "start_date_local": "2025-09-04T19:21:22Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8833,6 +9125,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Xalet Didac +Via verda",
@@ -8845,6 +9138,7 @@
     "workout_type": 12,
     "device_name": "Strava App",
     "id": 15692131854,
+    "id_str": "15692131854",
     "start_date": "2025-09-04T08:44:11Z",
     "start_date_local": "2025-09-04T10:44:11Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8900,6 +9194,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -8912,6 +9207,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15687028559,
+    "id_str": "15687028559",
     "start_date": "2025-09-03T18:04:32Z",
     "start_date_local": "2025-09-03T20:04:32Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -8954,6 +9250,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -8966,6 +9263,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15663126082,
+    "id_str": "15663126082",
     "start_date": "2025-09-01T17:27:32Z",
     "start_date_local": "2025-09-01T19:27:32Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9008,6 +9306,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -9020,6 +9319,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15627907016,
+    "id_str": "15627907016",
     "start_date": "2025-08-29T14:39:51Z",
     "start_date_local": "2025-08-29T16:39:51Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9062,6 +9362,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -9074,6 +9375,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15616993921,
+    "id_str": "15616993921",
     "start_date": "2025-08-28T14:07:17Z",
     "start_date_local": "2025-08-28T16:07:17Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9116,6 +9418,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -9128,6 +9431,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15605344685,
+    "id_str": "15605344685",
     "start_date": "2025-08-27T13:28:27Z",
     "start_date_local": "2025-08-27T15:28:27Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9170,6 +9474,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Entreno recu post-triatlo",
@@ -9182,6 +9487,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 15595944010,
+    "id_str": "15595944010",
     "start_date": "2025-08-26T17:50:37Z",
     "start_date_local": "2025-08-26T19:50:37Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9235,6 +9541,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Triatl\u00f3 Xerta",
@@ -9247,6 +9554,7 @@
     "workout_type": 1,
     "device_name": "Samsung Galaxy Watch5",
     "id": 15566334401,
+    "id_str": "15566334401",
     "start_date": "2025-08-24T06:52:33Z",
     "start_date_local": "2025-08-24T08:52:33Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9301,6 +9609,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -9313,6 +9622,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15528039768,
+    "id_str": "15528039768",
     "start_date": "2025-08-20T17:42:27Z",
     "start_date_local": "2025-08-20T19:42:27Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9355,6 +9665,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -9367,6 +9678,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15514826367,
+    "id_str": "15514826367",
     "start_date": "2025-08-19T16:19:04Z",
     "start_date_local": "2025-08-19T18:19:04Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9409,6 +9721,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -9421,6 +9734,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15501608533,
+    "id_str": "15501608533",
     "start_date": "2025-08-18T13:58:55Z",
     "start_date_local": "2025-08-18T15:58:55Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9463,6 +9777,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon Swim",
@@ -9474,6 +9789,7 @@
     "sport_type": "Swim",
     "device_name": "Samsung Galaxy Watch5",
     "id": 15502575213,
+    "id_str": "15502575213",
     "start_date": "2025-08-16T11:09:53Z",
     "start_date_local": "2025-08-16T13:09:53Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9528,6 +9844,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Lunch Swim",
@@ -9539,6 +9856,7 @@
     "sport_type": "Swim",
     "device_name": "Samsung Galaxy Watch5",
     "id": 15476959134,
+    "id_str": "15476959134",
     "start_date": "2025-08-16T10:44:39Z",
     "start_date_local": "2025-08-16T12:44:39Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9587,6 +9905,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Bici Santa Barbara",
@@ -9599,6 +9918,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 15459593149,
+    "id_str": "15459593149",
     "start_date": "2025-08-14T17:14:13Z",
     "start_date_local": "2025-08-14T19:14:13Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9654,6 +9974,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -9666,6 +9987,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15433704914,
+    "id_str": "15433704914",
     "start_date": "2025-08-12T13:52:50Z",
     "start_date_local": "2025-08-12T15:52:50Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9708,6 +10030,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -9720,6 +10043,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15423757384,
+    "id_str": "15423757384",
     "start_date": "2025-08-11T16:11:00Z",
     "start_date_local": "2025-08-11T18:11:00Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9762,6 +10086,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Easy Run (no)",
@@ -9774,6 +10099,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 15413748034,
+    "id_str": "15413748034",
     "start_date": "2025-08-10T17:39:31Z",
     "start_date_local": "2025-08-10T19:39:31Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9827,6 +10153,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning workout \u2600\ufe0f",
@@ -9839,6 +10166,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15385699204,
+    "id_str": "15385699204",
     "start_date": "2025-08-08T08:01:17Z",
     "start_date_local": "2025-08-08T10:01:17Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9881,6 +10209,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Monte Caro",
@@ -9892,6 +10221,7 @@
     "sport_type": "Hike",
     "device_name": "Strava App",
     "id": 15374123047,
+    "id_str": "15374123047",
     "start_date": "2025-08-07T07:43:14Z",
     "start_date_local": "2025-08-07T09:43:14Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9945,6 +10275,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -9957,6 +10288,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15365778239,
+    "id_str": "15365778239",
     "start_date": "2025-08-06T13:45:12Z",
     "start_date_local": "2025-08-06T15:45:12Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -9999,6 +10331,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Inner Shin Recovery",
@@ -10011,6 +10344,7 @@
     "workout_type": null,
     "device_name": "Recover Athletics",
     "id": 15350016627,
+    "id_str": "15350016627",
     "start_date": "2025-08-05T09:35:08Z",
     "start_date_local": "2025-08-05T11:35:08Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10053,6 +10387,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Estiraments/mobilitat articular  + abs + cardio",
@@ -10065,6 +10400,7 @@
     "workout_type": null,
     "device_name": "Strava App",
     "id": 15350820699,
+    "id_str": "15350820699",
     "start_date": "2025-08-05T09:24:46Z",
     "start_date_local": "2025-08-05T11:24:46Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10110,6 +10446,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -10122,6 +10459,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15339902850,
+    "id_str": "15339902850",
     "start_date": "2025-08-04T09:30:29Z",
     "start_date_local": "2025-08-04T11:30:29Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10164,6 +10502,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -10176,6 +10515,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15310702767,
+    "id_str": "15310702767",
     "start_date": "2025-08-01T15:38:23Z",
     "start_date_local": "2025-08-01T17:38:23Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10218,6 +10558,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -10230,6 +10571,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15299746325,
+    "id_str": "15299746325",
     "start_date": "2025-07-31T14:54:09Z",
     "start_date_local": "2025-07-31T16:54:09Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10272,6 +10614,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -10284,6 +10627,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15288335437,
+    "id_str": "15288335437",
     "start_date": "2025-07-30T14:59:43Z",
     "start_date_local": "2025-07-30T16:59:43Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10326,6 +10670,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -10338,6 +10683,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15232699970,
+    "id_str": "15232699970",
     "start_date": "2025-07-25T14:02:02Z",
     "start_date_local": "2025-07-25T16:02:02Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10380,6 +10726,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -10392,6 +10739,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15212047114,
+    "id_str": "15212047114",
     "start_date": "2025-07-23T15:05:29Z",
     "start_date_local": "2025-07-23T17:05:29Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10434,6 +10782,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -10446,6 +10795,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15188119482,
+    "id_str": "15188119482",
     "start_date": "2025-07-21T14:59:50Z",
     "start_date_local": "2025-07-21T16:59:50Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10488,6 +10838,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning workout \u2600\ufe0f",
@@ -10500,6 +10851,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15174400069,
+    "id_str": "15174400069",
     "start_date": "2025-07-20T08:27:50Z",
     "start_date_local": "2025-07-20T10:27:50Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10542,6 +10894,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -10554,6 +10907,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15146072070,
+    "id_str": "15146072070",
     "start_date": "2025-07-17T15:26:17Z",
     "start_date_local": "2025-07-17T17:26:17Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10596,6 +10950,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -10608,6 +10963,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15135408377,
+    "id_str": "15135408377",
     "start_date": "2025-07-16T15:45:37Z",
     "start_date_local": "2025-07-16T17:45:37Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10650,6 +11006,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -10662,6 +11019,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15112264852,
+    "id_str": "15112264852",
     "start_date": "2025-07-14T15:34:36Z",
     "start_date_local": "2025-07-14T17:34:36Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10704,6 +11062,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -10716,6 +11075,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15091497413,
+    "id_str": "15091497413",
     "start_date": "2025-07-12T15:21:14Z",
     "start_date_local": "2025-07-12T17:21:14Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10758,6 +11118,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening workout \ud83c\udfcb\ufe0f",
@@ -10770,6 +11131,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15070944062,
+    "id_str": "15070944062",
     "start_date": "2025-07-10T15:55:21Z",
     "start_date_local": "2025-07-10T17:55:21Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10812,6 +11174,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning workout \u2600\ufe0f",
@@ -10824,6 +11187,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15069736399,
+    "id_str": "15069736399",
     "start_date": "2025-07-09T09:17:02Z",
     "start_date_local": "2025-07-09T11:17:02Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10866,6 +11230,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning workout \u2600\ufe0f",
@@ -10878,6 +11243,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 15023788210,
+    "id_str": "15023788210",
     "start_date": "2025-07-06T09:09:31Z",
     "start_date_local": "2025-07-06T11:09:31Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10920,6 +11286,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning workout \u2600\ufe0f",
@@ -10932,6 +11299,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14981786099,
+    "id_str": "14981786099",
     "start_date": "2025-07-02T08:44:30Z",
     "start_date_local": "2025-07-02T10:44:30Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -10974,6 +11342,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning workout \u2600\ufe0f",
@@ -10986,6 +11355,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14970971214,
+    "id_str": "14970971214",
     "start_date": "2025-07-01T08:08:16Z",
     "start_date_local": "2025-07-01T10:08:16Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11028,6 +11398,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -11040,6 +11411,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14954054684,
+    "id_str": "14954054684",
     "start_date": "2025-06-29T13:54:54Z",
     "start_date_local": "2025-06-29T15:54:54Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11082,6 +11454,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Via verda 7k",
@@ -11094,6 +11467,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 14924664241,
+    "id_str": "14924664241",
     "start_date": "2025-06-26T17:45:37Z",
     "start_date_local": "2025-06-26T19:45:37Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11147,6 +11521,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning workout \u2600\ufe0f",
@@ -11159,6 +11534,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14909513915,
+    "id_str": "14909513915",
     "start_date": "2025-06-25T08:22:19Z",
     "start_date_local": "2025-06-25T10:22:19Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11201,6 +11577,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning workout \u2600\ufe0f",
@@ -11213,6 +11590,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14888548069,
+    "id_str": "14888548069",
     "start_date": "2025-06-23T08:13:04Z",
     "start_date_local": "2025-06-23T10:13:04Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11255,6 +11633,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Triceps hombro avantbra\u00e7",
@@ -11267,6 +11646,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14873022385,
+    "id_str": "14873022385",
     "start_date": "2025-06-21T16:06:48Z",
     "start_date_local": "2025-06-21T18:06:48Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11309,6 +11689,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "La Caramella Inferno",
@@ -11320,6 +11701,7 @@
     "sport_type": "Hike",
     "device_name": "Strava App",
     "id": 14863086388,
+    "id_str": "14863086388",
     "start_date": "2025-06-20T14:20:23Z",
     "start_date_local": "2025-06-20T16:20:23Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11373,6 +11755,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Primer entreno gympro",
@@ -11385,6 +11768,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14850934811,
+    "id_str": "14850934811",
     "start_date": "2025-06-19T14:48:56Z",
     "start_date_local": "2025-06-19T16:48:56Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11427,6 +11811,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Easy run post examens",
@@ -11439,6 +11824,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 14756721177,
+    "id_str": "14756721177",
     "start_date": "2025-06-10T16:35:09Z",
     "start_date_local": "2025-06-10T18:35:09Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11491,6 +11877,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Via verda 5k",
@@ -11503,6 +11890,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 14644356792,
+    "id_str": "14644356792",
     "start_date": "2025-05-30T18:38:27Z",
     "start_date_local": "2025-05-30T20:38:27Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11556,6 +11944,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -11568,6 +11957,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14621805571,
+    "id_str": "14621805571",
     "start_date": "2025-05-28T14:12:14Z",
     "start_date_local": "2025-05-28T16:12:14Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11610,6 +12000,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Sigma day",
@@ -11622,6 +12013,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14611328041,
+    "id_str": "14611328041",
     "start_date": "2025-05-27T14:42:15Z",
     "start_date_local": "2025-05-27T16:42:15Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11664,6 +12056,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "B3tterrunclub",
@@ -11676,6 +12069,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 14607019677,
+    "id_str": "14607019677",
     "start_date": "2025-05-27T05:32:55Z",
     "start_date_local": "2025-05-27T07:32:55Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11729,6 +12123,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Cursa Diagonal Dir '25",
@@ -11741,6 +12136,7 @@
     "workout_type": 1,
     "device_name": "Strava App",
     "id": 14586687087,
+    "id_str": "14586687087",
     "start_date": "2025-05-25T06:37:37Z",
     "start_date_local": "2025-05-25T08:37:37Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11793,6 +12189,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -11805,6 +12202,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14578741029,
+    "id_str": "14578741029",
     "start_date": "2025-05-24T10:13:38Z",
     "start_date_local": "2025-05-24T12:13:38Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11847,6 +12245,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -11859,6 +12258,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14577919046,
+    "id_str": "14577919046",
     "start_date": "2025-05-22T15:25:53Z",
     "start_date_local": "2025-05-22T17:25:53Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11901,6 +12301,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Segon entreno del dia",
@@ -11913,6 +12314,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 14542231949,
+    "id_str": "14542231949",
     "start_date": "2025-05-20T16:59:04Z",
     "start_date_local": "2025-05-20T18:59:04Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -11966,6 +12368,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "@b3tterrunclub",
@@ -11978,6 +12381,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 14535993166,
+    "id_str": "14535993166",
     "start_date": "2025-05-20T05:21:42Z",
     "start_date_local": "2025-05-20T07:21:42Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -12031,6 +12435,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning workout \u2600\ufe0f",
@@ -12043,6 +12448,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14526706640,
+    "id_str": "14526706640",
     "start_date": "2025-05-19T08:20:23Z",
     "start_date_local": "2025-05-19T10:20:23Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -12085,6 +12491,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "4 pelobrocolis fent pit-triceps",
@@ -12097,6 +12504,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14468030799,
+    "id_str": "14468030799",
     "start_date": "2025-05-13T14:27:49Z",
     "start_date_local": "2025-05-13T16:27:49Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -12139,6 +12547,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "@b3tterrunclub",
@@ -12151,6 +12560,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 14463277973,
+    "id_str": "14463277973",
     "start_date": "2025-05-13T05:27:18Z",
     "start_date_local": "2025-05-13T07:27:18Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -12204,6 +12614,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Hombro",
@@ -12216,6 +12627,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14444608546,
+    "id_str": "14444608546",
     "start_date": "2025-05-11T09:43:47Z",
     "start_date_local": "2025-05-11T11:43:47Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -12258,6 +12670,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Carrera ma\u00f1anera 5k Diagonal",
@@ -12270,6 +12683,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 14433183663,
+    "id_str": "14433183663",
     "start_date": "2025-05-10T09:18:07Z",
     "start_date_local": "2025-05-10T11:18:07Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -12323,6 +12737,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Esquena-Biceps",
@@ -12335,6 +12750,7 @@
     "workout_type": null,
     "device_name": "Hevy",
     "id": 14427226345,
+    "id_str": "14427226345",
     "start_date": "2025-05-09T14:34:37Z",
     "start_date_local": "2025-05-09T16:34:37Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -12377,6 +12793,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Pit-Triceps",
@@ -12389,6 +12806,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14404260740,
+    "id_str": "14404260740",
     "start_date": "2025-05-07T10:20:12Z",
     "start_date_local": "2025-05-07T12:20:12Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -12431,6 +12849,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Dia de palpitacions al cap (dia de cama)",
@@ -12443,6 +12862,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14396320572,
+    "id_str": "14396320572",
     "start_date": "2025-05-06T14:42:45Z",
     "start_date_local": "2025-05-06T16:42:45Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -12485,6 +12905,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Sigma Day",
@@ -12497,6 +12918,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14389271587,
+    "id_str": "14389271587",
     "start_date": "2025-05-05T15:15:30Z",
     "start_date_local": "2025-05-05T17:15:30Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -12539,6 +12961,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Bici Amposta-Alcanar Platja",
@@ -12551,6 +12974,7 @@
     "workout_type": 12,
     "device_name": "Strava App",
     "id": 14373346416,
+    "id_str": "14373346416",
     "start_date": "2025-05-04T09:41:12Z",
     "start_date_local": "2025-05-04T11:41:12Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -12606,6 +13030,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon workout \ud83d\udcaa",
@@ -12618,6 +13043,7 @@
     "workout_type": 30,
     "device_name": "Hevy",
     "id": 14323430284,
+    "id_str": "14323430284",
     "start_date": "2025-04-29T14:40:47Z",
     "start_date_local": "2025-04-29T16:40:47Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -12660,6 +13086,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Teide Baixada Sendero n.9",
@@ -12671,6 +13098,7 @@
     "sport_type": "Walk",
     "device_name": "Garmin f\u0113nix 6 Pro",
     "id": 14283282125,
+    "id_str": "14283282125",
     "start_date": "2025-04-22T06:25:08Z",
     "start_date_local": "2025-04-22T07:25:08Z",
     "timezone": "(GMT+00:00) Atlantic/Canary",
@@ -12724,6 +13152,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Teide Nocturn Sendero n.9",
@@ -12735,6 +13164,7 @@
     "sport_type": "Walk",
     "device_name": "Garmin f\u0113nix 6 Pro",
     "id": 14283283661,
+    "id_str": "14283283661",
     "start_date": "2025-04-21T22:22:33Z",
     "start_date_local": "2025-04-21T23:22:33Z",
     "timezone": "(GMT+00:00) Atlantic/Canary",
@@ -12788,6 +13218,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Evening Run",
@@ -12800,6 +13231,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 14186175044,
+    "id_str": "14186175044",
     "start_date": "2025-04-15T16:34:22Z",
     "start_date_local": "2025-04-15T18:34:22Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -12852,6 +13284,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Primer Riu Avall",
@@ -12864,6 +13297,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 14084163263,
+    "id_str": "14084163263",
     "start_date": "2025-04-05T07:16:14Z",
     "start_date_local": "2025-04-05T09:16:14Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -12874,7 +13308,7 @@
     "achievement_count": 4,
     "kudos_count": 1,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 9,
     "photo_count": 0,
     "map": {
       "id": "a14084163263",
@@ -12916,6 +13350,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "6K morning",
@@ -12928,6 +13363,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 14045147066,
+    "id_str": "14045147066",
     "start_date": "2025-04-01T05:36:29Z",
     "start_date_local": "2025-04-01T07:36:29Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -12938,7 +13374,7 @@
     "achievement_count": 39,
     "kudos_count": 4,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 30,
     "photo_count": 0,
     "map": {
       "id": "a14045147066",
@@ -12981,6 +13417,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Easy Run Diagonal",
@@ -12993,6 +13430,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 14012653128,
+    "id_str": "14012653128",
     "start_date": "2025-03-28T16:33:44Z",
     "start_date_local": "2025-03-28T17:33:44Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -13045,6 +13483,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Lunch Run",
@@ -13057,6 +13496,7 @@
     "workout_type": null,
     "device_name": "Samsung Galaxy Watch5",
     "id": 14097702953,
+    "id_str": "14097702953",
     "start_date": "2025-03-16T11:01:57Z",
     "start_date_local": "2025-03-16T12:01:57Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -13067,7 +13507,7 @@
     "achievement_count": 4,
     "kudos_count": 1,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 5,
     "photo_count": 0,
     "map": {
       "id": "a14097702953",
@@ -13111,6 +13551,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "MARAT\u00d3 BARCELONA",
@@ -13122,6 +13563,7 @@
     "sport_type": "Run",
     "workout_type": 1,
     "id": 13900832914,
+    "id_str": "13900832914",
     "start_date": "2025-03-16T08:05:45Z",
     "start_date_local": "2025-03-16T09:05:45Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -13165,6 +13607,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Easy Run",
@@ -13177,6 +13620,7 @@
     "workout_type": 0,
     "device_name": "Strava App",
     "id": 13797244967,
+    "id_str": "13797244967",
     "start_date": "2025-03-05T15:56:31Z",
     "start_date_local": "2025-03-05T16:56:31Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -13229,6 +13673,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Unirun 2025",
@@ -13241,6 +13686,7 @@
     "workout_type": 1,
     "device_name": "Strava App",
     "id": 13765420733,
+    "id_str": "13765420733",
     "start_date": "2025-03-02T08:31:27Z",
     "start_date_local": "2025-03-02T09:31:27Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -13251,7 +13697,7 @@
     "achievement_count": 5,
     "kudos_count": 15,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 226,
     "photo_count": 0,
     "map": {
       "id": "a13765420733",
@@ -13294,6 +13740,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Pre-unirun",
@@ -13306,6 +13753,7 @@
     "workout_type": 0,
     "device_name": "Strava App",
     "id": 13760629905,
+    "id_str": "13760629905",
     "start_date": "2025-03-01T15:56:25Z",
     "start_date_local": "2025-03-01T16:56:25Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -13316,7 +13764,7 @@
     "achievement_count": 0,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 2,
     "photo_count": 0,
     "map": {
       "id": "a13760629905",
@@ -13358,6 +13806,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "First 30k",
@@ -13370,6 +13819,7 @@
     "workout_type": 2,
     "device_name": "Strava App",
     "id": 13703359227,
+    "id_str": "13703359227",
     "start_date": "2025-02-23T07:50:26Z",
     "start_date_local": "2025-02-23T08:50:26Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -13422,6 +13872,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning Run",
@@ -13434,6 +13885,7 @@
     "workout_type": null,
     "device_name": "Samsung Health",
     "id": 14188086220,
+    "id_str": "14188086220",
     "start_date": "2025-02-16T07:53:25Z",
     "start_date_local": "2025-02-16T08:53:25Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -13444,7 +13896,7 @@
     "achievement_count": 51,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 74,
     "photo_count": 0,
     "map": {
       "id": "a14188086220",
@@ -13489,6 +13941,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Mitja marat\u00f3 Barcelona 2025",
@@ -13501,6 +13954,7 @@
     "workout_type": 1,
     "device_name": "Strava App",
     "id": 13639904955,
+    "id_str": "13639904955",
     "start_date": "2025-02-16T07:52:56Z",
     "start_date_local": "2025-02-16T08:52:56Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -13511,7 +13965,7 @@
     "achievement_count": 10,
     "kudos_count": 51,
     "comment_count": 2,
-    "athlete_count": 1,
+    "athlete_count": 358,
     "photo_count": 0,
     "map": {
       "id": "a13639904955",
@@ -13553,6 +14007,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Run with Kevin",
@@ -13565,6 +14020,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 13575818125,
+    "id_str": "13575818125",
     "start_date": "2025-02-08T19:07:08Z",
     "start_date_local": "2025-02-08T20:07:08Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -13575,7 +14031,7 @@
     "achievement_count": 3,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 2,
     "photo_count": 0,
     "map": {
       "id": "a13575818125",
@@ -13617,6 +14073,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Afternoon Run",
@@ -13629,6 +14086,7 @@
     "workout_type": 0,
     "device_name": "Strava App",
     "id": 13485101664,
+    "id_str": "13485101664",
     "start_date": "2025-01-29T15:55:16Z",
     "start_date_local": "2025-01-29T16:55:16Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -13681,6 +14139,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Run with Aiman in Turkey",
@@ -13693,6 +14152,7 @@
     "workout_type": 0,
     "device_name": "Strava App",
     "id": 13405523164,
+    "id_str": "13405523164",
     "start_date": "2025-01-20T14:25:37Z",
     "start_date_local": "2025-01-20T17:25:37Z",
     "timezone": "(GMT+03:00) Europe/Istanbul",
@@ -13745,6 +14205,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Bici en Didac",
@@ -13757,6 +14218,7 @@
     "workout_type": null,
     "device_name": "Samsung Health",
     "id": 13265511601,
+    "id_str": "13265511601",
     "start_date": "2025-01-04T14:38:56Z",
     "start_date_local": "2025-01-04T15:38:56Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -13767,7 +14229,7 @@
     "achievement_count": 0,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 2,
     "photo_count": 0,
     "map": {
       "id": "a13265511601",
@@ -13814,6 +14276,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning Walk with Junji",
@@ -13825,6 +14288,7 @@
     "sport_type": "Walk",
     "device_name": "Samsung Health",
     "id": 13228900899,
+    "id_str": "13228900899",
     "start_date": "2024-12-31T08:10:45Z",
     "start_date_local": "2024-12-31T09:10:45Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -13880,6 +14344,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Pista d'atletisme en kevin",
@@ -13892,6 +14357,7 @@
     "workout_type": 3,
     "device_name": "Samsung Health",
     "id": 13218922228,
+    "id_str": "13218922228",
     "start_date": "2024-12-28T18:28:20Z",
     "start_date_local": "2024-12-28T19:28:20Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -13902,7 +14368,7 @@
     "achievement_count": 18,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 2,
     "photo_count": 0,
     "map": {
       "id": "a13218922228",
@@ -13947,6 +14413,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning Run",
@@ -13959,6 +14426,7 @@
     "workout_type": null,
     "device_name": "Samsung Health",
     "id": 13218919613,
+    "id_str": "13218919613",
     "start_date": "2024-12-23T09:30:36Z",
     "start_date_local": "2024-12-23T10:30:36Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -14014,6 +14482,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning Run",
@@ -14026,6 +14495,7 @@
     "workout_type": null,
     "device_name": "Samsung Health",
     "id": 13132486300,
+    "id_str": "13132486300",
     "start_date": "2024-12-17T06:31:15Z",
     "start_date_local": "2024-12-17T07:31:15Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -14036,7 +14506,7 @@
     "achievement_count": 16,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 14,
     "photo_count": 0,
     "map": {
       "id": "a13132486300",
@@ -14081,6 +14551,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Morning Run",
@@ -14093,6 +14564,7 @@
     "workout_type": null,
     "device_name": "Samsung Health",
     "id": 13083755353,
+    "id_str": "13083755353",
     "start_date": "2024-12-10T06:50:35Z",
     "start_date_local": "2024-12-10T07:50:35Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -14103,7 +14575,7 @@
     "achievement_count": 17,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 13,
     "photo_count": 0,
     "map": {
       "id": "a13083755353",
@@ -14148,6 +14620,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Via verda",
@@ -14160,6 +14633,7 @@
     "workout_type": 3,
     "device_name": "Samsung Galaxy Watch5",
     "id": 13017458297,
+    "id_str": "13017458297",
     "start_date": "2024-11-30T16:21:55Z",
     "start_date_local": "2024-11-30T17:21:55Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -14214,6 +14688,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Mitja marat\u00f3 La barceloneta",
@@ -14226,6 +14701,7 @@
     "workout_type": 2,
     "device_name": "Strava App",
     "id": 12941979822,
+    "id_str": "12941979822",
     "start_date": "2024-11-20T06:08:54Z",
     "start_date_local": "2024-11-20T07:08:54Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -14278,6 +14754,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Sessio 9",
@@ -14290,6 +14767,7 @@
     "workout_type": 1,
     "device_name": "Strava App",
     "id": 2872358507,
+    "id_str": "2872358507",
     "start_date": "2019-11-17T14:52:33Z",
     "start_date_local": "2019-11-17T15:52:33Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
@@ -14342,6 +14820,7 @@
     "resource_state": 2,
     "athlete": {
       "id": 47802575,
+      "id_str": "47802575",
       "resource_state": 1
     },
     "name": "Sessi\u00f3 6 - For\u00e7a i Velocitat",
@@ -14354,6 +14833,7 @@
     "workout_type": 3,
     "device_name": "Strava App",
     "id": 2855191927,
+    "id_str": "2855191927",
     "start_date": "2019-11-10T14:26:50Z",
     "start_date_local": "2019-11-10T15:26:50Z",
     "timezone": "(GMT+01:00) Europe/Madrid",
