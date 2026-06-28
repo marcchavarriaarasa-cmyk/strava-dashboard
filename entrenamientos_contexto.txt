@@ -1,6 +1,30 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-06-27
+Actividad: Tornada Gympro (Run)
+Distancia: 1.72 km
+Tiempo en movimiento: 8.95 min
+Velocidad media: 11.53 km/h
+Desnivel positivo: 4.9 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-27
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 101.92 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-06-27
+Actividad: Anada Gympro (Run)
+Distancia: 2.19 km
+Tiempo en movimiento: 11.72 min
+Velocidad media: 11.2 km/h
+Desnivel positivo: 47.1 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-06-23
 Actividad: Casa Amposta - casa Alcanar (Ride)
 Distancia: 17.53 km
@@ -373,30 +397,6 @@ Fecha: 2026-04-28
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
 Tiempo en movimiento: 77.27 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-04-26
-Actividad: Tenis (Workout)
-Distancia: 2.06 km
-Tiempo en movimiento: 44.95 min
-Velocidad media: 2.75 km/h
-Desnivel positivo: 0.0 m
-Frecuencia cardíaca media: 145.1 bpm
-------------------------------
-Fecha: 2026-04-23
-Actividad: Diagonal Sant Jordi (Run)
-Distancia: 10.01 km
-Tiempo en movimiento: 52.7 min
-Velocidad media: 11.4 km/h
-Desnivel positivo: 56.9 m
-Frecuencia cardíaca media: 166.8 bpm
-------------------------------
-Fecha: 2026-04-22
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 77.63 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
