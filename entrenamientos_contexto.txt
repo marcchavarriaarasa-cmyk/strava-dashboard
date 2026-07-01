@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-06-30
+Actividad: Amposta - Via Verda - Vinallop - Santa Barbara - Amposta (Ride)
+Distancia: 26.65 km
+Tiempo en movimiento: 76.38 min
+Velocidad media: 20.93 km/h
+Desnivel positivo: 164.8 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-06-27
 Actividad: Tornada Gympro (Run)
 Distancia: 1.72 km
@@ -389,14 +397,6 @@ Fecha: 2026-04-29
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
 Tiempo en movimiento: 53.35 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-04-28
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 77.27 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm

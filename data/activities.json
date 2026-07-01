@@ -6,6 +6,75 @@
       "id_str": "47802575",
       "resource_state": 1
     },
+    "name": "Amposta - Via Verda - Vinallop - Santa Barbara - Amposta",
+    "distance": 26647.9,
+    "moving_time": 4583,
+    "elapsed_time": 6428,
+    "total_elevation_gain": 164.8,
+    "type": "Ride",
+    "sport_type": "Ride",
+    "workout_type": 12,
+    "device_name": "Strava App",
+    "id": 19127742116,
+    "id_str": "19127742116",
+    "start_date": "2026-06-30T16:58:36Z",
+    "start_date_local": "2026-06-30T18:58:36Z",
+    "timezone": "(GMT+01:00) Europe/Madrid",
+    "utc_offset": 7200.0,
+    "location_city": null,
+    "location_state": null,
+    "location_country": null,
+    "achievement_count": 9,
+    "kudos_count": 1,
+    "comment_count": 0,
+    "athlete_count": 1,
+    "photo_count": 0,
+    "map": {
+      "id": "a19127742116",
+      "summary_polyline": "mrmwF{koBGLEBBJCDBj@WxMuC|Co@BiDm@SQIWSIK?]RYBq@WgCOwA@qBRoA\\sAv@gCz@eIlCu@HgAXuFjBMFi@j@WL_NnE_H~Bk@XmHbCm@LeBL_Ab@aB`AqBv@q@PQAc@]i@GSHYZW^Mn@YNiLxD}`@hNQBGCKU]kBEKUOS@oBn@uFnD}BjAiBb@wBRoC@kDO{A[cF[g@Bc@Hm@TIRAbAKjAaCdAwAz@kCfCcAvAkD`HmRx`@W@cCqAa@B]TKVa@xAyBzI_@dAi@nBeD|MOr@K`BK`@e@d@cA`CuAjCeAxAkBvDwDvGiDdHkChFkAjBaArAiBpBmAjAkCtBsD|Bk@j@Yh@QTq@ZoBxA]ZU^aBb@}IlEMBa@IUBm_@|S_J~EeChBeBbBiApAqAlBqA|B]v@mAbDg@zAu@fDaBhJ?LDDZPFXHzENfBDxACdCH|@Az@K~@KzBETq@hCc@jAcFjLw@|As@|@k@x@S\\Qh@QN@IXYxBuChDaEVOXHf@^^j@B?BNn@H|@d@nD~Er@x@BDIrAF\\bC|CJFJArAcAPBLJvGtFzIdHdPbPbF|F|D~EJLHh@FNhBrB|@z@l@^jAb@l@LtC\\LFJJD^?dAQhDVtC`@xBHtDH|@Jn@b@`BJP\\PL\\|@rH^zEXtAv@hGTr@tA`Cf@f@dBpA^d@L^ZtBr@hDt@bFHNJHfAEtGOhITnHStCDxNlBbFRdFj@hBHhB`@vAn@z@TdHbAfEb@`Gt@~@DbCC^J~Ax@t@TpJvAfBTzHzALGDQBaCBWDGpGkDnCi@|@IvACdBFfBi@fDq@lD{@JMHSJgANi@T_@vBuAz@mAh@[bAc@v@M|BBvJ\\xC]hBJ~@?rBKXKHS?Yy@oHCgI@}CDGF?fBTfIWlE@rBMrB?HOC}@@wBOiDAgABuAGiFBYvCS?yAMa@oCIMOAMDkAWqUBSL?RH~ANXIFWCSY{O@a@Pc@Hc@Ca@_@y@Ga@e@mX}@ob@IqIFwIVkKbBw\\LoBPaAR{@b@iAjCoFjAk@RQlCmFfBwDBKASQYCIn@mAHa@JSjJaNj@iAlQyk@TuAzAmOP_AZaApAqBdPoUJKj@OPSL[P{@|@sAbEyFj@cAt@sBj@aCVaBNcCLkGd@aN`@gEn@_FDk@d@gXHc@l@m@FUDg@ASESIOMIi@Iw@BaBcAsDsCkH_GaDaE}CqEIYKO@KNQ",
+      "resource_state": 2
+    },
+    "trainer": false,
+    "commute": false,
+    "manual": false,
+    "private": false,
+    "visibility": "everyone",
+    "flagged": false,
+    "gear_id": "b16055834",
+    "start_latlng": [
+      40.707114,
+      0.575503
+    ],
+    "end_latlng": [
+      40.705829,
+      0.570989
+    ],
+    "average_speed": 5.815,
+    "max_speed": 11.64,
+    "average_watts": 164.9,
+    "device_watts": false,
+    "kilojoules": 755.6,
+    "has_heartrate": false,
+    "heartrate_opt_out": false,
+    "display_hide_heartrate_option": false,
+    "elev_high": 80.6,
+    "elev_low": 2.2,
+    "upload_id": 20243468972,
+    "upload_id_str": "20243468972",
+    "external_id": "9bf1c130-7758-43c5-978b-fbcffd3b088c-activity.fit",
+    "from_accepted_tag": false,
+    "pr_count": 3,
+    "total_photo_count": 0,
+    "has_kudoed": false,
+    "suffer_score": 146.0
+  },
+  {
+    "resource_state": 2,
+    "athlete": {
+      "id": 47802575,
+      "id_str": "47802575",
+      "resource_state": 1
+    },
     "name": "Tornada Gympro",
     "distance": 1719.9,
     "moving_time": 537,
@@ -2770,7 +2839,7 @@
     "achievement_count": 4,
     "kudos_count": 11,
     "comment_count": 0,
-    "athlete_count": 590,
+    "athlete_count": 589,
     "photo_count": 0,
     "map": {
       "id": "a18447888240",
@@ -12268,7 +12337,7 @@
     "achievement_count": 7,
     "kudos_count": 4,
     "comment_count": 0,
-    "athlete_count": 16,
+    "athlete_count": 1,
     "photo_count": 0,
     "map": {
       "id": "a14607019677",
@@ -13496,7 +13565,7 @@
     "achievement_count": 4,
     "kudos_count": 1,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 9,
     "photo_count": 0,
     "map": {
       "id": "a14084163263",
@@ -13562,7 +13631,7 @@
     "achievement_count": 39,
     "kudos_count": 4,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 30,
     "photo_count": 0,
     "map": {
       "id": "a14045147066",
@@ -13695,7 +13764,7 @@
     "achievement_count": 4,
     "kudos_count": 1,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 5,
     "photo_count": 0,
     "map": {
       "id": "a14097702953",
@@ -13885,7 +13954,7 @@
     "achievement_count": 5,
     "kudos_count": 15,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 226,
     "photo_count": 0,
     "map": {
       "id": "a13765420733",
@@ -13952,7 +14021,7 @@
     "achievement_count": 0,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 2,
     "photo_count": 0,
     "map": {
       "id": "a13760629905",
@@ -14084,7 +14153,7 @@
     "achievement_count": 51,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 74,
     "photo_count": 0,
     "map": {
       "id": "a14188086220",
@@ -14153,7 +14222,7 @@
     "achievement_count": 10,
     "kudos_count": 51,
     "comment_count": 2,
-    "athlete_count": 1,
+    "athlete_count": 358,
     "photo_count": 0,
     "map": {
       "id": "a13639904955",
@@ -14219,7 +14288,7 @@
     "achievement_count": 3,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 2,
     "photo_count": 0,
     "map": {
       "id": "a13575818125",
@@ -14417,7 +14486,7 @@
     "achievement_count": 0,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 2,
     "photo_count": 0,
     "map": {
       "id": "a13265511601",
@@ -14556,7 +14625,7 @@
     "achievement_count": 18,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 2,
     "photo_count": 0,
     "map": {
       "id": "a13218922228",
@@ -14694,7 +14763,7 @@
     "achievement_count": 16,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 14,
     "photo_count": 0,
     "map": {
       "id": "a13132486300",
@@ -14763,7 +14832,7 @@
     "achievement_count": 17,
     "kudos_count": 0,
     "comment_count": 0,
-    "athlete_count": 1,
+    "athlete_count": 13,
     "photo_count": 0,
     "map": {
       "id": "a13083755353",
