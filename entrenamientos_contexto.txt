@@ -1,6 +1,30 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-07-01
+Actividad: Tornada Gympro (Run)
+Distancia: 2.16 km
+Tiempo en movimiento: 10.65 min
+Velocidad media: 12.15 km/h
+Desnivel positivo: 4.0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-07-01
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 77.2 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-07-01
+Actividad: Anada Gympro (Run)
+Distancia: 2.15 km
+Tiempo en movimiento: 11.17 min
+Velocidad media: 11.56 km/h
+Desnivel positivo: 47.1 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-06-30
 Actividad: Amposta - Via Verda - Vinallop - Santa Barbara - Amposta (Ride)
 Distancia: 26.65 km
@@ -375,29 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 60.0 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0.0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-05-05
-Actividad: Casa Cupra Club Run 8k (Run)
-Distancia: 8.01 km
-Tiempo en movimiento: 46.92 min
-Velocidad media: 10.24 km/h
-Desnivel positivo: 25.1 m
-Frecuencia cardíaca media: 165.1 bpm
-------------------------------
-Fecha: 2026-04-30
-Actividad: Via verda en la mama (Run)
-Distancia: 7.51 km
-Tiempo en movimiento: 43.27 min
-Velocidad media: 10.41 km/h
-Desnivel positivo: 46.0 m
-Frecuencia cardíaca media: 159.5 bpm
-------------------------------
-Fecha: 2026-04-29
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 53.35 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
