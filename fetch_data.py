@@ -3,25 +3,78 @@ import requests
 import json
 import os
 import sys
+import tempfile
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 # Configuration - Load from Environment Variables for Security
 CLIENT_ID = os.getenv('STRAVA_CLIENT_ID')
 CLIENT_SECRET = os.getenv('STRAVA_CLIENT_SECRET')
 REFRESH_TOKEN = os.getenv('STRAVA_REFRESH_TOKEN')
 
-def get_access_token():
-    missing_vars = []
-    if not CLIENT_ID:
-        missing_vars.append('STRAVA_CLIENT_ID')
-    if not CLIENT_SECRET:
-        missing_vars.append('STRAVA_CLIENT_SECRET')
-    if not REFRESH_TOKEN:
-        missing_vars.append('STRAVA_REFRESH_TOKEN')
+REQUEST_TIMEOUT = (10, 30)
 
+
+class StravaError(RuntimeError):
+    """Raised when the sync cannot safely complete."""
+
+
+def build_session():
+    """Create an HTTP session resilient to temporary Strava/CDN failures."""
+    retry = Retry(
+        total=4,
+        connect=4,
+        read=4,
+        status=4,
+        backoff_factor=1,
+        status_forcelist=(403, 429, 500, 502, 503, 504),
+        allowed_methods=frozenset({'GET', 'POST'}),
+        respect_retry_after_header=True,
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session = requests.Session()
+    session.mount('https://', adapter)
+    return session
+
+
+SESSION = build_session()
+
+
+def require_credentials():
+    missing_vars = [
+        name for name, value in (
+            ('STRAVA_CLIENT_ID', CLIENT_ID),
+            ('STRAVA_CLIENT_SECRET', CLIENT_SECRET),
+            ('STRAVA_REFRESH_TOKEN', REFRESH_TOKEN),
+        ) if not value
+    ]
     if missing_vars:
-        print(f"Error: Missing environment variables: {', '.join(missing_vars)}.")
-        print("Please ensure these are set in your GitHub Repository Secrets.")
-        sys.exit(1)
+        raise StravaError(
+            f"Missing environment variables: {', '.join(missing_vars)}. "
+            "Configure them as GitHub Repository Secrets or in your local environment."
+        )
+
+
+def atomic_write_json(path, data):
+    """Replace a JSON file only after the complete payload has been written."""
+    directory = os.path.dirname(path) or '.'
+    os.makedirs(directory, exist_ok=True)
+    temp_path = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode='w', encoding='utf-8', dir=directory, delete=False
+        ) as temp_file:
+            temp_path = temp_file.name
+            json.dump(data, temp_file, indent=2, ensure_ascii=False)
+            temp_file.write('\n')
+        os.replace(temp_path, path)
+    finally:
+        if temp_path and os.path.exists(temp_path):
+            os.unlink(temp_path)
+
+
+def get_access_token():
+    require_credentials()
 
     print("Refreshing access token...")
     auth_url = "https://www.strava.com/oauth/token"
@@ -33,33 +86,41 @@ def get_access_token():
     }
     
     try:
-        response = requests.post(auth_url, data=payload)
+        response = SESSION.post(auth_url, data=payload, timeout=REQUEST_TIMEOUT)
         response.raise_for_status()
         tokens = response.json()
+        if not tokens.get('access_token'):
+            raise StravaError('Strava token response did not include an access token.')
         print("Access token refreshed successfully.")
         return tokens['access_token']
-    except requests.exceptions.RequestException as e:
-        print(f"Error refreshing token: {e}")
-        if response.text:
-            print(f"Response details: {response.text}")
-        sys.exit(1)
+    except (requests.exceptions.RequestException, ValueError) as error:
+        detail = getattr(locals().get('response'), 'text', '')
+        if detail:
+            detail = f" Response: {detail[:500]}"
+        raise StravaError(f"Unable to refresh the Strava token: {error}.{detail}") from error
+
 
 def generate_context_file(activities):
     """Generates a text file summarizing recent activities."""
     print("Generating entrenamientos_contexto.txt...")
     filename = 'entrenamientos_contexto.txt'
     
-    with open(filename, 'w') as f:
+    temp_path = None
+    try:
+        temp_file = tempfile.NamedTemporaryFile(
+            mode='w', encoding='utf-8', dir='.', delete=False
+        )
+        temp_path = temp_file.name
+        f = temp_file
         f.write("RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)\n")
         f.write("====================================================\n\n")
         
         if not activities:
             f.write("No hay actividades recientes.\n")
-            return
+            recent_activities = []
+        else:
+            recent_activities = activities[:50]
 
-        # Take the last 50 activities for context
-        recent_activities = activities[:50]
-        
         for activity in recent_activities:
             # Extract key metrics
             name = activity.get('name', 'Sin nombre')
@@ -81,8 +142,17 @@ def generate_context_file(activities):
             f.write(f"Desnivel positivo: {elevation_gain} m\n")
             f.write(f"Frecuencia cardíaca media: {heart_rate} bpm\n")
             f.write("-" * 30 + "\n")
-            
+        f.close()
+        os.replace(temp_path, filename)
+        temp_path = None
+    finally:
+        if 'f' in locals() and not f.closed:
+            f.close()
+        if temp_path and os.path.exists(temp_path):
+            os.unlink(temp_path)
+
     print(f"Successfully saved {len(recent_activities)} activities to {filename}")
+
 
 def fetch_activities(access_token):
     url = 'https://www.strava.com/api/v3/athlete/activities'
@@ -96,7 +166,9 @@ def fetch_activities(access_token):
         print(f"Fetching page {page}...")
         params = {'per_page': per_page, 'page': page}
         try:
-            response = requests.get(url, headers=headers, params=params)
+            response = SESSION.get(
+                url, headers=headers, params=params, timeout=REQUEST_TIMEOUT
+            )
             response.raise_for_status()
             
             data = response.json()
@@ -114,23 +186,30 @@ def fetch_activities(access_token):
             # Actually, standard behavior is fetch all.
             
             page += 1
-        except requests.exceptions.RequestException as e:
-            print(f"Error fetching activities: {e}")
-            break
+        except (requests.exceptions.RequestException, ValueError) as error:
+            raise StravaError(
+                f"Unable to fetch activities on page {page}: {error}"
+            ) from error
             
     print(f"Finished. Total activities found: {len(all_activities)}")
     
     # Save JSON
-    os.makedirs('data', exist_ok=True)
-    with open('data/activities.json', 'w') as f:
-        json.dump(all_activities, f, indent=2)
+    atomic_write_json('data/activities.json', all_activities)
     print("Successfully saved to data/activities.json")
     
     # Generate Context File
     generate_context_file(all_activities)
 
 
-if __name__ == "__main__":
-    token = get_access_token()
-    if token:
+def main():
+    try:
+        token = get_access_token()
         fetch_activities(token)
+        return 0
+    except StravaError as error:
+        print(f"Error: {error}", file=sys.stderr)
+        return 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())
