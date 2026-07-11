@@ -1,6 +1,30 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-07-10
+Actividad: Tornada Gympro (Run)
+Distancia: 1.66 km
+Tiempo en movimiento: 8.42 min
+Velocidad media: 11.81 km/h
+Desnivel positivo: 3.7 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-07-10
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 103.2 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-07-10
+Actividad: Anada Gympro (Run)
+Distancia: 2.16 km
+Tiempo en movimiento: 12.12 min
+Velocidad media: 10.71 km/h
+Desnivel positivo: 47.2 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-07-08
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
@@ -375,29 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 140.97 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-05-19
-Actividad: b3tterRunClub (Run)
-Distancia: 6.63 km
-Tiempo en movimiento: 34.5 min
-Velocidad media: 11.54 km/h
-Desnivel positivo: 11.1 m
-Frecuencia cardíaca media: 163.0 bpm
-------------------------------
-Fecha: 2026-05-18
-Actividad: De camí al pis (Walk)
-Distancia: 4.36 km
-Tiempo en movimiento: 42.9 min
-Velocidad media: 6.09 km/h
-Desnivel positivo: 8.7 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-05-17
-Actividad: Amposta - Tortosa (Via Verda) (Ride)
-Distancia: 36.48 km
-Tiempo en movimiento: 101.25 min
-Velocidad media: 21.62 km/h
-Desnivel positivo: 115.5 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
