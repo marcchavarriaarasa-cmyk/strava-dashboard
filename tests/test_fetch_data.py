@@ -1,0 +1,71 @@
+import os
+import tempfile
+import unittest
+from pathlib import Path
+from unittest.mock import patch
+
+import requests
+
+import fetch_data
+
+
+class FailingSession:
+    def get(self, *args, **kwargs):
+        response = requests.Response()
+        response.status_code = 503
+        response.url = args[0]
+        response._content = b'temporary failure'
+        response.raise_for_status()
+
+
+class FetchDataTests(unittest.TestCase):
+    def test_missing_credentials_are_reported_together(self):
+        with (
+            patch.object(fetch_data, 'CLIENT_ID', None),
+            patch.object(fetch_data, 'CLIENT_SECRET', None),
+            patch.object(fetch_data, 'REFRESH_TOKEN', None),
+        ):
+            with self.assertRaisesRegex(
+                fetch_data.StravaError,
+                'STRAVA_CLIENT_ID, STRAVA_CLIENT_SECRET, STRAVA_REFRESH_TOKEN',
+            ):
+                fetch_data.require_credentials()
+
+    def test_fetch_failure_does_not_replace_existing_files(self):
+        with tempfile.TemporaryDirectory() as directory:
+            old_cwd = os.getcwd()
+            os.chdir(directory)
+            try:
+                Path('data').mkdir()
+                activities_file = Path('data/activities.json')
+                context_file = Path('entrenamientos_contexto.txt')
+                activities_file.write_text('[{"existing": true}]\n', encoding='utf-8')
+                context_file.write_text('existing context\n', encoding='utf-8')
+
+                with patch.object(fetch_data, 'SESSION', FailingSession()):
+                    with self.assertRaises(fetch_data.StravaError):
+                        fetch_data.fetch_activities('token')
+
+                self.assertEqual(
+                    activities_file.read_text(encoding='utf-8'),
+                    '[{"existing": true}]\n',
+                )
+                self.assertEqual(
+                    context_file.read_text(encoding='utf-8'),
+                    'existing context\n',
+                )
+            finally:
+                os.chdir(old_cwd)
+
+    def test_atomic_json_write_replaces_complete_file(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'activities.json'
+            fetch_data.atomic_write_json(path, [{'name': 'Carrera'}])
+            self.assertEqual(
+                path.read_text(encoding='utf-8'),
+                '[\n  {\n    "name": "Carrera"\n  }\n]\n',
+            )
+
+
+if __name__ == '__main__':
+    unittest.main()
