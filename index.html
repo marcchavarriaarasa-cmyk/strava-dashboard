@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f3f0e8">
   <title>Marc — Training Log</title>
-  <link rel="stylesheet" href="style.css?v=4.0">
+  <link rel="stylesheet" href="style.css?v=5.0">
 </head>
 <body>
   <div class="shell">
@@ -31,6 +31,7 @@
           <span class="hero-number-value" id="hero-distance">—</span>
           <span class="hero-number-unit">KM</span>
           <span class="hero-number-caption" id="hero-caption">EN EL PERIODO SELECCIONADO</span>
+          <span class="hero-comparison" id="hero-comparison">—</span>
         </div>
       </section>
 
@@ -49,24 +50,28 @@
           <span class="metric-index">01</span>
           <span class="metric-label">TIEMPO ACTIVO</span>
           <strong id="metric-time">—</strong>
+          <span class="metric-comparison" id="time-comparison">—</span>
           <span class="metric-delta" id="time-delta">—</span>
         </article>
         <article class="metric">
           <span class="metric-index">02</span>
           <span class="metric-label">DESNIVEL</span>
           <strong id="metric-elevation">—</strong>
+          <span class="metric-comparison" id="elevation-comparison">—</span>
           <span class="metric-delta">METROS POSITIVOS</span>
         </article>
         <article class="metric">
           <span class="metric-index">03</span>
           <span class="metric-label">SESIONES</span>
           <strong id="metric-sessions">—</strong>
+          <span class="metric-comparison" id="sessions-comparison">—</span>
           <span class="metric-delta" id="frequency-note">—</span>
         </article>
         <article class="metric metric-accent">
           <span class="metric-index">04</span>
           <span class="metric-label">RACHA ACTIVA</span>
           <strong id="metric-streak">—</strong>
+          <span class="metric-comparison" id="best-streak-note">—</span>
           <span class="metric-delta">DÍAS CON ACTIVIDAD</span>
         </article>
       </section>
@@ -91,6 +96,33 @@
             </div>
           </header>
           <div class="sport-mix" id="sport-mix"></div>
+        </article>
+
+        <article class="panel panel-wide load-panel">
+          <header class="panel-header">
+            <div>
+              <p class="eyebrow">CARGA Y EQUILIBRIO</p>
+              <h2>Cómo se acumula la semana</h2>
+            </div>
+            <p class="panel-note" id="load-note">—</p>
+          </header>
+          <div class="training-load-chart" id="training-load-chart" role="img" aria-label="Carga semanal de cardio y fuerza"></div>
+          <p class="chart-footnote" id="load-coverage">—</p>
+        </article>
+
+        <article class="panel panel-wide running-panel">
+          <header class="panel-header">
+            <div>
+              <p class="eyebrow">PROGRESO DE CARRERA</p>
+              <h2>Ritmo en distancias comparables</h2>
+            </div>
+            <div class="progress-legend" aria-label="Series del gráfico">
+              <span><i class="legend-dot legend-dot-orange"></i>5–8 KM</span>
+              <span><i class="legend-dot legend-dot-green"></i>8–12 KM</span>
+            </div>
+          </header>
+          <div class="running-progress-chart" id="running-progress-chart" role="img" aria-label="Evolución del ritmo de carrera"></div>
+          <p class="chart-footnote" id="running-progress-note">—</p>
         </article>
 
         <article class="panel consistency-panel">
@@ -121,12 +153,12 @@
     </main>
 
     <footer>
-      <span>DATOS DE STRAVA · ACTUALIZACIÓN AUTOMÁTICA</span>
+      <span>DATOS PÚBLICOS REDUCIDOS · ACTUALIZACIÓN AUTOMÁTICA</span>
       <span>MARC CHAVARRIA · TRAINING LOG</span>
     </footer>
   </div>
 
   <div id="loading" class="loading" aria-live="polite">LEYENDO LA TEMPORADA…</div>
-  <script src="app.js?v=4.0"></script>
+  <script src="app.js?v=5.0"></script>
 </body>
 </html>

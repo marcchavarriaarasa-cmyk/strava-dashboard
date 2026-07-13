@@ -40,6 +40,6 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add data/activities.json entrenamientos_contexto.txt
+        git add data/activities.public.json entrenamientos_contexto.txt
         git commit -m "Update Strava data [skip ci]" || echo "No changes to commit"
         git push

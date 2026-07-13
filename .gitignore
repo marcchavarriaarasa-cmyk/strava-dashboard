@@ -12,3 +12,7 @@
 # Python
 __pycache__/
 *.py[cod]
+
+# Raw Strava exports contain private route and athlete metadata.
+/data/activities.json
+/pagina web strava/data/activities.json
