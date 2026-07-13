@@ -1012,6 +1012,18 @@
     "gear_type": "Zapatillas",
     "personal_bests": [
       {
+        "name": "10K",
+        "distance": 10000.0,
+        "elapsed_time": 2703,
+        "rank": 3
+      },
+      {
+        "name": "15K",
+        "distance": 15000.0,
+        "elapsed_time": 4098,
+        "rank": 1
+      },
+      {
         "name": "20K",
         "distance": 20000.0,
         "elapsed_time": 5502,
@@ -1022,18 +1034,6 @@
         "distance": 21097.0,
         "elapsed_time": 5795,
         "rank": 1
-      },
-      {
-        "name": "15K",
-        "distance": 15000.0,
-        "elapsed_time": 4098,
-        "rank": 2
-      },
-      {
-        "name": "10K",
-        "distance": 10000.0,
-        "elapsed_time": 2703,
-        "rank": 3
       }
     ]
   },
@@ -1408,16 +1408,16 @@
     "gear_type": "Zapatillas",
     "personal_bests": [
       {
+        "name": "5K",
+        "distance": 5000.0,
+        "elapsed_time": 1231,
+        "rank": 1
+      },
+      {
         "name": "10K",
         "distance": 10000.0,
         "elapsed_time": 2526,
         "rank": 1
-      },
-      {
-        "name": "5K",
-        "distance": 5000.0,
-        "elapsed_time": 1231,
-        "rank": 2
       }
     ]
   },
@@ -1534,14 +1534,7 @@
     "relative_effort": 121.0,
     "gear_name": "HOKA Bondi 9",
     "gear_type": "Zapatillas",
-    "personal_bests": [
-      {
-        "name": "10K",
-        "distance": 10000.0,
-        "elapsed_time": 2767,
-        "rank": 3
-      }
-    ]
+    "personal_bests": []
   },
   {
     "name": "Afternoon workout 💪",
@@ -1718,7 +1711,7 @@
         "name": "400m",
         "distance": 400.0,
         "elapsed_time": 75,
-        "rank": 3
+        "rank": 2
       }
     ]
   },
@@ -1859,7 +1852,7 @@
         "name": "1K",
         "distance": 1000.0,
         "elapsed_time": 226,
-        "rank": 3
+        "rank": 2
       }
     ]
   },
@@ -1879,7 +1872,7 @@
         "name": "400m",
         "distance": 400.0,
         "elapsed_time": 65,
-        "rank": 2
+        "rank": 1
       }
     ]
   },
@@ -2095,14 +2088,7 @@
     "relative_effort": 60.0,
     "gear_name": "HOKA Bondi 9",
     "gear_type": "Zapatillas",
-    "personal_bests": [
-      {
-        "name": "5K",
-        "distance": 5000.0,
-        "elapsed_time": 1391,
-        "rank": 3
-      }
-    ]
+    "personal_bests": []
   },
   {
     "name": "Morning workout ☀️",
@@ -2467,14 +2453,7 @@
     "relative_effort": null,
     "gear_name": "Nike Zoom Fly 5",
     "gear_type": "Zapatillas",
-    "personal_bests": [
-      {
-        "name": "10K",
-        "distance": 10000.0,
-        "elapsed_time": 2831,
-        "rank": 3
-      }
-    ]
+    "personal_bests": []
   },
   {
     "name": "Afternoon workout 💪",
@@ -2520,14 +2499,7 @@
     "relative_effort": 87.0,
     "gear_name": "Nike Zoom Fly 5",
     "gear_type": "Zapatillas",
-    "personal_bests": [
-      {
-        "name": "400m",
-        "distance": 400.0,
-        "elapsed_time": 90,
-        "rank": 3
-      }
-    ]
+    "personal_bests": []
   },
   {
     "name": "Morning workout ☀️",
@@ -2690,14 +2662,7 @@
     "relative_effort": null,
     "gear_name": "Nike Zoom Fly 5",
     "gear_type": "Zapatillas",
-    "personal_bests": [
-      {
-        "name": "10K",
-        "distance": 10000.0,
-        "elapsed_time": 3089,
-        "rank": 3
-      }
-    ]
+    "personal_bests": []
   },
   {
     "name": "6K morning",
@@ -2715,7 +2680,7 @@
         "name": "1K",
         "distance": 1000.0,
         "elapsed_time": 234,
-        "rank": 2
+        "rank": 3
       }
     ]
   },
@@ -2730,14 +2695,7 @@
     "relative_effort": null,
     "gear_name": "Nike Zoom Fly 5",
     "gear_type": "Zapatillas",
-    "personal_bests": [
-      {
-        "name": "1K",
-        "distance": 1000.0,
-        "elapsed_time": 239,
-        "rank": 3
-      }
-    ]
+    "personal_bests": []
   },
   {
     "name": "Lunch Run",
@@ -2792,19 +2750,13 @@
         "name": "400m",
         "distance": 400.0,
         "elapsed_time": 89,
-        "rank": 2
-      },
-      {
-        "name": "1K",
-        "distance": 1000.0,
-        "elapsed_time": 238,
-        "rank": 2
+        "rank": 3
       },
       {
         "name": "5K",
         "distance": 5000.0,
         "elapsed_time": 1300,
-        "rank": 2
+        "rank": 3
       }
     ]
   },
@@ -2837,24 +2789,6 @@
         "distance": 30000.0,
         "elapsed_time": 11926,
         "rank": 1
-      },
-      {
-        "name": "15K",
-        "distance": 15000.0,
-        "elapsed_time": 5165,
-        "rank": 3
-      },
-      {
-        "name": "20K",
-        "distance": 20000.0,
-        "elapsed_time": 6946,
-        "rank": 3
-      },
-      {
-        "name": "Half-Marathon",
-        "distance": 21097.0,
-        "elapsed_time": 7514,
-        "rank": 3
       }
     ]
   },
@@ -2887,36 +2821,30 @@
         "name": "5K",
         "distance": 5000.0,
         "elapsed_time": 1293,
-        "rank": 1
+        "rank": 2
       },
       {
         "name": "10K",
         "distance": 10000.0,
         "elapsed_time": 2662,
-        "rank": 1
+        "rank": 2
       },
       {
         "name": "15K",
         "distance": 15000.0,
         "elapsed_time": 4164,
-        "rank": 1
+        "rank": 2
       },
       {
         "name": "20K",
         "distance": 20000.0,
         "elapsed_time": 5757,
-        "rank": 1
+        "rank": 2
       },
       {
         "name": "Half-Marathon",
         "distance": 21097.0,
         "elapsed_time": 6085,
-        "rank": 1
-      },
-      {
-        "name": "1K",
-        "distance": 1000.0,
-        "elapsed_time": 243,
         "rank": 2
       }
     ]
@@ -2941,26 +2869,7 @@
     "elapsed_time": 3260,
     "total_elevation_gain": 19.7,
     "relative_effort": null,
-    "personal_bests": [
-      {
-        "name": "5K",
-        "distance": 5000.0,
-        "elapsed_time": 1410,
-        "rank": 1
-      },
-      {
-        "name": "10K",
-        "distance": 10000.0,
-        "elapsed_time": 2967,
-        "rank": 1
-      },
-      {
-        "name": "1K",
-        "distance": 1000.0,
-        "elapsed_time": 247,
-        "rank": 3
-      }
-    ]
+    "personal_bests": []
   },
   {
     "name": "Run with Aiman in Turkey",
@@ -3022,26 +2931,7 @@
     "elapsed_time": 2611,
     "total_elevation_gain": 13.2,
     "relative_effort": 86.0,
-    "personal_bests": [
-      {
-        "name": "1K",
-        "distance": 1000.0,
-        "elapsed_time": 244,
-        "rank": 2
-      },
-      {
-        "name": "400m",
-        "distance": 400.0,
-        "elapsed_time": 92,
-        "rank": 3
-      },
-      {
-        "name": "5K",
-        "distance": 5000.0,
-        "elapsed_time": 1704,
-        "rank": 3
-      }
-    ]
+    "personal_bests": []
   },
   {
     "name": "Morning Run",
@@ -3075,46 +2965,22 @@
     "relative_effort": null,
     "personal_bests": [
       {
-        "name": "5K",
-        "distance": 5000.0,
-        "elapsed_time": 1431,
-        "rank": 1
-      },
-      {
-        "name": "10K",
-        "distance": 10000.0,
-        "elapsed_time": 3108,
-        "rank": 1
-      },
-      {
         "name": "15K",
         "distance": 15000.0,
         "elapsed_time": 4866,
-        "rank": 1
+        "rank": 3
       },
       {
         "name": "20K",
         "distance": 20000.0,
         "elapsed_time": 6875,
-        "rank": 1
+        "rank": 3
       },
       {
         "name": "Half-Marathon",
         "distance": 21097.0,
         "elapsed_time": 7333,
-        "rank": 1
-      },
-      {
-        "name": "400m",
-        "distance": 400.0,
-        "elapsed_time": 101,
-        "rank": 2
-      },
-      {
-        "name": "1K",
-        "distance": 1000.0,
-        "elapsed_time": 265,
-        "rank": 2
+        "rank": 3
       }
     ]
   },
@@ -3133,12 +2999,6 @@
         "distance": 1000.0,
         "elapsed_time": 159,
         "rank": 1
-      },
-      {
-        "name": "400m",
-        "distance": 400.0,
-        "elapsed_time": 109,
-        "rank": 2
       }
     ]
   },
