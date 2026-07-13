@@ -130,6 +130,28 @@ def extract_personal_bests(detailed_activity):
     return sorted(personal_bests, key=lambda effort: (effort['rank'], effort['distance']))
 
 
+def rank_current_personal_bests(personal_bests):
+    """Rebuild the current top three per distance from historical Strava awards."""
+    ranked = {activity_id: [] for activity_id in personal_bests}
+    by_distance = {}
+    for activity_id, efforts in personal_bests.items():
+        for effort in efforts:
+            distance_key = round(float(effort.get('distance') or 0), 1)
+            by_distance.setdefault(distance_key, []).append((activity_id, effort))
+
+    for candidates in by_distance.values():
+        candidates.sort(key=lambda item: (
+            int(item[1].get('elapsed_time') or 0),
+            str(item[0]),
+        ))
+        for rank, (activity_id, effort) in enumerate(candidates[:3], start=1):
+            ranked[activity_id].append({**effort, 'rank': rank})
+
+    for efforts in ranked.values():
+        efforts.sort(key=lambda effort: (effort['distance'], effort['rank']))
+    return ranked
+
+
 def wait_for_read_limit_reset(response):
     """Pause before exhausting Strava's short read window during a backfill."""
     limits = response.headers.get('X-ReadRateLimit-Limit', '').split(',')
@@ -182,12 +204,15 @@ def fetch_personal_bests(access_token, activities, previous_public=None):
         resolved[activity['id']] = extract_personal_bests(detailed_activity)
         if index < len(pending) - 1:
             wait_for_read_limit_reset(response)
-    achievement_total = sum(len(efforts) for efforts in resolved.values())
+    historical_total = sum(len(efforts) for efforts in resolved.values())
+    ranked = rank_current_personal_bests(resolved)
+    current_total = sum(len(efforts) for efforts in ranked.values())
     print(
-        f'Resolved {achievement_total} non-segment, non-mile personal achievements '
-        f'across {len(candidates)} candidate activities ({len(pending)} API requests).'
+        f'Resolved {historical_total} historical non-segment, non-mile achievements; '
+        f'published {current_total} current top-three marks across {len(candidates)} '
+        f'candidate activities ({len(pending)} API requests).'
     )
-    return resolved
+    return ranked
 
 
 def gear_type_from_id(gear_id):

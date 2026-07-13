@@ -185,6 +185,26 @@ class FetchDataTests(unittest.TestCase):
         self.assertEqual(result, {123: []})
         get.assert_not_called()
 
+    def test_personal_bests_are_reranked_by_current_time_per_distance(self):
+        historical = {
+            1: [{'name': '15K', 'distance': 15000.0, 'elapsed_time': 4164, 'rank': 1}],
+            2: [{'name': '15K', 'distance': 15000.0, 'elapsed_time': 4098, 'rank': 2}],
+            3: [{'name': '15K', 'distance': 15000.0, 'elapsed_time': 5165, 'rank': 3}],
+            4: [{'name': '15K', 'distance': 15000.0, 'elapsed_time': 4866, 'rank': 1}],
+        }
+
+        ranked = fetch_data.rank_current_personal_bests(historical)
+
+        self.assertEqual(ranked[2][0]['rank'], 1)
+        self.assertEqual(ranked[1][0]['rank'], 2)
+        self.assertEqual(ranked[4][0]['rank'], 3)
+        self.assertEqual(ranked[3], [])
+        ordered = sorted(
+            (effort['rank'], effort['elapsed_time'])
+            for efforts in ranked.values() for effort in efforts
+        )
+        self.assertEqual(ordered, [(1, 4098), (2, 4164), (3, 4866)])
+
     def test_gear_catalog_resolves_each_unique_item_once(self):
         response = Mock()
         response.raise_for_status.return_value = None
