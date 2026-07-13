@@ -122,6 +122,69 @@ class FetchDataTests(unittest.TestCase):
         self.assertEqual(result[0]['gear_type'], 'Zapatillas')
         self.assertNotIn('g123', str(result))
 
+    def test_personal_bests_exclude_segments_miles_and_non_ranked_efforts(self):
+        detailed_activity = {
+            'best_efforts': [
+                {'name': '1k', 'distance': 1000, 'elapsed_time': 210, 'pr_rank': 1},
+                {'name': '1 mile', 'distance': 1609.34, 'elapsed_time': 360, 'pr_rank': 1},
+                {'name': '5k', 'distance': 5000, 'elapsed_time': 1200, 'pr_rank': None},
+                {'name': '10k', 'distance': 10000, 'elapsed_time': 2600, 'pr_rank': 3},
+            ],
+            'segment_efforts': [
+                {'name': 'Subida privada', 'distance': 900, 'elapsed_time': 180, 'pr_rank': 1},
+            ],
+        }
+
+        self.assertEqual(fetch_data.extract_personal_bests(detailed_activity), [
+            {'name': '1k', 'distance': 1000.0, 'elapsed_time': 210, 'rank': 1},
+            {'name': '10k', 'distance': 10000.0, 'elapsed_time': 2600, 'rank': 3},
+        ])
+
+    def test_public_activities_include_only_safe_personal_best_fields(self):
+        activity = {
+            'id': 987,
+            'name': 'Carrera',
+            'sport_type': 'Run',
+            'start_date_local': '2026-07-12T08:00:00Z',
+            'distance': 10000,
+            'moving_time': 3000,
+            'elapsed_time': 3060,
+            'total_elevation_gain': 80,
+        }
+        personal_bests = {
+            987: [{'name': '5k', 'distance': 5000.0, 'elapsed_time': 1240, 'rank': 1}],
+        }
+
+        result = fetch_data.build_public_activities([activity], personal_bests=personal_bests)
+
+        self.assertEqual(result[0]['personal_bests'], personal_bests[987])
+        self.assertNotIn('987', str(result))
+
+    def test_personal_bests_reuse_safe_cache(self):
+        activity = {
+            'id': 123,
+            'name': 'Carrera',
+            'sport_type': 'Run',
+            'start_date_local': '2026-07-12T08:00:00Z',
+            'distance': 10000,
+            'elapsed_time': 3060,
+            'achievement_count': 2,
+        }
+        cached_activity = {
+            'name': 'Carrera',
+            'sport_type': 'Run',
+            'date': '2026-07-12',
+            'distance': 10000,
+            'elapsed_time': 3060,
+            'personal_bests': [],
+        }
+
+        with patch.object(fetch_data.SESSION, 'get') as get:
+            result = fetch_data.fetch_personal_bests('token', [activity], [cached_activity])
+
+        self.assertEqual(result, {123: []})
+        get.assert_not_called()
+
     def test_gear_catalog_resolves_each_unique_item_once(self):
         response = Mock()
         response.raise_for_status.return_value = None

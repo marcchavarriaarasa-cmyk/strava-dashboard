@@ -4,6 +4,7 @@ import json
 import os
 import sys
 import tempfile
+import time
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
@@ -14,6 +15,8 @@ REFRESH_TOKEN = os.getenv('STRAVA_REFRESH_TOKEN')
 
 REQUEST_TIMEOUT = (10, 30)
 PUBLIC_DATA_PATH = 'data/activities.public.json'
+MILE_EFFORT_DISTANCES = (804.67, 1609.34, 3218.69, 16093.4)
+READ_RATE_LIMIT_RESERVE = 5
 KNOWN_GEAR_NAMES = {
     'g21829526': 'Nike Zoom Fly 5',
     'g22746812': 'HOKA Bondi 9',
@@ -79,6 +82,114 @@ def atomic_write_json(path, data):
             os.unlink(temp_path)
 
 
+def load_public_activities(path=PUBLIC_DATA_PATH):
+    """Load the last safe snapshot so detailed achievements can be cached."""
+    try:
+        with open(path, encoding='utf-8') as public_file:
+            data = json.load(public_file)
+        return data if isinstance(data, list) else []
+    except (OSError, ValueError):
+        return []
+
+
+def activity_cache_key(activity):
+    """Match an activity across syncs without persisting its Strava identifier."""
+    local_date = activity.get('start_date_local') or activity.get('start_date') or activity.get('date') or ''
+    return (
+        local_date.split('T', 1)[0],
+        activity.get('sport_type') or activity.get('type') or 'Workout',
+        activity.get('name') or 'Actividad',
+        float(activity.get('distance') or 0),
+        int(activity.get('elapsed_time') or 0),
+    )
+
+
+def is_mile_effort(name, distance):
+    normalized_name = (name or '').casefold()
+    if 'mile' in normalized_name or 'milla' in normalized_name:
+        return True
+    return any(abs(float(distance or 0) - mile_distance) <= 5 for mile_distance in MILE_EFFORT_DISTANCES)
+
+
+def extract_personal_bests(detailed_activity):
+    """Keep only non-mile top-three best efforts; segment efforts are never read."""
+    personal_bests = []
+    for effort in detailed_activity.get('best_efforts') or []:
+        rank = effort.get('pr_rank')
+        distance = effort.get('distance') or 0
+        elapsed_time = effort.get('elapsed_time') or effort.get('moving_time') or 0
+        name = (effort.get('name') or '').strip()
+        if rank not in (1, 2, 3) or is_mile_effort(name, distance) or elapsed_time <= 0:
+            continue
+        personal_bests.append({
+            'name': name or f'{round(float(distance))} m',
+            'distance': round(float(distance), 1),
+            'elapsed_time': int(elapsed_time),
+            'rank': int(rank),
+        })
+    return sorted(personal_bests, key=lambda effort: (effort['rank'], effort['distance']))
+
+
+def wait_for_read_limit_reset(response):
+    """Pause before exhausting Strava's short read window during a backfill."""
+    limits = response.headers.get('X-ReadRateLimit-Limit', '').split(',')
+    usage = response.headers.get('X-ReadRateLimit-Usage', '').split(',')
+    try:
+        short_limit = int(limits[0])
+        short_usage = int(usage[0])
+    except (IndexError, TypeError, ValueError):
+        return
+    if short_usage < short_limit - READ_RATE_LIMIT_RESERVE:
+        return
+    wait_seconds = 15 * 60 - int(time.time()) % (15 * 60) + 5
+    print(f'Read limit nearly reached; waiting {wait_seconds} seconds for the next Strava window.')
+    time.sleep(wait_seconds)
+
+
+def fetch_personal_bests(access_token, activities, previous_public=None):
+    """Resolve activity best efforts while reusing the privacy-safe public cache."""
+    previous_public = previous_public or []
+    cached = {
+        activity_cache_key(activity): activity.get('personal_bests') or []
+        for activity in previous_public
+        if 'personal_bests' in activity
+    }
+    candidates = [
+        activity for activity in activities
+        if activity.get('id') and int(activity.get('achievement_count') or 0) > 0
+    ]
+    headers = {'Authorization': f'Bearer {access_token}'}
+    resolved = {}
+    pending = []
+    for activity in candidates:
+        cache_key = activity_cache_key(activity)
+        if cache_key in cached:
+            resolved[activity['id']] = cached[cache_key]
+        else:
+            pending.append(activity)
+    for index, activity in enumerate(pending):
+        try:
+            response = SESSION.get(
+                f"https://www.strava.com/api/v3/activities/{activity['id']}",
+                headers=headers,
+                params={'include_all_efforts': 'false'},
+                timeout=REQUEST_TIMEOUT,
+            )
+            response.raise_for_status()
+            detailed_activity = response.json()
+        except (requests.exceptions.RequestException, ValueError) as error:
+            raise StravaError('Unable to fetch detailed activity achievements.') from error
+        resolved[activity['id']] = extract_personal_bests(detailed_activity)
+        if index < len(pending) - 1:
+            wait_for_read_limit_reset(response)
+    achievement_total = sum(len(efforts) for efforts in resolved.values())
+    print(
+        f'Resolved {achievement_total} non-segment, non-mile personal achievements '
+        f'across {len(candidates)} candidate activities ({len(pending)} API requests).'
+    )
+    return resolved
+
+
 def gear_type_from_id(gear_id):
     if gear_id.startswith('b'):
         return 'Bicicleta'
@@ -133,9 +244,10 @@ def fetch_gear_catalog(access_token, activities):
     return catalog
 
 
-def build_public_activities(activities, gear_catalog=None):
+def build_public_activities(activities, gear_catalog=None, personal_bests=None):
     """Return the minimal, privacy-conscious dataset used by GitHub Pages."""
     gear_catalog = gear_catalog or {}
+    personal_bests = personal_bests or {}
     public_activities = []
     for activity in activities:
         local_date = activity.get('start_date_local') or activity.get('start_date') or ''
@@ -153,6 +265,8 @@ def build_public_activities(activities, gear_catalog=None):
         if gear:
             public_activity['gear_name'] = gear['name']
             public_activity['gear_type'] = gear['type']
+        if activity.get('id') in personal_bests:
+            public_activity['personal_bests'] = personal_bests[activity['id']]
         public_activities.append(public_activity)
     return public_activities
 
@@ -280,8 +394,10 @@ def fetch_activities(access_token):
     # Publish only the fields required by the dashboard. Exact routes,
     # coordinates, athlete identifiers, devices and heart-rate samples stay out
     # of the GitHub Pages payload.
+    previous_public = load_public_activities()
     gear_catalog = fetch_gear_catalog(access_token, all_activities)
-    public_activities = build_public_activities(all_activities, gear_catalog)
+    personal_bests = fetch_personal_bests(access_token, all_activities, previous_public)
+    public_activities = build_public_activities(all_activities, gear_catalog, personal_bests)
     atomic_write_json(PUBLIC_DATA_PATH, public_activities)
     print(f"Successfully saved privacy-safe data to {PUBLIC_DATA_PATH}")
     

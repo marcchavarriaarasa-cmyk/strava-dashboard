@@ -91,6 +91,7 @@ function render() {
   renderSportMix(activities);
   renderTrainingLoad(activities);
   renderRunningProgress(activities);
+  renderPersonalBests(activities);
   renderGearUsage(activities);
   renderCalendar(state.activities.filter(matchesSport));
   renderActivityTable(activities);
@@ -415,6 +416,42 @@ function renderGearUsage(activities) {
     </div>`).join('');
 }
 
+function renderPersonalBests(activities) {
+  const panel = $('.achievements-panel');
+  const achievements = activities.flatMap(activity =>
+    (activity.personal_bests || []).map(effort => ({
+      ...effort,
+      activityName: activity.name || 'Actividad',
+      sport: sportLabels[activity.sport_type] || activity.sport_type,
+      date: activityDate(activity),
+    }))
+  ).sort((a, b) => b.date - a.date || a.rank - b.rank || a.distance - b.distance);
+
+  panel.classList.toggle('is-hidden', achievements.length === 0);
+  if (!achievements.length) return;
+
+  const records = achievements.filter(item => item.rank === 1).length;
+  $('#achievements-note').textContent = `${achievements.length} LOGROS · ${records} ${records === 1 ? 'RÉCORD PERSONAL' : 'RÉCORDS PERSONALES'}`;
+  const list = $('#personal-achievements');
+  list.setAttribute('aria-label', `${achievements.length} logros personales sin segmentos ni distancias en millas`);
+  list.innerHTML = `
+    <div class="achievement-row achievement-head" aria-hidden="true">
+      <span>DISTANCIA</span><span>MARCA</span><span>RANGO</span><span>FECHA</span><span>ACTIVIDAD</span>
+    </div>
+    ${achievements.map(item => `
+      <div class="achievement-row">
+        <strong class="achievement-distance">${escapeHtml(item.name)}</strong>
+        <span class="achievement-time">${formatEffortTime(item.elapsed_time)}</span>
+        <span class="achievement-rank" data-rank="${item.rank}">${personalRankLabel(item.rank)}</span>
+        <time class="achievement-date" datetime="${toIsoDay(item.date)}">${item.date.toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric' }).replace('.', '')}</time>
+        <span class="achievement-activity">${escapeHtml(item.activityName)}<small>${escapeHtml(item.sport).toUpperCase()}</small></span>
+      </div>`).join('')}`;
+}
+
+function personalRankLabel(rank) {
+  return rank === 1 ? 'RÉCORD PERSONAL' : rank === 2 ? '2ª MEJOR MARCA' : '3ª MEJOR MARCA';
+}
+
 function renderCalendar(activities) {
   const panel = $('.consistency-panel');
   const reference = activityDate(state.activities[0]);
@@ -506,6 +543,7 @@ function startOfWeek(date) { const copy = new Date(date); const day = (copy.getD
 function endOfWeek(date) { return new Date(startOfWeek(date).getTime() + 7 * DAY_MS - 1); }
 function dateSpanDays(items) { if (items.length < 2) return 1; return Math.max(1, (activityDate(items[0]) - activityDate(items[items.length - 1])) / DAY_MS); }
 function formatDuration(seconds = 0) { const hours = Math.floor(seconds / 3600); const minutes = Math.round((seconds % 3600) / 60); return hours ? `${hours}H ${minutes}M` : `${minutes} MIN`; }
+function formatEffortTime(seconds = 0) { const whole = Math.max(0, Math.round(Number(seconds) || 0)); const hours = Math.floor(whole / 3600); const minutes = Math.floor((whole % 3600) / 60); const remaining = whole % 60; return hours ? `${hours}:${String(minutes).padStart(2, '0')}:${String(remaining).padStart(2, '0')}` : `${minutes}:${String(remaining).padStart(2, '0')}`; }
 function formatPace(minutes) { let whole = Math.floor(minutes); let seconds = Math.round((minutes - whole) * 60); if (seconds === 60) { whole += 1; seconds = 0; } return `${whole}:${String(seconds).padStart(2, '0')}`; }
 function escapeHtml(value) { const node = document.createElement('div'); node.textContent = value; return node.innerHTML; }
 
