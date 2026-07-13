@@ -1,3 +1,4 @@
+const DAY_MS = 86400000;
 const state = { activities: [], range: 84, sport: 'Todos' };
 const sportLabels = {
   Run: 'Correr', Ride: 'Bici', MountainBikeRide: 'MTB', Walk: 'Caminar',
@@ -11,16 +12,18 @@ const fmtOne = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 1 });
 
 async function init() {
   try {
-    const response = await fetch('data/activities.json');
+    const response = await fetch('data/activities.public.json');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    state.activities = (await response.json()).sort((a, b) => new Date(b.start_date) - new Date(a.start_date));
+    state.activities = (await response.json()).sort((a, b) => activityDate(b) - activityDate(a));
     if (!state.activities.length) throw new Error('no hay actividades disponibles');
     bindControls();
     renderSportControls();
     render();
     $('#loading').classList.add('is-hidden');
   } catch (error) {
-    $('#loading').innerHTML = `<span class="error">NO SE HAN PODIDO LEER LOS DATOS · ${error.message}</span>`;
+    const loading = $('#loading');
+    loading.textContent = `NO SE HAN PODIDO LEER LOS DATOS · ${error.message}`;
+    loading.classList.add('error');
   }
 }
 
@@ -59,60 +62,110 @@ function renderSportControls() {
   });
 }
 
-function filteredActivities() {
-  const reference = new Date(state.activities[0].start_date);
-  const threshold = state.range === 'all' ? null : new Date(reference.getTime() - state.range * 86400000);
+function activitiesForPeriod(periodOffset = 0) {
+  if (state.range === 'all') {
+    return periodOffset === 0 ? state.activities.filter(matchesSport) : [];
+  }
+  const reference = activityDate(state.activities[0]);
+  const end = new Date(reference.getTime() - periodOffset * state.range * DAY_MS);
+  const start = new Date(end.getTime() - (state.range - 1) * DAY_MS);
   return state.activities.filter(item => {
-    const inRange = !threshold || new Date(item.start_date) >= threshold;
-    const matchesSport = state.sport === 'Todos' || item.sport_type === state.sport;
-    return inRange && matchesSport;
+    const date = activityDate(item);
+    return date >= start && date <= end && matchesSport(item);
   });
+}
+
+function matchesSport(item) {
+  return state.sport === 'Todos' || item.sport_type === state.sport;
 }
 
 function render() {
-  const activities = filteredActivities();
-  const latestDate = new Date(state.activities[0].start_date_local || state.activities[0].start_date);
+  const activities = activitiesForPeriod(0);
+  const previousActivities = activitiesForPeriod(1);
+  const latestDate = activityDate(state.activities[0]);
   $('#sync-date').textContent = `DATOS HASTA ${latestDate.toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric' }).toUpperCase()}`;
   $('#edition').textContent = `TEMPORADA ${latestDate.getFullYear()}`;
-  renderMetrics(activities);
+  renderMetrics(activities, previousActivities);
   renderWeeklyVolume(activities);
   renderSportMix(activities);
-  renderCalendar();
+  renderTrainingLoad(activities);
+  renderRunningProgress(activities);
+  renderCalendar(activities);
   renderActivityTable(activities);
 }
 
-function renderMetrics(activities) {
-  const distance = sum(activities, 'distance') / 1000;
-  const time = sum(activities, 'moving_time');
-  const elevation = sum(activities, 'total_elevation_gain');
-  const streak = calculateStreak(state.activities);
-  $('#hero-distance').textContent = fmtOne.format(distance);
+function renderMetrics(activities, previousActivities) {
+  const current = summarize(activities);
+  const previous = summarize(previousActivities);
+  const streaks = calculateStreaks(state.activities);
+  $('#hero-distance').textContent = fmtOne.format(current.distanceKm);
   $('#hero-caption').textContent = state.sport === 'Todos' ? 'EN EL PERIODO SELECCIONADO' : `${sportLabels[state.sport] || state.sport} · PERIODO SELECCIONADO`;
-  $('#metric-time').textContent = `${fmtOne.format(time / 3600)} H`;
-  $('#metric-elevation').textContent = `${fmt.format(elevation)} M`;
-  $('#metric-sessions').textContent = fmt.format(activities.length);
-  $('#metric-streak').textContent = `${streak} D`;
+  $('#hero-comparison').textContent = formatComparison(current.distanceKm, previous.distanceKm);
+  $('#metric-time').textContent = `${fmtOne.format(current.hours)} H`;
+  $('#time-comparison').textContent = formatComparison(current.seconds, previous.seconds);
+  $('#metric-elevation').textContent = `${fmt.format(current.elevation)} M`;
+  $('#elevation-comparison').textContent = formatComparison(current.elevation, previous.elevation);
+  $('#metric-sessions').textContent = fmt.format(current.sessions);
+  $('#sessions-comparison').textContent = formatComparison(current.sessions, previous.sessions);
+  $('#metric-streak').textContent = `${streaks.latest} D`;
+  $('#best-streak-note').textContent = `MEJOR RACHA · ${streaks.best} D`;
   const weeks = state.range === 'all' ? Math.max(1, dateSpanDays(activities) / 7) : state.range / 7;
-  $('#frequency-note').textContent = `${fmtOne.format(activities.length / Math.max(weeks, 1))} SESIONES / SEMANA`;
-  $('#time-delta').textContent = distance > 0 ? `${fmtOne.format(distance / Math.max(time / 3600, 1))} KM / H ACTIVA` : 'TRABAJO SIN DISTANCIA';
+  $('#frequency-note').textContent = `${fmtOne.format(current.sessions / Math.max(weeks, 1))} SESIONES / SEMANA`;
+  $('#time-delta').textContent = current.distanceKm > 0 ? `${fmtOne.format(current.distanceKm / Math.max(current.hours, 1))} KM / H ACTIVA` : 'TRABAJO SIN DISTANCIA';
+}
+
+function summarize(activities) {
+  const seconds = sum(activities, 'moving_time');
+  return {
+    distanceKm: sum(activities, 'distance') / 1000,
+    seconds,
+    hours: seconds / 3600,
+    elevation: sum(activities, 'total_elevation_gain'),
+    sessions: activities.length
+  };
+}
+
+function formatComparison(current, previous) {
+  if (state.range === 'all') return 'TODO EL HISTORIAL';
+  if (previous === 0) return current === 0 ? 'SIN ACTIVIDAD EN AMBOS PERIODOS' : 'SIN BASE ANTERIOR';
+  const change = (current - previous) / previous * 100;
+  if (Math.abs(change) < 0.5) return 'ESTABLE VS PERIODO ANTERIOR';
+  return `${change > 0 ? '+' : ''}${fmt.format(change)} % VS PERIODO ANTERIOR`;
+}
+
+function weekCount() {
+  return state.range === 28 ? 4 : 12;
+}
+
+function buildWeeks(activities) {
+  const count = weekCount();
+  const reference = startOfWeek(activityDate(state.activities[0]));
+  return Array.from({ length: count }, (_, index) => {
+    const start = new Date(reference.getTime() - (count - 1 - index) * 7 * DAY_MS);
+    const end = new Date(start.getTime() + 7 * DAY_MS);
+    const items = activities.filter(item => {
+      const date = activityDate(item);
+      return date >= start && date < end;
+    });
+    return {
+      start,
+      label: start.toLocaleDateString('es-ES', { day: '2-digit', month: 'short' }).replace('.', ''),
+      items
+    };
+  });
 }
 
 function renderWeeklyVolume(activities) {
-  const reference = startOfWeek(new Date(state.activities[0].start_date));
-  const weeks = Array.from({ length: 12 }, (_, index) => {
-    const start = new Date(reference.getTime() - (11 - index) * 7 * 86400000);
-    const end = new Date(start.getTime() + 7 * 86400000);
-    const distance = activities.filter(item => {
-      const date = new Date(item.start_date);
-      return date >= start && date < end;
-    }).reduce((total, item) => total + (item.distance || 0), 0) / 1000;
-    return { start, distance };
-  });
+  const weeks = buildWeeks(activities).map(week => ({
+    ...week,
+    distance: sum(week.items, 'distance') / 1000
+  }));
   const max = Math.max(...weeks.map(item => item.distance), 1);
-  $('#volume-chart').innerHTML = weeks.map(item => {
-    const label = item.start.toLocaleDateString('es-ES', { day: '2-digit', month: 'short' }).replace('.', '');
-    return `<div class="week-bar" style="--height:${Math.max(1, item.distance / max * 100)}%" data-label="${label}" data-value="${fmtOne.format(item.distance)}"></div>`;
-  }).join('');
+  const chart = $('#volume-chart');
+  chart.style.setProperty('--week-count', weeks.length);
+  chart.innerHTML = weeks.map(item =>
+    `<div class="week-bar" style="--height:${Math.max(1, item.distance / max * 100)}%" data-label="${item.label}" data-value="${fmtOne.format(item.distance)}"></div>`
+  ).join('');
 }
 
 function renderSportMix(activities) {
@@ -130,30 +183,146 @@ function renderSportMix(activities) {
     </div>`).join('') : '<p>Sin actividades en este periodo.</p>';
 }
 
-function renderCalendar() {
-  const reference = new Date(state.activities[0].start_date);
+function renderTrainingLoad(activities) {
+  const weeks = buildWeeks(activities).map(week => {
+    const cardio = week.items.filter(item => item.sport_type !== 'WeightTraining');
+    const strength = week.items.filter(item => item.sport_type === 'WeightTraining');
+    return {
+      ...week,
+      cardioEffort: cardio.reduce((total, item) => total + (Number(item.relative_effort) || 0), 0),
+      strengthMinutes: sum(strength, 'moving_time') / 60,
+      strengthSessions: strength.length
+    };
+  });
+  const last = weeks[weeks.length - 1];
+  $('#load-note').textContent = `ÚLTIMA SEMANA · ${fmt.format(last.cardioEffort)} ESFUERZO · ${fmt.format(last.strengthMinutes)} MIN FUERZA`;
+  $('#training-load-chart').innerHTML = [
+    renderLoadLane('CARDIO', 'ESFUERZO RELATIVO', weeks.map(item => item.cardioEffort), weeks, 'cardio-bar', 'PTS'),
+    renderLoadLane('FUERZA', 'MINUTOS ACTIVOS', weeks.map(item => item.strengthMinutes), weeks, 'strength-bar', 'MIN')
+  ].join('');
+  const cardioActivities = activities.filter(item => item.sport_type !== 'WeightTraining');
+  const scored = cardioActivities.filter(item => item.relative_effort !== null && item.relative_effort !== undefined && Number.isFinite(Number(item.relative_effort))).length;
+  const strengthSessions = activities.filter(item => item.sport_type === 'WeightTraining').length;
+  $('#load-coverage').textContent = `COBERTURA · ESFUERZO DISPONIBLE EN ${scored} DE ${cardioActivities.length} SESIONES DE CARDIO · FUERZA MEDIDA CON ${strengthSessions} SESIONES Y SU DURACIÓN`;
+}
+
+function renderLoadLane(label, subtitle, values, weeks, barClass, unit) {
+  const averages = movingAverage(values, 4);
+  return `<div class="load-lane">
+    <div class="load-lane-label"><strong>${label}</strong><span>${subtitle}<br>MEDIA MÓVIL 4 SEMANAS</span></div>
+    ${renderBarLineSvg(values, averages, weeks, barClass, unit)}
+  </div>`;
+}
+
+function renderBarLineSvg(values, averages, weeks, barClass, unit) {
+  const width = 1200;
+  const height = 210;
+  const margin = { top: 22, right: 18, bottom: 42, left: 58 };
+  const plotWidth = width - margin.left - margin.right;
+  const plotHeight = height - margin.top - margin.bottom;
+  const max = Math.max(...values, ...averages, 1);
+  const step = plotWidth / values.length;
+  const barWidth = Math.min(58, step * .52);
+  const y = value => margin.top + plotHeight - value / max * plotHeight;
+  const points = averages.map((value, index) => `${margin.left + step * (index + .5)},${y(value)}`).join(' ');
+  const grid = [1, .5, 0].map(fraction => {
+    const gridY = margin.top + plotHeight * (1 - fraction);
+    return `<line class="${fraction === 0 ? 'chart-baseline' : 'chart-grid'}" x1="${margin.left}" y1="${gridY}" x2="${width - margin.right}" y2="${gridY}"></line>
+      <text x="${margin.left - 10}" y="${gridY + 4}" text-anchor="end">${fmt.format(max * fraction)}</text>`;
+  }).join('');
+  const bars = values.map((value, index) => {
+    const x = margin.left + step * (index + .5) - barWidth / 2;
+    const barY = y(value);
+    const barHeight = margin.top + plotHeight - barY;
+    return `<g><title>${weeks[index].label}: ${fmtOne.format(value)} ${unit}</title><rect class="${barClass}" x="${x}" y="${barY}" width="${barWidth}" height="${barHeight}"></rect></g>`;
+  }).join('');
+  const labels = weeks.map((week, index) =>
+    `<text class="axis-label" x="${margin.left + step * (index + .5)}" y="${height - 12}" text-anchor="middle">${week.label}</text>`
+  ).join('');
+  const averagePoints = averages.map((value, index) =>
+    `<circle class="average-point" cx="${margin.left + step * (index + .5)}" cy="${y(value)}" r="3.5"><title>Media 4 semanas: ${fmtOne.format(value)} ${unit}</title></circle>`
+  ).join('');
+  return `<svg class="chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${unit === 'PTS' ? 'Esfuerzo relativo' : 'Minutos de fuerza'} por semana y media móvil de cuatro semanas">${grid}${bars}<polyline class="average-line" points="${points}"></polyline>${averagePoints}${labels}</svg>`;
+}
+
+function renderRunningProgress(activities) {
+  const bandDefinitions = [
+    { key: 'short', label: '5–8 KM', min: 5, max: 8, lineClass: 'running-series-orange', pointClass: 'running-point-orange' },
+    { key: 'long', label: '8–12 KM', min: 8, max: 12, lineClass: 'running-series-green', pointClass: 'running-point-green' }
+  ];
+  const bands = bandDefinitions.map(band => ({
+    ...band,
+    points: activities.filter(item => item.sport_type === 'Run').map(item => {
+      const distanceKm = Number(item.distance) / 1000;
+      const pace = Number(item.moving_time) / 60 / distanceKm;
+      return { date: activityDate(item), distanceKm, pace };
+    }).filter(item => item.distanceKm >= band.min && item.distanceKm < band.max && item.pace >= 2.5 && item.pace <= 12).sort((a, b) => a.date - b.date)
+  }));
+  const allPoints = bands.flatMap(band => band.points);
+  const chart = $('#running-progress-chart');
+  if (allPoints.length < 8) {
+    chart.innerHTML = '<div class="empty-chart">NO HAY SUFICIENTES CARRERAS COMPARABLES PARA ESTE FILTRO</div>';
+    $('#running-progress-note').textContent = `MUESTRA ACTUAL: ${allPoints.length} · SE NECESITAN AL MENOS 8 CARRERAS ENTRE 5 Y 12 KM PARA MOSTRAR UNA TENDENCIA`;
+    return;
+  }
+  chart.innerHTML = renderRunningSvg(bands, allPoints);
+  chart.setAttribute('aria-label', `Evolución del ritmo en ${allPoints.length} carreras comparables`);
+  $('#running-progress-note').textContent = `${allPoints.length} CARRERAS · RITMO EN MOVIMIENTO · ESCALA ENFOCADA, MÁS RÁPIDO ARRIBA · LÍNEAS: MEDIANA MÓVIL DE 4 CARRERAS`;
+}
+
+function renderRunningSvg(bands, allPoints) {
+  const width = 1200;
+  const height = 360;
+  const margin = { top: 24, right: 24, bottom: 48, left: 66 };
+  const plotWidth = width - margin.left - margin.right;
+  const plotHeight = height - margin.top - margin.bottom;
+  const minDate = Math.min(...allPoints.map(item => item.date.getTime()));
+  const maxDate = Math.max(...allPoints.map(item => item.date.getTime()));
+  const dateSpan = Math.max(maxDate - minDate, DAY_MS);
+  const rawMinPace = Math.min(...allPoints.map(item => item.pace));
+  const rawMaxPace = Math.max(...allPoints.map(item => item.pace));
+  let minPace = Math.floor((rawMinPace - .25) * 2) / 2;
+  let maxPace = Math.ceil((rawMaxPace + .25) * 2) / 2;
+  if (maxPace - minPace < 1) { minPace -= .5; maxPace += .5; }
+  const x = date => margin.left + (date.getTime() - minDate) / dateSpan * plotWidth;
+  const y = pace => margin.top + (pace - minPace) / (maxPace - minPace) * plotHeight;
+  const yTicks = Array.from({ length: 5 }, (_, index) => minPace + (maxPace - minPace) * index / 4);
+  const yGrid = yTicks.map(tick => `<line class="${tick === yTicks[yTicks.length - 1] ? 'chart-baseline' : 'chart-grid'}" x1="${margin.left}" y1="${y(tick)}" x2="${width - margin.right}" y2="${y(tick)}"></line><text x="${margin.left - 12}" y="${y(tick) + 4}" text-anchor="end">${formatPace(tick)}</text>`).join('');
+  const xTicks = Array.from({ length: 5 }, (_, index) => new Date(minDate + dateSpan * index / 4));
+  const shortWindow = dateSpan <= 120 * DAY_MS;
+  const xLabels = xTicks.map(date => `<text class="axis-label" x="${x(date)}" y="${height - 14}" text-anchor="middle">${date.toLocaleDateString('es-ES', shortWindow ? { day: '2-digit', month: 'short' } : { month: 'short', year: '2-digit' }).replace('.', '')}</text>`).join('');
+  const series = bands.map(band => {
+    const rolling = rollingMedian(band.points, 4);
+    const line = rolling.length > 1 ? `<polyline class="${band.lineClass}" points="${rolling.map(item => `${x(item.date)},${y(item.pace)}`).join(' ')}"></polyline>` : '';
+    const points = band.points.map(item => `<circle class="${band.pointClass}" cx="${x(item.date)}" cy="${y(item.pace)}" r="5"><title>${item.date.toLocaleDateString('es-ES')} · ${fmtOne.format(item.distanceKm)} km · ${formatPace(item.pace)}/km</title></circle>`).join('');
+    return `${line}${points}`;
+  }).join('');
+  return `<svg class="chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Ritmo de carrera entre 5 y 12 kilómetros a lo largo del tiempo">${yGrid}${series}${xLabels}</svg>`;
+}
+
+function renderCalendar(activities) {
+  const reference = activityDate(state.activities[0]);
   const end = endOfWeek(reference);
-  const start = new Date(end.getTime() - 12 * 7 * 86400000 + 86400000);
-  const distanceByDay = new Map();
-  state.activities.forEach(item => {
-    const key = dayKey(new Date(item.start_date_local || item.start_date));
-    const load = (item.distance || 0) / 1000 + (item.moving_time || 0) / 3600 * 2;
-    distanceByDay.set(key, (distanceByDay.get(key) || 0) + load);
+  const start = new Date(end.getTime() - 12 * 7 * DAY_MS + DAY_MS);
+  const minutesByDay = new Map();
+  activities.forEach(item => {
+    const key = dayKey(activityDate(item));
+    minutesByDay.set(key, (minutesByDay.get(key) || 0) + (Number(item.moving_time) || 0) / 60);
   });
   const values = [];
-  for (let date = new Date(start); date <= end; date = new Date(date.getTime() + 86400000)) {
-    values.push({ date: new Date(date), load: distanceByDay.get(dayKey(date)) || 0 });
+  for (let date = new Date(start); date <= end; date = new Date(date.getTime() + DAY_MS)) {
+    values.push({ date: new Date(date), minutes: minutesByDay.get(dayKey(date)) || 0 });
   }
-  const nonZero = values.map(item => item.load).filter(Boolean).sort((a, b) => a - b);
-  const q1 = nonZero[Math.floor(nonZero.length * .35)] || 1;
-  const q2 = nonZero[Math.floor(nonZero.length * .65)] || 3;
-  const q3 = nonZero[Math.floor(nonZero.length * .85)] || 7;
+  const nonZero = values.map(item => item.minutes).filter(Boolean).sort((a, b) => a - b);
+  const q1 = nonZero[Math.floor(nonZero.length * .35)] || 20;
+  const q2 = nonZero[Math.floor(nonZero.length * .65)] || 45;
+  const q3 = nonZero[Math.floor(nonZero.length * .85)] || 75;
   $('#training-calendar').innerHTML = values.map(item => {
-    const level = item.load === 0 ? 0 : item.load <= q1 ? 1 : item.load <= q2 ? 2 : item.load <= q3 ? 3 : 4;
-    const title = `${item.date.toLocaleDateString('es-ES')}: ${item.load ? fmtOne.format(item.load) + ' carga' : 'descanso'}`;
+    const level = item.minutes === 0 ? 0 : item.minutes <= q1 ? 1 : item.minutes <= q2 ? 2 : item.minutes <= q3 ? 3 : 4;
+    const title = `${item.date.toLocaleDateString('es-ES')}: ${item.minutes ? fmt.format(item.minutes) + ' min activos' : 'descanso'}`;
     return `<div class="day-cell" data-level="${level}" title="${title}"></div>`;
   }).join('');
-  const activeDays = values.filter(item => item.load > 0).length;
+  const activeDays = values.filter(item => item.minutes > 0).length;
   $('#active-days-note').textContent = `${activeDays} DÍAS ACTIVOS · ${values.length - activeDays} DE DESCANSO`;
 }
 
@@ -161,8 +330,8 @@ function renderActivityTable(activities) {
   const recent = activities.slice(0, 6);
   $('#latest-count').textContent = `${activities.length} REGISTROS`;
   $('#activity-table').innerHTML = recent.length ? recent.map(item => {
-    const date = new Date(item.start_date_local || item.start_date);
-    const distance = (item.distance || 0) / 1000;
+    const date = activityDate(item);
+    const distance = Number(item.distance) / 1000;
     return `<div class="activity-row">
       <span class="activity-date">${date.toLocaleDateString('es-ES', { day: '2-digit', month: 'short' }).replace('.', '')}</span>
       <span class="activity-title">${escapeHtml(item.name || 'Actividad')}<span>${(sportLabels[item.sport_type] || item.sport_type).toUpperCase()}</span></span>
@@ -172,23 +341,53 @@ function renderActivityTable(activities) {
   }).join('') : '<p>Sin actividades para este filtro.</p>';
 }
 
-function calculateStreak(activities) {
-  const days = new Set(activities.map(item => dayKey(new Date(item.start_date_local || item.start_date))));
-  let cursor = new Date(activities[0].start_date_local || activities[0].start_date);
-  let streak = 0;
-  while (days.has(dayKey(cursor))) {
-    streak += 1;
-    cursor = new Date(cursor.getTime() - 86400000);
+function calculateStreaks(activities) {
+  const days = [...new Set(activities.map(item => item.date))].sort();
+  if (!days.length) return { latest: 0, best: 0 };
+  let best = days.length ? 1 : 0;
+  let running = days.length ? 1 : 0;
+  for (let index = 1; index < days.length; index += 1) {
+    const previous = isoDate(days[index - 1]);
+    const current = isoDate(days[index]);
+    running = Math.round((current - previous) / DAY_MS) === 1 ? running + 1 : 1;
+    best = Math.max(best, running);
   }
-  return streak;
+  const daySet = new Set(days);
+  let cursor = isoDate(days[days.length - 1]);
+  let latest = 0;
+  while (daySet.has(toIsoDay(cursor))) {
+    latest += 1;
+    cursor = new Date(cursor.getTime() - DAY_MS);
+  }
+  return { latest, best };
+}
+
+function movingAverage(values, windowSize) {
+  return values.map((_, index) => {
+    const slice = values.slice(Math.max(0, index - windowSize + 1), index + 1);
+    return slice.reduce((total, value) => total + value, 0) / slice.length;
+  });
+}
+
+function rollingMedian(points, windowSize) {
+  return points.map((point, index) => {
+    const values = points.slice(Math.max(0, index - windowSize + 1), index + 1).map(item => item.pace).sort((a, b) => a - b);
+    const middle = Math.floor(values.length / 2);
+    const pace = values.length % 2 ? values[middle] : (values[middle - 1] + values[middle]) / 2;
+    return { date: point.date, pace };
+  });
 }
 
 function sum(items, key) { return items.reduce((total, item) => total + (Number(item[key]) || 0), 0); }
-function dayKey(date) { return `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`; }
+function activityDate(item) { return isoDate(item.date); }
+function isoDate(value) { return new Date(`${value}T12:00:00`); }
+function toIsoDay(date) { return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`; }
+function dayKey(date) { return toIsoDay(date); }
 function startOfWeek(date) { const copy = new Date(date); const day = (copy.getDay() + 6) % 7; copy.setHours(0, 0, 0, 0); copy.setDate(copy.getDate() - day); return copy; }
-function endOfWeek(date) { return new Date(startOfWeek(date).getTime() + 7 * 86400000 - 1); }
-function dateSpanDays(items) { if (items.length < 2) return 1; return Math.max(1, (new Date(items[0].start_date) - new Date(items[items.length - 1].start_date)) / 86400000); }
+function endOfWeek(date) { return new Date(startOfWeek(date).getTime() + 7 * DAY_MS - 1); }
+function dateSpanDays(items) { if (items.length < 2) return 1; return Math.max(1, (activityDate(items[0]) - activityDate(items[items.length - 1])) / DAY_MS); }
 function formatDuration(seconds = 0) { const hours = Math.floor(seconds / 3600); const minutes = Math.round((seconds % 3600) / 60); return hours ? `${hours}H ${minutes}M` : `${minutes} MIN`; }
+function formatPace(minutes) { let whole = Math.floor(minutes); let seconds = Math.round((minutes - whole) * 60); if (seconds === 60) { whole += 1; seconds = 0; } return `${whole}:${String(seconds).padStart(2, '0')}`; }
 function escapeHtml(value) { const node = document.createElement('div'); node.textContent = value; return node.innerHTML; }
 
 init();

@@ -13,6 +13,7 @@ CLIENT_SECRET = os.getenv('STRAVA_CLIENT_SECRET')
 REFRESH_TOKEN = os.getenv('STRAVA_REFRESH_TOKEN')
 
 REQUEST_TIMEOUT = (10, 30)
+PUBLIC_DATA_PATH = 'data/activities.public.json'
 
 
 class StravaError(RuntimeError):
@@ -71,6 +72,24 @@ def atomic_write_json(path, data):
     finally:
         if temp_path and os.path.exists(temp_path):
             os.unlink(temp_path)
+
+
+def build_public_activities(activities):
+    """Return the minimal, privacy-conscious dataset used by GitHub Pages."""
+    public_activities = []
+    for activity in activities:
+        local_date = activity.get('start_date_local') or activity.get('start_date') or ''
+        public_activities.append({
+            'name': activity.get('name') or 'Actividad',
+            'sport_type': activity.get('sport_type') or activity.get('type') or 'Workout',
+            'date': local_date.split('T', 1)[0],
+            'distance': activity.get('distance') or 0,
+            'moving_time': activity.get('moving_time') or 0,
+            'elapsed_time': activity.get('elapsed_time') or 0,
+            'total_elevation_gain': activity.get('total_elevation_gain') or 0,
+            'relative_effort': activity.get('suffer_score'),
+        })
+    return public_activities
 
 
 def get_access_token():
@@ -193,9 +212,12 @@ def fetch_activities(access_token):
             
     print(f"Finished. Total activities found: {len(all_activities)}")
     
-    # Save JSON
-    atomic_write_json('data/activities.json', all_activities)
-    print("Successfully saved to data/activities.json")
+    # Publish only the fields required by the dashboard. Exact routes,
+    # coordinates, athlete identifiers, devices and heart-rate samples stay out
+    # of the GitHub Pages payload.
+    public_activities = build_public_activities(all_activities)
+    atomic_write_json(PUBLIC_DATA_PATH, public_activities)
+    print(f"Successfully saved privacy-safe data to {PUBLIC_DATA_PATH}")
     
     # Generate Context File
     generate_context_file(all_activities)

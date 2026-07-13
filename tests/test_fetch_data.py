@@ -37,7 +37,7 @@ class FetchDataTests(unittest.TestCase):
             os.chdir(directory)
             try:
                 Path('data').mkdir()
-                activities_file = Path('data/activities.json')
+                activities_file = Path('data/activities.public.json')
                 context_file = Path('entrenamientos_contexto.txt')
                 activities_file.write_text('[{"existing": true}]\n', encoding='utf-8')
                 context_file.write_text('existing context\n', encoding='utf-8')
@@ -65,6 +65,41 @@ class FetchDataTests(unittest.TestCase):
                 path.read_text(encoding='utf-8'),
                 '[\n  {\n    "name": "Carrera"\n  }\n]\n',
             )
+
+    def test_public_activities_exclude_sensitive_fields(self):
+        activity = {
+            'id': 123,
+            'athlete': {'id': 456},
+            'name': 'Carrera matinal',
+            'sport_type': 'Run',
+            'start_date': '2026-07-12T06:00:00Z',
+            'start_date_local': '2026-07-12T08:00:00Z',
+            'distance': 10000,
+            'moving_time': 3000,
+            'elapsed_time': 3060,
+            'total_elevation_gain': 80,
+            'suffer_score': 42,
+            'average_heartrate': 155,
+            'device_name': 'Private device',
+            'map': {'summary_polyline': 'private-route'},
+            'start_latlng': [40.0, 0.5],
+        }
+
+        result = fetch_data.build_public_activities([activity])
+
+        self.assertEqual(result, [{
+            'name': 'Carrera matinal',
+            'sport_type': 'Run',
+            'date': '2026-07-12',
+            'distance': 10000,
+            'moving_time': 3000,
+            'elapsed_time': 3060,
+            'total_elevation_gain': 80,
+            'relative_effort': 42,
+        }])
+        serialized = str(result)
+        for sensitive_value in ('private-route', 'Private device', 'average_heartrate', 'athlete'):
+            self.assertNotIn(sensitive_value, serialized)
 
 
 if __name__ == '__main__':
