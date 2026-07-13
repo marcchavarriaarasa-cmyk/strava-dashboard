@@ -1,287 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strava Dashboard</title>
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-    <link rel="stylesheet" href="style.css?v=3.7">
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- FontAwesome (Optional for icons if needed later) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f0e8">
+  <title>Marc — Training Log</title>
+  <link rel="stylesheet" href="style.css?v=4.0">
 </head>
-<!-- ... -->
-<script src="app.js?v=1.4"></script>
-
 <body>
+  <div class="shell">
+    <header class="masthead">
+      <a class="brand" href="#top" aria-label="Volver al inicio">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>MARC / TRAINING LOG</span>
+      </a>
+      <div class="masthead-meta">
+        <span id="sync-date">DATOS ACTUALIZADOS</span>
+        <span class="edition" id="edition">TEMPORADA</span>
+      </div>
+    </header>
 
-    <div id="loading">
-        <div class="loader"></div>
-    </div>
-
-    <div class="container">
-        <header>
-            <h1 data-i18n="title">MY ACTIVITY</h1>
-            <div style="display: flex; align-items: center; gap: 15px;">
-                <button id="lang-btn" class="lang-btn">ES</button>
-                <div class="user-badge">
-                    <span>Marc Chavarria</span>
-                    <div
-                        style="width:30px;height:30px;background:#fc4c02;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:bold;">
-                        M</div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Stats Grid - Row 1 (4 items) -->
-        <div class="dashboard-grid"
-            style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-bottom: 20px;">
-            <div class="card">
-                <h3 data-i18n="total_distance">Total Distance</h3>
-                <div class="stat-value" id="total-distance">0</div>
-                <div class="stat-unit" data-i18n="km">Kilometers</div>
-            </div>
-            <div class="card">
-                <h3 data-i18n="elevation_gain">Elevation Gain</h3>
-                <div class="stat-value" id="total-elevation">0</div>
-                <div class="stat-unit" data-i18n="meters">Meters</div>
-            </div>
-            <div class="card">
-                <h3 data-i18n="total_time">Total Time</h3>
-                <div class="stat-value" id="total-time">0</div>
-                <div class="stat-unit" data-i18n="hours">Hours</div>
-            </div>
-            <div class="card">
-                <h3 data-i18n="activities">Activities</h3>
-                <div class="stat-value" id="total-activities">0</div>
-                <div class="stat-unit" data-i18n="sessions">Sessions</div>
-            </div>
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">RESUMEN DE ENTRENAMIENTO</p>
+          <h1 id="page-title">La temporada,<br><em>de un vistazo.</em></h1>
+          <p class="hero-note">Volumen, constancia y señales útiles. Sin puntuaciones opacas ni métricas decorativas.</p>
         </div>
-
-        <!-- Stats Grid - Row 2 (3 items) -->
-        <div class="dashboard-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-            <div class="card">
-                <h3 data-i18n="avg_pace">Avg Pace / Speed</h3>
-                <div class="stat-value" id="avg-pace">0:00</div>
-                <div class="stat-unit" id="avg-pace-unit">min/km</div>
-            </div>
-            <div class="card">
-                <h3 data-i18n="efficiency">Efficiency</h3>
-                <div class="stat-value" id="efficiency">0%</div>
-                <div class="stat-unit" data-i18n="moving_vs_elapsed">Moving vs Elapsed</div>
-            </div>
-            <div class="card">
-                <h3 data-i18n="toughness">Toughness</h3>
-                <div class="stat-value" id="toughness">0</div>
-                <div class="stat-unit" data-i18n="elev_per_km">Elev Gain / km</div>
-            </div>
+        <div class="hero-number" aria-label="Distancia total del periodo">
+          <span class="hero-number-value" id="hero-distance">—</span>
+          <span class="hero-number-unit">KM</span>
+          <span class="hero-number-caption" id="hero-caption">EN EL PERIODO SELECCIONADO</span>
         </div>
+      </section>
 
-        <!-- Goals Section -->
-        <h2 style="margin-bottom: 20px;" data-i18n="monthly_goals">Monthly Goals (Current Month)</h2>
-        <div class="goals-grid">
-            <!-- Run Goal -->
-            <div class="card goal-card">
-                <div class="goal-header">
-                    <h3 data-i18n="running">🏃‍♂️ Running</h3>
-                    <span id="run-projection" class="goal-projection">On track: 0km</span>
-                </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar" id="run-progress" style="width: 0%; background-color: #fc4c02;"></div>
-                </div>
-                <div class="goal-numbers">
-                    <span id="run-current">0 km</span>
-                    <span id="run-target">/ 100 km</span>
-                </div>
-            </div>
-
-            <!-- Ride Goal -->
-            <div class="card goal-card">
-                <div class="goal-header">
-                    <h3 data-i18n="cycling">🚴‍♂️ Cycling</h3>
-                    <span id="ride-projection" class="goal-projection">On track: 0km</span>
-                </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar" id="ride-progress" style="width: 0%; background-color: #2196f3;"></div>
-                </div>
-                <div class="goal-numbers">
-                    <span id="ride-current">0 km</span>
-                    <span id="ride-target">/ 300 km</span>
-                </div>
-            </div>
+      <section class="filter-bar" aria-label="Filtros del dashboard">
+        <div class="period-switch" role="group" aria-label="Periodo">
+          <button data-range="28">4 SEMANAS</button>
+          <button data-range="84" class="is-active">12 SEMANAS</button>
+          <button data-range="365">1 AÑO</button>
+          <button data-range="all">TODO</button>
         </div>
+        <div class="sport-switch" id="sport-switch" aria-label="Deporte"></div>
+      </section>
 
-        <!-- Controls -->
-        <div class="controls-section">
-            <div class="filter-group" id="year-filter-group">
-                <label data-i18n="year">Year</label>
-                <div class="multiselect-container">
-                    <button class="multiselect-btn" id="yearBtn" data-i18n="select_years">Select Years</button>
-                    <div class="multiselect-dropdown" id="yearList">
-                        <!-- Populated by JS -->
-                    </div>
-                </div>
-            </div>
-            <div class="filter-group" id="month-filter-group">
-                <label data-i18n="month">Month</label>
-                <div class="multiselect-container">
-                    <button class="multiselect-btn" id="monthBtn" data-i18n="select_months">Select Months</button>
-                    <div class="multiselect-dropdown" id="monthList">
-                        <!-- Populated by JS -->
-                    </div>
-                </div>
-            </div>
-            <div class="filter-group" id="type-filter-group">
-                <label data-i18n="sport">Sport</label>
-                <div class="multiselect-container">
-                    <button class="multiselect-btn" id="typeBtn" data-i18n="select_sports">Select Sports</button>
-                    <div class="multiselect-dropdown" id="typeList">
-                        <!-- Populated by JS -->
-                    </div>
-                </div>
-            </div>
-        </div>
+      <section class="metric-strip" aria-label="Métricas principales">
+        <article class="metric">
+          <span class="metric-index">01</span>
+          <span class="metric-label">TIEMPO ACTIVO</span>
+          <strong id="metric-time">—</strong>
+          <span class="metric-delta" id="time-delta">—</span>
+        </article>
+        <article class="metric">
+          <span class="metric-index">02</span>
+          <span class="metric-label">DESNIVEL</span>
+          <strong id="metric-elevation">—</strong>
+          <span class="metric-delta">METROS POSITIVOS</span>
+        </article>
+        <article class="metric">
+          <span class="metric-index">03</span>
+          <span class="metric-label">SESIONES</span>
+          <strong id="metric-sessions">—</strong>
+          <span class="metric-delta" id="frequency-note">—</span>
+        </article>
+        <article class="metric metric-accent">
+          <span class="metric-index">04</span>
+          <span class="metric-label">RACHA ACTIVA</span>
+          <strong id="metric-streak">—</strong>
+          <span class="metric-delta">DÍAS CON ACTIVIDAD</span>
+        </article>
+      </section>
 
+      <section class="analysis-grid">
+        <article class="panel volume-panel">
+          <header class="panel-header">
+            <div>
+              <p class="eyebrow">RITMO DE TEMPORADA</p>
+              <h2>Volumen semanal</h2>
+            </div>
+            <div class="chart-legend"><span></span> DISTANCIA / KM</div>
+          </header>
+          <div class="volume-chart" id="volume-chart" role="img" aria-label="Distancia semanal"></div>
+        </article>
 
+        <article class="panel mix-panel">
+          <header class="panel-header">
+            <div>
+              <p class="eyebrow">REPARTO</p>
+              <h2>Cómo entrenas</h2>
+            </div>
+          </header>
+          <div class="sport-mix" id="sport-mix"></div>
+        </article>
 
-        <!-- Charts -->
-        <div class="charts-section">
-            <div class="chart-container">
-                <h3 data-i18n="recent_distance">Recent Activity (Distance)</h3>
-                <canvas id="progressChart"></canvas>
+        <article class="panel consistency-panel">
+          <header class="panel-header">
+            <div>
+              <p class="eyebrow">CONSTANCIA</p>
+              <h2>Las últimas 12 semanas</h2>
             </div>
-            <div class="chart-container">
-                <h3 data-i18n="sport_type">Sport Type</h3>
-                <canvas id="typeChart"></canvas>
-            </div>
-        </div>
+            <p class="panel-note" id="active-days-note">—</p>
+          </header>
+          <div class="calendar-wrap">
+            <div class="weekday-labels" aria-hidden="true"><span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
+            <div class="training-calendar" id="training-calendar"></div>
+          </div>
+        </article>
 
-        <!-- Consistency Section -->
-        <h2 style="margin-bottom: 20px;" data-i18n="consistency_trends">Consistency & Trends</h2>
-        <div class="consistency-grid">
-            <!-- Heatmap -->
-            <div class="card heatmap-card">
-                <h3 data-i18n="activity_habit">Activity Habit (Last Year)</h3>
-                <div class="month-labels" id="monthLabels">
-                    <!-- JS Labels -->
-                </div>
-                <div class="heatmap-container" id="heatmap">
-                    <!-- JS Grid -->
-                </div>
+        <article class="panel latest-panel">
+          <header class="panel-header">
+            <div>
+              <p class="eyebrow">CUADERNO DE CAMPO</p>
+              <h2>Últimas actividades</h2>
             </div>
+            <span class="latest-count" id="latest-count">—</span>
+          </header>
+          <div class="activity-table" id="activity-table"></div>
+        </article>
+      </section>
+    </main>
 
-            <!-- Streaks & Time of Day -->
-            <div class="side-stats">
-                <div class="card streak-card">
-                    <h3 data-i18n="current_streak">Current Streak</h3>
-                    <div class="stat-value" id="current-streak">0</div>
-                    <div class="stat-unit" data-i18n="days">Days</div>
-                </div>
-                <div class="card streak-card">
-                    <h3 data-i18n="best_streak">Best Streak</h3>
-                    <div class="stat-value" id="best-streak">0</div>
-                    <div class="stat-unit" data-i18n="days">Days</div>
-                </div>
-                <div class="card chart-container" style="height: auto;">
-                    <h3 data-i18n="time_of_day">Time of Day</h3>
-                    <canvas id="timeOfDayChart" style="max-height: 200px;"></canvas>
-                </div>
-            </div>
-        </div>
+    <footer>
+      <span>DATOS DE STRAVA · ACTUALIZACIÓN AUTOMÁTICA</span>
+      <span>MARC CHAVARRIA · TRAINING LOG</span>
+    </footer>
+  </div>
 
-        <!-- Geography & Gear Section -->
-        <h2 style="margin-bottom: 20px;" data-i18n="geography_gear">Geography & Equipment</h2>
-        <div class="charts-section">
-            <div class="chart-container" style="flex: 2; min-height: 400px;">
-                <h3 data-i18n="latest_route">Latest Route</h3>
-                <div id="map" style="height: 350px; width: 100%; border-radius: 8px;"></div>
-            </div>
-            <div class="chart-container" style="flex: 1;">
-                <h3 data-i18n="gear_usage">Gear Usage (Distance)</h3>
-                <canvas id="gearChart"></canvas>
-            </div>
-        </div>
-
-        <!-- Training Quality Section -->
-        <h2 style="margin-bottom: 20px;" data-i18n="training_quality">Training Quality</h2>
-        <div class="charts-section">
-            <div class="chart-container" style="flex: 1;">
-                <h3 data-i18n="pulse_dist">Pulse Distribution (Avg HR)</h3>
-                <canvas id="hrDistributionChart"></canvas>
-            </div>
-            <div class="chart-container" style="flex: 1;">
-                <h3 data-i18n="effort_trend">Relative Effort Trend</h3>
-                <canvas id="effortTrendChart"></canvas>
-            </div>
-        </div>
-
-        <!-- Personal Records Section (Moved) -->
-        <h2 style="margin-bottom: 20px;" data-i18n="personal_records">Personal Records</h2>
-
-        <!-- Row 1: Best Efforts (4 cols) -->
-        <div class="dashboard-grid"
-            style="margin-bottom: 20px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-            <div class="card">
-                <h3 data-i18n="best_5k">Fastest 5k</h3>
-                <div class="stat-value" id="best-5k-time">-</div>
-                <div class="stat-unit" id="best-5k-date">-</div>
-            </div>
-            <div class="card">
-                <h3 data-i18n="best_10k">Fastest 10k</h3>
-                <div class="stat-value" id="best-10k-time">-</div>
-                <div class="stat-unit" id="best-10k-date">-</div>
-            </div>
-            <div class="card">
-                <h3 data-i18n="best_half_marathon">Half Marathon</h3>
-                <div class="stat-value" id="best-half-marathon-time">-</div>
-                <div class="stat-unit" id="best-half-marathon-date">-</div>
-            </div>
-            <div class="card">
-                <h3 data-i18n="best_marathon">Marathon</h3>
-                <div class="stat-value" id="best-marathon-time">-</div>
-                <div class="stat-unit" id="best-marathon-date">-</div>
-            </div>
-        </div>
-
-        <!-- Row 2: Highlights (3 cols) -->
-        <div class="dashboard-grid"
-            style="margin-bottom: 40px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
-            <div class="card">
-                <h3 data-i18n="longest_run">Longest Run</h3>
-                <div class="stat-value" id="longest-run-dist">0</div>
-                <div class="stat-unit" id="longest-run-date">-</div>
-            </div>
-            <div class="card">
-                <h3 data-i18n="longest_ride">Longest Ride</h3>
-                <div class="stat-value" id="longest-ride-dist">0</div>
-                <div class="stat-unit" id="longest-ride-date">-</div>
-            </div>
-            <div class="card">
-                <h3 data-i18n="max_elevation">Max Elevation</h3>
-                <div class="stat-value" id="max-elevation">0</div>
-                <div class="stat-unit" id="max-elevation-date">-</div>
-            </div>
-        </div>
-
-        <!-- Activity Feed -->
-        <div class="activity-feed">
-            <h2 data-i18n="recent_activities">Recent Activities</h2>
-            <div class="activity-list" id="activity-list">
-                <!-- Activities injected by JS -->
-            </div>
-        </div>
-    </div>
-
-    <script src="app.js?v=3.7"></script>
-    </script>
+  <div id="loading" class="loading" aria-live="polite">LEYENDO LA TEMPORADA…</div>
+  <script src="app.js?v=4.0"></script>
 </body>
-
 </html>
