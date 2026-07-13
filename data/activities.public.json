@@ -1,5 +1,17 @@
 [
   {
+    "name": "Sprints Costa Amunt w/ Kevin",
+    "sport_type": "Run",
+    "date": "2026-07-13",
+    "distance": 633.3,
+    "moving_time": 341,
+    "elapsed_time": 1551,
+    "total_elevation_gain": 19.6,
+    "relative_effort": 14.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
+  },
+  {
     "name": "Casa Alcanar - Casa Amposta",
     "sport_type": "Ride",
     "date": "2026-07-12",
@@ -27,13 +39,15 @@
     "moving_time": 505,
     "elapsed_time": 509,
     "total_elevation_gain": 3.7,
-    "relative_effort": 9.0
+    "relative_effort": 9.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-07-10",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6192,
     "elapsed_time": 6192,
     "total_elevation_gain": 0,
@@ -47,13 +61,15 @@
     "moving_time": 727,
     "elapsed_time": 736,
     "total_elevation_gain": 47.2,
-    "relative_effort": 23.0
+    "relative_effort": 23.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-07-08",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4957,
     "elapsed_time": 4957,
     "total_elevation_gain": 0,
@@ -67,7 +83,9 @@
     "moving_time": 3171,
     "elapsed_time": 3213,
     "total_elevation_gain": 60.0,
-    "relative_effort": 93.0
+    "relative_effort": 93.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Tornada Gympro",
@@ -77,13 +95,15 @@
     "moving_time": 498,
     "elapsed_time": 503,
     "total_elevation_gain": 4.0,
-    "relative_effort": 13.0
+    "relative_effort": 13.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-07-06",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5915,
     "elapsed_time": 5915,
     "total_elevation_gain": 0,
@@ -97,13 +117,15 @@
     "moving_time": 706,
     "elapsed_time": 719,
     "total_elevation_gain": 47.1,
-    "relative_effort": 30.0
+    "relative_effort": 30.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-07-03",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4365,
     "elapsed_time": 4365,
     "total_elevation_gain": 0,
@@ -117,13 +139,15 @@
     "moving_time": 639,
     "elapsed_time": 643,
     "total_elevation_gain": 4.0,
-    "relative_effort": 11.0
+    "relative_effort": 11.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-07-01",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4632,
     "elapsed_time": 4632,
     "total_elevation_gain": 0,
@@ -137,7 +161,9 @@
     "moving_time": 670,
     "elapsed_time": 677,
     "total_elevation_gain": 47.1,
-    "relative_effort": 21.0
+    "relative_effort": 21.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Amposta - Via Verda - Vinallop - Santa Barbara - Amposta",
@@ -147,7 +173,9 @@
     "moving_time": 4583,
     "elapsed_time": 6428,
     "total_elevation_gain": 164.8,
-    "relative_effort": 146.0
+    "relative_effort": 146.0,
+    "gear_name": "Kross",
+    "gear_type": "Bicicleta"
   },
   {
     "name": "Tornada Gympro",
@@ -157,13 +185,15 @@
     "moving_time": 537,
     "elapsed_time": 547,
     "total_elevation_gain": 4.9,
-    "relative_effort": null
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-06-27",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6115,
     "elapsed_time": 6115,
     "total_elevation_gain": 0,
@@ -177,7 +207,9 @@
     "moving_time": 703,
     "elapsed_time": 707,
     "total_elevation_gain": 47.1,
-    "relative_effort": 18.0
+    "relative_effort": 18.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Casa Amposta - casa Alcanar",
@@ -187,7 +219,9 @@
     "moving_time": 3374,
     "elapsed_time": 3374,
     "total_elevation_gain": 37.3,
-    "relative_effort": 55.0
+    "relative_effort": 55.0,
+    "gear_name": "Kross",
+    "gear_type": "Bicicleta"
   },
   {
     "name": "Tornada Gympro",
@@ -197,13 +231,15 @@
     "moving_time": 505,
     "elapsed_time": 514,
     "total_elevation_gain": 4.3,
-    "relative_effort": 9.0
+    "relative_effort": 9.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-06-22",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4210,
     "elapsed_time": 4210,
     "total_elevation_gain": 0,
@@ -217,7 +253,9 @@
     "moving_time": 734,
     "elapsed_time": 744,
     "total_elevation_gain": 47.1,
-    "relative_effort": 13.0
+    "relative_effort": 13.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Tornada Gympro",
@@ -227,13 +265,15 @@
     "moving_time": 552,
     "elapsed_time": 572,
     "total_elevation_gain": 3.4,
-    "relative_effort": null
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-06-20",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5789,
     "elapsed_time": 5789,
     "total_elevation_gain": 0,
@@ -247,7 +287,9 @@
     "moving_time": 731,
     "elapsed_time": 753,
     "total_elevation_gain": 47.1,
-    "relative_effort": null
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Via verda",
@@ -257,7 +299,9 @@
     "moving_time": 1712,
     "elapsed_time": 1791,
     "total_elevation_gain": 37.6,
-    "relative_effort": 19.0
+    "relative_effort": 19.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Tornada Gympro",
@@ -267,13 +311,15 @@
     "moving_time": 725,
     "elapsed_time": 740,
     "total_elevation_gain": 4.6,
-    "relative_effort": 8.0
+    "relative_effort": 8.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-06-17",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4586,
     "elapsed_time": 4586,
     "total_elevation_gain": 0,
@@ -287,7 +333,9 @@
     "moving_time": 736,
     "elapsed_time": 754,
     "total_elevation_gain": 47.2,
-    "relative_effort": 13.0
+    "relative_effort": 13.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Tornada gympro",
@@ -297,13 +345,15 @@
     "moving_time": 865,
     "elapsed_time": 915,
     "total_elevation_gain": 6.0,
-    "relative_effort": 15.0
+    "relative_effort": 15.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-06-16",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3398,
     "elapsed_time": 3398,
     "total_elevation_gain": 0,
@@ -317,7 +367,9 @@
     "moving_time": 807,
     "elapsed_time": 828,
     "total_elevation_gain": 47.2,
-    "relative_effort": 14.0
+    "relative_effort": 14.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Casa Alcanar - Casa Amposta",
@@ -327,7 +379,9 @@
     "moving_time": 2650,
     "elapsed_time": 2650,
     "total_elevation_gain": 37.9,
-    "relative_effort": 69.0
+    "relative_effort": 69.0,
+    "gear_name": "Kross",
+    "gear_type": "Bicicleta"
   },
   {
     "name": "Casa Amposta - casa Alcanar",
@@ -337,7 +391,9 @@
     "moving_time": 3060,
     "elapsed_time": 3233,
     "total_elevation_gain": 37.0,
-    "relative_effort": 47.0
+    "relative_effort": 47.0,
+    "gear_name": "Kross",
+    "gear_type": "Bicicleta"
   },
   {
     "name": "Tornada  gympro corrents",
@@ -347,13 +403,15 @@
     "moving_time": 775,
     "elapsed_time": 780,
     "total_elevation_gain": 6.3,
-    "relative_effort": 13.0
+    "relative_effort": 13.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-06-12",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5424,
     "elapsed_time": 5424,
     "total_elevation_gain": 0,
@@ -367,7 +425,9 @@
     "moving_time": 839,
     "elapsed_time": 853,
     "total_elevation_gain": 48.3,
-    "relative_effort": 15.0
+    "relative_effort": 15.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Anar al pis dels iaios",
@@ -377,7 +437,9 @@
     "moving_time": 4566,
     "elapsed_time": 7801,
     "total_elevation_gain": 41.8,
-    "relative_effort": 75.0
+    "relative_effort": 75.0,
+    "gear_name": "Kross",
+    "gear_type": "Bicicleta"
   },
   {
     "name": "Tornada gympro",
@@ -387,13 +449,15 @@
     "moving_time": 763,
     "elapsed_time": 776,
     "total_elevation_gain": 6.0,
-    "relative_effort": 13.0
+    "relative_effort": 13.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-06-09",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3782,
     "elapsed_time": 3782,
     "total_elevation_gain": 0,
@@ -407,7 +471,9 @@
     "moving_time": 827,
     "elapsed_time": 839,
     "total_elevation_gain": 48.4,
-    "relative_effort": 14.0
+    "relative_effort": 14.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Tornada corrents del gympro",
@@ -417,13 +483,15 @@
     "moving_time": 811,
     "elapsed_time": 832,
     "total_elevation_gain": 5.9,
-    "relative_effort": 9.0
+    "relative_effort": 9.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-06-04",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5963,
     "elapsed_time": 5963,
     "total_elevation_gain": 0,
@@ -437,7 +505,9 @@
     "moving_time": 684,
     "elapsed_time": 690,
     "total_elevation_gain": 41.6,
-    "relative_effort": 12.0
+    "relative_effort": 12.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Tornada del gym",
@@ -447,13 +517,15 @@
     "moving_time": 693,
     "elapsed_time": 715,
     "total_elevation_gain": 3.5,
-    "relative_effort": 7.0
+    "relative_effort": 7.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-06-03",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3996,
     "elapsed_time": 3996,
     "total_elevation_gain": 0,
@@ -467,7 +539,9 @@
     "moving_time": 777,
     "elapsed_time": 784,
     "total_elevation_gain": 48.4,
-    "relative_effort": 24.0
+    "relative_effort": 24.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Ultim b3tterRunClub 🥲",
@@ -477,7 +551,9 @@
     "moving_time": 2156,
     "elapsed_time": 2648,
     "total_elevation_gain": 18.5,
-    "relative_effort": 70.0
+    "relative_effort": 70.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "DESAFIO GUERREROS 6k",
@@ -493,7 +569,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-05-23",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3427,
     "elapsed_time": 3427,
     "total_elevation_gain": 0,
@@ -507,13 +583,15 @@
     "moving_time": 1717,
     "elapsed_time": 3648,
     "total_elevation_gain": 42.9,
-    "relative_effort": 54.0
+    "relative_effort": 54.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-05-20",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 8458,
     "elapsed_time": 8458,
     "total_elevation_gain": 0,
@@ -527,7 +605,9 @@
     "moving_time": 2070,
     "elapsed_time": 2274,
     "total_elevation_gain": 11.1,
-    "relative_effort": 59.0
+    "relative_effort": 59.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "De camí al pis",
@@ -547,13 +627,15 @@
     "moving_time": 6075,
     "elapsed_time": 7299,
     "total_elevation_gain": 115.5,
-    "relative_effort": 109.0
+    "relative_effort": 109.0,
+    "gear_name": "Kross",
+    "gear_type": "Bicicleta"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-05-14",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4851,
     "elapsed_time": 4851,
     "total_elevation_gain": 0,
@@ -563,7 +645,7 @@
     "name": "Morning workout ☀️",
     "sport_type": "WeightTraining",
     "date": "2026-05-13",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3608,
     "elapsed_time": 3608,
     "total_elevation_gain": 0,
@@ -577,7 +659,9 @@
     "moving_time": 2851,
     "elapsed_time": 3551,
     "total_elevation_gain": 26.4,
-    "relative_effort": 68.0
+    "relative_effort": 68.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Cursa Corte Ingles 2026",
@@ -587,7 +671,9 @@
     "moving_time": 3061,
     "elapsed_time": 3513,
     "total_elevation_gain": 22.5,
-    "relative_effort": 87.0
+    "relative_effort": 87.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Calentament Cursa Corte Ingles",
@@ -597,16 +683,18 @@
     "moving_time": 941,
     "elapsed_time": 949,
     "total_elevation_gain": 18.8,
-    "relative_effort": 24.0
+    "relative_effort": 24.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-05-07",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3600,
     "elapsed_time": 3600,
-    "total_elevation_gain": 0.0,
+    "total_elevation_gain": 0,
     "relative_effort": null
   },
   {
@@ -617,7 +705,9 @@
     "moving_time": 2815,
     "elapsed_time": 3046,
     "total_elevation_gain": 25.1,
-    "relative_effort": 78.0
+    "relative_effort": 78.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Via verda en la mama",
@@ -627,13 +717,15 @@
     "moving_time": 2596,
     "elapsed_time": 2692,
     "total_elevation_gain": 46.0,
-    "relative_effort": 66.0
+    "relative_effort": 66.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-04-29",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3201,
     "elapsed_time": 3201,
     "total_elevation_gain": 0,
@@ -643,7 +735,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-04-28",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4636,
     "elapsed_time": 4636,
     "total_elevation_gain": 0,
@@ -656,7 +748,7 @@
     "distance": 2056.8,
     "moving_time": 2697,
     "elapsed_time": 3370,
-    "total_elevation_gain": 0.0,
+    "total_elevation_gain": 0,
     "relative_effort": 36.0
   },
   {
@@ -667,13 +759,15 @@
     "moving_time": 3162,
     "elapsed_time": 3340,
     "total_elevation_gain": 56.9,
-    "relative_effort": 101.0
+    "relative_effort": 101.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-04-22",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4658,
     "elapsed_time": 4658,
     "total_elevation_gain": 0,
@@ -687,13 +781,15 @@
     "moving_time": 3092,
     "elapsed_time": 3184,
     "total_elevation_gain": 19.7,
-    "relative_effort": 82.0
+    "relative_effort": 82.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-04-20",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4495,
     "elapsed_time": 4495,
     "total_elevation_gain": 0,
@@ -703,7 +799,7 @@
     "name": "Morning workout ☀️",
     "sport_type": "WeightTraining",
     "date": "2026-04-19",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4662,
     "elapsed_time": 4662,
     "total_elevation_gain": 0,
@@ -717,7 +813,9 @@
     "moving_time": 2411,
     "elapsed_time": 2594,
     "total_elevation_gain": 14.7,
-    "relative_effort": 30.0
+    "relative_effort": 30.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Caminata chill via verda",
@@ -733,7 +831,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-04-12",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5111,
     "elapsed_time": 5111,
     "total_elevation_gain": 0,
@@ -743,7 +841,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-04-09",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 2557,
     "elapsed_time": 2557,
     "total_elevation_gain": 0,
@@ -753,7 +851,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-04-08",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5889,
     "elapsed_time": 5889,
     "total_elevation_gain": 0,
@@ -767,7 +865,9 @@
     "moving_time": 3495,
     "elapsed_time": 3495,
     "total_elevation_gain": 61.1,
-    "relative_effort": 130.0
+    "relative_effort": 130.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Estreno Via verda",
@@ -783,7 +883,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-04-02",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4587,
     "elapsed_time": 4587,
     "total_elevation_gain": 0,
@@ -796,14 +896,16 @@
     "distance": 7366.9,
     "moving_time": 2522,
     "elapsed_time": 2532,
-    "total_elevation_gain": 0.0,
-    "relative_effort": 67.0
+    "total_elevation_gain": 0,
+    "relative_effort": 67.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-03-26",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3258,
     "elapsed_time": 3258,
     "total_elevation_gain": 0,
@@ -813,7 +915,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-03-25",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5173,
     "elapsed_time": 5173,
     "total_elevation_gain": 0,
@@ -823,7 +925,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-03-21",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3995,
     "elapsed_time": 3995,
     "total_elevation_gain": 0,
@@ -833,7 +935,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-03-12",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4956,
     "elapsed_time": 4956,
     "total_elevation_gain": 0,
@@ -843,7 +945,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-03-10",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6312,
     "elapsed_time": 6312,
     "total_elevation_gain": 0,
@@ -853,7 +955,7 @@
     "name": "Morning workout ☀️",
     "sport_type": "WeightTraining",
     "date": "2026-03-08",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 8082,
     "elapsed_time": 8082,
     "total_elevation_gain": 0,
@@ -866,7 +968,7 @@
     "distance": 6572.9,
     "moving_time": 4766,
     "elapsed_time": 4988,
-    "total_elevation_gain": 0.0,
+    "total_elevation_gain": 0,
     "relative_effort": 22.0
   },
   {
@@ -876,7 +978,7 @@
     "distance": 5972.9,
     "moving_time": 3614,
     "elapsed_time": 3632,
-    "total_elevation_gain": 0.0,
+    "total_elevation_gain": 0,
     "relative_effort": 8.0
   },
   {
@@ -887,7 +989,9 @@
     "moving_time": 5859,
     "elapsed_time": 5865,
     "total_elevation_gain": 47.5,
-    "relative_effort": 271.0
+    "relative_effort": 271.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Calentament mitja bcn'26",
@@ -896,8 +1000,10 @@
     "distance": 2294.3,
     "moving_time": 733,
     "elapsed_time": 796,
-    "total_elevation_gain": 0.0,
-    "relative_effort": 14.0
+    "total_elevation_gain": 0,
+    "relative_effort": 14.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Activació pre-mitja (tornada)",
@@ -907,13 +1013,15 @@
     "moving_time": 339,
     "elapsed_time": 670,
     "total_elevation_gain": 12.9,
-    "relative_effort": 7.0
+    "relative_effort": 7.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Estiraments pre mitja bcn '26",
     "sport_type": "Pilates",
     "date": "2026-02-14",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3094,
     "elapsed_time": 3094,
     "total_elevation_gain": 0,
@@ -927,13 +1035,15 @@
     "moving_time": 265,
     "elapsed_time": 270,
     "total_elevation_gain": 3.1,
-    "relative_effort": 7.0
+    "relative_effort": 7.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-02-12",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4002,
     "elapsed_time": 4002,
     "total_elevation_gain": 0,
@@ -943,7 +1053,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-02-11",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6062,
     "elapsed_time": 6062,
     "total_elevation_gain": 0,
@@ -966,7 +1076,7 @@
     "distance": 2456.4,
     "moving_time": 1458,
     "elapsed_time": 1584,
-    "total_elevation_gain": 0.0,
+    "total_elevation_gain": 0,
     "relative_effort": 3.0
   },
   {
@@ -977,13 +1087,15 @@
     "moving_time": 3519,
     "elapsed_time": 3595,
     "total_elevation_gain": 72.4,
-    "relative_effort": 92.0
+    "relative_effort": 92.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-02-06",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 9099,
     "elapsed_time": 9099,
     "total_elevation_gain": 0,
@@ -997,7 +1109,9 @@
     "moving_time": 3297,
     "elapsed_time": 3487,
     "total_elevation_gain": 59.5,
-    "relative_effort": 59.0
+    "relative_effort": 59.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Pel Delta",
@@ -1007,13 +1121,15 @@
     "moving_time": 5876,
     "elapsed_time": 6408,
     "total_elevation_gain": 63.4,
-    "relative_effort": 48.0
+    "relative_effort": 48.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-01-30",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5166,
     "elapsed_time": 5166,
     "total_elevation_gain": 0,
@@ -1027,13 +1143,15 @@
     "moving_time": 3046,
     "elapsed_time": 3159,
     "total_elevation_gain": 64.6,
-    "relative_effort": 97.0
+    "relative_effort": 97.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Morning workout ☀️",
     "sport_type": "WeightTraining",
     "date": "2026-01-27",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3645,
     "elapsed_time": 3645,
     "total_elevation_gain": 0,
@@ -1043,7 +1161,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-01-25",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5707,
     "elapsed_time": 5707,
     "total_elevation_gain": 0,
@@ -1053,7 +1171,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-01-22",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4332,
     "elapsed_time": 4332,
     "total_elevation_gain": 0,
@@ -1063,7 +1181,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-01-20",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 7923,
     "elapsed_time": 7923,
     "total_elevation_gain": 0,
@@ -1077,13 +1195,15 @@
     "moving_time": 3321,
     "elapsed_time": 3341,
     "total_elevation_gain": 3.1,
-    "relative_effort": 106.0
+    "relative_effort": 106.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-01-14",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6592,
     "elapsed_time": 6592,
     "total_elevation_gain": 0,
@@ -1097,13 +1217,15 @@
     "moving_time": 1705,
     "elapsed_time": 2029,
     "total_elevation_gain": 7.7,
-    "relative_effort": 73.0
+    "relative_effort": 73.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-01-12",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 8376,
     "elapsed_time": 8376,
     "total_elevation_gain": 0,
@@ -1117,7 +1239,9 @@
     "moving_time": 1753,
     "elapsed_time": 1755,
     "total_elevation_gain": 2.0,
-    "relative_effort": 16.0
+    "relative_effort": 16.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Via verda",
@@ -1126,8 +1250,10 @@
     "distance": 6125.1,
     "moving_time": 2204,
     "elapsed_time": 2215,
-    "total_elevation_gain": 0.0,
-    "relative_effort": null
+    "total_elevation_gain": 0,
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "San Silvestre Amposta '25",
@@ -1137,7 +1263,9 @@
     "moving_time": 734,
     "elapsed_time": 743,
     "total_elevation_gain": 16.6,
-    "relative_effort": 36.0
+    "relative_effort": 36.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Pista atletisme amb familia Zhao",
@@ -1146,8 +1274,10 @@
     "distance": 10024.7,
     "moving_time": 3616,
     "elapsed_time": 3709,
-    "total_elevation_gain": 0.0,
-    "relative_effort": null
+    "total_elevation_gain": 0,
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Ruta circular cordillera serra del Montsia",
@@ -1163,7 +1293,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-12-16",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4950,
     "elapsed_time": 4950,
     "total_elevation_gain": 0,
@@ -1177,13 +1307,15 @@
     "moving_time": 3365,
     "elapsed_time": 3404,
     "total_elevation_gain": 2.7,
-    "relative_effort": 60.0
+    "relative_effort": 60.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-12-04",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4856,
     "elapsed_time": 4856,
     "total_elevation_gain": 0,
@@ -1197,13 +1329,15 @@
     "moving_time": 1580,
     "elapsed_time": 1750,
     "total_elevation_gain": 10.8,
-    "relative_effort": 17.0
+    "relative_effort": 17.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-12-01",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5206,
     "elapsed_time": 5206,
     "total_elevation_gain": 0,
@@ -1217,7 +1351,9 @@
     "moving_time": 2617,
     "elapsed_time": 2627,
     "total_elevation_gain": 33.7,
-    "relative_effort": 130.0
+    "relative_effort": 130.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Recollir dorsal jean bouin",
@@ -1227,13 +1363,15 @@
     "moving_time": 1576,
     "elapsed_time": 1733,
     "total_elevation_gain": 21.2,
-    "relative_effort": 41.0
+    "relative_effort": 41.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-11-26",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 7866,
     "elapsed_time": 7866,
     "total_elevation_gain": 0,
@@ -1247,7 +1385,9 @@
     "moving_time": 2379,
     "elapsed_time": 2911,
     "total_elevation_gain": 18.1,
-    "relative_effort": null
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Portell de l'infern i Salt del Robert",
@@ -1267,13 +1407,15 @@
     "moving_time": 1830,
     "elapsed_time": 2114,
     "total_elevation_gain": 11.4,
-    "relative_effort": null
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-11-13",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5514,
     "elapsed_time": 5514,
     "total_elevation_gain": 0,
@@ -1283,7 +1425,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-11-12",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6674,
     "elapsed_time": 6674,
     "total_elevation_gain": 0,
@@ -1297,13 +1439,15 @@
     "moving_time": 2159,
     "elapsed_time": 2727,
     "total_elevation_gain": 17.4,
-    "relative_effort": null
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-11-10",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3787,
     "elapsed_time": 3787,
     "total_elevation_gain": 0,
@@ -1317,13 +1461,15 @@
     "moving_time": 2811,
     "elapsed_time": 2836,
     "total_elevation_gain": 48.6,
-    "relative_effort": 121.0
+    "relative_effort": 121.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-11-08",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4013,
     "elapsed_time": 4013,
     "total_elevation_gain": 0,
@@ -1337,13 +1483,15 @@
     "moving_time": 1228,
     "elapsed_time": 1262,
     "total_elevation_gain": 24.1,
-    "relative_effort": 10.0
+    "relative_effort": 10.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-11-06",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5884,
     "elapsed_time": 5884,
     "total_elevation_gain": 0,
@@ -1353,7 +1501,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-11-04",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6697,
     "elapsed_time": 6697,
     "total_elevation_gain": 0,
@@ -1367,7 +1515,9 @@
     "moving_time": 2778,
     "elapsed_time": 3305,
     "total_elevation_gain": 14.0,
-    "relative_effort": 119.0
+    "relative_effort": 119.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Caminata",
@@ -1383,7 +1533,7 @@
     "name": "Morning workout ☀️",
     "sport_type": "WeightTraining",
     "date": "2025-10-30",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5109,
     "elapsed_time": 5109,
     "total_elevation_gain": 0,
@@ -1393,7 +1543,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-10-29",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3497,
     "elapsed_time": 3497,
     "total_elevation_gain": 0,
@@ -1403,7 +1553,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-10-23",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3756,
     "elapsed_time": 3756,
     "total_elevation_gain": 0,
@@ -1417,13 +1567,15 @@
     "moving_time": 2721,
     "elapsed_time": 3200,
     "total_elevation_gain": 45.1,
-    "relative_effort": null
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-10-21",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4995,
     "elapsed_time": 4995,
     "total_elevation_gain": 0,
@@ -1437,13 +1589,15 @@
     "moving_time": 5612,
     "elapsed_time": 7705,
     "total_elevation_gain": 222.9,
-    "relative_effort": 241.0
+    "relative_effort": 241.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-10-17",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4688,
     "elapsed_time": 4688,
     "total_elevation_gain": 0,
@@ -1453,7 +1607,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-10-15",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6357,
     "elapsed_time": 6357,
     "total_elevation_gain": 0,
@@ -1463,7 +1617,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-10-14",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4708,
     "elapsed_time": 4708,
     "total_elevation_gain": 0,
@@ -1477,7 +1631,9 @@
     "moving_time": 1614,
     "elapsed_time": 2225,
     "total_elevation_gain": 19.6,
-    "relative_effort": null
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Canal 7k",
@@ -1486,14 +1642,16 @@
     "distance": 7113.6,
     "moving_time": 2307,
     "elapsed_time": 2540,
-    "total_elevation_gain": 0.0,
-    "relative_effort": 60.0
+    "total_elevation_gain": 0,
+    "relative_effort": 60.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-10-08",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6130,
     "elapsed_time": 6130,
     "total_elevation_gain": 0,
@@ -1503,7 +1661,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-10-06",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5717,
     "elapsed_time": 5717,
     "total_elevation_gain": 0,
@@ -1513,7 +1671,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-10-01",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4969,
     "elapsed_time": 4969,
     "total_elevation_gain": 0,
@@ -1523,7 +1681,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-09-30",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4440,
     "elapsed_time": 4440,
     "total_elevation_gain": 0,
@@ -1537,7 +1695,9 @@
     "moving_time": 2921,
     "elapsed_time": 3420,
     "total_elevation_gain": 46.7,
-    "relative_effort": 77.0
+    "relative_effort": 77.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Paseito pel canal",
@@ -1547,13 +1707,15 @@
     "moving_time": 5112,
     "elapsed_time": 6002,
     "total_elevation_gain": 40.6,
-    "relative_effort": 24.0
+    "relative_effort": 24.0,
+    "gear_name": "Kross",
+    "gear_type": "Bicicleta"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-09-23",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6264,
     "elapsed_time": 6264,
     "total_elevation_gain": 0,
@@ -1563,7 +1725,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-09-22",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4088,
     "elapsed_time": 4088,
     "total_elevation_gain": 0,
@@ -1577,13 +1739,15 @@
     "moving_time": 2234,
     "elapsed_time": 2251,
     "total_elevation_gain": 31.8,
-    "relative_effort": null
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-09-18",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 8169,
     "elapsed_time": 8169,
     "total_elevation_gain": 0,
@@ -1597,7 +1761,9 @@
     "moving_time": 2130,
     "elapsed_time": 2526,
     "total_elevation_gain": 14.0,
-    "relative_effort": 91.0
+    "relative_effort": 91.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "200 x 3   /   400x1",
@@ -1606,8 +1772,10 @@
     "distance": 2649.2,
     "moving_time": 1985,
     "elapsed_time": 2537,
-    "total_elevation_gain": 0.0,
-    "relative_effort": 6.0
+    "total_elevation_gain": 0,
+    "relative_effort": 6.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Calentament",
@@ -1616,8 +1784,10 @@
     "distance": 1725.4,
     "moving_time": 764,
     "elapsed_time": 1205,
-    "total_elevation_gain": 0.0,
-    "relative_effort": null
+    "total_elevation_gain": 0,
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Series Costa Amunt",
@@ -1627,7 +1797,9 @@
     "moving_time": 490,
     "elapsed_time": 1400,
     "total_elevation_gain": 27.9,
-    "relative_effort": 29.0
+    "relative_effort": 29.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Xalet Didac - Via verda (tornada)",
@@ -1637,7 +1809,9 @@
     "moving_time": 3607,
     "elapsed_time": 3834,
     "total_elevation_gain": 61.7,
-    "relative_effort": 115.0
+    "relative_effort": 115.0,
+    "gear_name": "Kross",
+    "gear_type": "Bicicleta"
   },
   {
     "name": "Xalet Didac +Via verda",
@@ -1653,7 +1827,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-09-03",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5466,
     "elapsed_time": 5466,
     "total_elevation_gain": 0,
@@ -1663,7 +1837,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-09-01",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6136,
     "elapsed_time": 6136,
     "total_elevation_gain": 0,
@@ -1673,7 +1847,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-08-29",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5029,
     "elapsed_time": 5029,
     "total_elevation_gain": 0,
@@ -1683,7 +1857,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-08-28",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4324,
     "elapsed_time": 4324,
     "total_elevation_gain": 0,
@@ -1693,7 +1867,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-08-27",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4606,
     "elapsed_time": 4606,
     "total_elevation_gain": 0,
@@ -1707,7 +1881,9 @@
     "moving_time": 1800,
     "elapsed_time": 1935,
     "total_elevation_gain": 19.5,
-    "relative_effort": 20.0
+    "relative_effort": 20.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Triatló Xerta",
@@ -1723,7 +1899,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-08-20",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3820,
     "elapsed_time": 3820,
     "total_elevation_gain": 0,
@@ -1733,7 +1909,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-08-19",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 2701,
     "elapsed_time": 2701,
     "total_elevation_gain": 0,
@@ -1743,7 +1919,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-08-18",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4883,
     "elapsed_time": 4883,
     "total_elevation_gain": 0,
@@ -1756,7 +1932,7 @@
     "distance": 3159.8,
     "moving_time": 1527,
     "elapsed_time": 4350,
-    "total_elevation_gain": 0.0,
+    "total_elevation_gain": 0,
     "relative_effort": 12.0
   },
   {
@@ -1777,13 +1953,15 @@
     "moving_time": 2746,
     "elapsed_time": 6036,
     "total_elevation_gain": 152.0,
-    "relative_effort": 87.0
+    "relative_effort": 87.0,
+    "gear_name": "Kross",
+    "gear_type": "Bicicleta"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-08-12",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3484,
     "elapsed_time": 3484,
     "total_elevation_gain": 0,
@@ -1793,7 +1971,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-08-11",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6289,
     "elapsed_time": 6289,
     "total_elevation_gain": 0,
@@ -1806,14 +1984,16 @@
     "distance": 5022.3,
     "moving_time": 1397,
     "elapsed_time": 1401,
-    "total_elevation_gain": 0.0,
-    "relative_effort": 60.0
+    "total_elevation_gain": 0,
+    "relative_effort": 60.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Morning workout ☀️",
     "sport_type": "WeightTraining",
     "date": "2025-08-08",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6531,
     "elapsed_time": 6531,
     "total_elevation_gain": 0,
@@ -1833,7 +2013,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-08-06",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4977,
     "elapsed_time": 4977,
     "total_elevation_gain": 0,
@@ -1843,7 +2023,7 @@
     "name": "Inner Shin Recovery",
     "sport_type": "Workout",
     "date": "2025-08-05",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 50,
     "elapsed_time": 50,
     "total_elevation_gain": 0,
@@ -1853,7 +2033,7 @@
     "name": "Estiraments/mobilitat articular  + abs + cardio",
     "sport_type": "Pilates",
     "date": "2025-08-05",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5255,
     "elapsed_time": 5255,
     "total_elevation_gain": 0,
@@ -1863,7 +2043,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-08-04",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 8316,
     "elapsed_time": 8316,
     "total_elevation_gain": 0,
@@ -1873,7 +2053,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-08-01",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6842,
     "elapsed_time": 6842,
     "total_elevation_gain": 0,
@@ -1883,7 +2063,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-07-31",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 7402,
     "elapsed_time": 7402,
     "total_elevation_gain": 0,
@@ -1893,7 +2073,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-07-30",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5849,
     "elapsed_time": 5849,
     "total_elevation_gain": 0,
@@ -1903,7 +2083,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-07-25",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5476,
     "elapsed_time": 5476,
     "total_elevation_gain": 0,
@@ -1913,7 +2093,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-07-23",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 7739,
     "elapsed_time": 7739,
     "total_elevation_gain": 0,
@@ -1923,7 +2103,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-07-21",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4151,
     "elapsed_time": 4151,
     "total_elevation_gain": 0,
@@ -1933,7 +2113,7 @@
     "name": "Morning workout ☀️",
     "sport_type": "WeightTraining",
     "date": "2025-07-20",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6224,
     "elapsed_time": 6224,
     "total_elevation_gain": 0,
@@ -1943,7 +2123,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-07-17",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4471,
     "elapsed_time": 4471,
     "total_elevation_gain": 0,
@@ -1953,7 +2133,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-07-16",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4569,
     "elapsed_time": 4569,
     "total_elevation_gain": 0,
@@ -1963,7 +2143,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-07-14",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3116,
     "elapsed_time": 3116,
     "total_elevation_gain": 0,
@@ -1973,7 +2153,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-07-12",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4331,
     "elapsed_time": 4331,
     "total_elevation_gain": 0,
@@ -1983,7 +2163,7 @@
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2025-07-10",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 7001,
     "elapsed_time": 7001,
     "total_elevation_gain": 0,
@@ -1993,7 +2173,7 @@
     "name": "Morning workout ☀️",
     "sport_type": "WeightTraining",
     "date": "2025-07-09",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4892,
     "elapsed_time": 4892,
     "total_elevation_gain": 0,
@@ -2003,7 +2183,7 @@
     "name": "Morning workout ☀️",
     "sport_type": "WeightTraining",
     "date": "2025-07-06",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6354,
     "elapsed_time": 6354,
     "total_elevation_gain": 0,
@@ -2013,7 +2193,7 @@
     "name": "Morning workout ☀️",
     "sport_type": "WeightTraining",
     "date": "2025-07-02",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3806,
     "elapsed_time": 3806,
     "total_elevation_gain": 0,
@@ -2023,7 +2203,7 @@
     "name": "Morning workout ☀️",
     "sport_type": "WeightTraining",
     "date": "2025-07-01",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6070,
     "elapsed_time": 6070,
     "total_elevation_gain": 0,
@@ -2033,7 +2213,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-06-29",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4780,
     "elapsed_time": 4780,
     "total_elevation_gain": 0,
@@ -2046,14 +2226,16 @@
     "distance": 6999.7,
     "moving_time": 2021,
     "elapsed_time": 2021,
-    "total_elevation_gain": 0.0,
-    "relative_effort": 64.0
+    "total_elevation_gain": 0,
+    "relative_effort": 64.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Morning workout ☀️",
     "sport_type": "WeightTraining",
     "date": "2025-06-25",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5072,
     "elapsed_time": 5072,
     "total_elevation_gain": 0,
@@ -2063,7 +2245,7 @@
     "name": "Morning workout ☀️",
     "sport_type": "WeightTraining",
     "date": "2025-06-23",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6424,
     "elapsed_time": 6424,
     "total_elevation_gain": 0,
@@ -2073,7 +2255,7 @@
     "name": "Triceps hombro avantbraç",
     "sport_type": "WeightTraining",
     "date": "2025-06-21",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 6855,
     "elapsed_time": 6855,
     "total_elevation_gain": 0,
@@ -2093,7 +2275,7 @@
     "name": "Primer entreno gympro",
     "sport_type": "WeightTraining",
     "date": "2025-06-19",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3209,
     "elapsed_time": 3209,
     "total_elevation_gain": 0,
@@ -2107,7 +2289,9 @@
     "moving_time": 1682,
     "elapsed_time": 1722,
     "total_elevation_gain": 104.5,
-    "relative_effort": null
+    "relative_effort": null,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Via verda 5k",
@@ -2116,14 +2300,16 @@
     "distance": 5008.2,
     "moving_time": 1477,
     "elapsed_time": 1497,
-    "total_elevation_gain": 0.0,
-    "relative_effort": 38.0
+    "total_elevation_gain": 0,
+    "relative_effort": 38.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-05-28",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5673,
     "elapsed_time": 5673,
     "total_elevation_gain": 0,
@@ -2133,7 +2319,7 @@
     "name": "Sigma day",
     "sport_type": "WeightTraining",
     "date": "2025-05-27",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3432,
     "elapsed_time": 3432,
     "total_elevation_gain": 0,
@@ -2147,7 +2333,9 @@
     "moving_time": 1874,
     "elapsed_time": 1890,
     "total_elevation_gain": 8.0,
-    "relative_effort": 20.0
+    "relative_effort": 20.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Cursa Diagonal Dir '25",
@@ -2157,13 +2345,15 @@
     "moving_time": 2884,
     "elapsed_time": 2897,
     "total_elevation_gain": 8.9,
-    "relative_effort": null
+    "relative_effort": null,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-05-24",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4091,
     "elapsed_time": 4091,
     "total_elevation_gain": 0,
@@ -2173,7 +2363,7 @@
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-05-22",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3385,
     "elapsed_time": 3385,
     "total_elevation_gain": 0,
@@ -2187,7 +2377,9 @@
     "moving_time": 3133,
     "elapsed_time": 3138,
     "total_elevation_gain": 15.4,
-    "relative_effort": 56.0
+    "relative_effort": 56.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "@b3tterrunclub",
@@ -2197,13 +2389,15 @@
     "moving_time": 2025,
     "elapsed_time": 2238,
     "total_elevation_gain": 11.4,
-    "relative_effort": 87.0
+    "relative_effort": 87.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Morning workout ☀️",
     "sport_type": "WeightTraining",
     "date": "2025-05-19",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3893,
     "elapsed_time": 3893,
     "total_elevation_gain": 0,
@@ -2213,10 +2407,10 @@
     "name": "4 pelobrocolis fent pit-triceps",
     "sport_type": "WeightTraining",
     "date": "2025-05-13",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5319,
     "elapsed_time": 5319,
-    "total_elevation_gain": 0.0,
+    "total_elevation_gain": 0,
     "relative_effort": null
   },
   {
@@ -2227,13 +2421,15 @@
     "moving_time": 1885,
     "elapsed_time": 2104,
     "total_elevation_gain": 9.3,
-    "relative_effort": 60.0
+    "relative_effort": 60.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Hombro",
     "sport_type": "WeightTraining",
     "date": "2025-05-11",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 3037,
     "elapsed_time": 3037,
     "total_elevation_gain": 0,
@@ -2247,23 +2443,25 @@
     "moving_time": 1429,
     "elapsed_time": 1483,
     "total_elevation_gain": 8.9,
-    "relative_effort": 45.0
+    "relative_effort": 45.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Esquena-Biceps",
     "sport_type": "WeightTraining",
     "date": "2025-05-09",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 7660,
     "elapsed_time": 7660,
-    "total_elevation_gain": 0.0,
+    "total_elevation_gain": 0,
     "relative_effort": null
   },
   {
     "name": "Pit-Triceps",
     "sport_type": "WeightTraining",
     "date": "2025-05-07",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 5215,
     "elapsed_time": 5215,
     "total_elevation_gain": 0,
@@ -2273,7 +2471,7 @@
     "name": "Dia de palpitacions al cap (dia de cama)",
     "sport_type": "WeightTraining",
     "date": "2025-05-06",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 7151,
     "elapsed_time": 7151,
     "total_elevation_gain": 0,
@@ -2283,7 +2481,7 @@
     "name": "Sigma Day",
     "sport_type": "WeightTraining",
     "date": "2025-05-05",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4331,
     "elapsed_time": 4331,
     "total_elevation_gain": 0,
@@ -2297,13 +2495,15 @@
     "moving_time": 2887,
     "elapsed_time": 2913,
     "total_elevation_gain": 34.7,
-    "relative_effort": 124.0
+    "relative_effort": 124.0,
+    "gear_name": "Kross",
+    "gear_type": "Bicicleta"
   },
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2025-04-29",
-    "distance": 0.0,
+    "distance": 0,
     "moving_time": 4935,
     "elapsed_time": 4935,
     "total_elevation_gain": 0,
@@ -2337,7 +2537,9 @@
     "moving_time": 1699,
     "elapsed_time": 1704,
     "total_elevation_gain": 31.3,
-    "relative_effort": null
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Primer Riu Avall",
@@ -2347,7 +2549,9 @@
     "moving_time": 3411,
     "elapsed_time": 3449,
     "total_elevation_gain": 53.6,
-    "relative_effort": null
+    "relative_effort": null,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "6K morning",
@@ -2357,7 +2561,9 @@
     "moving_time": 1500,
     "elapsed_time": 1799,
     "total_elevation_gain": 7.9,
-    "relative_effort": 75.0
+    "relative_effort": 75.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Easy Run Diagonal",
@@ -2367,7 +2573,9 @@
     "moving_time": 1554,
     "elapsed_time": 1681,
     "total_elevation_gain": 9.2,
-    "relative_effort": null
+    "relative_effort": null,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Lunch Run",
@@ -2377,7 +2585,9 @@
     "moving_time": 6128,
     "elapsed_time": 7662,
     "total_elevation_gain": 35.0,
-    "relative_effort": 145.0
+    "relative_effort": 145.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "MARATÓ BARCELONA",
@@ -2386,8 +2596,10 @@
     "distance": 42200.0,
     "moving_time": 15589,
     "elapsed_time": 15589,
-    "total_elevation_gain": 0.0,
-    "relative_effort": 952.0
+    "total_elevation_gain": 0,
+    "relative_effort": 952.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Easy Run",
@@ -2397,7 +2609,9 @@
     "moving_time": 1776,
     "elapsed_time": 1812,
     "total_elevation_gain": 65.7,
-    "relative_effort": null
+    "relative_effort": null,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Unirun 2025",
@@ -2407,7 +2621,9 @@
     "moving_time": 1359,
     "elapsed_time": 1375,
     "total_elevation_gain": 28.4,
-    "relative_effort": 67.0
+    "relative_effort": 67.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Pre-unirun",
@@ -2416,8 +2632,10 @@
     "distance": 2559.4,
     "moving_time": 718,
     "elapsed_time": 812,
-    "total_elevation_gain": 0.0,
-    "relative_effort": null
+    "total_elevation_gain": 0,
+    "relative_effort": null,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "First 30k",
@@ -2426,8 +2644,10 @@
     "distance": 30034.3,
     "moving_time": 11208,
     "elapsed_time": 11945,
-    "total_elevation_gain": 0.0,
-    "relative_effort": null
+    "total_elevation_gain": 0,
+    "relative_effort": null,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Morning Run",
@@ -2437,7 +2657,9 @@
     "moving_time": 5783,
     "elapsed_time": 6190,
     "total_elevation_gain": 48.4,
-    "relative_effort": 240.0
+    "relative_effort": 240.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Mitja marató Barcelona 2025",
@@ -2447,7 +2669,9 @@
     "moving_time": 6133,
     "elapsed_time": 6227,
     "total_elevation_gain": 45.2,
-    "relative_effort": 264.0
+    "relative_effort": 264.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
   },
   {
     "name": "Run with Kevin",
@@ -2456,7 +2680,7 @@
     "distance": 5008.4,
     "moving_time": 1595,
     "elapsed_time": 1601,
-    "total_elevation_gain": 0.0,
+    "total_elevation_gain": 0,
     "relative_effort": null
   },
   {
@@ -2506,7 +2730,7 @@
     "distance": 4857.7,
     "moving_time": 1364,
     "elapsed_time": 1462,
-    "total_elevation_gain": 0.0,
+    "total_elevation_gain": 0,
     "relative_effort": 55.0
   },
   {
@@ -2516,7 +2740,7 @@
     "distance": 4035.5,
     "moving_time": 1284,
     "elapsed_time": 1649,
-    "total_elevation_gain": 0.0,
+    "total_elevation_gain": 0,
     "relative_effort": 62.0
   },
   {
@@ -2566,7 +2790,7 @@
     "distance": 4800.7,
     "moving_time": 1440,
     "elapsed_time": 2889,
-    "total_elevation_gain": 0.0,
+    "total_elevation_gain": 0,
     "relative_effort": 38.0
   },
   {
@@ -2576,7 +2800,7 @@
     "distance": 1445.9,
     "moving_time": 516,
     "elapsed_time": 543,
-    "total_elevation_gain": 0.0,
+    "total_elevation_gain": 0,
     "relative_effort": 13.0
   }
 ]

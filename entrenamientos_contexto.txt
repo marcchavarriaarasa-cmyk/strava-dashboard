@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-07-13
+Actividad: Sprints Costa Amunt w/ Kevin (Run)
+Distancia: 0.63 km
+Tiempo en movimiento: 5.68 min
+Velocidad media: 6.69 km/h
+Desnivel positivo: 19.6 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-07-12
 Actividad: Casa Alcanar - Casa Amposta (Ride)
 Distancia: 17.69 km
@@ -392,12 +400,4 @@ Tiempo en movimiento: 31.62 min
 Velocidad media: 2.88 km/h
 Desnivel positivo: 15.4 m
 Frecuencia cardíaca media: 139.6 bpm
-------------------------------
-Fecha: 2026-05-23
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 57.12 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
 ------------------------------
