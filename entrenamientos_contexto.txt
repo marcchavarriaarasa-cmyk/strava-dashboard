@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-07-12
+Actividad: Casa Alcanar - Casa Amposta (Ride)
+Distancia: 17.69 km
+Tiempo en movimiento: 54.95 min
+Velocidad media: 19.31 km/h
+Desnivel positivo: 43.8 m
+Frecuencia cardíaca media: 142.1 bpm
+------------------------------
 Fecha: 2026-07-11
 Actividad: Casa Amposta - Casa Alcanar (Ride)
 Distancia: 17.68 km
@@ -391,13 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 57.12 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-05-23
-Actividad: Activació Desafio Guerreros (Run)
-Distancia: 5.83 km
-Tiempo en movimiento: 28.62 min
-Velocidad media: 12.22 km/h
-Desnivel positivo: 42.9 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
