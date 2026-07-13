@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f3f0e8">
   <title>Marc — Training Log</title>
-  <link rel="stylesheet" href="style.css?v=5.0">
+  <link rel="stylesheet" href="style.css?v=5.1">
 </head>
 <body>
   <div class="shell">
@@ -27,9 +27,9 @@
           <h1 id="page-title">La temporada,<br><em>de un vistazo.</em></h1>
           <p class="hero-note">Volumen, constancia y señales útiles. Sin puntuaciones opacas ni métricas decorativas.</p>
         </div>
-        <div class="hero-number" aria-label="Distancia total del periodo">
+        <div class="hero-number" id="hero-number" aria-label="Distancia total del periodo">
           <span class="hero-number-value" id="hero-distance">—</span>
-          <span class="hero-number-unit">KM</span>
+          <span class="hero-number-unit" id="hero-unit">KM</span>
           <span class="hero-number-caption" id="hero-caption">EN EL PERIODO SELECCIONADO</span>
           <span class="hero-comparison" id="hero-comparison">—</span>
         </div>
@@ -48,28 +48,28 @@
       <section class="metric-strip" aria-label="Métricas principales">
         <article class="metric">
           <span class="metric-index">01</span>
-          <span class="metric-label">TIEMPO ACTIVO</span>
+          <span class="metric-label" id="metric-time-label">TIEMPO ACTIVO</span>
           <strong id="metric-time">—</strong>
           <span class="metric-comparison" id="time-comparison">—</span>
           <span class="metric-delta" id="time-delta">—</span>
         </article>
         <article class="metric">
           <span class="metric-index">02</span>
-          <span class="metric-label">DESNIVEL</span>
+          <span class="metric-label" id="metric-elevation-label">DESNIVEL</span>
           <strong id="metric-elevation">—</strong>
           <span class="metric-comparison" id="elevation-comparison">—</span>
-          <span class="metric-delta">METROS POSITIVOS</span>
+          <span class="metric-delta" id="elevation-delta">METROS POSITIVOS</span>
         </article>
         <article class="metric">
           <span class="metric-index">03</span>
-          <span class="metric-label">SESIONES</span>
+          <span class="metric-label" id="metric-sessions-label">SESIONES</span>
           <strong id="metric-sessions">—</strong>
           <span class="metric-comparison" id="sessions-comparison">—</span>
           <span class="metric-delta" id="frequency-note">—</span>
         </article>
         <article class="metric metric-accent">
           <span class="metric-index">04</span>
-          <span class="metric-label">RACHA ACTIVA</span>
+          <span class="metric-label" id="metric-streak-label">RACHA ACTIVA</span>
           <strong id="metric-streak">—</strong>
           <span class="metric-comparison" id="best-streak-note">—</span>
           <span class="metric-delta">DÍAS CON ACTIVIDAD</span>
@@ -83,7 +83,7 @@
               <p class="eyebrow">RITMO DE TEMPORADA</p>
               <h2>Volumen semanal</h2>
             </div>
-            <div class="chart-legend"><span></span> DISTANCIA / KM</div>
+            <div class="chart-legend"><span></span> <b id="volume-legend-text">DISTANCIA / KM</b></div>
           </header>
           <div class="volume-chart" id="volume-chart" role="img" aria-label="Distancia semanal"></div>
         </article>
@@ -137,6 +137,7 @@
             <div class="weekday-labels" aria-hidden="true"><span>L</span><span>M</span><span>X</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
             <div class="training-calendar" id="training-calendar"></div>
           </div>
+          <div class="calendar-legend" id="calendar-legend" aria-label="Leyenda de minutos activos por día"></div>
         </article>
 
         <article class="panel latest-panel">
@@ -159,6 +160,6 @@
   </div>
 
   <div id="loading" class="loading" aria-live="polite">LEYENDO LA TEMPORADA…</div>
-  <script src="app.js?v=5.0"></script>
+  <script src="app.js?v=5.1"></script>
 </body>
 </html>

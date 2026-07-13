@@ -87,13 +87,17 @@ button { font: inherit; }
 .panel { min-width: 0; padding: 36px 32px 38px 0; border-bottom: 1px solid var(--ink); }
 .panel:nth-child(even) { padding-left: 32px; padding-right: 0; border-left: 1px solid var(--ink); }
 .panel-wide { grid-column: 1 / -1; padding: 42px 0; border-left: 0 !important; }
+.panel.is-wide { grid-column: 1 / -1; padding-right: 0; border-left: 0; }
+.panel.is-hidden { display: none; }
 .panel-header { display: flex; justify-content: space-between; gap: 20px; align-items: start; margin-bottom: 34px; }
 .panel h2 { margin: 0; font-size: clamp(27px, 3vw, 44px); letter-spacing: -.045em; line-height: 1; }
 .panel-note, .chart-legend, .latest-count { margin: 0; font-size: 10px; font-weight: 800; letter-spacing: .12em; color: var(--muted); text-align: right; }
 .chart-legend span { display: inline-block; width: 16px; height: 3px; margin: 0 7px 2px 0; background: var(--orange); }
+.chart-legend b { font: inherit; }
 
 .volume-chart { height: 300px; display: grid; grid-template-columns: repeat(var(--week-count, 12), minmax(22px, 1fr)); gap: 8px; align-items: end; border-bottom: 1px solid var(--ink); background: repeating-linear-gradient(to top, transparent 0, transparent 74px, rgba(21,21,19,.08) 75px); }
-.week-bar { position: relative; height: var(--height); min-height: 2px; background: var(--orange); transition: opacity .2s; }
+.week-bar { position: relative; height: var(--height); background: var(--orange); transition: opacity .2s; }
+.week-bar.has-value { min-height: 2px; }
 .week-bar:hover { opacity: .7; }
 .week-bar::after { content: attr(data-label); position: absolute; left: 50%; bottom: -25px; transform: translateX(-50%); font-size: 9px; font-weight: 700; color: var(--muted); }
 .week-bar::before { content: attr(data-value); position: absolute; left: 50%; top: -18px; transform: translateX(-50%); font-size: 9px; opacity: 0; }
@@ -142,9 +146,14 @@ button { font: inherit; }
 .day-cell[data-level="2"] { background: #6f9681; }
 .day-cell[data-level="3"] { background: var(--green); }
 .day-cell[data-level="4"] { background: var(--orange); }
+.calendar-legend { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; margin-top: 18px; color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .08em; }
+.calendar-legend::before { content: "MINUTOS ACTIVOS / DÍA"; color: var(--ink); }
+.calendar-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.calendar-legend .day-cell { display: inline-block; width: 12px; height: 12px; flex: 0 0 12px; }
 
 .activity-table { border-top: 1px solid var(--ink); }
 .activity-row { display: grid; grid-template-columns: 74px 1fr 88px 78px; gap: 14px; align-items: center; min-height: 62px; border-bottom: 1px solid var(--line); }
+.activity-row.is-compact { grid-template-columns: 74px 1fr 100px; }
 .activity-date { font-family: var(--font-display); font-style: italic; color: var(--muted); }
 .activity-title { font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .activity-title span { display: block; margin-top: 3px; color: var(--muted); font-size: 9px; letter-spacing: .1em; }
@@ -162,7 +171,7 @@ footer { min-height: 100px; display: flex; justify-content: space-between; align
   .metric:nth-child(2) { border-right: 0; }
   .metric:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
   .analysis-grid { grid-template-columns: 1fr; }
-  .panel, .panel:nth-child(even), .panel-wide { grid-column: 1; padding: 34px 0; border-left: 0; }
+  .panel, .panel:nth-child(even), .panel-wide, .panel.is-wide { grid-column: 1; padding: 34px 0; border-left: 0; }
   .load-lane { grid-template-columns: 120px minmax(0, 1fr); gap: 14px; }
 }
 
@@ -184,7 +193,9 @@ footer { min-height: 100px; display: flex; justify-content: space-between; align
   .load-lane .chart-svg, .running-progress-chart .chart-svg { width: 720px; min-width: 720px; height: auto; min-height: 0; }
   .panel-header { align-items: flex-start; flex-direction: column; }
   .panel-note, .progress-legend { text-align: left; justify-content: flex-start; }
+  .calendar-legend { justify-content: flex-start; }
   .activity-row { grid-template-columns: 58px 1fr 65px; }
+  .activity-row.is-compact { grid-template-columns: 58px 1fr 65px; }
   .activity-row .activity-value:last-child { display: none; }
   footer { align-items: flex-start; flex-direction: column; justify-content: center; gap: 8px; }
 }

@@ -5,6 +5,7 @@ const sportLabels = {
   Hike: 'Senderismo', WeightTraining: 'Fuerza', Swim: 'Nadar',
   Pilates: 'Pilates', Tennis: 'Tenis', Workout: 'Entreno'
 };
+const nonDistanceSports = new Set(['WeightTraining', 'Pilates', 'Workout']);
 
 const $ = (selector) => document.querySelector(selector);
 const fmt = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0 });
@@ -90,28 +91,64 @@ function render() {
   renderSportMix(activities);
   renderTrainingLoad(activities);
   renderRunningProgress(activities);
-  renderCalendar(activities);
+  renderCalendar(state.activities.filter(matchesSport));
   renderActivityTable(activities);
 }
 
 function renderMetrics(activities, previousActivities) {
   const current = summarize(activities);
   const previous = summarize(previousActivities);
-  const streaks = calculateStreaks(state.activities);
-  $('#hero-distance').textContent = fmtOne.format(current.distanceKm);
+  const distanceBased = selectionUsesDistance();
+  const streaks = calculateStreaks(activities);
+  const weeks = periodWeeks(activities);
+  const previousWeeks = periodWeeks(previousActivities);
+  const currentFrequency = current.sessions / weeks;
+  const previousFrequency = previous.sessions / previousWeeks;
+  const currentAverageMinutes = current.sessions ? current.seconds / current.sessions / 60 : 0;
+  const previousAverageMinutes = previous.sessions ? previous.seconds / previous.sessions / 60 : 0;
+
+  $('#hero-distance').textContent = distanceBased ? fmtOne.format(current.distanceKm) : fmt.format(current.sessions);
+  $('#hero-unit').textContent = distanceBased ? 'KM' : 'SESIONES';
+  $('#hero-number').setAttribute('aria-label', distanceBased ? 'Distancia total del periodo' : 'Sesiones totales del periodo');
   $('#hero-caption').textContent = state.sport === 'Todos' ? 'EN EL PERIODO SELECCIONADO' : `${sportLabels[state.sport] || state.sport} · PERIODO SELECCIONADO`;
-  $('#hero-comparison').textContent = formatComparison(current.distanceKm, previous.distanceKm);
+  $('#hero-comparison').textContent = formatComparison(distanceBased ? current.distanceKm : current.sessions, distanceBased ? previous.distanceKm : previous.sessions);
   $('#metric-time').textContent = `${fmtOne.format(current.hours)} H`;
   $('#time-comparison').textContent = formatComparison(current.seconds, previous.seconds);
-  $('#metric-elevation').textContent = `${fmt.format(current.elevation)} M`;
-  $('#elevation-comparison').textContent = formatComparison(current.elevation, previous.elevation);
-  $('#metric-sessions').textContent = fmt.format(current.sessions);
-  $('#sessions-comparison').textContent = formatComparison(current.sessions, previous.sessions);
+  $('#metric-time-label').textContent = 'TIEMPO ACTIVO';
   $('#metric-streak').textContent = `${streaks.latest} D`;
+  $('#metric-streak-label').textContent = state.sport === 'Todos' ? 'RACHA ACTIVA' : 'ÚLTIMA RACHA';
   $('#best-streak-note').textContent = `MEJOR RACHA · ${streaks.best} D`;
-  const weeks = state.range === 'all' ? Math.max(1, dateSpanDays(activities) / 7) : state.range / 7;
-  $('#frequency-note').textContent = `${fmtOne.format(current.sessions / Math.max(weeks, 1))} SESIONES / SEMANA`;
-  $('#time-delta').textContent = current.distanceKm > 0 ? `${fmtOne.format(current.distanceKm / Math.max(current.hours, 1))} KM / H ACTIVA` : 'TRABAJO SIN DISTANCIA';
+
+  if (distanceBased) {
+    $('#metric-elevation-label').textContent = 'DESNIVEL';
+    $('#metric-elevation').textContent = `${fmt.format(current.elevation)} M`;
+    $('#elevation-comparison').textContent = formatComparison(current.elevation, previous.elevation);
+    $('#elevation-delta').textContent = 'METROS POSITIVOS';
+    $('#metric-sessions-label').textContent = 'SESIONES';
+    $('#metric-sessions').textContent = fmt.format(current.sessions);
+    $('#sessions-comparison').textContent = formatComparison(current.sessions, previous.sessions);
+    $('#frequency-note').textContent = `${fmtOne.format(currentFrequency)} SESIONES / SEMANA`;
+    $('#time-delta').textContent = current.distanceKm > 0 ? `${fmtOne.format(current.distanceKm / Math.max(current.hours, 1))} KM / H ACTIVA` : 'DURACIÓN ACUMULADA';
+  } else {
+    $('#metric-elevation-label').textContent = 'DURACIÓN MEDIA';
+    $('#metric-elevation').textContent = `${fmt.format(currentAverageMinutes)} MIN`;
+    $('#elevation-comparison').textContent = formatComparison(currentAverageMinutes, previousAverageMinutes);
+    $('#elevation-delta').textContent = 'POR SESIÓN';
+    $('#metric-sessions-label').textContent = 'FRECUENCIA';
+    $('#metric-sessions').textContent = `${fmtOne.format(currentFrequency)} / SEM`;
+    $('#sessions-comparison').textContent = formatComparison(currentFrequency, previousFrequency);
+    $('#frequency-note').textContent = `${fmt.format(current.sessions)} SESIONES EN EL PERIODO`;
+    $('#time-delta').textContent = 'DURACIÓN ACUMULADA';
+  }
+}
+
+function selectionUsesDistance() {
+  return state.sport === 'Todos' || !nonDistanceSports.has(state.sport);
+}
+
+function periodWeeks(activities) {
+  if (state.range !== 'all') return state.range / 7;
+  return Math.max(1, (dateSpanDays(activities) + 1) / 7);
 }
 
 function summarize(activities) {
@@ -156,15 +193,22 @@ function buildWeeks(activities) {
 }
 
 function renderWeeklyVolume(activities) {
+  const distanceBased = selectionUsesDistance();
   const weeks = buildWeeks(activities).map(week => ({
     ...week,
-    distance: sum(week.items, 'distance') / 1000
+    value: distanceBased ? sum(week.items, 'distance') / 1000 : sum(week.items, 'moving_time') / 60
   }));
-  const max = Math.max(...weeks.map(item => item.distance), 1);
+  const panel = $('.volume-panel');
+  const max = Math.max(...weeks.map(item => item.value), 0);
+  panel.classList.toggle('is-hidden', max === 0);
+  panel.classList.toggle('is-wide', state.sport !== 'Todos');
+  if (max === 0) return;
+  $('#volume-legend-text').textContent = distanceBased ? 'DISTANCIA / KM' : 'MINUTOS ACTIVOS / SEMANA';
   const chart = $('#volume-chart');
+  chart.setAttribute('aria-label', distanceBased ? 'Distancia semanal en kilómetros' : 'Minutos activos por semana');
   chart.style.setProperty('--week-count', weeks.length);
   chart.innerHTML = weeks.map(item =>
-    `<div class="week-bar" style="--height:${Math.max(1, item.distance / max * 100)}%" data-label="${item.label}" data-value="${fmtOne.format(item.distance)}"></div>`
+    `<div class="week-bar${item.value > 0 ? ' has-value' : ''}" style="--height:${item.value / max * 100}%" data-label="${item.label}" data-value="${distanceBased ? fmtOne.format(item.value) : fmt.format(item.value)}"></div>`
   ).join('');
 }
 
@@ -174,6 +218,10 @@ function renderSportMix(activities) {
     return result;
   }, {});
   const rows = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 6);
+  const panel = $('.mix-panel');
+  const shouldShow = state.sport === 'Todos' && rows.length > 1;
+  panel.classList.toggle('is-hidden', !shouldShow);
+  if (!shouldShow) return;
   const max = rows[0]?.[1] || 1;
   $('#sport-mix').innerHTML = rows.length ? rows.map(([sport, count]) => `
     <div class="mix-row">
@@ -184,8 +232,13 @@ function renderSportMix(activities) {
 }
 
 function renderTrainingLoad(activities) {
+  const panel = $('.load-panel');
+  if (!selectionUsesDistance() && state.sport !== 'Todos') {
+    panel.classList.add('is-hidden');
+    return;
+  }
   const weeks = buildWeeks(activities).map(week => {
-    const cardio = week.items.filter(item => item.sport_type !== 'WeightTraining');
+    const cardio = week.items.filter(item => item.sport_type !== 'WeightTraining' && hasRelativeEffort(item));
     const strength = week.items.filter(item => item.sport_type === 'WeightTraining');
     return {
       ...week,
@@ -194,16 +247,33 @@ function renderTrainingLoad(activities) {
       strengthSessions: strength.length
     };
   });
-  const last = weeks[weeks.length - 1];
-  $('#load-note').textContent = `ÚLTIMA SEMANA · ${fmt.format(last.cardioEffort)} ESFUERZO · ${fmt.format(last.strengthMinutes)} MIN FUERZA`;
-  $('#training-load-chart').innerHTML = [
-    renderLoadLane('CARDIO', 'ESFUERZO RELATIVO', weeks.map(item => item.cardioEffort), weeks, 'cardio-bar', 'PTS'),
-    renderLoadLane('FUERZA', 'MINUTOS ACTIVOS', weeks.map(item => item.strengthMinutes), weeks, 'strength-bar', 'MIN')
-  ].join('');
   const cardioActivities = activities.filter(item => item.sport_type !== 'WeightTraining');
-  const scored = cardioActivities.filter(item => item.relative_effort !== null && item.relative_effort !== undefined && Number.isFinite(Number(item.relative_effort))).length;
+  const scored = cardioActivities.filter(hasRelativeEffort).length;
   const strengthSessions = activities.filter(item => item.sport_type === 'WeightTraining').length;
-  $('#load-coverage').textContent = `COBERTURA · ESFUERZO DISPONIBLE EN ${scored} DE ${cardioActivities.length} SESIONES DE CARDIO · FUERZA MEDIDA CON ${strengthSessions} SESIONES Y SU DURACIÓN`;
+  const showCardio = scored > 0;
+  const showStrength = state.sport === 'Todos' && strengthSessions > 0;
+  if (!showCardio && !showStrength) {
+    panel.classList.add('is-hidden');
+    return;
+  }
+  panel.classList.remove('is-hidden');
+  const last = weeks[weeks.length - 1];
+  const noteParts = [];
+  if (showCardio) noteParts.push(`${fmt.format(last.cardioEffort)} ESFUERZO`);
+  if (showStrength) noteParts.push(`${fmt.format(last.strengthMinutes)} MIN FUERZA`);
+  $('#load-note').textContent = `ÚLTIMA SEMANA · ${noteParts.join(' · ')}`;
+  const lanes = [];
+  if (showCardio) lanes.push(renderLoadLane('CARDIO', 'ESFUERZO RELATIVO', weeks.map(item => item.cardioEffort), weeks, 'cardio-bar', 'PTS'));
+  if (showStrength) lanes.push(renderLoadLane('FUERZA', 'MINUTOS ACTIVOS', weeks.map(item => item.strengthMinutes), weeks, 'strength-bar', 'MIN'));
+  $('#training-load-chart').innerHTML = lanes.join('');
+  const coverageParts = [];
+  if (showCardio) coverageParts.push(`ESFUERZO DISPONIBLE EN ${scored} DE ${cardioActivities.length} SESIONES DE CARDIO`);
+  if (showStrength) coverageParts.push(`FUERZA MEDIDA CON ${strengthSessions} SESIONES Y SU DURACIÓN`);
+  $('#load-coverage').textContent = `COBERTURA · ${coverageParts.join(' · ')}`;
+}
+
+function hasRelativeEffort(item) {
+  return item.relative_effort !== null && item.relative_effort !== undefined && Number.isFinite(Number(item.relative_effort));
 }
 
 function renderLoadLane(label, subtitle, values, weeks, barClass, unit) {
@@ -246,6 +316,11 @@ function renderBarLineSvg(values, averages, weeks, barClass, unit) {
 }
 
 function renderRunningProgress(activities) {
+  const panel = $('.running-panel');
+  if (state.sport !== 'Todos' && state.sport !== 'Run') {
+    panel.classList.add('is-hidden');
+    return;
+  }
   const bandDefinitions = [
     { key: 'short', label: '5–8 KM', min: 5, max: 8, lineClass: 'running-series-orange', pointClass: 'running-point-orange' },
     { key: 'long', label: '8–12 KM', min: 8, max: 12, lineClass: 'running-series-green', pointClass: 'running-point-green' }
@@ -261,10 +336,10 @@ function renderRunningProgress(activities) {
   const allPoints = bands.flatMap(band => band.points);
   const chart = $('#running-progress-chart');
   if (allPoints.length < 8) {
-    chart.innerHTML = '<div class="empty-chart">NO HAY SUFICIENTES CARRERAS COMPARABLES PARA ESTE FILTRO</div>';
-    $('#running-progress-note').textContent = `MUESTRA ACTUAL: ${allPoints.length} · SE NECESITAN AL MENOS 8 CARRERAS ENTRE 5 Y 12 KM PARA MOSTRAR UNA TENDENCIA`;
+    panel.classList.add('is-hidden');
     return;
   }
+  panel.classList.remove('is-hidden');
   chart.innerHTML = renderRunningSvg(bands, allPoints);
   chart.setAttribute('aria-label', `Evolución del ritmo en ${allPoints.length} carreras comparables`);
   $('#running-progress-note').textContent = `${allPoints.length} CARRERAS · RITMO EN MOVIMIENTO · ESCALA ENFOCADA, MÁS RÁPIDO ARRIBA · LÍNEAS: MEDIANA MÓVIL DE 4 CARRERAS`;
@@ -301,6 +376,7 @@ function renderRunningSvg(bands, allPoints) {
 }
 
 function renderCalendar(activities) {
+  const panel = $('.consistency-panel');
   const reference = activityDate(state.activities[0]);
   const end = endOfWeek(reference);
   const start = new Date(end.getTime() - 12 * 7 * DAY_MS + DAY_MS);
@@ -313,30 +389,33 @@ function renderCalendar(activities) {
   for (let date = new Date(start); date <= end; date = new Date(date.getTime() + DAY_MS)) {
     values.push({ date: new Date(date), minutes: minutesByDay.get(dayKey(date)) || 0 });
   }
-  const nonZero = values.map(item => item.minutes).filter(Boolean).sort((a, b) => a - b);
-  const q1 = nonZero[Math.floor(nonZero.length * .35)] || 20;
-  const q2 = nonZero[Math.floor(nonZero.length * .65)] || 45;
-  const q3 = nonZero[Math.floor(nonZero.length * .85)] || 75;
   $('#training-calendar').innerHTML = values.map(item => {
-    const level = item.minutes === 0 ? 0 : item.minutes <= q1 ? 1 : item.minutes <= q2 ? 2 : item.minutes <= q3 ? 3 : 4;
+    const level = item.minutes === 0 ? 0 : item.minutes <= 30 ? 1 : item.minutes <= 60 ? 2 : item.minutes <= 90 ? 3 : 4;
     const title = `${item.date.toLocaleDateString('es-ES')}: ${item.minutes ? fmt.format(item.minutes) + ' min activos' : 'descanso'}`;
     return `<div class="day-cell" data-level="${level}" title="${title}"></div>`;
   }).join('');
   const activeDays = values.filter(item => item.minutes > 0).length;
+  panel.classList.toggle('is-hidden', activeDays === 0);
+  $('.latest-panel').classList.toggle('is-wide', activeDays === 0);
+  if (activeDays === 0) return;
   $('#active-days-note').textContent = `${activeDays} DÍAS ACTIVOS · ${values.length - activeDays} DE DESCANSO`;
+  $('#calendar-legend').innerHTML = [
+    ['0', 'DESCANSO'], ['1', '1–30 MIN'], ['2', '31–60 MIN'], ['3', '61–90 MIN'], ['4', '+90 MIN']
+  ].map(([level, label]) => `<span><i class="day-cell" data-level="${level}"></i>${label}</span>`).join('');
 }
 
 function renderActivityTable(activities) {
   const recent = activities.slice(0, 6);
+  const distanceBased = selectionUsesDistance();
   $('#latest-count').textContent = `${activities.length} REGISTROS`;
   $('#activity-table').innerHTML = recent.length ? recent.map(item => {
     const date = activityDate(item);
     const distance = Number(item.distance) / 1000;
-    return `<div class="activity-row">
+    return `<div class="activity-row${distanceBased ? '' : ' is-compact'}">
       <span class="activity-date">${date.toLocaleDateString('es-ES', { day: '2-digit', month: 'short' }).replace('.', '')}</span>
       <span class="activity-title">${escapeHtml(item.name || 'Actividad')}<span>${(sportLabels[item.sport_type] || item.sport_type).toUpperCase()}</span></span>
-      <span class="activity-value">${distance ? fmtOne.format(distance) + ' KM' : formatDuration(item.moving_time)}</span>
-      <span class="activity-value">${item.total_elevation_gain ? '+' + fmt.format(item.total_elevation_gain) + ' M' : '—'}</span>
+      <span class="activity-value">${distanceBased && distance ? fmtOne.format(distance) + ' KM' : formatDuration(item.moving_time)}</span>
+      ${distanceBased ? `<span class="activity-value">${item.total_elevation_gain ? '+' + fmt.format(item.total_elevation_gain) + ' M' : '—'}</span>` : ''}
     </div>`;
   }).join('') : '<p>Sin actividades para este filtro.</p>';
 }
