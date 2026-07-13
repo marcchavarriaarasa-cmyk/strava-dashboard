@@ -91,7 +91,7 @@ function render() {
   renderSportMix(activities);
   renderTrainingLoad(activities);
   renderRunningProgress(activities);
-  renderPersonalBests(activities);
+  renderPersonalBests(state.activities.filter(matchesSport));
   renderGearUsage(activities);
   renderCalendar(state.activities.filter(matchesSport));
   renderActivityTable(activities);
@@ -425,31 +425,50 @@ function renderPersonalBests(activities) {
       sport: sportLabels[activity.sport_type] || activity.sport_type,
       date: activityDate(activity),
     }))
-  ).sort((a, b) => b.date - a.date || a.rank - b.rank || a.distance - b.distance);
+  );
 
   panel.classList.toggle('is-hidden', achievements.length === 0);
   if (!achievements.length) return;
 
-  const records = achievements.filter(item => item.rank === 1).length;
-  $('#achievements-note').textContent = `${achievements.length} LOGROS · ${records} ${records === 1 ? 'RÉCORD PERSONAL' : 'RÉCORDS PERSONALES'}`;
+  const groups = Object.values(achievements.reduce((result, item) => {
+    const key = String(Number(item.distance) || item.name);
+    if (!result[key]) result[key] = { distance: Number(item.distance) || 0, name: item.name, items: [] };
+    result[key].items.push(item);
+    return result;
+  }, {})).map(group => ({
+    ...group,
+    items: group.items.sort((a, b) => a.elapsed_time - b.elapsed_time || b.date - a.date),
+  })).sort((a, b) => a.distance - b.distance);
+
+  $('#achievements-note').textContent = `${groups.length} DISTANCIAS · ${achievements.length} MEJORES MARCAS · HISTORIAL COMPLETO`;
   const list = $('#personal-achievements');
-  list.setAttribute('aria-label', `${achievements.length} logros personales sin segmentos ni distancias en millas`);
-  list.innerHTML = `
-    <div class="achievement-row achievement-head" aria-hidden="true">
-      <span>DISTANCIA</span><span>MARCA</span><span>RANGO</span><span>FECHA</span><span>ACTIVIDAD</span>
-    </div>
-    ${achievements.map(item => `
-      <div class="achievement-row">
-        <strong class="achievement-distance">${escapeHtml(item.name)}</strong>
-        <span class="achievement-time">${formatEffortTime(item.elapsed_time)}</span>
-        <span class="achievement-rank" data-rank="${item.rank}">${personalRankLabel(item.rank)}</span>
-        <time class="achievement-date" datetime="${toIsoDay(item.date)}">${item.date.toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric' }).replace('.', '')}</time>
-        <span class="achievement-activity">${escapeHtml(item.activityName)}<small>${escapeHtml(item.sport).toUpperCase()}</small></span>
-      </div>`).join('')}`;
+  list.setAttribute('aria-label', `${groups.length} distancias con sus mejores marcas personales actuales`);
+  list.innerHTML = groups.map(group => `
+    <section class="achievement-group" aria-labelledby="achievement-${Math.round(group.distance)}">
+      <header class="achievement-group-header">
+        <h3 id="achievement-${Math.round(group.distance)}">${formatAchievementDistance(group.name)}</h3>
+        <span>${group.items.length} ${group.items.length === 1 ? 'MARCA REGISTRADA' : 'MEJORES MARCAS'}</span>
+      </header>
+      <div class="achievement-row achievement-head" aria-hidden="true">
+        <span>PUESTO</span><span>MARCA</span><span>FECHA</span><span>ACTIVIDAD</span>
+      </div>
+      ${group.items.map(item => `
+        <div class="achievement-row">
+          <span class="achievement-rank" data-rank="${item.rank}">${personalRankLabel(item.rank)}</span>
+          <strong class="achievement-time">${formatEffortTime(item.elapsed_time)}</strong>
+          <time class="achievement-date" datetime="${toIsoDay(item.date)}">${item.date.toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric' }).replace('.', '')}</time>
+          <span class="achievement-activity">${escapeHtml(item.activityName)}<small>${escapeHtml(item.sport).toUpperCase()}</small></span>
+        </div>`).join('')}
+    </section>`).join('');
 }
 
 function personalRankLabel(rank) {
-  return rank === 1 ? 'RÉCORD PERSONAL' : rank === 2 ? '2ª MEJOR MARCA' : '3ª MEJOR MARCA';
+  return rank === 1 ? '1ª · RÉCORD PERSONAL' : rank === 2 ? '2ª MEJOR MARCA' : '3ª MEJOR MARCA';
+}
+
+function formatAchievementDistance(name) {
+  if (name === 'Half-Marathon') return 'MEDIA MARATÓN';
+  return escapeHtml(name).replace(/m$/i, ' M');
 }
 
 function renderCalendar(activities) {
