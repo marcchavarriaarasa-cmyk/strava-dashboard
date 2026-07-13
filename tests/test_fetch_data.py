@@ -2,7 +2,7 @@ import os
 import tempfile
 import unittest
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 import requests
 
@@ -81,6 +81,7 @@ class FetchDataTests(unittest.TestCase):
             'suffer_score': 42,
             'average_heartrate': 155,
             'device_name': 'Private device',
+            'gear_id': 'g-private',
             'map': {'summary_polyline': 'private-route'},
             'start_latlng': [40.0, 0.5],
         }
@@ -98,8 +99,49 @@ class FetchDataTests(unittest.TestCase):
             'relative_effort': 42,
         }])
         serialized = str(result)
-        for sensitive_value in ('private-route', 'Private device', 'average_heartrate', 'athlete'):
+        for sensitive_value in ('private-route', 'Private device', 'average_heartrate', 'athlete', 'g-private'):
             self.assertNotIn(sensitive_value, serialized)
+
+    def test_public_activities_include_safe_gear_labels(self):
+        activity = {
+            'name': 'Carrera',
+            'sport_type': 'Run',
+            'start_date_local': '2026-07-12T08:00:00Z',
+            'distance': 10000,
+            'moving_time': 3000,
+            'elapsed_time': 3060,
+            'total_elevation_gain': 80,
+            'gear_id': 'g123',
+        }
+
+        result = fetch_data.build_public_activities([activity], {
+            'g123': {'name': 'HOKA Bondi 9', 'type': 'Zapatillas'},
+        })
+
+        self.assertEqual(result[0]['gear_name'], 'HOKA Bondi 9')
+        self.assertEqual(result[0]['gear_type'], 'Zapatillas')
+        self.assertNotIn('g123', str(result))
+
+    def test_gear_catalog_resolves_each_unique_item_once(self):
+        response = Mock()
+        response.raise_for_status.return_value = None
+        response.json.return_value = {
+            'brand_name': 'HOKA',
+            'model_name': 'Bondi 9',
+        }
+        activities = [
+            {'gear_id': 'g123'},
+            {'gear_id': 'g123'},
+            {'gear_id': None},
+        ]
+
+        with patch.object(fetch_data.SESSION, 'get', return_value=response) as get:
+            catalog = fetch_data.fetch_gear_catalog('token', activities)
+
+        self.assertEqual(catalog, {
+            'g123': {'name': 'HOKA Bondi 9', 'type': 'Zapatillas'},
+        })
+        self.assertEqual(get.call_count, 1)
 
 
 if __name__ == '__main__':

@@ -91,6 +91,7 @@ function render() {
   renderSportMix(activities);
   renderTrainingLoad(activities);
   renderRunningProgress(activities);
+  renderGearUsage(activities);
   renderCalendar(state.activities.filter(matchesSport));
   renderActivityTable(activities);
 }
@@ -373,6 +374,45 @@ function renderRunningSvg(bands, allPoints) {
     return `${line}${points}`;
   }).join('');
   return `<svg class="chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Ritmo de carrera entre 5 y 12 kilómetros a lo largo del tiempo">${yGrid}${series}${xLabels}</svg>`;
+}
+
+function renderGearUsage(activities) {
+  const panel = $('.gear-panel');
+  const usage = activities.reduce((result, item) => {
+    if (!item.gear_name || Number(item.distance) <= 0) return result;
+    const key = `${item.gear_type || 'Material'}::${item.gear_name}`;
+    if (!result[key]) {
+      result[key] = {
+        name: item.gear_name,
+        type: item.gear_type || 'Material',
+        distanceKm: 0,
+        sessions: 0,
+      };
+    }
+    result[key].distanceKm += Number(item.distance) / 1000;
+    result[key].sessions += 1;
+    return result;
+  }, {});
+  const rows = Object.values(usage).sort((a, b) => b.distanceKm - a.distanceKm);
+  panel.classList.toggle('is-hidden', rows.length === 0);
+  if (!rows.length) return;
+
+  const max = Math.max(...rows.map(item => item.distanceKm), 1);
+  const total = rows.reduce((sum, item) => sum + item.distanceKm, 0);
+  $('#gear-note').textContent = `${rows.length} ${rows.length === 1 ? 'EQUIPO' : 'EQUIPOS'} · ${fmtOne.format(total)} KM EN EL PERIODO`;
+  const chart = $('#gear-usage');
+  chart.setAttribute('aria-label', `Kilómetros recorridos con ${rows.length} equipos en el periodo seleccionado`);
+  chart.innerHTML = rows.map(item => `
+    <div class="gear-row">
+      <div class="gear-meta">
+        <strong>${escapeHtml(item.name)}</strong>
+        <span>${escapeHtml(item.type).toUpperCase()} · ${item.sessions} ${item.sessions === 1 ? 'SESIÓN' : 'SESIONES'}</span>
+      </div>
+      <div class="gear-track" aria-hidden="true">
+        <div class="gear-fill" data-gear-type="${escapeHtml(item.type)}" style="--width:${item.distanceKm / max * 100}%"></div>
+      </div>
+      <span class="gear-value">${fmtOne.format(item.distanceKm)} KM</span>
+    </div>`).join('');
 }
 
 function renderCalendar(activities) {

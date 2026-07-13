@@ -14,6 +14,11 @@ REFRESH_TOKEN = os.getenv('STRAVA_REFRESH_TOKEN')
 
 REQUEST_TIMEOUT = (10, 30)
 PUBLIC_DATA_PATH = 'data/activities.public.json'
+KNOWN_GEAR_NAMES = {
+    'g21829526': 'Nike Zoom Fly 5',
+    'g22746812': 'HOKA Bondi 9',
+    'b16055834': 'Kross',
+}
 
 
 class StravaError(RuntimeError):
@@ -74,12 +79,67 @@ def atomic_write_json(path, data):
             os.unlink(temp_path)
 
 
-def build_public_activities(activities):
+def gear_type_from_id(gear_id):
+    if gear_id.startswith('b'):
+        return 'Bicicleta'
+    if gear_id.startswith('g'):
+        return 'Zapatillas'
+    return 'Material'
+
+
+def gear_display_name(gear_id, gear):
+    name = (gear or {}).get('name')
+    if name:
+        return name
+    brand_and_model = ' '.join(
+        part.strip()
+        for part in (
+            (gear or {}).get('brand_name') or '',
+            (gear or {}).get('model_name') or '',
+        )
+        if part.strip()
+    )
+    return brand_and_model or KNOWN_GEAR_NAMES.get(gear_id)
+
+
+def fetch_gear_catalog(access_token, activities):
+    """Resolve unique gear ids without exposing those ids to GitHub Pages."""
+    headers = {'Authorization': f'Bearer {access_token}'}
+    gear_ids = sorted({activity.get('gear_id') for activity in activities if activity.get('gear_id')})
+    catalog = {}
+    for gear_id in gear_ids:
+        gear = {}
+        try:
+            response = SESSION.get(
+                f'https://www.strava.com/api/v3/gear/{gear_id}',
+                headers=headers,
+                timeout=REQUEST_TIMEOUT,
+            )
+            response.raise_for_status()
+            gear = response.json()
+        except (requests.exceptions.RequestException, ValueError):
+            print(
+                'Warning: unable to resolve one gear item; using a known fallback when available.',
+                file=sys.stderr,
+            )
+
+        name = gear_display_name(gear_id, gear)
+        if name:
+            catalog[gear_id] = {
+                'name': name,
+                'type': gear_type_from_id(gear_id),
+            }
+    print(f'Resolved {len(catalog)} of {len(gear_ids)} gear items.')
+    return catalog
+
+
+def build_public_activities(activities, gear_catalog=None):
     """Return the minimal, privacy-conscious dataset used by GitHub Pages."""
+    gear_catalog = gear_catalog or {}
     public_activities = []
     for activity in activities:
         local_date = activity.get('start_date_local') or activity.get('start_date') or ''
-        public_activities.append({
+        public_activity = {
             'name': activity.get('name') or 'Actividad',
             'sport_type': activity.get('sport_type') or activity.get('type') or 'Workout',
             'date': local_date.split('T', 1)[0],
@@ -88,7 +148,12 @@ def build_public_activities(activities):
             'elapsed_time': activity.get('elapsed_time') or 0,
             'total_elevation_gain': activity.get('total_elevation_gain') or 0,
             'relative_effort': activity.get('suffer_score'),
-        })
+        }
+        gear = gear_catalog.get(activity.get('gear_id'))
+        if gear:
+            public_activity['gear_name'] = gear['name']
+            public_activity['gear_type'] = gear['type']
+        public_activities.append(public_activity)
     return public_activities
 
 
@@ -215,7 +280,8 @@ def fetch_activities(access_token):
     # Publish only the fields required by the dashboard. Exact routes,
     # coordinates, athlete identifiers, devices and heart-rate samples stay out
     # of the GitHub Pages payload.
-    public_activities = build_public_activities(all_activities)
+    gear_catalog = fetch_gear_catalog(access_token, all_activities)
+    public_activities = build_public_activities(all_activities, gear_catalog)
     atomic_write_json(PUBLIC_DATA_PATH, public_activities)
     print(f"Successfully saved privacy-safe data to {PUBLIC_DATA_PATH}")
     
