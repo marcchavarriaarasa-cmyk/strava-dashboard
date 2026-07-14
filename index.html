@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f3f0e8">
   <title>Marc — Training Log</title>
-  <link rel="stylesheet" href="style.css?v=5.8">
+  <link rel="stylesheet" href="style.css?v=6.0">
 </head>
 <body>
   <div class="shell">
@@ -25,7 +25,6 @@
         <div class="hero-copy">
           <p class="eyebrow">RESUMEN DE ENTRENAMIENTO</p>
           <h1 id="page-title">La temporada,<br><em>de un vistazo.</em></h1>
-          <p class="hero-note">Volumen, constancia y señales útiles. Sin puntuaciones opacas ni métricas decorativas.</p>
         </div>
         <div class="hero-number" id="hero-number" aria-label="Distancia total del periodo">
           <span class="hero-number-value" id="hero-distance">—</span>
@@ -122,7 +121,6 @@
             </div>
           </header>
           <div class="running-progress-chart" id="running-progress-chart" role="img" aria-label="Evolución del ritmo de carrera"></div>
-          <p class="chart-footnote" id="running-progress-note">—</p>
         </article>
 
         <article class="panel panel-wide achievements-panel is-hidden">
@@ -134,7 +132,6 @@
             <p class="panel-note" id="achievements-note">—</p>
           </header>
           <div class="personal-achievements" id="personal-achievements"></div>
-          <p class="chart-footnote">CLASIFICACIÓN ACTUAL POR TIEMPO · HISTORIAL COMPLETO · SIN SEGMENTOS · SIN DISTANCIAS EN MILLAS</p>
         </article>
 
         <article class="panel panel-wide gear-panel is-hidden">
@@ -167,11 +164,20 @@
           <header class="panel-header">
             <div>
               <p class="eyebrow">CUADERNO DE CAMPO</p>
-              <h2>Últimas actividades</h2>
+              <h2>Actividades</h2>
             </div>
             <span class="latest-count" id="latest-count">—</span>
           </header>
+          <label class="activity-search" for="activity-search">
+            <span>BUSCAR POR NOMBRE O DEPORTE</span>
+            <input id="activity-search" type="search" autocomplete="off" placeholder="Ej. carrera, bici, gimnasio…">
+          </label>
           <div class="activity-table" id="activity-table"></div>
+          <nav class="activity-pagination" aria-label="Paginación de actividades">
+            <button id="activity-prev" type="button">ANTERIOR</button>
+            <span id="activity-page" aria-live="polite">PÁGINA 1</span>
+            <button id="activity-next" type="button">SIGUIENTE</button>
+          </nav>
         </article>
       </section>
     </main>
@@ -183,6 +189,6 @@
   </div>
 
   <div id="loading" class="loading" aria-live="polite">LEYENDO LA TEMPORADA…</div>
-  <script src="app.js?v=5.8"></script>
+  <script src="app.js?v=6.0"></script>
 </body>
 </html>

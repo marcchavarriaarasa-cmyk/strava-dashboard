@@ -1,5 +1,6 @@
 const DAY_MS = 86400000;
-const state = { activities: [], range: 84, sport: 'Todos' };
+const ACTIVITY_PAGE_SIZE = 8;
+const state = { activities: [], range: 84, sport: 'Todos', activityPage: 1, activitySearch: '' };
 const sportLabels = {
   Run: 'Correr', Ride: 'Bici', MountainBikeRide: 'MTB', Walk: 'Caminar',
   Hike: 'Senderismo', WeightTraining: 'Fuerza', Swim: 'Nadar',
@@ -20,6 +21,7 @@ async function init() {
     state.activities = (await response.json()).sort((a, b) => activityDate(b) - activityDate(a));
     if (!state.activities.length) throw new Error('no hay actividades disponibles');
     bindControls();
+    bindActivityControls();
     renderSportControls();
     render();
     setupScrollReveals();
@@ -43,6 +45,7 @@ function bindControls() {
       button.classList.add('is-active');
       button.setAttribute('aria-pressed', 'true');
       state.range = button.dataset.range === 'all' ? 'all' : Number(button.dataset.range);
+      state.activityPage = 1;
       render(true);
       animateSelectedControl(button);
     });
@@ -64,9 +67,27 @@ function renderSportControls() {
       button.classList.add('is-active');
       button.setAttribute('aria-pressed', 'true');
       state.sport = button.dataset.sport;
+      state.activityPage = 1;
       render(true);
       animateSelectedControl(button);
     });
+  });
+}
+
+function bindActivityControls() {
+  $('#activity-search').addEventListener('input', event => {
+    state.activitySearch = event.target.value;
+    state.activityPage = 1;
+    renderActivityTable(activitiesForPeriod(0));
+  });
+  $('#activity-prev').addEventListener('click', () => {
+    if (state.activityPage <= 1) return;
+    state.activityPage -= 1;
+    renderActivityTable(activitiesForPeriod(0));
+  });
+  $('#activity-next').addEventListener('click', () => {
+    state.activityPage += 1;
+    renderActivityTable(activitiesForPeriod(0));
   });
 }
 
@@ -443,7 +464,6 @@ function renderRunningProgress(activities) {
   panel.classList.remove('is-hidden');
   chart.innerHTML = renderRunningSvg(bands, allPoints);
   chart.setAttribute('aria-label', `Evolución del ritmo en ${allPoints.length} carreras comparables`);
-  $('#running-progress-note').textContent = `${allPoints.length} CARRERAS · RITMO EN MOVIMIENTO · ESCALA ENFOCADA, MÁS RÁPIDO ARRIBA · LÍNEAS: MEDIANA MÓVIL DE 4 CARRERAS`;
 }
 
 function renderRunningSvg(bands, allPoints) {
@@ -546,7 +566,6 @@ function renderPersonalBests(activities) {
     <section class="achievement-group" aria-labelledby="achievement-${Math.round(group.distance)}">
       <header class="achievement-group-header">
         <h3 id="achievement-${Math.round(group.distance)}">${formatAchievementDistance(group.name)}</h3>
-        <span>${group.items.length} ${group.items.length === 1 ? 'MARCA REGISTRADA' : 'MEJORES MARCAS'}</span>
       </header>
       <div class="achievement-row achievement-head" aria-hidden="true">
         <span>PUESTO</span><span>MARCA</span><span>RITMO</span><span>FECHA</span><span>ACTIVIDAD</span>
@@ -606,10 +625,26 @@ function renderCalendar(activities) {
 }
 
 function renderActivityTable(activities) {
-  const recent = activities.slice(0, 6);
+  const query = normalizeSearch(state.activitySearch);
+  const filtered = query ? activities.filter(item => normalizeSearch([
+    item.name,
+    sportLabels[item.sport_type] || item.sport_type,
+    item.date,
+  ].join(' ')).includes(query)) : activities;
+  const totalPages = Math.max(1, Math.ceil(filtered.length / ACTIVITY_PAGE_SIZE));
+  state.activityPage = Math.min(state.activityPage, totalPages);
+  const pageStart = (state.activityPage - 1) * ACTIVITY_PAGE_SIZE;
+  const pageItems = filtered.slice(pageStart, pageStart + ACTIVITY_PAGE_SIZE);
   const distanceBased = selectionUsesDistance();
-  $('#latest-count').textContent = `${activities.length} REGISTROS`;
-  $('#activity-table').innerHTML = recent.length ? recent.map(item => {
+  const sportTotal = state.activities.filter(matchesSport).length;
+  const comparisonTotal = query ? activities.length : sportTotal;
+  const count = filtered.length === comparisonTotal ? `${filtered.length}` : `${filtered.length} DE ${comparisonTotal}`;
+  const sportContext = state.sport === 'Todos' ? '' : ` · ${(sportLabels[state.sport] || state.sport).toUpperCase()}`;
+  $('#latest-count').textContent = `${count} REGISTROS${sportContext}`;
+  $('#activity-page').textContent = filtered.length ? `PÁGINA ${state.activityPage} DE ${totalPages}` : 'SIN RESULTADOS';
+  $('#activity-prev').disabled = state.activityPage <= 1;
+  $('#activity-next').disabled = state.activityPage >= totalPages || filtered.length === 0;
+  $('#activity-table').innerHTML = pageItems.length ? pageItems.map(item => {
     const date = activityDate(item);
     const distance = Number(item.distance) / 1000;
     return `<div class="activity-row${distanceBased ? '' : ' is-compact'}">
@@ -618,7 +653,11 @@ function renderActivityTable(activities) {
       <span class="activity-value">${distanceBased && distance ? fmtOne.format(distance) + ' KM' : formatDuration(item.moving_time)}</span>
       ${distanceBased ? `<span class="activity-value">${item.total_elevation_gain ? '+' + fmt.format(item.total_elevation_gain) + ' M' : '—'}</span>` : ''}
     </div>`;
-  }).join('') : '<p>Sin actividades para este filtro.</p>';
+  }).join('') : `<p class="activity-empty">${query ? `No hay actividades que coincidan con «${escapeHtml(state.activitySearch.trim())}».` : 'Sin actividades para este filtro.'}</p>`;
+}
+
+function normalizeSearch(value) {
+  return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('es');
 }
 
 function calculateStreaks(activities) {

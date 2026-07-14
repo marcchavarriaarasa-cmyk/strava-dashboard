@@ -19,6 +19,34 @@ class FailingSession:
 
 
 class FetchDataTests(unittest.TestCase):
+    def test_fetch_activities_reads_pages_until_strava_returns_empty(self):
+        pages = []
+
+        def response_for_page(*args, **kwargs):
+            page = kwargs['params']['page']
+            pages.append(page)
+            response = Mock()
+            response.raise_for_status.return_value = None
+            response.json.return_value = (
+                [{'id': page, 'name': f'Actividad {page}'}] if page < 3 else []
+            )
+            return response
+
+        with (
+            patch.object(fetch_data.SESSION, 'get', side_effect=response_for_page),
+            patch.object(fetch_data, 'load_public_activities', return_value=[]),
+            patch.object(fetch_data, 'fetch_gear_catalog', return_value={}),
+            patch.object(fetch_data, 'fetch_personal_bests', return_value={}),
+            patch.object(fetch_data, 'build_public_activities', return_value=[]),
+            patch.object(fetch_data, 'atomic_write_json') as write_json,
+            patch.object(fetch_data, 'generate_context_file') as write_context,
+        ):
+            fetch_data.fetch_activities('token')
+
+        self.assertEqual(pages, [1, 2, 3])
+        write_json.assert_called_once_with(fetch_data.PUBLIC_DATA_PATH, [])
+        write_context.assert_called_once()
+
     def test_missing_credentials_are_reported_together(self):
         with (
             patch.object(fetch_data, 'CLIENT_ID', None),
