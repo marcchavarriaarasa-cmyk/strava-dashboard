@@ -10,6 +10,8 @@ const nonDistanceSports = new Set(['WeightTraining', 'Pilates', 'Workout']);
 const $ = (selector) => document.querySelector(selector);
 const fmt = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 0 });
 const fmtOne = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 1 });
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let revealObserver;
 
 async function init() {
   try {
@@ -20,6 +22,7 @@ async function init() {
     bindControls();
     renderSportControls();
     render();
+    setupScrollReveals();
     $('#loading').classList.add('is-hidden');
   } catch (error) {
     const loading = $('#loading');
@@ -32,6 +35,7 @@ function bindControls() {
   document.querySelectorAll('[data-range]').forEach(button => {
     button.setAttribute('aria-pressed', button.classList.contains('is-active'));
     button.addEventListener('click', () => {
+      if (button.classList.contains('is-active')) return;
       document.querySelectorAll('[data-range]').forEach(item => {
         item.classList.remove('is-active');
         item.setAttribute('aria-pressed', 'false');
@@ -39,7 +43,8 @@ function bindControls() {
       button.classList.add('is-active');
       button.setAttribute('aria-pressed', 'true');
       state.range = button.dataset.range === 'all' ? 'all' : Number(button.dataset.range);
-      render();
+      render(true);
+      animateSelectedControl(button);
     });
   });
 }
@@ -51,6 +56,7 @@ function renderSportControls() {
   ).join('');
   document.querySelectorAll('[data-sport]').forEach(button => {
     button.addEventListener('click', () => {
+      if (button.classList.contains('is-active')) return;
       document.querySelectorAll('[data-sport]').forEach(item => {
         item.classList.remove('is-active');
         item.setAttribute('aria-pressed', 'false');
@@ -58,7 +64,8 @@ function renderSportControls() {
       button.classList.add('is-active');
       button.setAttribute('aria-pressed', 'true');
       state.sport = button.dataset.sport;
-      render();
+      render(true);
+      animateSelectedControl(button);
     });
   });
 }
@@ -80,7 +87,7 @@ function matchesSport(item) {
   return state.sport === 'Todos' || item.sport_type === state.sport;
 }
 
-function render() {
+function render(animate = false) {
   const activities = activitiesForPeriod(0);
   const previousActivities = activitiesForPeriod(1);
   const latestDate = activityDate(state.activities[0]);
@@ -95,6 +102,98 @@ function render() {
   renderGearUsage(activities);
   renderCalendar(state.activities.filter(matchesSport));
   renderActivityTable(activities);
+  if (animate) {
+    window.setTimeout(() => {
+      observeRevealTargets();
+      animateDashboardUpdate();
+    }, 0);
+  }
+}
+
+function setupScrollReveals() {
+  if (reducedMotion.matches || !('IntersectionObserver' in window)) {
+    document.querySelectorAll('.analysis-grid > .panel, footer').forEach(element => element.classList.add('is-revealed'));
+    return;
+  }
+  revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-revealed');
+      revealObserver.unobserve(entry.target);
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -7% 0px' });
+  observeRevealTargets();
+}
+
+function observeRevealTargets() {
+  document.querySelectorAll('.analysis-grid > .panel:not(.is-hidden), footer').forEach(element => {
+    if (element.classList.contains('is-revealed')) return;
+    if (!revealObserver) {
+      element.classList.add('is-revealed');
+      return;
+    }
+    element.classList.add('reveal-on-scroll');
+    revealObserver.observe(element);
+  });
+}
+
+function animateSelectedControl(button) {
+  if (reducedMotion.matches || !button.animate) return;
+  button.animate([
+    { transform: 'scale(.94)' },
+    { transform: 'scale(1.03)', offset: .58 },
+    { transform: 'scale(1)' }
+  ], { duration: 260, easing: 'cubic-bezier(.22, 1, .36, 1)' });
+}
+
+function animateDashboardUpdate() {
+  if (reducedMotion.matches) return;
+  if (!Element.prototype.animate) {
+    document.body.classList.remove('is-filter-updating');
+    void document.body.offsetWidth;
+    document.body.classList.add('is-filter-updating');
+    window.setTimeout(() => document.body.classList.remove('is-filter-updating'), 620);
+    return;
+  }
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+  const targets = [$('#hero-number'), ...document.querySelectorAll('.metric, .analysis-grid > .panel:not(.is-hidden)')]
+    .filter(element => {
+      const rect = element.getBoundingClientRect();
+      return rect.bottom > 0 && rect.top < viewportHeight;
+    });
+
+  targets.forEach((element, index) => {
+    element.getAnimations?.().forEach(animation => animation.cancel());
+    element.animate([
+      { opacity: .28, transform: 'translateY(12px)' },
+      { opacity: 1, transform: 'translateY(0)' }
+    ], {
+      duration: 430,
+      delay: Math.min(index * 32, 160),
+      easing: 'cubic-bezier(.22, 1, .36, 1)',
+      fill: 'both'
+    });
+  });
+
+  animateChartElements('.week-bar, .cardio-bar, .strength-bar', 'scaleY(0)', 'bottom');
+  animateChartElements('.mix-fill, .gear-fill', 'scaleX(0)', 'left');
+  animateChartElements('.activity-row, .achievement-group', 'translateY(8px)', 'center');
+}
+
+function animateChartElements(selector, fromTransform, origin) {
+  document.querySelectorAll(selector).forEach((element, index) => {
+    if (!element.animate) return;
+    element.animate([
+      { opacity: .18, transform: fromTransform },
+      { opacity: 1, transform: 'none' }
+    ], {
+      duration: 480,
+      delay: Math.min(index * 22, 220),
+      easing: 'cubic-bezier(.22, 1, .36, 1)',
+      transformOrigin: origin,
+      fill: 'both'
+    });
+  });
 }
 
 function renderMetrics(activities, previousActivities) {
