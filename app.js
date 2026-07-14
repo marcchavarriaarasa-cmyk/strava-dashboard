@@ -1,3 +1,5 @@
+document.documentElement.classList.add('has-js');
+
 const DAY_MS = 86400000;
 const ACTIVITY_PAGE_SIZE = 8;
 const state = { activities: [], range: 84, sport: 'Todos', activityPage: 1, activitySearch: '' };
@@ -25,12 +27,31 @@ async function init() {
     renderSportControls();
     render();
     setupScrollReveals();
-    $('#loading').classList.add('is-hidden');
+    startPageEntrance();
   } catch (error) {
     const loading = $('#loading');
     loading.textContent = `NO SE HAN PODIDO LEER LOS DATOS · ${error.message}`;
     loading.classList.add('error');
   }
+}
+
+function startPageEntrance() {
+  const root = document.documentElement;
+  const loading = $('#loading');
+
+  if (reducedMotion.matches) {
+    root.classList.add('is-ready');
+    loading.classList.add('is-hidden');
+    return;
+  }
+
+  window.setTimeout(() => {
+    root.classList.add('is-ready', 'is-entering');
+    loading.classList.add('is-leaving');
+
+    window.setTimeout(() => loading.classList.add('is-hidden'), 760);
+    window.setTimeout(() => root.classList.remove('is-entering'), 1300);
+  }, 60);
 }
 
 function bindControls() {
