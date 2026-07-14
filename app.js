@@ -331,7 +331,8 @@ function formatComparison(current, previous) {
 }
 
 function weekCount() {
-  return state.range === 28 ? 4 : 12;
+  if (state.range === 'all') return 12;
+  return Math.max(1, Math.ceil(state.range / 7));
 }
 
 function buildWeeks(activities) {
