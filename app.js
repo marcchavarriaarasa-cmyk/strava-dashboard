@@ -160,11 +160,28 @@ function setupScrollReveals() {
   revealObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
+      setChartAnimationDelays(entry.target);
       entry.target.classList.add('is-revealed');
       revealObserver.unobserve(entry.target);
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -7% 0px' });
   observeRevealTargets();
+}
+
+function setChartAnimationDelays(panel) {
+  const groups = [
+    { selector: '.week-bar, .cardio-bar, .strength-bar', step: 34, max: 360 },
+    { selector: '.mix-fill, .gear-fill', step: 64, max: 320 },
+    { selector: '.average-line, .running-series-orange, .running-series-green', step: 120, max: 240 },
+    { selector: '.average-point, .running-point-orange, .running-point-green', step: 24, max: 420 },
+    { selector: '#training-calendar .day-cell', step: 7, max: 420 }
+  ];
+
+  groups.forEach(group => {
+    panel.querySelectorAll(group.selector).forEach((element, index) => {
+      element.style.setProperty('--chart-delay', `${Math.min(index * group.step, group.max)}ms`);
+    });
+  });
 }
 
 function observeRevealTargets() {

@@ -109,6 +109,18 @@ html.has-js:not(.is-ready) body { overflow: hidden; }
 .panel.is-hidden { display: none; }
 .reveal-on-scroll { opacity: 0; transform: translateY(28px); transition: opacity .68s cubic-bezier(.22, 1, .36, 1), transform .68s cubic-bezier(.22, 1, .36, 1); will-change: opacity, transform; }
 .reveal-on-scroll.is-revealed { opacity: 1; transform: translateY(0); will-change: auto; }
+.panel.is-revealed .week-bar,
+.panel.is-revealed .cardio-bar,
+.panel.is-revealed .strength-bar { animation: chart-scroll-rise .82s cubic-bezier(.22, 1, .36, 1) var(--chart-delay, 0ms) both; transform-origin: bottom; }
+.panel.is-revealed .mix-fill,
+.panel.is-revealed .gear-fill { animation: chart-scroll-grow .78s cubic-bezier(.22, 1, .36, 1) var(--chart-delay, 0ms) both; transform-origin: left; }
+.panel.is-revealed .average-line,
+.panel.is-revealed .running-series-orange,
+.panel.is-revealed .running-series-green { animation: chart-scroll-draw .96s cubic-bezier(.22, 1, .36, 1) var(--chart-delay, 0ms) both; }
+.panel.is-revealed .average-point,
+.panel.is-revealed .running-point-orange,
+.panel.is-revealed .running-point-green { animation: chart-scroll-point .46s cubic-bezier(.22, 1, .36, 1) var(--chart-delay, 0ms) both; transform-box: fill-box; transform-origin: center; }
+.panel.is-revealed #training-calendar .day-cell { animation: chart-scroll-cell .42s cubic-bezier(.22, 1, .36, 1) var(--chart-delay, 0ms) both; }
 .is-filter-updating .hero-number,
 .is-filter-updating .metric,
 .is-filter-updating .panel.is-revealed:not(.is-hidden) { animation: filter-content-in .43s cubic-bezier(.22, 1, .36, 1) both; }
@@ -240,6 +252,26 @@ footer { min-height: 100px; display: flex; justify-content: space-between; align
   from { transform: scaleX(0); }
   to { transform: scaleX(1); }
 }
+@keyframes chart-scroll-rise {
+  from { opacity: .18; transform: scaleY(0); }
+  to { opacity: 1; transform: scaleY(1); }
+}
+@keyframes chart-scroll-grow {
+  from { opacity: .18; transform: scaleX(0); }
+  to { opacity: 1; transform: scaleX(1); }
+}
+@keyframes chart-scroll-draw {
+  from { opacity: 0; clip-path: inset(0 100% 0 0); }
+  to { opacity: 1; clip-path: inset(0 0 0 0); }
+}
+@keyframes chart-scroll-point {
+  from { opacity: 0; transform: scale(0); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes chart-scroll-cell {
+  from { opacity: 0; transform: scale(0); }
+  to { opacity: 1; transform: scale(1); }
+}
 @keyframes filter-content-in {
   from { opacity: .28; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
@@ -262,6 +294,18 @@ footer { min-height: 100px; display: flex; justify-content: space-between; align
   .has-js:not(.is-ready) .filter-bar,
   .has-js:not(.is-ready) .metric { opacity: 1; }
   .reveal-on-scroll { opacity: 1; transform: none; }
+  .panel.is-revealed .week-bar,
+  .panel.is-revealed .cardio-bar,
+  .panel.is-revealed .strength-bar,
+  .panel.is-revealed .mix-fill,
+  .panel.is-revealed .gear-fill,
+  .panel.is-revealed .average-line,
+  .panel.is-revealed .average-point,
+  .panel.is-revealed .running-series-orange,
+  .panel.is-revealed .running-series-green,
+  .panel.is-revealed .running-point-orange,
+  .panel.is-revealed .running-point-green,
+  .panel.is-revealed #training-calendar .day-cell { animation: none; opacity: 1; transform: none; clip-path: none; }
 }
 
 @media (max-width: 950px) {
