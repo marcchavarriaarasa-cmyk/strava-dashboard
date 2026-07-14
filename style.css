@@ -156,9 +156,11 @@ button { font: inherit; }
 .achievement-group-header { display: flex; justify-content: space-between; align-items: end; gap: 20px; min-height: 92px; padding: 20px 0 16px; border-bottom: 1px solid var(--ink); }
 .achievement-group-header h3 { margin: 0; font-size: clamp(34px, 4vw, 58px); line-height: .9; letter-spacing: -.055em; }
 .achievement-group-header span { color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .12em; }
-.achievement-row { display: grid; grid-template-columns: 190px 150px 170px minmax(0, 1fr); gap: 24px; align-items: center; min-height: 70px; border-bottom: 1px solid var(--line); }
+.achievement-row { display: grid; grid-template-columns: minmax(150px, 190px) 120px 110px 150px minmax(0, 1fr); gap: 24px; align-items: center; min-height: 70px; border-bottom: 1px solid var(--line); }
 .achievement-head { min-height: 38px; color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .12em; }
 .achievement-time { font-size: 21px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.achievement-pace { font-size: 15px; font-weight: 800; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.achievement-pace small { color: var(--muted); font-size: 8px; letter-spacing: .08em; }
 .achievement-rank { justify-self: start; padding: 7px 9px; border: 1px solid var(--ink); font-size: 9px; font-weight: 800; letter-spacing: .08em; }
 .achievement-rank[data-rank="1"] { background: var(--orange); border-color: var(--orange); color: var(--white); }
 .achievement-rank[data-rank="2"] { background: var(--green); border-color: var(--green); color: var(--white); }
@@ -249,7 +251,6 @@ footer { min-height: 100px; display: flex; justify-content: space-between; align
   .load-lane .chart-svg, .running-progress-chart .chart-svg { width: 720px; min-width: 720px; height: auto; min-height: 0; }
   .panel-header { align-items: flex-start; flex-direction: column; }
   .panel-note, .progress-legend { text-align: left; justify-content: flex-start; }
-  .achievement-row { grid-template-columns: 175px 110px 140px 1fr; gap: 14px; }
   .gear-row { grid-template-columns: 1fr auto; gap: 8px 16px; }
   .gear-track { grid-column: 1 / -1; grid-row: 2; }
   .gear-value { grid-column: 2; grid-row: 1; }
@@ -261,6 +262,7 @@ footer { min-height: 100px; display: flex; justify-content: space-between; align
   .achievement-rank { grid-column: 1; grid-row: 1; }
   .achievement-time { grid-column: 2; grid-row: 1; }
   .achievement-date { grid-column: 1; grid-row: 2; }
+  .achievement-pace { grid-column: 2; grid-row: 2; justify-self: end; }
   .achievement-activity { grid-column: 1 / -1; grid-row: 3; display: block; }
   .activity-row { grid-template-columns: 58px 1fr 65px; }
   .activity-row.is-compact { grid-template-columns: 58px 1fr 65px; }

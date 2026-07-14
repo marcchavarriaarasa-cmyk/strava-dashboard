@@ -549,12 +549,13 @@ function renderPersonalBests(activities) {
         <span>${group.items.length} ${group.items.length === 1 ? 'MARCA REGISTRADA' : 'MEJORES MARCAS'}</span>
       </header>
       <div class="achievement-row achievement-head" aria-hidden="true">
-        <span>PUESTO</span><span>MARCA</span><span>FECHA</span><span>ACTIVIDAD</span>
+        <span>PUESTO</span><span>MARCA</span><span>RITMO</span><span>FECHA</span><span>ACTIVIDAD</span>
       </div>
       ${group.items.map(item => `
         <div class="achievement-row">
           <span class="achievement-rank" data-rank="${item.rank}">${personalRankLabel(item.rank)}</span>
           <strong class="achievement-time">${formatEffortTime(item.elapsed_time)}</strong>
+          <span class="achievement-pace">${formatAchievementPace(item.elapsed_time, group.distance)} <small>MIN/KM</small></span>
           <time class="achievement-date" datetime="${toIsoDay(item.date)}">${item.date.toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric' }).replace('.', '')}</time>
           <span class="achievement-activity">${escapeHtml(item.activityName)}<small>${escapeHtml(item.sport).toUpperCase()}</small></span>
         </div>`).join('')}
@@ -568,6 +569,11 @@ function personalRankLabel(rank) {
 function formatAchievementDistance(name) {
   if (name === 'Half-Marathon') return 'MEDIA MARATÓN';
   return escapeHtml(name).replace(/m$/i, ' M');
+}
+
+function formatAchievementPace(seconds, distanceMeters) {
+  const pace = Number(seconds) / 60 / (Number(distanceMeters) / 1000);
+  return Number.isFinite(pace) && pace > 0 ? formatPace(pace) : '—';
 }
 
 function renderCalendar(activities) {
