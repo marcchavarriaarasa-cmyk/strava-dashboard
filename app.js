@@ -576,6 +576,12 @@ function renderGearUsage(activities) {
 
 function renderPersonalBests(activities) {
   const panel = $('.achievements-panel');
+
+  if (state.sport === 'Ride' || state.sport === 'MountainBikeRide') {
+    renderCyclingAchievements(activities, panel);
+    return;
+  }
+
   const achievements = activities.flatMap(activity =>
     (activity.personal_bests || []).map(effort => ({
       ...effort,
@@ -618,6 +624,72 @@ function renderPersonalBests(activities) {
           <span class="achievement-activity">${escapeHtml(item.activityName)}<small>${escapeHtml(item.sport).toUpperCase()}</small></span>
         </div>`).join('')}
     </section>`).join('');
+}
+
+function renderCyclingAchievements(activities, panel) {
+  const rides = activities.filter(activity => Number(activity.distance) > 0 && Number(activity.moving_time) > 0);
+  panel.classList.toggle('is-hidden', rides.length === 0);
+  if (!rides.length) return;
+
+  const metrics = [
+    {
+      key: 'distance',
+      title: 'MAYOR DISTANCIA',
+      score: activity => Number(activity.distance),
+      result: activity => `${fmtOne.format(Number(activity.distance) / 1000)} KM`,
+      context: activity => `${fmtOne.format(cyclingAverageSpeed(activity))} KM/H`,
+    },
+    {
+      key: 'elevation',
+      title: 'MAYOR DESNIVEL',
+      score: activity => Number(activity.total_elevation_gain) || 0,
+      result: activity => `${fmt.format(Number(activity.total_elevation_gain) || 0)} M`,
+      context: activity => `${fmtOne.format(Number(activity.distance) / 1000)} KM`,
+    },
+    {
+      key: 'speed',
+      title: 'MEJOR VELOCIDAD MEDIA',
+      score: cyclingAverageSpeed,
+      result: activity => `${fmtOne.format(cyclingAverageSpeed(activity))} KM/H`,
+      context: activity => `${fmtOne.format(Number(activity.distance) / 1000)} KM`,
+    },
+    {
+      key: 'duration',
+      title: 'MAYOR TIEMPO EN MOVIMIENTO',
+      score: activity => Number(activity.moving_time),
+      result: activity => formatEffortTime(activity.moving_time),
+      context: activity => `${fmtOne.format(Number(activity.distance) / 1000)} KM`,
+    },
+  ].map(metric => ({
+    ...metric,
+    items: [...rides].sort((a, b) => metric.score(b) - metric.score(a) || activityDate(b) - activityDate(a)).slice(0, 3),
+  }));
+
+  const resultCount = metrics.reduce((total, metric) => total + metric.items.length, 0);
+  $('#achievements-note').textContent = `${metrics.length} CATEGORÍAS · ${resultCount} MEJORES MARCAS · HISTORIAL COMPLETO`;
+  const list = $('#personal-achievements');
+  list.setAttribute('aria-label', 'Récords personales de ciclismo por distancia, desnivel, velocidad y duración');
+  list.innerHTML = metrics.map(metric => `
+    <section class="achievement-group" aria-labelledby="cycling-achievement-${metric.key}">
+      <header class="achievement-group-header">
+        <h3 id="cycling-achievement-${metric.key}">${metric.title}</h3>
+      </header>
+      <div class="achievement-row achievement-head" aria-hidden="true">
+        <span>PUESTO</span><span>RESULTADO</span><span>CONTEXTO</span><span>FECHA</span><span>ACTIVIDAD</span>
+      </div>
+      ${metric.items.map((item, index) => `
+        <div class="achievement-row">
+          <span class="achievement-rank" data-rank="${index + 1}">${personalRankLabel(index + 1)}</span>
+          <strong class="achievement-time">${metric.result(item)}</strong>
+          <span class="achievement-pace">${metric.context(item)}</span>
+          <time class="achievement-date" datetime="${toIsoDay(activityDate(item))}">${activityDate(item).toLocaleDateString('es-ES', { day: '2-digit', month: 'short', year: 'numeric' }).replace('.', '')}</time>
+          <span class="achievement-activity">${escapeHtml(item.name || 'Salida en bici')}<small>${escapeHtml(sportLabels[item.sport_type] || item.sport_type).toUpperCase()}</small></span>
+        </div>`).join('')}
+    </section>`).join('');
+}
+
+function cyclingAverageSpeed(activity) {
+  return Number(activity.distance) / 1000 / (Number(activity.moving_time) / 3600);
 }
 
 function personalRankLabel(rank) {
