@@ -1,5 +1,39 @@
 [
   {
+    "name": "Tornada Gympro",
+    "sport_type": "Run",
+    "date": "2026-07-14",
+    "distance": 1692.0,
+    "moving_time": 476,
+    "elapsed_time": 484,
+    "total_elevation_gain": 2.3,
+    "relative_effort": 15.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
+  },
+  {
+    "name": "Evening workout 🏋️",
+    "sport_type": "WeightTraining",
+    "date": "2026-07-14",
+    "distance": 0,
+    "moving_time": 4133,
+    "elapsed_time": 4133,
+    "total_elevation_gain": 0,
+    "relative_effort": null
+  },
+  {
+    "name": "Anada Gympro",
+    "sport_type": "Run",
+    "date": "2026-07-14",
+    "distance": 2021.3,
+    "moving_time": 703,
+    "elapsed_time": 798,
+    "total_elevation_gain": 46.7,
+    "relative_effort": 30.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
+  },
+  {
     "name": "Sprints Costa Amunt w/ Kevin",
     "sport_type": "Run",
     "date": "2026-07-13",

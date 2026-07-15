@@ -1,6 +1,30 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-07-14
+Actividad: Tornada Gympro (Run)
+Distancia: 1.69 km
+Tiempo en movimiento: 7.93 min
+Velocidad media: 12.8 km/h
+Desnivel positivo: 2.3 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-07-14
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 68.88 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-07-14
+Actividad: Anada Gympro (Run)
+Distancia: 2.02 km
+Tiempo en movimiento: 11.72 min
+Velocidad media: 10.35 km/h
+Desnivel positivo: 46.7 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-07-13
 Actividad: Sprints Costa Amunt w/ Kevin (Run)
 Distancia: 0.63 km
@@ -376,28 +400,4 @@ Tiempo en movimiento: 66.6 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-03
-Actividad: Anar al gym (Run)
-Distancia: 2.56 km
-Tiempo en movimiento: 12.95 min
-Velocidad media: 11.86 km/h
-Desnivel positivo: 48.4 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-05-26
-Actividad: Ultim b3tterRunClub 🥲 (Run)
-Distancia: 7.07 km
-Tiempo en movimiento: 35.93 min
-Velocidad media: 11.8 km/h
-Desnivel positivo: 18.5 m
-Frecuencia cardíaca media: 166.0 bpm
-------------------------------
-Fecha: 2026-05-24
-Actividad: DESAFIO GUERREROS 6k (Run)
-Distancia: 3.78 km
-Tiempo en movimiento: 31.62 min
-Velocidad media: 2.88 km/h
-Desnivel positivo: 15.4 m
-Frecuencia cardíaca media: 139.6 bpm
 ------------------------------
