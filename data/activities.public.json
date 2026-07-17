@@ -1,5 +1,49 @@
 [
   {
+    "name": "Via verda Pont penjant",
+    "sport_type": "Run",
+    "date": "2026-07-16",
+    "distance": 4847.7,
+    "moving_time": 2135,
+    "elapsed_time": 2444,
+    "total_elevation_gain": 12.1,
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
+  },
+  {
+    "name": "Tornada Gympro",
+    "sport_type": "Ride",
+    "date": "2026-07-16",
+    "distance": 1727.3,
+    "moving_time": 340,
+    "elapsed_time": 343,
+    "total_elevation_gain": 4.1,
+    "relative_effort": null,
+    "gear_name": "Kross",
+    "gear_type": "Bicicleta"
+  },
+  {
+    "name": "Evening workout 🏋️",
+    "sport_type": "WeightTraining",
+    "date": "2026-07-16",
+    "distance": 0,
+    "moving_time": 4840,
+    "elapsed_time": 4840,
+    "total_elevation_gain": 0,
+    "relative_effort": null
+  },
+  {
+    "name": "Anada gympro",
+    "sport_type": "Ride",
+    "date": "2026-07-16",
+    "distance": 2298.6,
+    "moving_time": 509,
+    "elapsed_time": 509,
+    "total_elevation_gain": 46.2,
+    "relative_effort": null
+  },
+  {
     "name": "Tornada Gympro",
     "sport_type": "Run",
     "date": "2026-07-14",
