@@ -1,6 +1,30 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-07-28
+Actividad: Tornada gympro (Run)
+Distancia: 2.0 km
+Tiempo en movimiento: 10.72 min
+Velocidad media: 11.22 km/h
+Desnivel positivo: 2.3 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-07-28
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 66.15 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-07-28
+Actividad: Anada gympro (Run)
+Distancia: 2.23 km
+Tiempo en movimiento: 12.48 min
+Velocidad media: 10.72 km/h
+Desnivel positivo: 47.2 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-07-22
 Actividad: Afternoon workout 💪 (WeightTraining)
 Distancia: 0.0 km
@@ -375,29 +399,5 @@ Distancia: 2.57 km
 Tiempo en movimiento: 13.98 min
 Velocidad media: 11.02 km/h
 Desnivel positivo: 48.3 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-10
-Actividad: Anar al pis dels iaios (Ride)
-Distancia: 25.45 km
-Tiempo en movimiento: 76.1 min
-Velocidad media: 20.06 km/h
-Desnivel positivo: 41.8 m
-Frecuencia cardíaca media: 148.1 bpm
-------------------------------
-Fecha: 2026-06-09
-Actividad: Tornada gympro (Run)
-Distancia: 2.51 km
-Tiempo en movimiento: 12.72 min
-Velocidad media: 11.86 km/h
-Desnivel positivo: 6.0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-09
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 63.03 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------

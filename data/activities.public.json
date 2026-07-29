@@ -1,5 +1,39 @@
 [
   {
+    "name": "Tornada gympro",
+    "sport_type": "Run",
+    "date": "2026-07-28",
+    "distance": 2003.3,
+    "moving_time": 643,
+    "elapsed_time": 668,
+    "total_elevation_gain": 2.3,
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
+  },
+  {
+    "name": "Evening workout 🏋️",
+    "sport_type": "WeightTraining",
+    "date": "2026-07-28",
+    "distance": 0,
+    "moving_time": 3969,
+    "elapsed_time": 3969,
+    "total_elevation_gain": 0,
+    "relative_effort": null
+  },
+  {
+    "name": "Anada gympro",
+    "sport_type": "Run",
+    "date": "2026-07-28",
+    "distance": 2229.8,
+    "moving_time": 749,
+    "elapsed_time": 768,
+    "total_elevation_gain": 47.2,
+    "relative_effort": null,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
+  },
+  {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-07-22",
