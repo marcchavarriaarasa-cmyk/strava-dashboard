@@ -1,6 +1,30 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-07-29
+Actividad: Tornada Gympro (Run)
+Distancia: 2.18 km
+Tiempo en movimiento: 13.13 min
+Velocidad media: 9.97 km/h
+Desnivel positivo: 4.7 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-07-29
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 90.25 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-07-29
+Actividad: Anada Gympro (Run)
+Distancia: 2.15 km
+Tiempo en movimiento: 12.4 min
+Velocidad media: 10.38 km/h
+Desnivel positivo: 47.1 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-07-28
 Actividad: Tornada gympro (Run)
 Distancia: 2.0 km
@@ -376,28 +400,4 @@ Tiempo en movimiento: 51.0 min
 Velocidad media: 20.74 km/h
 Desnivel positivo: 37.0 m
 Frecuencia cardíaca media: 148.4 bpm
-------------------------------
-Fecha: 2026-06-12
-Actividad: Tornada  gympro corrents (Run)
-Distancia: 2.59 km
-Tiempo en movimiento: 12.92 min
-Velocidad media: 12.01 km/h
-Desnivel positivo: 6.3 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-12
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 90.4 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-12
-Actividad: Anada Gympro corrents (Run)
-Distancia: 2.57 km
-Tiempo en movimiento: 13.98 min
-Velocidad media: 11.02 km/h
-Desnivel positivo: 48.3 m
-Frecuencia cardíaca media: Null bpm
 ------------------------------
