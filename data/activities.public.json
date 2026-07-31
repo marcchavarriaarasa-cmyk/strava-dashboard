@@ -1,5 +1,27 @@
 [
   {
+    "name": "Evening Run",
+    "sport_type": "Run",
+    "date": "2026-07-30",
+    "distance": 0,
+    "moving_time": 0,
+    "elapsed_time": 10,
+    "total_elevation_gain": 0,
+    "relative_effort": 0.0
+  },
+  {
+    "name": "Canal + Via Verda w/Kevin",
+    "sport_type": "Run",
+    "date": "2026-07-30",
+    "distance": 10062.5,
+    "moving_time": 3563,
+    "elapsed_time": 4886,
+    "total_elevation_gain": 42.1,
+    "relative_effort": 113.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
+  },
+  {
     "name": "Tornada Gympro",
     "sport_type": "Run",
     "date": "2026-07-29",

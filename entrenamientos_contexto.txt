@@ -1,6 +1,22 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-07-30
+Actividad: Evening Run (Run)
+Distancia: 0.0 km
+Tiempo en movimiento: 0.0 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0.0 m
+Frecuencia cardíaca media: 0.0 bpm
+------------------------------
+Fecha: 2026-07-30
+Actividad: Canal + Via Verda w/Kevin (Run)
+Distancia: 10.06 km
+Tiempo en movimiento: 59.38 min
+Velocidad media: 10.17 km/h
+Desnivel positivo: 42.1 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-07-29
 Actividad: Tornada Gympro (Run)
 Distancia: 2.18 km
@@ -384,20 +400,4 @@ Tiempo en movimiento: 13.45 min
 Velocidad media: 10.43 km/h
 Desnivel positivo: 47.2 m
 Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-14
-Actividad: Casa Alcanar - Casa Amposta (Ride)
-Distancia: 17.61 km
-Tiempo en movimiento: 44.17 min
-Velocidad media: 23.92 km/h
-Desnivel positivo: 37.9 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-14
-Actividad: Casa Amposta - casa Alcanar (Ride)
-Distancia: 17.63 km
-Tiempo en movimiento: 51.0 min
-Velocidad media: 20.74 km/h
-Desnivel positivo: 37.0 m
-Frecuencia cardíaca media: 148.4 bpm
 ------------------------------
