@@ -1,13 +1,16 @@
 [
   {
-    "name": "Evening Run",
-    "sport_type": "Run",
-    "date": "2026-07-30",
-    "distance": 0,
-    "moving_time": 0,
-    "elapsed_time": 10,
-    "total_elevation_gain": 0,
-    "relative_effort": 0.0
+    "name": "Casa Amposta - Casa Alcanar",
+    "sport_type": "Ride",
+    "date": "2026-07-31",
+    "distance": 17662.5,
+    "moving_time": 3266,
+    "elapsed_time": 3352,
+    "total_elevation_gain": 36.9,
+    "relative_effort": 86.0,
+    "gear_name": "Kross",
+    "gear_type": "Bicicleta",
+    "personal_bests": []
   },
   {
     "name": "Canal + Via Verda w/Kevin",

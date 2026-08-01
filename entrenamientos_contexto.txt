@@ -1,13 +1,13 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
-Fecha: 2026-07-30
-Actividad: Evening Run (Run)
-Distancia: 0.0 km
-Tiempo en movimiento: 0.0 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0.0 m
-Frecuencia cardíaca media: 0.0 bpm
+Fecha: 2026-07-31
+Actividad: Casa Amposta - Casa Alcanar (Ride)
+Distancia: 17.66 km
+Tiempo en movimiento: 54.43 min
+Velocidad media: 19.47 km/h
+Desnivel positivo: 36.9 m
+Frecuencia cardíaca media: Null bpm
 ------------------------------
 Fecha: 2026-07-30
 Actividad: Canal + Via Verda w/Kevin (Run)
