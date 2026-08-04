@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-08-03
+Actividad: Afternoon workout 💪 (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 107.45 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-07-31
 Actividad: Casa Amposta - Casa Alcanar (Ride)
 Distancia: 17.66 km
@@ -391,13 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 56.63 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-16
-Actividad: Anada gympro (Run)
-Distancia: 2.34 km
-Tiempo en movimiento: 13.45 min
-Velocidad media: 10.43 km/h
-Desnivel positivo: 47.2 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
