@@ -1,5 +1,18 @@
 [
   {
+    "name": "Anada Rapita",
+    "sport_type": "Run",
+    "date": "2026-08-06",
+    "distance": 10027.7,
+    "moving_time": 3369,
+    "elapsed_time": 3381,
+    "total_elevation_gain": 50.9,
+    "relative_effort": 141.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas",
+    "personal_bests": []
+  },
+  {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-08-04",
