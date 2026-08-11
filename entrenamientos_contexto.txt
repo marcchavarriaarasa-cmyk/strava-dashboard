@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-08-10
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 108.33 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-08-09
 Actividad: Anada Rapita (Run)
 Distancia: 8.02 km
@@ -391,13 +399,5 @@ Distancia: 2.2 km
 Tiempo en movimiento: 12.18 min
 Velocidad media: 10.81 km/h
 Desnivel positivo: 47.1 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-18
-Actividad: Via verda (Run)
-Distancia: 5.05 km
-Tiempo en movimiento: 28.53 min
-Velocidad media: 10.62 km/h
-Desnivel positivo: 37.6 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
