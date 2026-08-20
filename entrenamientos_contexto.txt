@@ -17,6 +17,14 @@ Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
+Fecha: 2026-08-11
+Actividad: Night Hike (Hike)
+Distancia: 0.7 km
+Tiempo en movimiento: 7.15 min
+Velocidad media: 5.86 km/h
+Desnivel positivo: 0.0 m
+Frecuencia cardíaca media: 124.7 bpm
+------------------------------
 Fecha: 2026-08-10
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
@@ -391,13 +399,5 @@ Distancia: 2.22 km
 Tiempo en movimiento: 12.23 min
 Velocidad media: 10.89 km/h
 Desnivel positivo: 47.1 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-20
-Actividad: Tornada Gympro (Run)
-Distancia: 1.66 km
-Tiempo en movimiento: 9.2 min
-Velocidad media: 10.8 km/h
-Desnivel positivo: 3.4 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------

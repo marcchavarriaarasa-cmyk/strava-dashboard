@@ -22,6 +22,16 @@
     "relative_effort": null
   },
   {
+    "name": "Night Hike",
+    "sport_type": "Hike",
+    "date": "2026-08-11",
+    "distance": 699.0,
+    "moving_time": 429,
+    "elapsed_time": 21129,
+    "total_elevation_gain": 0,
+    "relative_effort": 1.0
+  },
+  {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-08-10",
