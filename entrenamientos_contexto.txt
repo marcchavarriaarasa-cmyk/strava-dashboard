@@ -1,6 +1,22 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-08-20
+Actividad: Via Verda  Germans Zhao (Run)
+Distancia: 6.03 km
+Tiempo en movimiento: 38.58 min
+Velocidad media: 9.37 km/h
+Desnivel positivo: 36.3 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-08-20
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 70.0 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-08-16
 Actividad: Anada Rapita (Run)
 Distancia: 7.01 km
@@ -383,21 +399,5 @@ Distancia: 1.72 km
 Tiempo en movimiento: 8.42 min
 Velocidad media: 12.29 km/h
 Desnivel positivo: 4.3 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-22
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 70.17 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-22
-Actividad: Anada Gympro (Run)
-Distancia: 2.22 km
-Tiempo en movimiento: 12.23 min
-Velocidad media: 10.89 km/h
-Desnivel positivo: 47.1 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
