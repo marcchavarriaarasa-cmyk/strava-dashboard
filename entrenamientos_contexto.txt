@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-08-23
+Actividad: Ruta dels Bandolera (Ride)
+Distancia: 15.35 km
+Tiempo en movimiento: 64.48 min
+Velocidad media: 14.28 km/h
+Desnivel positivo: 266.5 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-08-22
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
@@ -392,12 +400,4 @@ Tiempo en movimiento: 11.72 min
 Velocidad media: 11.2 km/h
 Desnivel positivo: 47.1 m
 Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-23
-Actividad: Casa Amposta - casa Alcanar (Ride)
-Distancia: 17.53 km
-Tiempo en movimiento: 56.23 min
-Velocidad media: 18.7 km/h
-Desnivel positivo: 37.3 m
-Frecuencia cardíaca media: 149.5 bpm
 ------------------------------
