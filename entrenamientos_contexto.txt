@@ -1,6 +1,22 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-08-25
+Actividad: Correr rapita w/Didac & Marta (Run)
+Distancia: 4.88 km
+Tiempo en movimiento: 33.1 min
+Velocidad media: 8.85 km/h
+Desnivel positivo: 22.4 m
+Frecuencia cardíaca media: 149.9 bpm
+------------------------------
+Fecha: 2026-08-25
+Actividad: Torreta (Ride)
+Distancia: 10.8 km
+Tiempo en movimiento: 33.93 min
+Velocidad media: 19.09 km/h
+Desnivel positivo: 140.7 m
+Frecuencia cardíaca media: 154.8 bpm
+------------------------------
 Fecha: 2026-08-23
 Actividad: Ruta dels Bandolera (Ride)
 Distancia: 15.35 km
@@ -32,6 +48,14 @@ Tiempo en movimiento: 70.0 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-08-19
+Actividad: Afternoon Swim (Swim)
+Distancia: 4.53 km
+Tiempo en movimiento: 41.18 min
+Velocidad media: 6.6 km/h
+Desnivel positivo: 2.3 m
+Frecuencia cardíaca media: 126.2 bpm
 ------------------------------
 Fecha: 2026-08-16
 Actividad: Anada Rapita (Run)
@@ -375,29 +399,5 @@ Distancia: 26.65 km
 Tiempo en movimiento: 76.38 min
 Velocidad media: 20.93 km/h
 Desnivel positivo: 164.8 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-27
-Actividad: Tornada Gympro (Run)
-Distancia: 1.72 km
-Tiempo en movimiento: 8.95 min
-Velocidad media: 11.53 km/h
-Desnivel positivo: 4.9 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-27
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 101.92 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-27
-Actividad: Anada Gympro (Run)
-Distancia: 2.19 km
-Tiempo en movimiento: 11.72 min
-Velocidad media: 11.2 km/h
-Desnivel positivo: 47.1 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
