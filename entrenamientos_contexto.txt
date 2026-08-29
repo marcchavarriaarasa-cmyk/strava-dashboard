@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-08-28
+Actividad: Via verda (Run)
+Distancia: 8.21 km
+Tiempo en movimiento: 46.7 min
+Velocidad media: 10.54 km/h
+Desnivel positivo: 50.0 m
+Frecuencia cardíaca media: 150.9 bpm
+------------------------------
 Fecha: 2026-08-25
 Actividad: Correr rapita w/Didac & Marta (Run)
 Distancia: 4.88 km
@@ -391,13 +399,5 @@ Distancia: 2.15 km
 Tiempo en movimiento: 11.17 min
 Velocidad media: 11.56 km/h
 Desnivel positivo: 47.1 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-06-30
-Actividad: Amposta - Via Verda - Vinallop - Santa Barbara - Amposta (Ride)
-Distancia: 26.65 km
-Tiempo en movimiento: 76.38 min
-Velocidad media: 20.93 km/h
-Desnivel positivo: 164.8 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
