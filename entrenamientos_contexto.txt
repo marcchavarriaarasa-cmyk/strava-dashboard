@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-09-01
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 70.83 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-08-30
 Actividad: Triatló Xerta 2026 (correr) (Run)
 Distancia: 3.69 km
@@ -391,13 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 72.75 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-07-01
-Actividad: Tornada Gympro (Run)
-Distancia: 2.16 km
-Tiempo en movimiento: 10.65 min
-Velocidad media: 12.15 km/h
-Desnivel positivo: 4.0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------

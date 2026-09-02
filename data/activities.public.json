@@ -1,5 +1,15 @@
 [
   {
+    "name": "Evening workout 🏋️",
+    "sport_type": "WeightTraining",
+    "date": "2026-09-01",
+    "distance": 0,
+    "moving_time": 4250,
+    "elapsed_time": 4250,
+    "total_elevation_gain": 0,
+    "relative_effort": null
+  },
+  {
     "name": "Triatló Xerta 2026 (correr)",
     "sport_type": "Run",
     "date": "2026-08-30",
@@ -2474,7 +2484,8 @@
     "total_elevation_gain": 152.0,
     "relative_effort": 87.0,
     "gear_name": "Kross",
-    "gear_type": "Bicicleta"
+    "gear_type": "Bicicleta",
+    "personal_bests": []
   },
   {
     "name": "Afternoon workout 💪",
