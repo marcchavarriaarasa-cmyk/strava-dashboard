@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-09-08
+Actividad: Alcanar platja - Amposta (Ride)
+Distancia: 17.27 km
+Tiempo en movimiento: 44.4 min
+Velocidad media: 23.34 km/h
+Desnivel positivo: 32.6 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-09-06
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
@@ -392,12 +400,4 @@ Tiempo en movimiento: 52.85 min
 Velocidad media: 11.35 km/h
 Desnivel positivo: 60.0 m
 Frecuencia cardíaca media: 164.1 bpm
-------------------------------
-Fecha: 2026-07-06
-Actividad: Tornada Gympro (Run)
-Distancia: 1.68 km
-Tiempo en movimiento: 8.3 min
-Velocidad media: 12.14 km/h
-Desnivel positivo: 4.0 m
-Frecuencia cardíaca media: Null bpm
 ------------------------------

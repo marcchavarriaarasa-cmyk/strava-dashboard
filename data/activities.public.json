@@ -1,5 +1,18 @@
 [
   {
+    "name": "Alcanar platja - Amposta",
+    "sport_type": "Ride",
+    "date": "2026-09-08",
+    "distance": 17269.6,
+    "moving_time": 2664,
+    "elapsed_time": 2664,
+    "total_elevation_gain": 32.6,
+    "relative_effort": 29.0,
+    "gear_name": "Kross",
+    "gear_type": "Bicicleta",
+    "personal_bests": []
+  },
+  {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-09-06",
