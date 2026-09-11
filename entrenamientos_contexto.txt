@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-09-10
+Actividad: Torreta - Foradada nocturna (Hike)
+Distancia: 12.35 km
+Tiempo en movimiento: 188.37 min
+Velocidad media: 3.93 km/h
+Desnivel positivo: 799.2 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-09-08
 Actividad: Alcanar platja - Amposta (Ride)
 Distancia: 17.27 km
@@ -392,12 +400,4 @@ Tiempo en movimiento: 82.62 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-07-07
-Actividad: Via Verda (Run)
-Distancia: 10.0 km
-Tiempo en movimiento: 52.85 min
-Velocidad media: 11.35 km/h
-Desnivel positivo: 60.0 m
-Frecuencia cardíaca media: 164.1 bpm
 ------------------------------

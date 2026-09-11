@@ -1,5 +1,15 @@
 [
   {
+    "name": "Torreta - Foradada nocturna",
+    "sport_type": "Hike",
+    "date": "2026-09-10",
+    "distance": 12352.5,
+    "moving_time": 11302,
+    "elapsed_time": 14155,
+    "total_elevation_gain": 799.2,
+    "relative_effort": null
+  },
+  {
     "name": "Alcanar platja - Amposta",
     "sport_type": "Ride",
     "date": "2026-09-08",
