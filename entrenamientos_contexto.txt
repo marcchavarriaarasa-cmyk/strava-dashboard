@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-09-12
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 65.2 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-09-10
 Actividad: Torreta - Foradada nocturna (Hike)
 Distancia: 12.35 km
@@ -391,13 +399,5 @@ Distancia: 2.16 km
 Tiempo en movimiento: 12.12 min
 Velocidad media: 10.71 km/h
 Desnivel positivo: 47.2 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-07-08
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 82.62 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
