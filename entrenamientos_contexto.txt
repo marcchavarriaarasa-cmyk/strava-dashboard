@@ -1,6 +1,22 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-09-20
+Actividad: Afternoon workout 💪 (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 83.72 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
+Fecha: 2026-09-20
+Actividad: Vua Verda Riu w/Kevin (Run)
+Distancia: 6.1 km
+Tiempo en movimiento: 43.27 min
+Velocidad media: 8.46 km/h
+Desnivel positivo: 2.5 m
+Frecuencia cardíaca media: 122.7 bpm
+------------------------------
 Fecha: 2026-09-18
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
@@ -384,20 +400,4 @@ Tiempo en movimiento: 54.95 min
 Velocidad media: 19.31 km/h
 Desnivel positivo: 43.8 m
 Frecuencia cardíaca media: 142.1 bpm
-------------------------------
-Fecha: 2026-07-11
-Actividad: Casa Amposta - Casa Alcanar (Ride)
-Distancia: 17.68 km
-Tiempo en movimiento: 48.25 min
-Velocidad media: 21.99 km/h
-Desnivel positivo: 37.3 m
-Frecuencia cardíaca media: 147.1 bpm
-------------------------------
-Fecha: 2026-07-10
-Actividad: Tornada Gympro (Run)
-Distancia: 1.66 km
-Tiempo en movimiento: 8.42 min
-Velocidad media: 11.81 km/h
-Desnivel positivo: 3.7 m
-Frecuencia cardíaca media: Null bpm
 ------------------------------

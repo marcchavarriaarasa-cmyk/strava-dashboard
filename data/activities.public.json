@@ -1,5 +1,27 @@
 [
   {
+    "name": "Afternoon workout 💪",
+    "sport_type": "WeightTraining",
+    "date": "2026-09-20",
+    "distance": 0,
+    "moving_time": 5023,
+    "elapsed_time": 5023,
+    "total_elevation_gain": 0,
+    "relative_effort": null
+  },
+  {
+    "name": "Vua Verda Riu w/Kevin",
+    "sport_type": "Run",
+    "date": "2026-09-20",
+    "distance": 6100.3,
+    "moving_time": 2596,
+    "elapsed_time": 2764,
+    "total_elevation_gain": 2.5,
+    "relative_effort": 9.0,
+    "gear_name": "Nike Zoom Fly 5",
+    "gear_type": "Zapatillas"
+  },
+  {
     "name": "Evening workout 🏋️",
     "sport_type": "WeightTraining",
     "date": "2026-09-18",
