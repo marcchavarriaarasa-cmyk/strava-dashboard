@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-09-25
+Actividad: GR92 w/David Mèlich (Hike)
+Distancia: 11.08 km
+Tiempo en movimiento: 151.23 min
+Velocidad media: 4.4 km/h
+Desnivel positivo: 148.4 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-09-24
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
@@ -391,13 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 68.88 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-07-14
-Actividad: Anada Gympro (Run)
-Distancia: 2.02 km
-Tiempo en movimiento: 11.72 min
-Velocidad media: 10.35 km/h
-Desnivel positivo: 46.7 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
