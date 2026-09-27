@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-09-26
+Actividad: Via Verda (Run)
+Distancia: 16.14 km
+Tiempo en movimiento: 85.17 min
+Velocidad media: 11.37 km/h
+Desnivel positivo: 54.4 m
+Frecuencia cardíaca media: 163.5 bpm
+------------------------------
 Fecha: 2026-09-25
 Actividad: GR92 w/David Mèlich (Hike)
 Distancia: 11.08 km
@@ -391,13 +399,5 @@ Distancia: 1.69 km
 Tiempo en movimiento: 7.93 min
 Velocidad media: 12.8 km/h
 Desnivel positivo: 2.3 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-07-14
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 68.88 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
