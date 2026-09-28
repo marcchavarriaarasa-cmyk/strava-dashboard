@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-09-27
+Actividad: Afternoon workout 💪 (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 82.13 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-09-26
 Actividad: Via Verda (Run)
 Distancia: 16.14 km
@@ -391,13 +399,5 @@ Distancia: 2.3 km
 Tiempo en movimiento: 8.48 min
 Velocidad media: 16.26 km/h
 Desnivel positivo: 46.2 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-07-14
-Actividad: Tornada Gympro (Run)
-Distancia: 1.69 km
-Tiempo en movimiento: 7.93 min
-Velocidad media: 12.8 km/h
-Desnivel positivo: 2.3 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
