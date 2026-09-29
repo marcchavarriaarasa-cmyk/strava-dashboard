@@ -2441,7 +2441,7 @@
         "name": "1K",
         "distance": 1000.0,
         "elapsed_time": 226,
-        "rank": 2
+        "rank": 1
       }
     ]
   },
@@ -3270,7 +3270,7 @@
         "name": "1K",
         "distance": 1000.0,
         "elapsed_time": 234,
-        "rank": 3
+        "rank": 2
       }
     ]
   },
@@ -3582,15 +3582,7 @@
     "moving_time": 1440,
     "elapsed_time": 2889,
     "total_elevation_gain": 0,
-    "relative_effort": 38.0,
-    "personal_bests": [
-      {
-        "name": "1K",
-        "distance": 1000.0,
-        "elapsed_time": 159,
-        "rank": 1
-      }
-    ]
+    "relative_effort": 38.0
   },
   {
     "name": "Sessió 6 - Força i Velocitat",
