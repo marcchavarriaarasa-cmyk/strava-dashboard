@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-10-04
+Actividad: Howth (Hike)
+Distancia: 10.87 km
+Tiempo en movimiento: 163.32 min
+Velocidad media: 4.0 km/h
+Desnivel positivo: 280.5 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-10-01
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
@@ -391,13 +399,5 @@ Distancia: 4.85 km
 Tiempo en movimiento: 35.58 min
 Velocidad media: 8.18 km/h
 Desnivel positivo: 12.1 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-07-16
-Actividad: Tornada Gympro (Ride)
-Distancia: 1.73 km
-Tiempo en movimiento: 5.67 min
-Velocidad media: 18.29 km/h
-Desnivel positivo: 4.1 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
