@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-10-07
+Actividad: Clio RunClub w/kayla (Run)
+Distancia: 5.28 km
+Tiempo en movimiento: 32.07 min
+Velocidad media: 9.88 km/h
+Desnivel positivo: 12.0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-10-04
 Actividad: Howth (Hike)
 Distancia: 10.87 km
@@ -391,13 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 132.07 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-07-16
-Actividad: Via verda Pont penjant (Run)
-Distancia: 4.85 km
-Tiempo en movimiento: 35.58 min
-Velocidad media: 8.18 km/h
-Desnivel positivo: 12.1 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
