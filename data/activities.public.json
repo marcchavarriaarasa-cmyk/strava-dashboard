@@ -1,5 +1,25 @@
 [
   {
+    "name": "Caminata per Arklow",
+    "sport_type": "Walk",
+    "date": "2026-10-09",
+    "distance": 8116.7,
+    "moving_time": 6262,
+    "elapsed_time": 9747,
+    "total_elevation_gain": 48.6,
+    "relative_effort": 30.0
+  },
+  {
+    "name": "Wicklow Cliffs",
+    "sport_type": "Walk",
+    "date": "2026-10-09",
+    "distance": 2957.4,
+    "moving_time": 794,
+    "elapsed_time": 12406,
+    "total_elevation_gain": 15.6,
+    "relative_effort": 4.0
+  },
+  {
     "name": "Upper Lake Hiking (Glendalough)",
     "sport_type": "Hike",
     "date": "2026-10-08",
