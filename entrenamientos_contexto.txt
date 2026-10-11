@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-10-10
+Actividad: Avoca - Connary Upper - Meeting of the waters - Cronemore - Arklow (Hike)
+Distancia: 28.45 km
+Tiempo en movimiento: 212.6 min
+Velocidad media: 8.03 km/h
+Desnivel positivo: 511.0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-10-09
 Actividad: Caminata per Arklow (Walk)
 Distancia: 8.12 km
@@ -391,13 +399,5 @@ Distancia: 2.0 km
 Tiempo en movimiento: 10.72 min
 Velocidad media: 11.22 km/h
 Desnivel positivo: 2.3 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-07-28
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 66.15 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------

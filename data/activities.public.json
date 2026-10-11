@@ -1,5 +1,15 @@
 [
   {
+    "name": "Avoca - Connary Upper - Meeting of the waters - Cronemore - Arklow",
+    "sport_type": "Hike",
+    "date": "2026-10-10",
+    "distance": 28446.9,
+    "moving_time": 12756,
+    "elapsed_time": 24597,
+    "total_elevation_gain": 511.0,
+    "relative_effort": 141.0
+  },
+  {
     "name": "Caminata per Arklow",
     "sport_type": "Walk",
     "date": "2026-10-09",
