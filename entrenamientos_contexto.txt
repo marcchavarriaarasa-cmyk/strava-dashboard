@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-10-15
+Actividad: Cames (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 97.05 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-10-13
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
@@ -391,13 +399,5 @@ Distancia: 0.0 km
 Tiempo en movimiento: 90.25 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-07-29
-Actividad: Anada Gympro (Run)
-Distancia: 2.15 km
-Tiempo en movimiento: 12.4 min
-Velocidad media: 10.38 km/h
-Desnivel positivo: 47.1 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
