@@ -2,6 +2,16 @@
   {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
+    "date": "2026-10-23",
+    "distance": 0,
+    "moving_time": 5307,
+    "elapsed_time": 5307,
+    "total_elevation_gain": 0,
+    "relative_effort": null
+  },
+  {
+    "name": "Afternoon workout 💪",
+    "sport_type": "WeightTraining",
     "date": "2026-10-22",
     "distance": 0,
     "moving_time": 4238,
