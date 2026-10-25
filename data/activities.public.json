@@ -1,5 +1,17 @@
 [
   {
+    "name": "Delta de l'Ebre - Bici en Kevin",
+    "sport_type": "Ride",
+    "date": "2026-10-24",
+    "distance": 25217.6,
+    "moving_time": 5209,
+    "elapsed_time": 7727,
+    "total_elevation_gain": 3.2,
+    "relative_effort": 45.0,
+    "gear_name": "Kross",
+    "gear_type": "Bicicleta"
+  },
+  {
     "name": "Afternoon workout 💪",
     "sport_type": "WeightTraining",
     "date": "2026-10-23",

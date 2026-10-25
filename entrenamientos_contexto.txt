@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-10-24
+Actividad: Delta de l'Ebre - Bici en Kevin (Ride)
+Distancia: 25.22 km
+Tiempo en movimiento: 86.82 min
+Velocidad media: 17.43 km/h
+Desnivel positivo: 3.2 m
+Frecuencia cardíaca media: 139.0 bpm
+------------------------------
 Fecha: 2026-10-23
 Actividad: Afternoon workout 💪 (WeightTraining)
 Distancia: 0.0 km
@@ -389,14 +397,6 @@ Fecha: 2026-08-04
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
 Tiempo en movimiento: 84.75 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-08-03
-Actividad: Afternoon workout 💪 (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 107.45 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
