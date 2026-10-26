@@ -1,5 +1,17 @@
 [
   {
+    "name": "Mitja Marato Via Verda",
+    "sport_type": "Run",
+    "date": "2026-10-25",
+    "distance": 21703.0,
+    "moving_time": 7099,
+    "elapsed_time": 7286,
+    "total_elevation_gain": 70.3,
+    "relative_effort": 295.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
+  },
+  {
     "name": "Delta de l'Ebre - Bici en Kevin",
     "sport_type": "Ride",
     "date": "2026-10-24",

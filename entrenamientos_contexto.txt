@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-10-25
+Actividad: Mitja Marato Via Verda (Run)
+Distancia: 21.7 km
+Tiempo en movimiento: 118.32 min
+Velocidad media: 11.01 km/h
+Desnivel positivo: 70.3 m
+Frecuencia cardíaca media: 172.0 bpm
+------------------------------
 Fecha: 2026-10-24
 Actividad: Delta de l'Ebre - Bici en Kevin (Ride)
 Distancia: 25.22 km
@@ -392,12 +400,4 @@ Tiempo en movimiento: 56.15 min
 Velocidad media: 10.71 km/h
 Desnivel positivo: 50.9 m
 Frecuencia cardíaca media: 171.7 bpm
-------------------------------
-Fecha: 2026-08-04
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 84.75 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
 ------------------------------
