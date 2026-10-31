@@ -1,5 +1,17 @@
 [
   {
+    "name": "Easy run Via Verda",
+    "sport_type": "Run",
+    "date": "2026-10-30",
+    "distance": 10017.3,
+    "moving_time": 3034,
+    "elapsed_time": 3047,
+    "total_elevation_gain": 49.7,
+    "relative_effort": 93.0,
+    "gear_name": "HOKA Bondi 9",
+    "gear_type": "Zapatillas"
+  },
+  {
     "name": "Cames",
     "sport_type": "WeightTraining",
     "date": "2026-10-29",
