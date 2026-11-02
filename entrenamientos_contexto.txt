@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-11-01
+Actividad: Morning workout ☀️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 117.47 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-10-31
 Actividad: Via Verda - Germans Zhao (Run)
 Distancia: 5.06 km
@@ -392,12 +400,4 @@ Tiempo en movimiento: 7.15 min
 Velocidad media: 5.86 km/h
 Desnivel positivo: 0.0 m
 Frecuencia cardíaca media: 124.7 bpm
-------------------------------
-Fecha: 2026-08-10
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 108.33 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
-Frecuencia cardíaca media: Null bpm
 ------------------------------
