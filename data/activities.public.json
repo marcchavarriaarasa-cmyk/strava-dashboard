@@ -1,5 +1,15 @@
 [
   {
+    "name": "Fageda d'en Jordà +  2 Volcans",
+    "sport_type": "Hike",
+    "date": "2026-11-07",
+    "distance": 12069.1,
+    "moving_time": 8340,
+    "elapsed_time": 9155,
+    "total_elevation_gain": 500.6,
+    "relative_effort": 150.0
+  },
+  {
     "name": "Correr pel Delta w/Didac",
     "sport_type": "Run",
     "date": "2026-11-05",

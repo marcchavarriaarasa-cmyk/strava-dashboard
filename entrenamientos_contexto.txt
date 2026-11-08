@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-11-07
+Actividad: Fageda d'en Jordà +  2 Volcans (Hike)
+Distancia: 12.07 km
+Tiempo en movimiento: 139.0 min
+Velocidad media: 5.21 km/h
+Desnivel positivo: 500.6 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-11-05
 Actividad: Correr pel Delta w/Didac (Run)
 Distancia: 10.22 km
@@ -392,12 +400,4 @@ Tiempo en movimiento: 41.18 min
 Velocidad media: 6.6 km/h
 Desnivel positivo: 2.3 m
 Frecuencia cardíaca media: 126.2 bpm
-------------------------------
-Fecha: 2026-08-16
-Actividad: Anada Rapita (Run)
-Distancia: 7.01 km
-Tiempo en movimiento: 36.72 min
-Velocidad media: 11.46 km/h
-Desnivel positivo: 33.3 m
-Frecuencia cardíaca media: 166.4 bpm
 ------------------------------
