@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-11-08
+Actividad: MONSTER RACE 2026 - TEAMS 7K (Run)
+Distancia: 8.15 km
+Tiempo en movimiento: 107.42 min
+Velocidad media: 4.51 km/h
+Desnivel positivo: 233.1 m
+Frecuencia cardíaca media: 156.4 bpm
+------------------------------
 Fecha: 2026-11-07
 Actividad: Fageda d'en Jordà +  2 Volcans (Hike)
 Distancia: 12.07 km
@@ -392,12 +400,4 @@ Tiempo en movimiento: 70.0 min
 Velocidad media: 0.0 km/h
 Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-08-19
-Actividad: Afternoon Swim (Swim)
-Distancia: 4.53 km
-Tiempo en movimiento: 41.18 min
-Velocidad media: 6.6 km/h
-Desnivel positivo: 2.3 m
-Frecuencia cardíaca media: 126.2 bpm
 ------------------------------
