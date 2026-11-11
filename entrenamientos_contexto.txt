@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-11-10
+Actividad: Evening workout 🏋️ (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 94.77 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-11-08
 Actividad: MONSTER RACE 2026 - TEAMS 7K (Run)
 Distancia: 8.15 km
@@ -391,13 +399,5 @@ Distancia: 6.03 km
 Tiempo en movimiento: 38.58 min
 Velocidad media: 9.37 km/h
 Desnivel positivo: 36.3 m
-Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-08-20
-Actividad: Evening workout 🏋️ (WeightTraining)
-Distancia: 0.0 km
-Tiempo en movimiento: 70.0 min
-Velocidad media: 0.0 km/h
-Desnivel positivo: 0 m
 Frecuencia cardíaca media: Null bpm
 ------------------------------
