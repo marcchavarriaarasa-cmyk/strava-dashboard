@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-11-14
+Actividad: Correr per Amposta (Run)
+Distancia: 6.81 km
+Tiempo en movimiento: 36.52 min
+Velocidad media: 11.19 km/h
+Desnivel positivo: 12.9 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-11-13
 Actividad: Afternoon workout 💪 (WeightTraining)
 Distancia: 0.0 km
@@ -392,12 +400,4 @@ Tiempo en movimiento: 33.93 min
 Velocidad media: 19.09 km/h
 Desnivel positivo: 140.7 m
 Frecuencia cardíaca media: 154.8 bpm
-------------------------------
-Fecha: 2026-08-23
-Actividad: Ruta dels Bandolera (Ride)
-Distancia: 15.35 km
-Tiempo en movimiento: 64.48 min
-Velocidad media: 14.28 km/h
-Desnivel positivo: 266.5 m
-Frecuencia cardíaca media: Null bpm
 ------------------------------
