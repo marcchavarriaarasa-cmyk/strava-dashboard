@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-11-15
+Actividad: Piscina 2k - 80 piscines (25m) (Swim)
+Distancia: 3.92 km
+Tiempo en movimiento: 25.12 min
+Velocidad media: 9.37 km/h
+Desnivel positivo: 3.0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-11-14
 Actividad: Correr per Amposta (Run)
 Distancia: 6.81 km
@@ -392,12 +400,4 @@ Tiempo en movimiento: 33.1 min
 Velocidad media: 8.85 km/h
 Desnivel positivo: 22.4 m
 Frecuencia cardíaca media: 149.9 bpm
-------------------------------
-Fecha: 2026-08-25
-Actividad: Torreta (Ride)
-Distancia: 10.8 km
-Tiempo en movimiento: 33.93 min
-Velocidad media: 19.09 km/h
-Desnivel positivo: 140.7 m
-Frecuencia cardíaca media: 154.8 bpm
 ------------------------------

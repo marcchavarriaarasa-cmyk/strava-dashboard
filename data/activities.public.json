@@ -1,5 +1,15 @@
 [
   {
+    "name": "Piscina 2k - 80 piscines (25m)",
+    "sport_type": "Swim",
+    "date": "2026-11-15",
+    "distance": 3923.8,
+    "moving_time": 1507,
+    "elapsed_time": 3570,
+    "total_elevation_gain": 3.0,
+    "relative_effort": 48.0
+  },
+  {
     "name": "Correr per Amposta",
     "sport_type": "Run",
     "date": "2026-11-14",
