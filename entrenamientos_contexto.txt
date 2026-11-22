@@ -1,6 +1,14 @@
 RESUMEN DE ENTRENAMIENTOS RECIENTES (Contexto para IA)
 ====================================================
 
+Fecha: 2026-11-21
+Actividad: Espalda y bíceps (WeightTraining)
+Distancia: 0.0 km
+Tiempo en movimiento: 93.65 min
+Velocidad media: 0.0 km/h
+Desnivel positivo: 0 m
+Frecuencia cardíaca media: Null bpm
+------------------------------
 Fecha: 2026-11-17
 Actividad: Evening workout 🏋️ (WeightTraining)
 Distancia: 0.0 km
@@ -392,12 +400,4 @@ Tiempo en movimiento: 29.13 min
 Velocidad media: 22.01 km/h
 Desnivel positivo: 136.2 m
 Frecuencia cardíaca media: Null bpm
-------------------------------
-Fecha: 2026-08-28
-Actividad: Via verda (Run)
-Distancia: 8.21 km
-Tiempo en movimiento: 46.7 min
-Velocidad media: 10.54 km/h
-Desnivel positivo: 50.0 m
-Frecuencia cardíaca media: 150.9 bpm
 ------------------------------
